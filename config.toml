@@ -59,7 +59,7 @@ enableGitInfo = false
   organizations = [ { name = "Woods Hole Oceanographic Institution", url = "http://www.whoi.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "headshot-01.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
   email = "halexander@whoi.edu"
@@ -89,7 +89,7 @@ enableGitInfo = false
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
+  map = 1
   map_api_key = ""
   latitude = "41.532841"
   longitude = "-70.648943"
@@ -244,10 +244,10 @@ enableGitInfo = false
   #
   #   Full list: https://jpswalsh.github.io/academicons/
 
-  [[params.social]]
-    icon = "envelope"
-    icon_pack = "fas"
-    link = "mailto:halexander@whoi.edu"
+  #[[params.social]]
+#    icon = "envelope"
+#    icon_pack = "fas"
+#    link = "mailto:halexander@whoi.edu"
 
   [[params.social]]
     icon = "twitter"
@@ -264,12 +264,17 @@ enableGitInfo = false
     icon_pack = "fab"
     link = "//github.com/AlexanderLabWHOI"
 
+    [[params.social]]
+      icon = "orcid"
+      icon_pack = "ai"
+      link = "https://orcid.org/0000-0003-1308-8008"
+
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
   [[params.social]]
     icon = "cv"
     icon_pack = "ai"
-    link = "files/cv.pdf"
+    link = "https://github.com/halexand/Alexander_CV/blob/master/Alexander_CurrentCV.pdf"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the

@@ -28,6 +28,6 @@ weight = 5
 
 +++
 
-# Biography
+# About the lab
 
 [In prep]
