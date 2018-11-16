@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/publication_types/1/</link>
+    <description>Recent content in 1 on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrating &#39;big data&#39; into aquatic ecology: Challenges and opportunities</title>
+      <link>https://alexanderlabwhoi.github.io/publication/durden2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/durden2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sixty Years of Sverdrup: A Retrospective of Progress in the Study of Phytoplankton Blooms</title>
+      <link>https://alexanderlabwhoi.github.io/publication/fischer2014/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/fischer2014/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,5 +10,153 @@
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Dask for faster data parsing</title>
+      <link>https://alexanderlabwhoi.github.io/post/firstpost/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/firstpost/</guid>
+      <description>&lt;p&gt;Recently I had cause to poke around a bit with the dataset from &amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eukaryotic Metagenome Assembled Genomes (MAGs)</title>
+      <link>https://alexanderlabwhoi.github.io/projects/euk-mags/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/projects/euk-mags/</guid>
+      <description>&lt;p&gt;Protists, or eukaryotic microbes, are key players in marine ecosystems, encompassing primary producers (phytoplankton), mixotrophs, and heterotrophs. Similar to their prokaryotic microbial counterparts (bacteria and archaea), many protists cannot be cultured, making the direct study of their biology in the lab challenging. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.g. metagenomics), have shed light on the ecological roles, evolutionary histories, and physiological capabilities of these organisms. Metagenomic analyses have traditionally focused on the analysis of species and gene content and shifts in relative abundance between samples. Recently, new computational approaches have been developed to facilitate the retrieval of nearly complete prokaryotic genomes from metagenomes, a process referred to as &amp;lsquo;binning&amp;rsquo; that generates Metagenome Assembled Genomes (MAGs). Genome binning approaches have yet to be applied to metagenomic data to specifically isolate eukaryotic MAGs.&lt;/p&gt;
+
+&lt;p&gt;This year the metagenomic data corresponding to protist size fractions (0.8  m - 2000  m) from Tara Oceans were published, spanning the world&amp;rsquo;s oceans. These data represent the largest metagenomic sequencing initiative focused on protists and provide the unique opportunity to retool existing prokaryotic binning approaches to construct new eukaryotic genomes. We are working to capitalize on the release of these data and the high-memory computational power available at WHOI to (1) establish a eukaryotic MAG pipeline for the assembly and binning of eukaryotic genomes from marine metagenomes, (2) test the efficacy this pipeline with a series of mock community metagenomes, and (3) apply the eukaryotic MAG pipeline to extract eukaryotic genomes out of the Tara Oceans metagenomes. This work will establish new computational approaches for the analysis of eukaryotic metagenomes that will be broadly applicable to all metagenomic samples.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transcriptional Basis of Sinking</title>
+      <link>https://alexanderlabwhoi.github.io/projects/cosci/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/projects/cosci/</guid>
+      <description>&lt;p&gt;During the &lt;a href=&#34;http://deep-dom.blogspot.com/&#34; target=&#34;_blank&#34;&gt;DeepDOM&lt;/a&gt; cruise, we transited through the Amazon plume. The Amazon river is responsible for ~15% of all fresh water input to the world&amp;rsquo;s oceans. Consequently, this region represents a unique biogeochemical environment, characterized by low salinity and rich in terrestrial carbon and nutrients. In the low salinity lens of the plume, we discovered a blooming species of &lt;em&gt;Coscinodiscus&lt;/em&gt;, a centric diatom. We were able to monitor its physiological status in situ, perform field incubation experiments, and recover and isolate from this bloom to study in culture. Using these data we hope to address three questions: 1) What are the metabolic underpinnings of the &lt;em&gt;Coscinodiscus&lt;/em&gt; response to N, P, or Si stress? 2) Do N, P, or Si responses suggest a control on the &lt;em&gt;Coscinodiscus&lt;/em&gt; bloom in the Amazon Plume? and 3) How does competition affect physiological ecology?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</title>
+      <link>https://alexanderlabwhoi.github.io/publication/bolyen2018/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/bolyen2018/</guid>
+      <description>
+
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;We present QIIME 2, an open-source microbiome data science platform accessible to users spanning the microbiome research ecosystem, from scientists and engineers to clinicians and policy makers. QIIME 2 provides new features that will drive the next generation of microbiome research. These include interactive spatial and temporal analysis and visualization tools, support for metabolomics and shotgun metagenomics analysis, and automated data provenance tracking to ensure reproducible, transparent microbiome data science.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transcriptional patterns identify resource controls on the diazotroph Trichodesmium in the Atlantic and Pacific oceans</title>
+      <link>https://alexanderlabwhoi.github.io/publication/rouco2018/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/rouco2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shifting metabolic priorities among key protistan taxa within and below the euphotic zone</title>
+      <link>https://alexanderlabwhoi.github.io/publication/hu2018/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/hu2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What are the type, direction, and strength of species, community, and ecosystem responses to warming in aquatic mesocosm studies and their dependency on experimental characteristics? A systematic review protocol</title>
+      <link>https://alexanderlabwhoi.github.io/publication/guy-haim2017/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/guy-haim2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transcriptional response of the harmful raphidophyte Heterosigma akashiwo to nitrate and phosphate stress</title>
+      <link>https://alexanderlabwhoi.github.io/publication/haley2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/haley2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conserved transcriptional responses to nutrient stress in bloom-forming algae</title>
+      <link>https://alexanderlabwhoi.github.io/publication/harke2017/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/harke2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virus-host relationships of marine single-celled eukaryotes resolved from metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrating &#39;big data&#39; into aquatic ecology: Challenges and opportunities</title>
+      <link>https://alexanderlabwhoi.github.io/publication/durden2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/durden2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phosphorus availability regulates intracellular nucleotides in marine eukaryotic phytoplankton</title>
+      <link>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Variable depth distribution of Trichodesmium clades in the North Pacific Ocean</title>
+      <link>https://alexanderlabwhoi.github.io/publication/rouco2016/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/rouco2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Functional group-specific traits drive phytoplankton dynamics in the oligotrophic ocean</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2015a/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2015a/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

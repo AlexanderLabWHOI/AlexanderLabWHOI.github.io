@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>niche partitioning on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/niche-partitioning/</link>
+    <description>Recent content in niche partitioning on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 01 Apr 2015 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/niche-partitioning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Metatranscriptome analyses indicate resource partitioning between diatoms in the field</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2015/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diversity on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/diversity/</link>
+    <description>Recent content in diversity on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 01 Oct 2016 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/diversity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Variable depth distribution of Trichodesmium clades in the North Pacific Ocean</title>
+      <link>https://alexanderlabwhoi.github.io/publication/rouco2016/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/rouco2016/</guid>
+      <description> Abstract </description>
+    </item>
+    
+  </channel>
+</rss>

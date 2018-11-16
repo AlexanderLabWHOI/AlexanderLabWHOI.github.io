@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reference gene on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/reference-gene/</link>
+    <description>Recent content in reference gene on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2012 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/reference-gene/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Identifying reference genes with stable expression from high throughput sequence data</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -36,7 +36,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/home/about/</guid>
-      <description>About the lab [In prep]</description>
+      <description>About the lab Our lab focuses on the application of computational approaches to oceanographic questions. We use a combination of culture- and field-based studies to better understand the biogeochemical functioning and physiological ecology of eukaryotic plankton in a changing ocean. Topics of interest include the maintenance of genetic diversity in planktonic populations and the role of biodiversity in ecosystem functioning.
+We also aim to make research done in this lab openly available and reproducible.</description>
     </item>
     
     <item>
@@ -49,27 +50,9 @@
     </item>
     
     <item>
-      <title>Experience</title>
-      <link>https://alexanderlabwhoi.github.io/home/experience/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/home/experience/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Selected Publications</title>
-      <link>https://alexanderlabwhoi.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Recent Publications</title>
       <link>https://alexanderlabwhoi.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/home/publications/</guid>
       <description></description>
@@ -122,11 +105,11 @@ To remove this section, either delete content/home/teaching.md or edit the front
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>https://alexanderlabwhoi.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      <title>Join the Lab</title>
+      <link>https://alexanderlabwhoi.github.io/home/jointhelab/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/home/tags/</guid>
+      <guid>https://alexanderlabwhoi.github.io/home/jointhelab/</guid>
       <description></description>
     </item>
     
@@ -145,6 +128,15 @@ To remove this section, either delete content/home/teaching.md or edit the front
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interests</title>
+      <link>https://alexanderlabwhoi.github.io/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/home/tags/</guid>
       <description></description>
     </item>
     

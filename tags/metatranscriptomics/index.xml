@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>metatranscriptomics on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</link>
+    <description>Recent content in metatranscriptomics on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 11 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/metatranscriptomics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Transcriptional Basis of Sinking</title>
+      <link>https://alexanderlabwhoi.github.io/projects/cosci/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/projects/cosci/</guid>
+      <description>During the DeepDOM cruise, we transited through the Amazon plume. The Amazon river is responsible for ~15% of all fresh water input to the world&amp;rsquo;s oceans. Consequently, this region represents a unique biogeochemical environment, characterized by low salinity and rich in terrestrial carbon and nutrients. In the low salinity lens of the plume, we discovered a blooming species of Coscinodiscus, a centric diatom. We were able to monitor its physiological status in situ, perform field incubation experiments, and recover and isolate from this bloom to study in culture.</description>
+    </item>
+    
+    <item>
+      <title>Transcriptional patterns identify resource controls on the diazotroph Trichodesmium in the Atlantic and Pacific oceans</title>
+      <link>https://alexanderlabwhoi.github.io/publication/rouco2018/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/rouco2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shifting metabolic priorities among key protistan taxa within and below the euphotic zone</title>
+      <link>https://alexanderlabwhoi.github.io/publication/hu2018/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/hu2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virus-host relationships of marine single-celled eukaryotes resolved from metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional group-specific traits drive phytoplankton dynamics in the oligotrophic ocean</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2015a/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2015a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metatranscriptome analyses indicate resource partitioning between diatoms in the field</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2015/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2015/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

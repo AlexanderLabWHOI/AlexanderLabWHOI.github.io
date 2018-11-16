@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>transcriptomics on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/transcriptomics/</link>
+    <description>Recent content in transcriptomics on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/transcriptomics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Transcriptional response of the harmful raphidophyte Heterosigma akashiwo to nitrate and phosphate stress</title>
+      <link>https://alexanderlabwhoi.github.io/publication/haley2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/haley2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conserved transcriptional responses to nutrient stress in bloom-forming algae</title>
+      <link>https://alexanderlabwhoi.github.io/publication/harke2017/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/harke2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phosphorus availability regulates intracellular nucleotides in marine eukaryotic phytoplankton</title>
+      <link>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identifying reference genes with stable expression from high throughput sequence data</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The transcriptome and proteome of the diatom Thalassiosira pseudonana reveal a diverse phosphorus stress response</title>
+      <link>https://alexanderlabwhoi.github.io/publication/dyhrman2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/dyhrman2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
