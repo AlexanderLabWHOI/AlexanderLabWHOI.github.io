@@ -11,16 +11,6 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Dask for faster data parsing</title>
-      <link>https://alexanderlabwhoi.github.io/post/firstpost/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/firstpost/</guid>
-      <description>&lt;p&gt;Recently I had cause to poke around a bit with the dataset from &amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Eukaryotic Metagenome Assembled Genomes (MAGs)</title>
       <link>https://alexanderlabwhoi.github.io/projects/euk-mags/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
@@ -29,6 +19,20 @@
       <description>&lt;p&gt;Protists, or eukaryotic microbes, are key players in marine ecosystems, encompassing primary producers (phytoplankton), mixotrophs, and heterotrophs. Similar to their prokaryotic microbial counterparts (bacteria and archaea), many protists cannot be cultured, making the direct study of their biology in the lab challenging. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.g. metagenomics), have shed light on the ecological roles, evolutionary histories, and physiological capabilities of these organisms. Metagenomic analyses have traditionally focused on the analysis of species and gene content and shifts in relative abundance between samples. Recently, new computational approaches have been developed to facilitate the retrieval of nearly complete prokaryotic genomes from metagenomes, a process referred to as &amp;lsquo;binning&amp;rsquo; that generates Metagenome Assembled Genomes (MAGs). Genome binning approaches have yet to be applied to metagenomic data to specifically isolate eukaryotic MAGs.&lt;/p&gt;
 
 &lt;p&gt;This year the metagenomic data corresponding to protist size fractions (0.8  m - 2000  m) from Tara Oceans were published, spanning the world&amp;rsquo;s oceans. These data represent the largest metagenomic sequencing initiative focused on protists and provide the unique opportunity to retool existing prokaryotic binning approaches to construct new eukaryotic genomes. We are working to capitalize on the release of these data and the high-memory computational power available at WHOI to (1) establish a eukaryotic MAG pipeline for the assembly and binning of eukaryotic genomes from marine metagenomes, (2) test the efficacy this pipeline with a series of mock community metagenomes, and (3) apply the eukaryotic MAG pipeline to extract eukaryotic genomes out of the Tara Oceans metagenomes. This work will establish new computational approaches for the analysis of eukaryotic metagenomes that will be broadly applicable to all metagenomic samples.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello, world.</title>
+      <link>https://alexanderlabwhoi.github.io/post/firstpost/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/firstpost/</guid>
+      <description>&lt;p&gt;Two months ago, I started in the Biology Department at the &lt;a href=&#34;whoi.edu&#34; target=&#34;_blank&#34;&gt;Woods Hole Oceanographic Institution&lt;/a&gt; as an Assistant Scientist. The processes has been otherworldly. Suddenly I find myself the steward of my own ship (read: lab). My emotional state seems to oscillate between excited exhilaration and existential terror (&lt;em&gt;O&lt;/em&gt; 3 kHz). I have spent the last 11 (or more) years working towards this very moment&amp;ndash; so it is surreal to have officially arrived. And now&amp;hellip; what? Grants, papers, setting up a wet lab, navigating tenure, defining my scientific brand?&lt;/p&gt;
+
+&lt;p&gt;One thing I would like to practice more than I have during previous career stages is making writing more of a habit. Voicing myself in a public sphere has always made me nervous (reference that time in first grade when I got a nosebleed while leading the class in the pledge of allegiance). So, be it giving a scientific talk, speaking up in a meeting or seminar, or tweeting (oh hey, you, follow me &lt;a href=&#34;https://twitter.com/intent/user?screen_name=nekton4plankton&#34; target=&#34;_blank&#34;&gt;@nekton4plankton&lt;/a&gt;), I have to push by the jitters and psych myself up a bit.&lt;/p&gt;
+
+&lt;p&gt;So, consider this blog my attempt to habituate myself to making my thoughts more public. Topics to be covered will likely include: science, new PI life, computational blunders and wins, and life in a small, science-y fishing village.&lt;/p&gt;
 </description>
     </item>
     
