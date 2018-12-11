@@ -132,7 +132,7 @@
     <item>
       <title>big data</title>
       <link>https://alexanderlabwhoi.github.io/tags/big-data/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/big-data/</guid>
       <description></description>
@@ -198,15 +198,6 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/cyber-infrastructure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dask</title>
-      <link>https://alexanderlabwhoi.github.io/tags/dask/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/dask/</guid>
       <description></description>
     </item>
     
@@ -355,6 +346,15 @@
     </item>
     
     <item>
+      <title>lab setup</title>
+      <link>https://alexanderlabwhoi.github.io/tags/lab-setup/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/lab-setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>marine</title>
       <link>https://alexanderlabwhoi.github.io/tags/marine/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
@@ -445,6 +445,15 @@
     </item>
     
     <item>
+      <title>new PI</title>
+      <link>https://alexanderlabwhoi.github.io/tags/new-pi/</link>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/new-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>niche partitioning</title>
       <link>https://alexanderlabwhoi.github.io/tags/niche-partitioning/</link>
       <pubDate>Wed, 01 Apr 2015 00:00:00 -0400</pubDate>
@@ -522,15 +531,6 @@
       <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/protists/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://alexanderlabwhoi.github.io/tags/python/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/python/</guid>
       <description></description>
     </item>
     
