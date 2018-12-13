@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Keeping it light: (Re)analyzing community-wide datasets without major infrastructure</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Re-assembly, quality evaluation, and annotation of 678 microbial eukaryotic reference transcriptomes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/johnson2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/johnson2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Eukaryotic Metagenome Assembled Genomes (MAGs)</title>
       <link>https://alexanderlabwhoi.github.io/projects/euk-mags/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
@@ -138,27 +156,6 @@
       <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Variable depth distribution of Trichodesmium clades in the North Pacific Ocean</title>
-      <link>https://alexanderlabwhoi.github.io/publication/rouco2016/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/rouco2016/</guid>
-      <description>
-
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Functional group-specific traits drive phytoplankton dynamics in the oligotrophic ocean</title>
-      <link>https://alexanderlabwhoi.github.io/publication/alexander2015a/</link>
-      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/alexander2015a/</guid>
       <description></description>
     </item>
     

@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/publication/alexander2018/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/publication/johnson2018/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/projects/euk-mags/</loc>
       <lastmod>2018-11-11T00:00:00+00:00</lastmod>
     </url>
@@ -206,7 +222,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/publication_types/2/</loc>
-      <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -277,7 +293,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/mmetsp/</loc>
-      <lastmod>2017-07-01T00:00:00-04:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -350,6 +366,15 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/aquatic/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/automated-pipeline/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -438,6 +463,15 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/data-reuse/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/data-science/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -457,7 +491,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/de-novo-assembly/</loc>
-      <lastmod>2018-04-01T00:00:00-04:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -600,6 +634,15 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/marine-microbial-eukaryote/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/mesocosm/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -735,6 +778,15 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/open-data/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/phosphorus/</loc>
       <lastmod>2018-06-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -762,6 +814,15 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/protist/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/protists/</loc>
       <lastmod>2016-11-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -773,6 +834,15 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/qrt-pcr/</loc>
       <lastmod>2018-06-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/re-analysis/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -799,7 +869,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/reproducibility/</loc>
-      <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -836,6 +906,15 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/sub-euphotic/</loc>
       <lastmod>2018-04-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/transcriptome/</loc>
+      <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     

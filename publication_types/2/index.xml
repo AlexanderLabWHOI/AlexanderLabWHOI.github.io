@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Keeping it light: (Re)analyzing community-wide datasets without major infrastructure</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Re-assembly, quality evaluation, and annotation of 678 microbial eukaryotic reference transcriptomes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/johnson2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/johnson2018/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</title>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/tags/de-novo-assembly/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Re-assembly, quality evaluation, and annotation of 678 microbial eukaryotic reference transcriptomes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/johnson2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/johnson2018/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Shifting metabolic priorities among key protistan taxa within and below the euphotic zone</title>
