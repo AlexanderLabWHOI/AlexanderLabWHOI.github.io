@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Running Jupyter Notebooks Remotely with Slurm</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</guid>
+      <description>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you jupyter notebook command on the remote machine you will not be able to interact with .</description>
+    </item>
+    
+    <item>
       <title>Hello, world.</title>
       <link>https://alexanderlabwhoi.github.io/post/firstpost/</link>
       <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>

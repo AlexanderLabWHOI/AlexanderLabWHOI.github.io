@@ -11,6 +11,133 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Running Jupyter Notebooks Remotely with Slurm</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</guid>
+      <description>
+
+&lt;p&gt;I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I  prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you &lt;code&gt;jupyter notebook&lt;/code&gt; command on the remote machine you will not be able to interact with . Rather, you need to create a connection between your local browser and the remote Jupyter session. Here I am showing a special case, where you might want to run jupyter notebooks on a larger compute node via an interactive session with slurm.&lt;/p&gt;
+
+&lt;h2 id=&#34;starting-your-interactive-job-with-slurm&#34;&gt;Starting your interactive job with slurm&lt;/h2&gt;
+
+&lt;p&gt;First things first: start up a &lt;code&gt;tmux&lt;/code&gt; session (or &lt;code&gt;screen&lt;/code&gt; if you prefer). If I am looking to have some program running for longer than I am wanting to keep a terminal window open &amp;ndash; &lt;code&gt;tmux&lt;/code&gt; or &lt;code&gt;screen&lt;/code&gt; are great options as they keep your session from timing out on remote machines. I have a preference for &lt;a href=&#34;https://superuser.com/questions/236158/tmux-vs-screen&#34; target=&#34;_blank&#34;&gt;tmux&lt;/a&gt;, but it is really up to you.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tmux new -s jupyter
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now that we are in our new tmux session, it is time to request an real-time run on the remote HPC. Using the slurm command &lt;a href=&#34;https://slurm.schedmd.com/srun.html&#34; target=&#34;_blank&#34;&gt;srun&lt;/a&gt;, I am asking for 2 hours to run on two CPUs on a queue called main. You can customize this to your needs and resources by requesting more nodes, memory, etc.:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;srun -p main --time=02:00:00 --ntasks-per-node 2 --pty bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will log you onto some node which will be noted in your command prompt. For example, my command line prompt changed from &lt;code&gt;halexander@hpc&lt;/code&gt; to &lt;code&gt;halexander@node1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have many commands that I like in my &lt;code&gt;.bash_profile&lt;/code&gt; that are not otherwise carried over to this new machine that we just logged into, so go ahead and source my bash profile (&lt;code&gt;source ~/.bash_profile&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-a-conda-environment-and-starting-a-jupyter-notebook&#34;&gt;Creating a conda environment and starting a jupyter notebook&lt;/h2&gt;
+
+&lt;p&gt;I like to run each of my various projects in its own conda environment. There are many reasons for this: reproducibility, control over program versions, dealing with conflicting package requirements, and, especially for on a shared compute resource (like an HPC), bypassing having root permission for installing programs. Another nice bonus for this particular case is that conda environments will automatically have &lt;code&gt;jupyter&lt;/code&gt; installed. So, create a conda environment (if you haven&amp;rsquo;t already):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda create conda-env
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and activate it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;source activate conda-env
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should now see that your terminal prompt has changed to something like the following, indicating that you are logged onto the interactive node and working within the conda-env environment:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(conda-env) halexander@node1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One issue I encountered (that may be specific to my local HPC) that I want to note. If I try to run the command &lt;code&gt;jupyter notebook&lt;/code&gt; right away I get the following error:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Traceback (most recent call last):
+  File &amp;quot;/address/home/halexander/.conda/envs/conda-env/lib/python3.6/site-packages/traitlets/traitlets.py&amp;quot;, line 528, in get
+    value = obj._trait_values[self.name]
+KeyError: &#39;runtime_dir&#39;
+....
+PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To get around this issue I found some help on &lt;a href=&#34;https://stackoverflow.com/questions/35878178/jupyter-notebook-permission-error&#34; target=&#34;_blank&#34;&gt;StackOverflow&lt;/a&gt;. (Google is your friend for pesky errors like this.) This simple export command fixed my problem:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export XDG_RUNTIME_DIR=&amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, it is time to start up a jupyter notebook! On the remote machine type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jupyter notebook --no-browser --port=8888
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Note, the default is for jupyter notebook to automatically open a browser &amp;ndash; but we can&amp;rsquo;t do that on a remote server, so we bypass that function with the &lt;code&gt;--no-browser&lt;/code&gt; flag.)&lt;/p&gt;
+
+&lt;p&gt;I regularly want to run this command and hate typing, so I went ahead and created a function to streamline this process:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function jpt(){
+    jupyter notebook --no-browser --port=$1
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This allows you to just type &lt;code&gt;jpt&lt;/code&gt; and a port number and the command will be taken care of. If you want to use this function, simply copy the above and place it in your &lt;code&gt;.bash_profile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, &lt;code&gt;jpt 8888&lt;/code&gt; will start a jupyter notebook on the port 8888.&lt;/p&gt;
+
+&lt;p&gt;If all is well, after running the above command, you should see something like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[I 14:22:55.931 NotebookApp] Writing notebook server cookie secret to /hpc/home/halexander/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 14:23:01.371 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 14:23:01.371 NotebookApp] Serving notebooks from local directory: /vortexfs1/scratch/halexander/tara/sourmash-analysis
+[I 14:23:01.371 NotebookApp] The Jupyter Notebook is running at:
+[I 14:23:01.371 NotebookApp] http://localhost:8888/
+[I 14:23:01.371 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Creating an SSH tunnel&lt;/p&gt;
+
+&lt;p&gt;You are now ready to create a &lt;a href=&#34;https://en.wikipedia.org/wiki/Tunneling_protocol&#34; target=&#34;_blank&#34;&gt;tunnel&lt;/a&gt; from your local computer to the jupyter notebook running on the HPC.&lt;/p&gt;
+
+&lt;p&gt;Open a new terminal on your local machine. In the above example, I started a notebook on &lt;code&gt;node1&lt;/code&gt; at port &lt;code&gt;8888&lt;/code&gt; and my username is &lt;code&gt;halexander&lt;/code&gt; and the address of my HPC is &lt;code&gt;hpc.address.edu&lt;/code&gt;. So, to create the tunnel I would type the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -t -t halexander@hpc.address.edu -L 8888:localhost:8888 ssh node1 -L 8888:localhost:8888
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a lot of typing, so it is simpler to create another bash function that you can put in your local &lt;code&gt;.bash_profile&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function jptnode(){
+    # Forwards port $1 into port $2 and listens to it
+        ssh -t -t halexander@hpc.address.edu -L $1:localhost:$1 ssh $2 -L $1:localhost:$1
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will of course want to customize the above function to contain your username in place of &lt;code&gt;halexander&lt;/code&gt; and the address of your hpc in place of &lt;code&gt;hpc.address.edu&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;$&lt;/code&gt; indicates the input variables in this function, with &lt;code&gt;$1&lt;/code&gt; being the port you specified for the jupyter notebook and &lt;code&gt;$2&lt;/code&gt; being the name of the node you are running the notebook on. So, to use this function you would type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jptnode 8888 node1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you run this, you should notice that your terminal window has been logged on to your remote HPC and then logged onto the requested node.&lt;/p&gt;
+
+&lt;p&gt;You can now open your browser of choice and go to &lt;code&gt;localhost:8888&lt;/code&gt; and you should see the jupyter dashboard. You should be able to start working in jupyter notebooks, downloading data, or do any other things you want to do through the jupyter dashboard. Make sure to shutdown the jupyter notebook when you are done.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-few-important-notes&#34;&gt;A few important notes&lt;/h2&gt;
+
+&lt;p&gt;1) Before you connect to a remote server with jupyter notebook make sure that you have configured jupyter with password information. You can do this by editing the &lt;code&gt;jupyter-notebook_config.json&lt;/code&gt; which is usually located in &lt;code&gt;~/.jupyter&lt;/code&gt; or by typing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jupyter notebook password
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;which will prompt you for a password that will be used for future notebooks.&lt;/p&gt;
+
+&lt;p&gt;2) Make sure you shutdown  your jupyter notebook when you are done. To do this, you can log back onto the tmux session you started earlier (&lt;code&gt;tmux a -t jupyter&lt;/code&gt;) where the jupyter notebook is running and use &lt;code&gt;ctrl-C&lt;/code&gt; should shutdown the jupyter notebook. If you run into issues with a port still being used, chances are that a notebook is still running somewhere.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Keeping it light: (Re)analyzing community-wide datasets without major infrastructure</title>
       <link>https://alexanderlabwhoi.github.io/publication/alexander2018/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
@@ -147,15 +274,6 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
       <description></description>
     </item>
     

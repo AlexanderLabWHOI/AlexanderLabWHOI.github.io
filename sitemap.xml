@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</loc>
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/publication/alexander2018/</loc>
       <lastmod>2018-12-01T00:00:00-05:00</lastmod>
     </url>
@@ -274,6 +282,15 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/hpc/</loc>
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/heterosigma-akashiwo/</loc>
       <lastmod>2017-09-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -436,6 +453,24 @@
     
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/computing/</loc>
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/conda/</loc>
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/conserved-response/</loc>
       <lastmod>2017-07-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -456,6 +491,15 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/cyber-infrastructure/</loc>
       <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/data-analysis/</loc>
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -609,6 +653,15 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/housekeeping-genes/</loc>
       <lastmod>2012-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/jupyter/</loc>
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

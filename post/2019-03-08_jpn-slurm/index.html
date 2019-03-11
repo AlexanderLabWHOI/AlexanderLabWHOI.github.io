@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
+  <meta name="author" content="Harriet Alexander">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Using SSH to tunnel into jupyter notebooks deployed remotely on slurm">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-65421302-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://alexanderlabwhoi.github.io/index.xml" type="application/rss+xml" title="Alexander Lab @ WHOI">
+  <link rel="feed" href="https://alexanderlabwhoi.github.io/index.xml" type="application/rss+xml" title="Alexander Lab @ WHOI">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@nekton4plankton">
+  <meta property="twitter:creator" content="@nekton4plankton">
+  
+  <meta property="og:site_name" content="Alexander Lab @ WHOI">
+  <meta property="og:url" content="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/">
+  <meta property="og:title" content="Running Jupyter Notebooks Remotely with Slurm | Alexander Lab @ WHOI">
+  <meta property="og:description" content="Using SSH to tunnel into jupyter notebooks deployed remotely on slurm">
+  
+  
+    
+  <meta property="og:image" content="https://alexanderlabwhoi.github.io/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-03-11T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-03-11T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Running Jupyter Notebooks Remotely with Slurm | Alexander Lab @ WHOI</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Alexander Lab @ WHOI</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/conduct">
+            
+            <span>Conduct</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/join">
+            
+            <span>Join</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Running Jupyter Notebooks Remotely with Slurm</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Harriet Alexander">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Mar 11, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Harriet Alexander">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Running%20Jupyter%20Notebooks%20Remotely%20with%20Slurm&amp;url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2019-03-08_jpn-slurm%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2019-03-08_jpn-slurm%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2019-03-08_jpn-slurm%2f&amp;title=Running%20Jupyter%20Notebooks%20Remotely%20with%20Slurm"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2019-03-08_jpn-slurm%2f&amp;title=Running%20Jupyter%20Notebooks%20Remotely%20with%20Slurm"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Running%20Jupyter%20Notebooks%20Remotely%20with%20Slurm&amp;body=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2019-03-08_jpn-slurm%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I  prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you <code>jupyter notebook</code> command on the remote machine you will not be able to interact with . Rather, you need to create a connection between your local browser and the remote Jupyter session. Here I am showing a special case, where you might want to run jupyter notebooks on a larger compute node via an interactive session with slurm.</p>
+
+<h2 id="starting-your-interactive-job-with-slurm">Starting your interactive job with slurm</h2>
+
+<p>First things first: start up a <code>tmux</code> session (or <code>screen</code> if you prefer). If I am looking to have some program running for longer than I am wanting to keep a terminal window open &ndash; <code>tmux</code> or <code>screen</code> are great options as they keep your session from timing out on remote machines. I have a preference for <a href="https://superuser.com/questions/236158/tmux-vs-screen" target="_blank">tmux</a>, but it is really up to you.</p>
+
+<pre><code>tmux new -s jupyter
+</code></pre>
+
+<p>Now that we are in our new tmux session, it is time to request an real-time run on the remote HPC. Using the slurm command <a href="https://slurm.schedmd.com/srun.html" target="_blank">srun</a>, I am asking for 2 hours to run on two CPUs on a queue called main. You can customize this to your needs and resources by requesting more nodes, memory, etc.:</p>
+
+<pre><code>srun -p main --time=02:00:00 --ntasks-per-node 2 --pty bash
+</code></pre>
+
+<p>This will log you onto some node which will be noted in your command prompt. For example, my command line prompt changed from <code>halexander@hpc</code> to <code>halexander@node1</code>.</p>
+
+<p>I have many commands that I like in my <code>.bash_profile</code> that are not otherwise carried over to this new machine that we just logged into, so go ahead and source my bash profile (<code>source ~/.bash_profile</code>).</p>
+
+<h2 id="creating-a-conda-environment-and-starting-a-jupyter-notebook">Creating a conda environment and starting a jupyter notebook</h2>
+
+<p>I like to run each of my various projects in its own conda environment. There are many reasons for this: reproducibility, control over program versions, dealing with conflicting package requirements, and, especially for on a shared compute resource (like an HPC), bypassing having root permission for installing programs. Another nice bonus for this particular case is that conda environments will automatically have <code>jupyter</code> installed. So, create a conda environment (if you haven&rsquo;t already):</p>
+
+<pre><code>conda create conda-env
+</code></pre>
+
+<p>and activate it:</p>
+
+<pre><code>source activate conda-env
+</code></pre>
+
+<p>You should now see that your terminal prompt has changed to something like the following, indicating that you are logged onto the interactive node and working within the conda-env environment:</p>
+
+<pre><code>(conda-env) halexander@node1
+</code></pre>
+
+<p>One issue I encountered (that may be specific to my local HPC) that I want to note. If I try to run the command <code>jupyter notebook</code> right away I get the following error:</p>
+
+<pre><code>Traceback (most recent call last):
+  File &quot;/address/home/halexander/.conda/envs/conda-env/lib/python3.6/site-packages/traitlets/traitlets.py&quot;, line 528, in get
+    value = obj._trait_values[self.name]
+KeyError: 'runtime_dir'
+....
+PermissionError: [Errno 13] Permission denied: '/run/user/12746'
+</code></pre>
+
+<p>To get around this issue I found some help on <a href="https://stackoverflow.com/questions/35878178/jupyter-notebook-permission-error" target="_blank">StackOverflow</a>. (Google is your friend for pesky errors like this.) This simple export command fixed my problem:</p>
+
+<pre><code>export XDG_RUNTIME_DIR=&quot;&quot;
+</code></pre>
+
+<p>Now, it is time to start up a jupyter notebook! On the remote machine type:</p>
+
+<pre><code>jupyter notebook --no-browser --port=8888
+</code></pre>
+
+<p>(Note, the default is for jupyter notebook to automatically open a browser &ndash; but we can&rsquo;t do that on a remote server, so we bypass that function with the <code>--no-browser</code> flag.)</p>
+
+<p>I regularly want to run this command and hate typing, so I went ahead and created a function to streamline this process:</p>
+
+<pre><code>function jpt(){
+    jupyter notebook --no-browser --port=$1
+}
+</code></pre>
+
+<p>This allows you to just type <code>jpt</code> and a port number and the command will be taken care of. If you want to use this function, simply copy the above and place it in your <code>.bash_profile</code>.</p>
+
+<p>Now, <code>jpt 8888</code> will start a jupyter notebook on the port 8888.</p>
+
+<p>If all is well, after running the above command, you should see something like the following:</p>
+
+<pre><code>[I 14:22:55.931 NotebookApp] Writing notebook server cookie secret to /hpc/home/halexander/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 14:23:01.371 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 14:23:01.371 NotebookApp] Serving notebooks from local directory: /vortexfs1/scratch/halexander/tara/sourmash-analysis
+[I 14:23:01.371 NotebookApp] The Jupyter Notebook is running at:
+[I 14:23:01.371 NotebookApp] http://localhost:8888/
+[I 14:23:01.371 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+</code></pre>
+
+<p>##Creating an SSH tunnel</p>
+
+<p>You are now ready to create a <a href="https://en.wikipedia.org/wiki/Tunneling_protocol" target="_blank">tunnel</a> from your local computer to the jupyter notebook running on the HPC.</p>
+
+<p>Open a new terminal on your local machine. In the above example, I started a notebook on <code>node1</code> at port <code>8888</code> and my username is <code>halexander</code> and the address of my HPC is <code>hpc.address.edu</code>. So, to create the tunnel I would type the following:</p>
+
+<pre><code>ssh -t -t halexander@hpc.address.edu -L 8888:localhost:8888 ssh node1 -L 8888:localhost:8888
+</code></pre>
+
+<p>This is a lot of typing, so it is simpler to create another bash function that you can put in your local <code>.bash_profile</code>.</p>
+
+<pre><code>function jptnode(){
+    # Forwards port $1 into port $2 and listens to it
+        ssh -t -t halexander@hpc.address.edu -L $1:localhost:$1 ssh $2 -L $1:localhost:$1
+}
+</code></pre>
+
+<p>You will of course want to customize the above function to contain your username in place of <code>halexander</code> and the address of your hpc in place of <code>hpc.address.edu</code>.</p>
+
+<p>The <code>$</code> indicates the input variables in this function, with <code>$1</code> being the port you specified for the jupyter notebook and <code>$2</code> being the name of the node you are running the notebook on. So, to use this function you would type:</p>
+
+<pre><code>jptnode 8888 node1
+</code></pre>
+
+<p>Once you run this, you should notice that your terminal window has been logged on to your remote HPC and then logged onto the requested node.</p>
+
+<p>You can now open your browser of choice and go to <code>localhost:8888</code> and you should see the jupyter dashboard. You should be able to start working in jupyter notebooks, downloading data, or do any other things you want to do through the jupyter dashboard. Make sure to shutdown the jupyter notebook when you are done.</p>
+
+<h2 id="a-few-important-notes">A few important notes</h2>
+
+<p>1) Before you connect to a remote server with jupyter notebook make sure that you have configured jupyter with password information. You can do this by editing the <code>jupyter-notebook_config.json</code> which is usually located in <code>~/.jupyter</code> or by typing:</p>
+
+<pre><code>jupyter notebook password
+</code></pre>
+
+<p>which will prompt you for a password that will be used for future notebooks.</p>
+
+<p>2) Make sure you shutdown  your jupyter notebook when you are done. To do this, you can log back onto the tmux session you started earlier (<code>tmux a -t jupyter</code>) where the jupyter notebook is running and use <code>ctrl-C</code> should shutdown the jupyter notebook. If you run into issues with a port still being used, chances are that a notebook is still running somewhere.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/conda/">conda</a>
+  
+  <a class="badge badge-light" href="/tags/jupyter/">jupyter</a>
+  
+  <a class="badge badge-light" href="/tags/hpc/">HPC</a>
+  
+  <a class="badge badge-light" href="/tags/computing/">computing</a>
+  
+  <a class="badge badge-light" href="/tags/data-analysis/">data analysis</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/headshot-01.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Harriet Alexander</a></h5>
+    <h6 class="card-subtitle">Assistant Scientist</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="//twitter.com/nekton4plankton" >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=FdYCw1gAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="//github.com/AlexanderLabWHOI" >
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://orcid.org/0000-0003-1308-8008" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/halexand/Alexander_CV/blob/master/Alexander_CurrentCV.pdf" target="_blank" rel="noopener">
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+      <script async defer src="//maps.googleapis.com/maps/api/js?key="></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "Search Results",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.2861db6bcf2db4b5eade32c795453e47.js"></script>
+
+    
+
+  </body>
+</html>
+
