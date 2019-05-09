@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrew R. Juhl on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/andrew-r.-juhl/</link>
+    <description>Recent content in Andrew R. Juhl on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/andrew-r.-juhl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Transcriptional response of the harmful raphidophyte Heterosigma akashiwo to nitrate and phosphate stress</title>
+      <link>https://alexanderlabwhoi.github.io/publication/haley2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/haley2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conserved transcriptional responses to nutrient stress in bloom-forming algae</title>
+      <link>https://alexanderlabwhoi.github.io/publication/harke2017/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/harke2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

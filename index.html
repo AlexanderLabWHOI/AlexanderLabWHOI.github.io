@@ -6,11 +6,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
-  <meta name="author" content="Harriet Alexander">
+  <meta name="generator" content="Source Themes Academic 4.1.0">
+  <meta name="generator" content="Hugo 0.54.0" />
 
   
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alexander Lab">
+
   
   
   
@@ -31,6 +44,12 @@
   
 
   
+
+  
+
+  
+
+  
   
   
   <meta name="theme-color" content="#2962ff">
@@ -43,7 +62,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
     
@@ -55,7 +74,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -103,6 +123,12 @@
 
   <link rel="canonical" href="https://alexanderlabwhoi.github.io/">
 
+  
+  
+  
+  
+    
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@nekton4plankton">
@@ -111,14 +137,10 @@
   <meta property="og:site_name" content="Alexander Lab @ WHOI">
   <meta property="og:url" content="https://alexanderlabwhoi.github.io/">
   <meta property="og:title" content="Alexander Lab @ WHOI">
-  <meta property="og:description" content="Alexander Lab @ Woods Hole Oceanographic Institution">
-  
-  
-    
-  <meta property="og:image" content="https://alexanderlabwhoi.github.io/img/icon-192.png">
+  <meta property="og:description" content="Alexander Lab @ Woods Hole Oceanographic Institution"><meta property="og:image" content="https://alexanderlabwhoi.github.io/img/static/img/logo/Alexander-lab-logo-01.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2017-10-15T00:00:00-04:00">
+  <meta property="og:updated_time" content="2019-04-29T16:06:30-04:00">
   
 
   
@@ -129,6 +151,37 @@
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
@@ -147,7 +200,7 @@
 
       
       
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
         
 
         
@@ -197,28 +250,9 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#posts" data-target="#posts">
+          <a class="nav-link" href="/post" data-target="/post">
             
             <span>Posts</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#projects" data-target="#projects">
-            
-            <span>Projects</span>
             
           </a>
         </li>
@@ -284,10 +318,26 @@
         
 
       
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
 
         
 
         
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
       </ul>
 
     </div>
@@ -296,7 +346,9 @@
 
 
 
-<span id="homepage" style="display: none"></span>
+<span id="homepage" class="d-none"></span>
+
+
 
 
   
@@ -306,35 +358,55 @@
 
 
   
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
   
   
     
 
 
-<section id="hero_carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+<section id="slider" class="carousel slide" data-ride="carousel" data-interval="5000">
 
   
   <ol class="carousel-indicators">
     
-    <li data-target="#hero_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
     
-    <li data-target="#hero_carousel" data-slide-to="1" ></li>
+    <li data-target="#slider" data-slide-to="1" ></li>
     
-    <li data-target="#hero_carousel" data-slide-to="2" ></li>
+    <li data-target="#slider" data-slide-to="2" ></li>
     
   </ol>
 
   
   <div class="carousel-inner" style="min-height: 300px;">
     
-    <div class="hero-overlay carousel-item active" style="min-height: inherit;
+    <div class="wg-hero carousel-item active" style="min-height: inherit;
       
       background-color: #333;
       
       
       background-image:
       linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-      url('/img/banners/header_iceburg-01.jpg');
+      url('https://alexanderlabwhoi.github.io/img/banners/header_iceburg-01.jpg');
       
       ;">
       <div class="container" style="text-align: left;">
@@ -348,14 +420,14 @@
         </div>
     </div>
     
-    <div class="hero-overlay carousel-item" style="min-height: inherit;
+    <div class="wg-hero carousel-item" style="min-height: inherit;
       
       background-color: #333;
       
       
       background-image:
       linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-      url('/img/banners/Core.jpg');
+      url('https://alexanderlabwhoi.github.io/img/banners/Core.jpg');
       
       ;">
       <div class="container" style="text-align: left;">
@@ -369,14 +441,14 @@
         </div>
     </div>
     
-    <div class="hero-overlay carousel-item" style="min-height: inherit;
+    <div class="wg-hero carousel-item" style="min-height: inherit;
       
       background-color: #333;
       
       
       background-image:
       linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-      url('/img/banners/bioinformatics.png');
+      url('https://alexanderlabwhoi.github.io/img/banners/bioinformatics.png');
       
       ;">
       <div class="container" style="text-align: left;">
@@ -393,11 +465,11 @@
   </div>
 
   
-  <a class="carousel-control-prev" href="#hero_carousel" data-slide="prev">
+  <a class="carousel-control-prev" href="#slider" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#hero_carousel" data-slide="next">
+  <a class="carousel-control-next" href="#slider" data-slide="next">
     <span class="carousel-control-next-icon"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -409,9 +481,40 @@
   
   
   
-  <section id="about" class="home-section">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="about" class="home-section wg-about   " >
     <div class="container">
       
+
+
+
+
+  
+
+
+
+
+
+
 
 
 
@@ -420,26 +523,24 @@
     <div id="profile">
 
       
-      <img class="portrait" src="/img/headshot-01.jpg" itemprop="image" alt="Avatar">
+      
+      <img class="portrait" src="/author/admin/avatar_hu200d925875015daa0522743bbebb071a_1938423_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
       
 
       <div class="portrait-title">
-        <h2 itemprop="name">Harriet Alexander</h2>
-        <h3 itemprop="jobTitle">Assistant Scientist</h3>
-
-        
+        <h2 itemprop="name">Alexander Lab</h2>
         
 
         
         <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="http://www.whoi.edu/" target="_blank" itemprop="url" rel="noopener">
+          <a href="whoi.edu" target="_blank" itemprop="url" rel="noopener">
           <span itemprop="name">Woods Hole Oceanographic Institution</span>
           </a>
         </h3>
         
       </div>
 
-      <link itemprop="url" href="https://alexanderlabwhoi.github.io/">
+      <link itemprop="url" href="">
 
       <ul class="network-icon" aria-hidden="true">
         
@@ -455,7 +556,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="//twitter.com/nekton4plankton" >
+          <a itemprop="sameAs" href="https://twitter.com/nekton4plankton" target="_blank" rel="noopener">
             <i class="fab fa-twitter big-icon"></i>
           </a>
         </li>
@@ -487,38 +588,8 @@
           
         
         <li>
-          <a itemprop="sameAs" href="//github.com/AlexanderLabWHOI" >
+          <a itemprop="sameAs" href="https://github.com/AlexanderLabWHOI" target="_blank" rel="noopener">
             <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://orcid.org/0000-0003-1308-8008" target="_blank" rel="noopener">
-            <i class="ai ai-orcid big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://github.com/halexand/Alexander_CV/blob/master/Alexander_CurrentCV.pdf" target="_blank" rel="noopener">
-            <i class="ai ai-cv big-icon"></i>
           </a>
         </li>
         
@@ -529,12 +600,11 @@
   <div class="col-12 col-lg-8" itemprop="description">
 
     
+    <h1>About the lab</h1>
 
-<h1 id="about-the-lab">About the lab</h1>
+    <p>Our lab focuses on the application of computational approaches to oceanographic questions. We use a combination of culture- and field-based studies to better understand the biogeochemical functioning and physiological ecology of eukaryotic plankton in a changing ocean. Topics of interest include the maintenance of genetic diversity in planktonic populations and the role of biodiversity in ecosystem functioning.</p>
 
-<p>Our lab focuses on the application of computational approaches to oceanographic questions. We use a combination of culture- and field-based studies to better understand the biogeochemical functioning and physiological ecology of eukaryotic plankton in a changing ocean. Topics of interest include the maintenance of genetic diversity in planktonic populations and the role of biodiversity in ecosystem functioning.</p>
-
-<p>We also aim to make research done in this lab openly available and reproducible. We also work to share and teach these approaches to other researchers.</p>
+<p>We aim to make research done in this lab openly available and reproducible, and work to share these approaches with other researchers.</p>
 
 <p>Interested in <a href="/join">joining the lab</a>?</p>
 
@@ -542,43 +612,7 @@
     <div class="row">
 
       
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Plankton Ecology</li>
-          
-          <li>Biological Oceanography</li>
-          
-          <li>Bioinformatics</li>
-          
-        </ul>
-      </div>
-      
 
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Biological Oceanography, 2016</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BA in Biological Sciences, 2010</p>
-              <p class="institution">Wellesley College</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
       
 
     </div>
@@ -592,111 +626,108 @@
   
   
   
-  <section id="publications" class="home-section">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="publications" class="home-section wg-pages   " >
     <div class="container">
       
 
 
 
 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>Recent Publications</h1>
     
-    
-    <p class="view-all">
-      <a href="/publication/">
-        More Publications
-        <i class="fas fa-angle-double-right"></i>
-      </a>
-    </p>
-    
   </div>
   <div class="col-12 col-lg-8">
-    
 
-    
-      
-    
+    <p><!-- <div class="alert alert-note">
+  <div>
+    <p>Quickly discover relevant content by <a href="https://alexanderlabwhoi.github.io/publication/" target="_blank">filtering publications</a>.</p>
 
-    
-
-    
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/alexander2018/" itemprop="url">Keeping it light: (Re)analyzing community-wide datasets without major infrastructure</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        <strong>Harriet Alexander</strong>, Lisa K Johnson, C Titus Brown</div>
-    </div>
-
-    <div class="btn-links">
-      
-
-
-
-
-
-
-  
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://academic.oup.com/gigascience/advance-article/doi/10.1093/gigascience/giy159/5241892" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/alexander2018/Alexander2018.bib">
-  Cite
-</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1093/gigascience/giy159" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-
-  </div>
-  <div class="ml-3">
-    
-    
   </div>
 </div>
+ -->
+</p>
 
-      
     
       
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+        
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0" itemprop="name">
@@ -704,21 +735,57 @@
     </h3>
 
     
+    <div class="article-style" itemprop="articleBody">
+      <strong>Background</strong> De novo transcriptome assemblies are required prior to analyzing RNAseq data from a species without an existing reference …
+    </div>
+    
 
     <div class="stream-meta article-metadata">
+
+      
+
+      
       <div itemprop="author">
-        Lisa K Johnson, <strong>Harriet Alexander</strong>, C Titus Brown</div>
+        
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/lisa-k-johnson/">Lisa K Johnson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/harriet-alexander/"><strong>Harriet Alexander</strong></a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/c-titus-brown/">C Titus Brown</a></span></span>
+  
+
+
+
+      </div>
+      
     </div>
 
+    
     <div class="btn-links">
       
 
 
 
 
-
-
-  
 
 
 
@@ -757,6 +824,7 @@
 
 
     </div>
+    
 
   </div>
   <div class="ml-3">
@@ -768,20 +836,78 @@
       
     
       
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+        
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/bolyen2018/" itemprop="url">QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</a>
+      <a href="/publication/alexander2018/" itemprop="url">Keeping it light: (Re)analyzing community-wide datasets without major infrastructure</a>
     </h3>
 
     
+    <div class="article-style" itemprop="articleBody">
+      DNA sequencing technology has revolutionized the field of biology, shifting biology from a data-limited to data-rich state. Central to …
+    </div>
+    
 
     <div class="stream-meta article-metadata">
+
+      
+
+      
       <div itemprop="author">
-        Evan Bolyen, Jai Ram Rideout, Matthew R Dillon, Nicholas A Bokulich, Christian Abnet, Gabriel A Al-Ghalith, <strong>Harriet Alexander</strong>, Eric J Alm, Manimozhiyan Arumugam, Francesco Asnicar, Yang Bai, Jordan E Bisanz, Kyle Bittinger, Asker Brejnrod, Colin J Brislawn, C Titus Brown, Benjamin J Callahan, Andrés Mauricio Caraballo-Rodríguez, John Chase, Emily Cope, Ricardo Da Silva, Pieter C Dorrestein, Gavin M Douglas, Daniel M Durall, Claire Duvallet, Christian F Edwardson, Madeleine Ernst, Mehrbod Estaki, Jennifer Fouquier, Julia M Gauglitz, Deanna L Gibson, Antonio Gonzalez, Kestrel Gorlick, Jiarong Guo, Benjamin Hillmann, Susan Holmes, Hannes Holste, Curtis Huttenhower, Gavin Huttley, Stefan Janssen, Alan K Jarmusch, Lingjing Jiang, Benjamin Kaehler, Kyo Bin Kang, Christopher R Keefe, Paul Keim, Scott T Kelley, Dan Knights, Irina Koester, Tomasz Kosciolek, Jorden Kreps, Morgan GI Langille, Joslynn Lee, Ruth Ley, Yong-Xin Liu, Erikka Loftfield, Catherine Lozupone, Massoud Maher, Clarisse Marotz, Bryan D Martin, Daniel McDonald, Lauren J McIver, Alexey V Melnik, Jessica L Metcalf, Sydney C Morgan, Jamie Morton, Ahmad Turan Naimey, Jose A Navas-Molina, Louis Felix Nothias, Stephanie B Orchanian, Talima Pearson, Samuel L Peoples, Daniel Petras, Mary Lai Preuss, Elmar Pruesse, Lasse Buur Rasmussen, Adam Rivers, II Michael S Robeson, Patrick Rosenthal, Nicola Segata, Michael Shaffer, Arron Shiffer, Rashmi Sinha, Se Jin Song, John R Spear, Austin D Swafford, Luke R Thompson, Pedro J Torres, Pauline Trinh, Anupriya Tripathi, Peter J Turnbaugh, Sabah Ul-Hasan, Justin JJ van der Hooft, Fernando Vargas, Yoshiki Vázquez-Baeza, Emily Vogtmann, Max von Hippel, William Walters, Yunhu Wan, Mingxun Wang, Jonathan Warren, Kyle C Weber, Chase HD Williamson, Amy D Willis, Zhenjiang Zech Xu, Jesse R Zaneveld, Yilong Zhang, Rob Knight, J Gregory Caporaso</div>
+        
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/harriet-alexander/"><strong>Harriet Alexander</strong></a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/lisa-k-johnson/">Lisa K Johnson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/c-titus-brown/">C Titus Brown</a></span></span>
+  
+
+
+
+      </div>
+      
     </div>
 
+    
     <div class="btn-links">
       
 
@@ -790,7 +916,874 @@
 
 
 
+
   
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://academic.oup.com/gigascience/advance-article/doi/10.1093/gigascience/giy159/5241892" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
+        data-filename="/publication/alexander2018/Alexander2018.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1093/gigascience/giy159" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/publication/bolyen2018/" itemprop="url">QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</a>
+    </h3>
+
+    
+    <div class="article-style" itemprop="articleBody">
+      Abstract We present QIIME 2, an open-source microbiome data science platform accessible to users spanning the microbiome research …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div itemprop="author">
+        
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/evan-bolyen/">Evan Bolyen</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jai-ram-rideout/">Jai Ram Rideout</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/matthew-r-dillon/">Matthew R Dillon</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/nicholas-a-bokulich/">Nicholas A Bokulich</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/christian-abnet/">Christian Abnet</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/gabriel-a-al-ghalith/">Gabriel A Al-Ghalith</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/harriet-alexander/"><strong>Harriet Alexander</strong></a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/eric-j-alm/">Eric J Alm</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/manimozhiyan-arumugam/">Manimozhiyan Arumugam</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/francesco-asnicar/">Francesco Asnicar</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/yang-bai/">Yang Bai</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jordan-e-bisanz/">Jordan E Bisanz</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/kyle-bittinger/">Kyle Bittinger</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/asker-brejnrod/">Asker Brejnrod</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/colin-j-brislawn/">Colin J Brislawn</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/c-titus-brown/">C Titus Brown</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/benjamin-j-callahan/">Benjamin J Callahan</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/andr%C3%A9s-mauricio-caraballo-rodr%C3%ADguez/">Andrés Mauricio Caraballo-Rodríguez</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/john-chase/">John Chase</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/emily-cope/">Emily Cope</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/ricardo-da-silva/">Ricardo Da Silva</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/pieter-c-dorrestein/">Pieter C Dorrestein</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/gavin-m-douglas/">Gavin M Douglas</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/daniel-m-durall/">Daniel M Durall</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/claire-duvallet/">Claire Duvallet</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/christian-f-edwardson/">Christian F Edwardson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/madeleine-ernst/">Madeleine Ernst</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/mehrbod-estaki/">Mehrbod Estaki</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jennifer-fouquier/">Jennifer Fouquier</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/julia-m-gauglitz/">Julia M Gauglitz</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/deanna-l-gibson/">Deanna L Gibson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/antonio-gonzalez/">Antonio Gonzalez</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/kestrel-gorlick/">Kestrel Gorlick</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jiarong-guo/">Jiarong Guo</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/benjamin-hillmann/">Benjamin Hillmann</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/susan-holmes/">Susan Holmes</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/hannes-holste/">Hannes Holste</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/curtis-huttenhower/">Curtis Huttenhower</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/gavin-huttley/">Gavin Huttley</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/stefan-janssen/">Stefan Janssen</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/alan-k-jarmusch/">Alan K Jarmusch</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/lingjing-jiang/">Lingjing Jiang</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/benjamin-kaehler/">Benjamin Kaehler</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/kyo-bin-kang/">Kyo Bin Kang</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/christopher-r-keefe/">Christopher R Keefe</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/paul-keim/">Paul Keim</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/scott-t-kelley/">Scott T Kelley</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/dan-knights/">Dan Knights</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/irina-koester/">Irina Koester</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/tomasz-kosciolek/">Tomasz Kosciolek</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jorden-kreps/">Jorden Kreps</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/morgan-gi-langille/">Morgan GI Langille</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/joslynn-lee/">Joslynn Lee</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/ruth-ley/">Ruth Ley</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/yong-xin-liu/">Yong-Xin Liu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/erikka-loftfield/">Erikka Loftfield</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/catherine-lozupone/">Catherine Lozupone</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/massoud-maher/">Massoud Maher</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/clarisse-marotz/">Clarisse Marotz</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/bryan-d-martin/">Bryan D Martin</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/daniel-mcdonald/">Daniel McDonald</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/lauren-j-mciver/">Lauren J McIver</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/alexey-v-melnik/">Alexey V Melnik</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jessica-l-metcalf/">Jessica L Metcalf</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/sydney-c-morgan/">Sydney C Morgan</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jamie-morton/">Jamie Morton</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/ahmad-turan-naimey/">Ahmad Turan Naimey</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jose-a-navas-molina/">Jose A Navas-Molina</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/louis-felix-nothias/">Louis Felix Nothias</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/stephanie-b-orchanian/">Stephanie B Orchanian</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/talima-pearson/">Talima Pearson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/samuel-l-peoples/">Samuel L Peoples</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/daniel-petras/">Daniel Petras</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/mary-lai-preuss/">Mary Lai Preuss</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/elmar-pruesse/">Elmar Pruesse</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/lasse-buur-rasmussen/">Lasse Buur Rasmussen</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/adam-rivers/">Adam Rivers</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/ii-michael-s-robeson/">II Michael S Robeson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/patrick-rosenthal/">Patrick Rosenthal</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/nicola-segata/">Nicola Segata</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/michael-shaffer/">Michael Shaffer</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/arron-shiffer/">Arron Shiffer</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/rashmi-sinha/">Rashmi Sinha</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/se-jin-song/">Se Jin Song</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/john-r-spear/">John R Spear</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/austin-d-swafford/">Austin D Swafford</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/luke-r-thompson/">Luke R Thompson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/pedro-j-torres/">Pedro J Torres</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/pauline-trinh/">Pauline Trinh</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/anupriya-tripathi/">Anupriya Tripathi</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/peter-j-turnbaugh/">Peter J Turnbaugh</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/sabah-ul-hasan/">Sabah Ul-Hasan</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/justin-jj-van-der-hooft/">Justin JJ van der Hooft</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/fernando-vargas/">Fernando Vargas</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/yoshiki-v%C3%A1zquez-baeza/">Yoshiki Vázquez-Baeza</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/emily-vogtmann/">Emily Vogtmann</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/max-von-hippel/">Max von Hippel</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/william-walters/">William Walters</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/yunhu-wan/">Yunhu Wan</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/mingxun-wang/">Mingxun Wang</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jonathan-warren/">Jonathan Warren</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/kyle-c-weber/">Kyle C Weber</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/chase-hd-williamson/">Chase HD Williamson</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/amy-d-willis/">Amy D Willis</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/zhenjiang-zech-xu/">Zhenjiang Zech Xu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/jesse-r-zaneveld/">Jesse R Zaneveld</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/yilong-zhang/">Yilong Zhang</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/rob-knight/">Rob Knight</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/j-gregory-caporaso/">J Gregory Caporaso</a></span></span>
+  
+
+
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
 
 
 
@@ -829,6 +1822,7 @@
 
 
     </div>
+    
 
   </div>
   <div class="ml-3">
@@ -840,22 +1834,8 @@
       
     
       
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
+        
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/rouco2018/" itemprop="url">Transcriptional patterns identify resource controls on the diazotroph Trichodesmium in the Atlantic and Pacific oceans</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Mónica Rouco, Kyle R. Frischkorn, Sheean T. Haley, <strong>Harriet Alexander</strong>, Sonya T. Dyhrman</div>
-    </div>
-
-    <div class="btn-links">
-      
 
 
 
@@ -863,6 +1843,89 @@
 
 
   
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/publication/rouco2018/" itemprop="url">Transcriptional patterns identify resource controls on the diazotroph Trichodesmium in the Atlantic and Pacific oceans</a>
+    </h3>
+
+    
+    <div class="article-style" itemprop="articleBody">
+      The N2-fixing cyanobacterium <em>Trichodesmium</em> is intensely studied because of the control this organism exerts over the cycling of carbon …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div itemprop="author">
+        
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/m%C3%B3nica-rouco/">Mónica Rouco</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/kyle-r.-frischkorn/">Kyle R. Frischkorn</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/sheean-t.-haley/">Sheean T. Haley</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/harriet-alexander/"><strong>Harriet Alexander</strong></a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/sonya-t.-dyhrman/">Sonya T. Dyhrman</a></span></span>
+  
+
+
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
 
 
 
@@ -901,6 +1964,7 @@
 
 
     </div>
+    
 
   </div>
   <div class="ml-3">
@@ -912,22 +1976,8 @@
       
     
       
-        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
-  <div class="media-body">
+        
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/hu2018/" itemprop="url">Shifting metabolic priorities among key protistan taxa within and below the euphotic zone</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        Sarah K Hu, Zhenfeng Liu, <strong>Harriet Alexander</strong>, Victoria Campbell, Paige E Connell, Sonya T Dyhrman, Karla B Heidelberg, David A Caron</div>
-    </div>
-
-    <div class="btn-links">
-      
 
 
 
@@ -935,6 +1985,110 @@
 
 
   
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/publication/hu2018/" itemprop="url">Shifting metabolic priorities among key protistan taxa within and below the euphotic zone</a>
+    </h3>
+
+    
+    <div class="article-style" itemprop="articleBody">
+      A metatranscriptome study targeting the protistan community was conducted off the coast of Southern California, at the San Pedro Ocean …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div itemprop="author">
+        
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/sarah-k-hu/">Sarah K Hu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/zhenfeng-liu/">Zhenfeng Liu</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/harriet-alexander/"><strong>Harriet Alexander</strong></a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/victoria-campbell/">Victoria Campbell</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/paige-e-connell/">Paige E Connell</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/sonya-t-dyhrman/">Sonya T Dyhrman</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/karla-b-heidelberg/">Karla B Heidelberg</a></span></span>, 
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      <a href="/authors/david-a-caron/">David A Caron</a></span></span>
+  
+
+
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
 
 
 
@@ -973,6 +2127,7 @@
 
 
     </div>
+    
 
   </div>
   <div class="ml-3">
@@ -984,88 +2139,14 @@
       
     
 
-  </div>
-</div>
-
+    
+    <div class="see-all">
+      <a href="/publication/">
+        See all publications
+        <i class="fas fa-angle-right"></i>
+      </a>
     </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="projects" class="home-section">
-    <div class="container">
-      
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-
-    <h1>Projects</h1>
     
-
-  </div>
-  <div class="col-xs-12 col-md-8">
-
-
-
-    
-
-    
-
-    <div class="row  js-layout-row ">
-      
-        
-        
-        
-        
-          
-
-
-
-
-
-<div class="col-lg-12 project-item isotope-item js-id-metagenomics js-id-Tara-Oceans js-id-MAGs js-id-eukaryotes" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-copy pub-icon" aria-hidden="true"></i>
-
-  <span class="project-title">
-    <a href="/projects/euk-mags/"  itemprop="url">Eukaryotic Metagenome Assembled Genomes (MAGs)</a>
-  </span>
-
-  
-</div>
-
-        
-      
-        
-        
-        
-        
-          
-
-
-
-
-
-<div class="col-lg-12 project-item isotope-item js-id-metatranscriptomics js-id-Amazon-River-Plume js-id-MAGs js-id-eukaryotes" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="far fa-copy pub-icon" aria-hidden="true"></i>
-
-  <span class="project-title">
-    <a href="/projects/cosci/"  itemprop="url">Transcriptional Basis of Sinking</a>
-  </span>
-
-  
-</div>
-
-        
-      
-    </div>
 
   </div>
 </div>
@@ -1077,20 +2158,151 @@
   
   
   
-  <section id="posts" class="home-section">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="people" class="home-section wg-people   " >
     <div class="container">
       
 
 
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>People</h1>
+    
+  </div>
+  
+
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Principal Investigator</h2>
+  </div>
+
+  
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      <a href="/authors/halexand/"><img class="portrait" src="/author/halexand/avatar_hu200d925875015daa0522743bbebb071a_1938423_150x150_fill_q90_lanczos_center.jpg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/authors/halexand/">Harriet Alexander</a></h2>
+      <h3>Assistant Scientist</h3>
+      <p class="people-interests">Plankton Ecology, Biological Oceanography, Bioinformatics, Open Science</p>
+    </div>
+  </div>
+
+  
+  
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="posts" class="home-section wg-pages   " >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
 
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-
     <h1>Recent Posts</h1>
     
-    
-
   </div>
   <div class="col-12 col-lg-8">
 
@@ -1098,72 +2310,198 @@
 
     
       
-
-      
-      
-
         
 
-        
-        
 
-        
-        
-          
-      
-          
-      
-          
-      
-          
-      
-          
-      
 
-      
-      
-        
-          
 
-<div class="media stream-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="headline">
-      <a href="/post/2019-03-08_jpn-slurm/" itemprop="url">Running Jupyter Notebooks Remotely with Slurm</a>
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/post/anaconda-r-sarah/" itemprop="url">Keeping my R life organized</a>
     </h3>
 
     
+    <div class="article-style" itemprop="articleBody">
+      I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+
+<meta content="2019-04-29 16:06:30 -0400 EDT" itemprop="datePublished">
+<meta content="2019-04-29 16:06:30 -0400 EDT" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/shu/">Sarah Hu</a></span></span>
+  
+
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
     
       
     
+    <time>Apr 29, 2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    12 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/post/2019-03-08_jpn_slurm/" itemprop="url">Running Jupyter Notebooks Remotely with Slurm</a>
+    </h3>
+
     
     <div class="article-style" itemprop="articleBody">
       Using SSH to tunnel into jupyter notebooks deployed remotely on slurm
     </div>
     
 
-    <div class="stream-meta">
-    
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+
+<meta content="2019-03-11 18:30:13 -0400 EDT" itemprop="datePublished">
+<meta content="2019-03-11 18:30:13 -0400 EDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
   
   
+  
+  
+  <div>
+    
+
+
+
   <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Harriet Alexander">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/halexand/">Harriet Alexander</a></span></span>
+  
+
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Mar 11, 2019</time>
   </span>
   
 
-  <span class="article-date">
-    
-    <meta content="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-03-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Mar 11, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Harriet Alexander">
-  </span>
+  
 
   
   <span class="middot-divider"></span>
@@ -1176,12 +2514,30 @@
   
 
   
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/computation/">computation</a>, 
+    
+    <a href="/categories/bioinformatics/">bioinformatics</a>, 
+    
+    <a href="/categories/python/">python</a>
+    
+  </span>
+  
+  
 
   
 
 </div>
 
+      
     </div>
+
+    
 
   </div>
   <div class="ml-3">
@@ -1190,67 +2546,89 @@
   </div>
 </div>
 
-        
       
-
-      
-
-        
-
-        
-        
-
-        
-        
-          
-      
-          
-      
-
-      
+    
       
         
-          
 
-<div class="media stream-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="headline">
-      <a href="/post/firstpost/" itemprop="url">Hello, world.</a>
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/post/first/" itemprop="url">Hello, world.</a>
     </h3>
 
-    
-    
-      
-    
     
     <div class="article-style" itemprop="articleBody">
       Leveling up: welcome to your independent scientific position
     </div>
     
 
-    <div class="stream-meta">
-    
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+
+<meta content="2018-11-11 18:35:12 -0400 -0400" itemprop="datePublished">
+<meta content="2018-11-11 18:35:12 -0400 -0400" itemprop="dateModified">
 
 <div class="article-metadata">
 
   
   
+  
+  
+  <div>
+    
+
+
+
   <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Harriet Alexander">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/halexand/">Harriet Alexander</a></span></span>
+  
+
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Nov 11, 2018</time>
   </span>
   
 
-  <span class="article-date">
-    
-    <meta content="2018-11-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-11-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Nov 11, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Harriet Alexander">
-  </span>
+  
 
   
   <span class="middot-divider"></span>
@@ -1268,93 +2646,26 @@
 
 </div>
 
+      
     </div>
+
+    
 
   </div>
   <div class="ml-3">
     
     
+    
+    <a href="/post/first/">
+      <img src="/post/first/featured_hueabfcfdb7b5101dc85dd8e79fce12dd7_1721362_150x0_resize_q90_lanczos.jpg" itemprop="image">
+    </a>
+    
   </div>
 </div>
 
-        
-      
-
       
     
 
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="contact" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    <ul class="fa-ul" itemscope>
-
-      
-      <li>
-        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email"><a href="mailto:halexander@whoi.edu">halexander@whoi.edu</a></span>
-      </li>
-      
-
-      
-
-      
-
-      
-      <li>
-        <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-        <span id="person-telephone" itemprop="telephone"><a href="tel:508%20289%203565">508 289 3565</a></span>
-      </li>
-      
-
-      
-
-      
-
-      
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Watson Lab, 266 Woods Hole Rd. MS# 31, Woods Hole, MA 02543</span>
-      </li>
-      
-
-      
-
-    </ul>
-
-    
-    <div class="d-none">
-      <input id="map-provider" value="1">
-      <input id="map-lat" value="41.532841">
-      <input id="map-lng" value="-70.648943">
-      <input id="map-dir" value="Watson Lab, 266 Woods Hole Rd. MS# 31, Woods Hole, MA 02543">
-      <input id="map-zoom" value="15">
-      <input id="map-api-key" value="">
-    </div>
-    <div id="map"></div>
     
 
   </div>
@@ -1367,7 +2678,27 @@
   
   
   
-  <section id="tags" class="home-section">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="tags" class="home-section wg-tag-cloud   " >
     <div class="container">
       
 
@@ -1390,7 +2721,7 @@
       
       
 
-      <div id="tag-cloud">
+      <div class="tag-cloud">
         
           
           
@@ -1400,7 +2731,7 @@
           
           
           
-          <a href="/tags/amazon-river-plume/" style="font-size:0.8rem">Amazon River Plume</a>
+          <a href="/tags/anaconda/" style="font-size:0.8rem">Anaconda</a>
         
           
           
@@ -1420,12 +2751,12 @@
           
           
           
-          <a href="/tags/mags/" style="font-size:1.311750992628768rem">MAGs</a>
+          <a href="/tags/mmetsp/" style="font-size:1.611106133023426rem">MMETSP</a>
         
           
           
           
-          <a href="/tags/mmetsp/" style="font-size:1.611106133023426rem">MMETSP</a>
+          <a href="/tags/r/" style="font-size:0.8rem">R</a>
         
           
           
@@ -1436,11 +2767,6 @@
           
           
           <a href="/tags/sverdrup/" style="font-size:0.8rem">Sverdrup</a>
-        
-          
-          
-          
-          <a href="/tags/tara-oceans/" style="font-size:0.8rem">Tara Oceans</a>
         
           
           
@@ -1465,7 +2791,7 @@
           
           
           
-          <a href="/tags/best-practices/" style="font-size:0.8rem">best practices</a>
+          <a href="/tags/best-practices/" style="font-size:1.311750992628768rem">best practices</a>
         
           
           
@@ -1491,6 +2817,11 @@
           
           
           <a href="/tags/climate-change/" style="font-size:0.8rem">climate change</a>
+        
+          
+          
+          
+          <a href="/tags/computation/" style="font-size:0.8rem">computation</a>
         
           
           
@@ -1565,11 +2896,6 @@
           
           
           
-          <a href="/tags/eukaryotes/" style="font-size:1.311750992628768rem">eukaryotes</a>
-        
-          
-          
-          
           <a href="/tags/evolution/" style="font-size:0.8rem">evolution</a>
         
           
@@ -1640,17 +2966,12 @@
           
           
           
-          <a href="/tags/metagenomics/" style="font-size:0.8rem">metagenomics</a>
-        
-          
-          
-          
           <a href="/tags/metalloenzyme/" style="font-size:0.8rem">metalloenzyme</a>
         
           
           
           
-          <a href="/tags/metatranscriptomics/" style="font-size:2.122857125652194rem">metatranscriptomics</a>
+          <a href="/tags/metatranscriptomics/" style="font-size:1.9882490073712318rem">metatranscriptomics</a>
         
           
           
@@ -1807,6 +3128,141 @@
   </section>
   
 
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="contact" class="home-section wg-contact   " >
+    <div class="container">
+      
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    <ul class="fa-ul" itemscope>
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email"><a href="mailto:halexander@whoi.edu">halexander@whoi.edu</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
+        <span id="person-telephone" itemprop="telephone"><a href="tel:508%20289%203565">508 289 3565</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address" itemprop="address">Watson Lab, 266 Woods Hole Rd. MS# 31, Woods Hole, MA 02543</span>
+      </li>
+      
+
+      
+
+      
+
+      
+      
+
+    </ul>
+
+    
+    <div class="d-none">
+      <input id="map-provider" value="1">
+      <input id="map-lat" value="41.532841">
+      <input id="map-lng" value="-70.648943">
+      <input id="map-dir" value="Watson Lab, 266 Woods Hole Rd. MS# 31, Woods Hole, MA 02543">
+      <input id="map-zoom" value="15">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  <section id="experience" class="home-section wg-blank   " >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Socialize</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      <p><a class="twitter-timeline" href="https://twitter.com/nekton4plankton?ref_src=twsrc%5Etfw" data-tweet-limit="3" data-height="300">Tweets by nekton4plankton</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+  
 
 
 <div class="container">
@@ -1814,7 +3270,7 @@
   
 
   <p class="powered-by">
-    &copy; 2018 &middot; 
+    &copy; 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1869,9 +3325,9 @@
     
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
       
@@ -1907,7 +3363,7 @@
       const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
-        'results': "Search Results",
+        'results': "results found",
         'no_results': "No results found"
       };
       const content_type = {
@@ -1953,10 +3409,12 @@
     
     
     
+      
     
-    <script src="/js/academic.min.2861db6bcf2db4b5eade32c795453e47.js"></script>
-
     
+    
+    
+    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
 
   </body>
 </html>

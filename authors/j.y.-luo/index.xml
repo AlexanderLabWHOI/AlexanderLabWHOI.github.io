@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>J.Y. Luo on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/j.y.-luo/</link>
+    <description>Recent content in J.Y. Luo on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/j.y.-luo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrating &#39;big data&#39; into aquatic ecology: Challenges and opportunities</title>
+      <link>https://alexanderlabwhoi.github.io/publication/durden2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/durden2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

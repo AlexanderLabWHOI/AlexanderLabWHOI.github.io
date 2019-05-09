@@ -6,10 +6,37 @@
     <description>Recent content in Categories on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; 2019</copyright>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bioinformatics</title>
+      <link>https://alexanderlabwhoi.github.io/categories/bioinformatics/</link>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/categories/bioinformatics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computation</title>
+      <link>https://alexanderlabwhoi.github.io/categories/computation/</link>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/categories/computation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://alexanderlabwhoi.github.io/categories/python/</link>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/categories/python/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

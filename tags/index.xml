@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; 2019</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -22,11 +22,11 @@
     </item>
     
     <item>
-      <title>Amazon River Plume</title>
-      <link>https://alexanderlabwhoi.github.io/tags/amazon-river-plume/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <title>Anaconda</title>
+      <link>https://alexanderlabwhoi.github.io/tags/anaconda/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/amazon-river-plume/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/anaconda/</guid>
       <description></description>
     </item>
     
@@ -42,7 +42,7 @@
     <item>
       <title>HPC</title>
       <link>https://alexanderlabwhoi.github.io/tags/hpc/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/hpc/</guid>
       <description></description>
@@ -58,20 +58,20 @@
     </item>
     
     <item>
-      <title>MAGs</title>
-      <link>https://alexanderlabwhoi.github.io/tags/mags/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/mags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>MMETSP</title>
       <link>https://alexanderlabwhoi.github.io/tags/mmetsp/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/mmetsp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://alexanderlabwhoi.github.io/tags/r/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/r/</guid>
       <description></description>
     </item>
     
@@ -90,15 +90,6 @@
       <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/sverdrup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tara Oceans</title>
-      <link>https://alexanderlabwhoi.github.io/tags/tara-oceans/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/tara-oceans/</guid>
       <description></description>
     </item>
     
@@ -141,7 +132,7 @@
     <item>
       <title>best practices</title>
       <link>https://alexanderlabwhoi.github.io/tags/best-practices/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/best-practices/</guid>
       <description></description>
@@ -193,9 +184,18 @@
     </item>
     
     <item>
+      <title>computation</title>
+      <link>https://alexanderlabwhoi.github.io/tags/computation/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/computation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>computing</title>
       <link>https://alexanderlabwhoi.github.io/tags/computing/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/computing/</guid>
       <description></description>
@@ -204,7 +204,7 @@
     <item>
       <title>conda</title>
       <link>https://alexanderlabwhoi.github.io/tags/conda/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/conda/</guid>
       <description></description>
@@ -240,7 +240,7 @@
     <item>
       <title>data analysis</title>
       <link>https://alexanderlabwhoi.github.io/tags/data-analysis/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/data-analysis/</guid>
       <description></description>
@@ -319,15 +319,6 @@
     </item>
     
     <item>
-      <title>eukaryotes</title>
-      <link>https://alexanderlabwhoi.github.io/tags/eukaryotes/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/eukaryotes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>evolution</title>
       <link>https://alexanderlabwhoi.github.io/tags/evolution/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
@@ -402,7 +393,7 @@
     <item>
       <title>jupyter</title>
       <link>https://alexanderlabwhoi.github.io/tags/jupyter/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/jupyter/</guid>
       <description></description>
@@ -411,7 +402,7 @@
     <item>
       <title>lab setup</title>
       <link>https://alexanderlabwhoi.github.io/tags/lab-setup/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/lab-setup/</guid>
       <description></description>
@@ -454,15 +445,6 @@
     </item>
     
     <item>
-      <title>metagenomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metagenomics/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metagenomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>metalloenzyme</title>
       <link>https://alexanderlabwhoi.github.io/tags/metalloenzyme/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
@@ -474,7 +456,7 @@
     <item>
       <title>metatranscriptomics</title>
       <link>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</guid>
       <description></description>
@@ -519,7 +501,7 @@
     <item>
       <title>new PI</title>
       <link>https://alexanderlabwhoi.github.io/tags/new-pi/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/new-pi/</guid>
       <description></description>

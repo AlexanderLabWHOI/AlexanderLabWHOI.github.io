@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrew E. Allen on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/andrew-e.-allen/</link>
+    <description>Recent content in Andrew E. Allen on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/andrew-e.-allen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

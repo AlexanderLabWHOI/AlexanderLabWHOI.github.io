@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Amy D Willis on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/amy-d-willis/</link>
+    <description>Recent content in Amy D Willis on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/amy-d-willis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</title>
+      <link>https://alexanderlabwhoi.github.io/publication/bolyen2018/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/bolyen2018/</guid>
+      <description>Abstract We present QIIME 2, an open-source microbiome data science platform accessible to users spanning the microbiome research ecosystem, from scientists and engineers to clinicians and policy makers. QIIME 2 provides new features that will drive the next generation of microbiome research. These include interactive spatial and temporal analysis and visualization tools, support for metabolomics and shotgun metagenomics analysis, and automated data provenance tracking to ensure reproducible, transparent microbiome data science.</description>
+    </item>
+    
+  </channel>
+</rss>

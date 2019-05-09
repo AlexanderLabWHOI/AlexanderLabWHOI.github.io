@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>admin on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/admin/</link>
+    <description>Recent content in admin on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/admin/</guid>
+      <description>Our lab focuses on the application of computational approaches to oceanographic questions. We use a combination of culture- and field-based studies to better understand the biogeochemical functioning and physiological ecology of eukaryotic plankton in a changing ocean. Topics of interest include the maintenance of genetic diversity in planktonic populations and the role of biodiversity in ecosystem functioning.
+We aim to make research done in this lab openly available and reproducible, and work to share these approaches with other researchers.</description>
+    </item>
+    
+  </channel>
+</rss>

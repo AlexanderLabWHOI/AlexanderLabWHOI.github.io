@@ -6,27 +6,37 @@
     <description>Recent content in Posts on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 29 Apr 2019 16:06:30 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Running Jupyter Notebooks Remotely with Slurm</title>
-      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Keeping my R life organized</title>
+      <link>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</guid>
+      <guid>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</guid>
+      <description>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.
+Installing Anaconda First, let&amp;rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions here to install.</description>
+    </item>
+    
+    <item>
+      <title>Running Jupyter Notebooks Remotely with Slurm</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</link>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</guid>
       <description>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command jupyter notebook on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine.</description>
     </item>
     
     <item>
       <title>Hello, world.</title>
-      <link>https://alexanderlabwhoi.github.io/post/firstpost/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <link>https://alexanderlabwhoi.github.io/post/first/</link>
+      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/post/firstpost/</guid>
+      <guid>https://alexanderlabwhoi.github.io/post/first/</guid>
       <description>Two months ago, I started in the Biology Department at the Woods Hole Oceanographic Institution as an Assistant Scientist. The processes has been otherworldly. Suddenly I find myself the steward of my own ship (read: lab). My emotional state seems to oscillate between excited exhilaration and existential terror (O 3 kHz). I have spent the last 11 (or more) years working towards this very moment&amp;ndash; so it is surreal to have officially arrived.</description>
     </item>
     

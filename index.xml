@@ -4,18 +4,350 @@
     <title>Alexander Lab @ WHOI on Alexander Lab @ WHOI</title>
     <link>https://alexanderlabwhoi.github.io/</link>
     <description>Recent content in Alexander Lab @ WHOI on Alexander Lab @ WHOI</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 29 Apr 2019 16:06:30 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Running Jupyter Notebooks Remotely with Slurm</title>
-      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Keeping my R life organized</title>
+      <link>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn-slurm/</guid>
+      <guid>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</guid>
+      <description>
+
+&lt;p&gt;I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-anaconda&#34;&gt;Installing Anaconda&lt;/h2&gt;
+
+&lt;p&gt;First, let&amp;rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/&#34; target=&#34;_blank&#34;&gt;here to install&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once you have Anaconda installed, check the version.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda -V
+# I&#39;m currently running v4.6.8
+which conda
+# Location on my computer: /Users/shu/anaconda3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;why-did-you-make-me-install-anaconda&#34;&gt;Why did you make me install anaconda?&lt;/h3&gt;
+
+&lt;p&gt;Briefly, Anaconda, or conda, is a software package manager. Anaconda will make your scientific programming life easier by facilitating software installations for many programs or packages. You can google &amp;lsquo;conda install for software X&amp;rsquo;, and often find a single line command to install the most recent version of that software.&lt;/p&gt;
+
+&lt;p&gt;Even better, Anaconda allows you to create compartmentalized computational environments  (called &amp;ldquo;conda environments&amp;rdquo; in this post) where you can install any mixture of things you require without accidentally messing up other software downloads on your computer. You can use these conda environments in any number of ways&amp;ndash; they can be program-specific (for the running of one specific tool) or project-specific (to store versions for a whole workflow). For instance, I&amp;rsquo;m working on a collaborative project which requires building bioinformatic pipelines with several different programs. It is key that my collaborator and I maintain the same versions of software, so code that we write individually can be easily shared. For this, we created and shared a conda environment. &lt;a href=&#34;https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html&#34; target=&#34;_blank&#34;&gt;More info on getting started with conda here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Conda environments have been widely adopted as a means of facilitating reproducible computation across the Python ecosystem&amp;ndash; but is now expanding to include other programming languages such as R (more &lt;a href=&#34;https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Below, documents how I have built up conda environments to run specific versions of R, including RStudio and jupyter notebooks.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-a-conda-environment-for-r&#34;&gt;Creating a conda environment for R&lt;/h2&gt;
+
+&lt;p&gt;First, list the conda environments you have locally:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda info --envs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The output should list all the conda environments you have created. An asterisk will denote where you currently are, likely &amp;lsquo;base&amp;rsquo;. Additionally, your command line will be preceded with &amp;lsquo;(base)&amp;rsquo; to denote you are in your base conda environment.&lt;/p&gt;
+
+&lt;p&gt;First, we will generate a specific R environment for R v3.5.1 (most recent version available through Anaconda, as of April 2019).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda create --name r_3.5.1 -c r r=3.5.1 r-essentials
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;What is happening in this command?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;lsquo;conda create &amp;ndash;name r_3.5.1&amp;rsquo; creates a new conda environment that will be called &amp;lsquo;r_3.5.1&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;&amp;rsquo;-c r r=3.5.1&amp;rsquo; specifies to use the &amp;lsquo;r&amp;rsquo; channel for installation. In this particular case, we also specify r=3.5.1. Without this last part, conda will automatically install the most recent version of R.&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;r-essentials&amp;rsquo;, upon installing R-related packages, you need to add &amp;lsquo;r-&amp;rsquo; ahead of the package name. r-essentials is a package bundle which has a lot of the most basic and commonly used R packages. A &lt;a href=&#34;http://repo.anaconda.com/pkgs/r/&#34; target=&#34;_blank&#34;&gt;full list of packages&lt;/a&gt; available for conda install.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This installation will take a few minutes and at the end you should see something like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip 19.1############################################################################################################################################## | 100%
+r-highr 0.7########################################################################################################################################### | 100%
+r-sourcetools 0.1.7################################################################################################################################### | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use:
+# &amp;gt; source activate r_3.5.1
+#
+# To deactivate an active environment, use:
+# &amp;gt; source deactivate
+#
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, list your conda environments again with &lt;code&gt;conda info --envs&lt;/code&gt;. You should now see the new environment listed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;base                  *  /Users/shu/anaconda3
+r_3.5.1                  /Users/shu/anaconda3/envs/r_3.5.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To activate your newly created R environment type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;source activate r_3.5.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Your terminal prompt should now be preceded by your conda environment name, in this case &lt;code&gt;(r_3.5.1)&lt;/code&gt;, and the asterisk should be listed next to &lt;code&gt;r_3.5.1&lt;/code&gt; rather than &lt;code&gt;base&lt;/code&gt;in the &lt;code&gt;conda info --envs&lt;/code&gt; output.&lt;/p&gt;
+
+&lt;h3 id=&#34;check-that-the-correct-r-version-is-running&#34;&gt;Check that the correct R version is running&lt;/h3&gt;
+
+&lt;p&gt;We can check the version of R in two ways.&lt;/p&gt;
+
+&lt;p&gt;First, launch R by typing &lt;code&gt;R&lt;/code&gt;, you should see R version 3.5.1 (&amp;ldquo;Feather Spray&amp;rdquo;) load. IF you got an error about the &amp;ldquo;java&amp;rdquo; command-line tool, &lt;a href=&#34;https://www.theitsage.com/fix-java-command-line-tool-popup-mac/&#34; target=&#34;_blank&#34;&gt;visit this site to fix it.&lt;/a&gt;. I got this error using anything &amp;gt;10.10 on Mac OS X.&lt;/p&gt;
+
+&lt;p&gt;The first line after typing &lt;code&gt;R&lt;/code&gt; should be:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;R version 3.5.1 (2018-07-02) -- &amp;quot;Feather Spray&amp;quot;
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because we created this R environment and specified &lt;code&gt;r-essentials&lt;/code&gt;, many popular packages have already been loaded. Check this by loading some basic libraries &lt;code&gt;library(ggplot2)&lt;/code&gt; or &amp;lsquo;library(dplyr)&amp;rsquo;. Convenient, eh?&lt;/p&gt;
+
+&lt;p&gt;Quit R &lt;code&gt;quit()&lt;/code&gt;, but don&amp;rsquo;t deactivate the &lt;code&gt;r_3.5.1&lt;/code&gt; environment.&lt;/p&gt;
+
+&lt;p&gt;Second, we can also directly check which R is being called by our $PATH in the conda environment by typing &lt;code&gt;which R&lt;/code&gt;. This should output something like the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/Users/shu/anaconda3/envs/r_3.5.1/bin/R
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This indicates that &lt;code&gt;R&lt;/code&gt; is being called from the bin in your newly created conda environment (&lt;code&gt;anaconda3/envs/r_3.5.1/bin/&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Keep this path in mind as we set up &lt;code&gt;jupyter notebook&lt;/code&gt; and &lt;code&gt;RStudio&lt;/code&gt; below, as they also need to launch R from this same location.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-a-jupyter-notebook-in-r&#34;&gt;Creating a jupyter notebook in R&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://irkernel.github.io&#34; target=&#34;_blank&#34;&gt;Jupyter notebook for R&lt;/a&gt; was included in the r-essential package download. To launch, type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will open the &lt;code&gt;jupyter notebook&lt;/code&gt; home screen in browser window, showing your current directory. At the top right, you can click &lt;code&gt;New&lt;/code&gt; and see which kernels you can use to start a notebook (hopefully, Python 3 or R).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/_gen/images/jupyternb-browser.png&#34; alt=&#34;Jupyter notebook dropdown&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select &lt;code&gt;R&lt;/code&gt; under the &amp;lsquo;New&amp;rsquo; dropdown menu (you can also launch a &lt;code&gt;Python3&lt;/code&gt; notebook&amp;hellip; but that isn&amp;rsquo;t what we are doing right now), and a new Untitled.ipynb will open. In the first cell, enter &lt;code&gt;version&lt;/code&gt; and execute the cell (SHIFT+ENTER to execute). This should print out the version of &lt;code&gt;R&lt;/code&gt; that the notebook is running&amp;ndash; which should be &lt;code&gt;3.5.1&lt;/code&gt;. You can also ensure this R notebook is running properly by loading some R libraries.&lt;/p&gt;
+
+&lt;p&gt;To close the notebook, click &lt;code&gt;Logout&lt;/code&gt; at the top right of the notebook open in your browser and/or CTRL+C in the terminal from where you launched the notebook. Close the browser windows.&lt;/p&gt;
+
+&lt;p&gt;One of the major issues I have encountered is Jupyter calling the incorrect path (more below).&lt;/p&gt;
+
+&lt;p&gt;If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&amp;rsquo;t use which R (as above) as that doesn&amp;rsquo;t answer where Jupyter is looking. Rather, you can use &lt;code&gt;jupyter kernelspec&lt;/code&gt;, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks (see tweet).&lt;/p&gt;
+
+&lt;p&gt;To see what paths are being called by jupyter notebook type this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jupyter kernelspec list --json
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As an example, here is my output:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+  &amp;quot;kernelspecs&amp;quot;: {
+    &amp;quot;python3&amp;quot;: {
+      &amp;quot;resource_dir&amp;quot;: &amp;quot;/Users/shu/anaconda3/envs/r_3.5.1/share/jupyter/kernels/python3&amp;quot;,
+      &amp;quot;spec&amp;quot;: {
+        &amp;quot;argv&amp;quot;: [
+          &amp;quot;/Users/shu/anaconda3/envs/r_3.5.1/bin/python&amp;quot;,
+          &amp;quot;-m&amp;quot;,
+          &amp;quot;ipykernel_launcher&amp;quot;,
+          &amp;quot;-f&amp;quot;,
+          &amp;quot;{connection_file}&amp;quot;
+        ],
+        &amp;quot;env&amp;quot;: {},
+        &amp;quot;display_name&amp;quot;: &amp;quot;Python 3&amp;quot;,
+        &amp;quot;language&amp;quot;: &amp;quot;python&amp;quot;,
+        &amp;quot;interrupt_mode&amp;quot;: &amp;quot;signal&amp;quot;,
+        &amp;quot;metadata&amp;quot;: {}
+      }
+    },
+    &amp;quot;ir&amp;quot;: {
+      &amp;quot;resource_dir&amp;quot;: &amp;quot;/Users/shu/anaconda3/envs/r_3.5.1/share/jupyter/kernels/ir&amp;quot;,
+      &amp;quot;spec&amp;quot;: {
+        &amp;quot;argv&amp;quot;: [
+          &amp;quot;R&amp;quot;,
+          &amp;quot;--slave&amp;quot;,
+          &amp;quot;-e&amp;quot;,
+          &amp;quot;IRkernel::main()&amp;quot;,
+          &amp;quot;--args&amp;quot;,
+          &amp;quot;{connection_file}&amp;quot;
+        ],
+        &amp;quot;env&amp;quot;: {},
+        &amp;quot;display_name&amp;quot;: &amp;quot;R&amp;quot;,
+        &amp;quot;language&amp;quot;: &amp;quot;R&amp;quot;,
+        &amp;quot;interrupt_mode&amp;quot;: &amp;quot;signal&amp;quot;,
+        &amp;quot;metadata&amp;quot;: {}
+      }
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This command returns the paths (&lt;code&gt;resource_dir&lt;/code&gt;) that the &lt;code&gt;jupyter notebook&lt;/code&gt; when opened in the &lt;code&gt;r_3.5.1&lt;/code&gt; environment is accessing. The key point is that you should see that &lt;code&gt;resource_dir&lt;/code&gt; for both &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;ir&lt;/code&gt; (read: &lt;code&gt;R&lt;/code&gt;) kernels should be within your conda environment path (&lt;code&gt;.../anaconda3/envs/r_3.5.1/...&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;From my experience, a common issue I encountered was &lt;code&gt;jupyter notebook&lt;/code&gt; trying to use an &lt;code&gt;R&lt;/code&gt; version that was external to my environment (i.e. from an R version installed in my base environment or an old R version installed on my computer pre-anaconda). These issues manifest as IRKernel in &lt;code&gt;jupyter notebook&lt;/code&gt; never becomes active or dying immediately after launch. This cause of this problem was revealed with the &lt;code&gt;kernelspec&lt;/code&gt; command above.&lt;/p&gt;
+
+&lt;p&gt;One of the main lessons I learned in troubleshooting: don&amp;rsquo;t be afraid to &lt;strong&gt;destroy everything&lt;/strong&gt;. More specifically, if you run into issues and find that one or all of these paths are not shuttling through the correct R conda environment of your choice&amp;hellip; destroy and rebuild. Use this command (&lt;code&gt;jupyter kernelspec&lt;/code&gt;) to locate and destroy this other R option that jupyter notebook is defaulting to (but make sure you are not deleting another whole environment!).&lt;/p&gt;
+
+&lt;p&gt;#link to tweet from Harriet&lt;/p&gt;
+
+&lt;h3 id=&#34;opening-rstudio-within-a-conda-environment&#34;&gt;Opening RStudio within a conda environment&lt;/h3&gt;
+
+&lt;p&gt;To run &lt;code&gt;RStudio&lt;/code&gt; in our environment, we can use the single-line conda command &lt;code&gt;conda install -c r rstudio&lt;/code&gt;. However, it is important to specify the version of &lt;code&gt;R&lt;/code&gt; that we want to install:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install -c r r=3.5.1 rstudio
+# As of April 2019, this installs RStudio v1.1.456
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Launch RStudio by typing &lt;code&gt;rstudio&lt;/code&gt;. The first line in the RStudio console should be the same as when we launched R from the command line directly &lt;code&gt;R version 3.5.1 (2018-07-02) -- &amp;quot;Feather Spray&amp;quot;&lt;/code&gt;. To close RStudio, you can close RStudio itself, or CTRL+C in the terminal from where you launched it.&lt;/p&gt;
+
+&lt;p&gt;Moreover, by creating a specific alias, we can more precisely tell RStudio to open as a specific version (within a conda environment).&lt;/p&gt;
+
+&lt;p&gt;First, perform a check to make sure &lt;code&gt;RStudio&lt;/code&gt; is launching from the same location as &lt;code&gt;R&lt;/code&gt; in this environment.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;which R
+# Output: /Users/sarahhu/anaconda3/envs/r_3.5.1/bin/R
+which rstudio
+# Output: /Users/sarahhu/anaconda3/envs/r_3.5.1/bin/rstudio
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Copy the output from &lt;code&gt;which R&lt;/code&gt; and open your bash profile (&lt;code&gt;~/.bash_profile&lt;/code&gt;) using a text editor.&lt;/p&gt;
+
+&lt;p&gt;Add this line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# R version alias
+alias rstu3.5=&amp;quot;RSTUDIO_WHICH_R=/Users/shu/anaconda3/envs/r_3.5.1/bin/R open -a rstudio&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can then source your bash profile to add that command to your current terminal session.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Source bash profile
+source ~/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Make sure you are still in your r_3.5.1 environment (sourcing your bash profile may place you back in your base environment). From the command line (in your r_3.5.1 environment) you can now type rstu3.5 to launch RStudio. I highly recommend opening RStudio from the command line using this alias you created! I found it was a much more stable way to work with RStudio.&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-a-conda-environment-with-a-different-r-version&#34;&gt;Creating a conda environment with a different R version&lt;/h2&gt;
+
+&lt;p&gt;Alright, so this is the moment of truth: can you successfully support two &lt;em&gt;different&lt;/em&gt; &lt;code&gt;R&lt;/code&gt; versions on your computer with conda environments?&lt;/p&gt;
+
+&lt;p&gt;First, (if you aren&amp;rsquo;t already) logout of the &lt;code&gt;r_3.5.1&lt;/code&gt; conda environment with &lt;code&gt;conda deactivate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s try installing an older version of &lt;code&gt;R&lt;/code&gt;&amp;ndash; 3.4.3. So, we will repeat the above instructions to create a new environment, but specify &lt;code&gt;R&lt;/code&gt;&amp;ndash; 3.4.3.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Create new R environment with R version 3.4.3
+conda create --name r_3.4.3 -c r r=3.4.3 r-essentials
+
+# Enter environment
+source activate r_3.4.3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, we can do the same checks that we did above. First, launch &lt;code&gt;R&lt;/code&gt; on the command line and then spin up a &lt;code&gt;jupyter notebook&lt;/code&gt; with an &lt;code&gt;R&lt;/code&gt; kernel to check that they are both running &lt;code&gt;R v3.4.3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, reinstall RStudio with &lt;code&gt;R v.3.4.3&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Install RStudio
+conda install -c r r=3.4.3 rstudio
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then ensure that you are running the correct version by opening RStudio from the command line (&lt;code&gt;rstudio&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;You should then double check the paths of &lt;code&gt;R&lt;/code&gt; and &lt;code&gt;rstudio&lt;/code&gt; within this environment:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Check outputs
+which R
+# Output: /Users/shu/anaconda3/envs/r_3.4.3/bin/R
+which rstudio
+# Output: /Users/shu/anaconda3/envs/r_3.4.3/bin/rstudio
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If all things check out:&lt;/p&gt;
+
+&lt;p&gt;[x] Correct &lt;code&gt;R&lt;/code&gt; version in command line
+ [x] Correct &lt;code&gt;R&lt;/code&gt; version in RStudio
+ [x] Correct &lt;code&gt;R&lt;/code&gt; version in Jupyter Notebook
+ [x] Path of &lt;code&gt;R&lt;/code&gt; aligns with your specified conda environment
+ [x] Path of &lt;code&gt;rstudio&lt;/code&gt; aligns with your specified conda environment&lt;/p&gt;
+
+&lt;p&gt;You can safely go ahead and create a new alias within your &lt;code&gt;.bash_profile&lt;/code&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;alias rstu3.4=&amp;quot;RSTUDIO_WHICH_R=/Users/shu/anaconda3/envs/r_3.4.3/bin/R open -a rstudio&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, now when you list your conda environments &lt;code&gt;conda info --envs&lt;/code&gt; you will see both new R environments.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# conda environments:
+#
+base                     /Users/shu/anaconda3
+r_3.4.3               *  /Users/shu/anaconda3/envs/r_3.4.3
+r_3.5.1                  /Users/shu/anaconda3/envs/r_3.5.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;what-other-r-versions-are-available-for-conda-install&#34;&gt;What other R versions are available for conda install?&lt;/h3&gt;
+
+&lt;p&gt;To check out other available R versions built through conda you can search the R channel using conda:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda search -c r r
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;installing-r-packages&#34;&gt;Installing R packages&lt;/h2&gt;
+
+&lt;p&gt;To install other R packages, rather than use &amp;lsquo;install.packages()&amp;rsquo; in the R console, I recommend googling conda + PACKAGE-NAME or searching the conda &lt;code&gt;R&lt;/code&gt; channel (&lt;code&gt;conda search -f r-PACKAGENAME&lt;/code&gt;) for the package you want to install. When you are ready to install a package, make sure you are in the conda environment with whatever &lt;code&gt;R&lt;/code&gt; version you want the package installed and type &lt;code&gt;conda install -c r r-PACKAGENAME&lt;/code&gt;. This approach to R package installs is &lt;em&gt;life changing&lt;/em&gt;, especially if you&amp;rsquo;re all too familiar with &lt;code&gt;non-zero exit status&lt;/code&gt; or random failures when attempting to install R packages.&lt;/p&gt;
+
+&lt;p&gt;You can also view your list of installed R packages in your environment, &lt;code&gt;conda list r-&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;conda-channels-for-r-package-installation&#34;&gt;Conda channels for R package installation&lt;/h3&gt;
+
+&lt;p&gt;Some package groups require installation through a different conda channel. Two of the main ones I use are bioconductor &lt;a href=&#34;https://bioconda.github.io&#34; target=&#34;_blank&#34;&gt;Bioconda&lt;/a&gt; and &lt;a href=&#34;https://conda-forge.org&#34; target=&#34;_blank&#34;&gt;conda-forge&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To set this up, configure your R environment by executing these commands in &lt;em&gt;this exact order&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Type these commands in this exact order:
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To install a package using one of these channels, use &amp;ldquo;-c&amp;rdquo; in the conda install command. For instance to install &lt;a href=&#34;https://cran.r-project.org/web/packages/compositions/compositions.pdf&#34; target=&#34;_blank&#34;&gt;compositions&lt;/a&gt; and &lt;a href=&#34;https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html&#34; target=&#34;_blank&#34;&gt;cowplot&lt;/a&gt;, you need to use the &lt;a href=&#34;https://conda-forge.org&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;conda-forge&lt;/code&gt;&lt;/a&gt; channel. &lt;a href=&#34;https://anaconda.org/conda-forge/r-compositions&#34; target=&#34;_blank&#34;&gt;See install information here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install -c conda-forge r-compositions
+conda install -c conda-forge r-cowplot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Other examples which require Bioconda:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install -c bioconda bioconductor-decontam
+conda install -c bioconda bioconductor-deseq
+conda install -c bioconda bioconductor-edger
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Don&amp;rsquo;t be afraid of destruction&lt;/em&gt;. Behind the scenes of this post, I completely removed and re-installed Anaconda on my computer at least twice and created and then deleted numerous environments. Starting with a clean slate turned out to be &lt;em&gt;necessary&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another reason to not shy away from destruction is that it is a way towards a more reproducible work process. After deleting and reinstalling Anaconda (and every other conda environment to my name), I was able to easily reinstate the environment my collaborator and I share with no issues (you can rebuild!). And now, I can return to whichever R version I need for a given project by navigating between my R conda environments. &lt;a href=&#34;https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=environment&#34; target=&#34;_blank&#34;&gt;How much fun is it to be organized?&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Anaconda was built with Python in mind&lt;/em&gt;. My motivation for this post was that it was difficult to find a working solution to partition R versions using conda environments (especially in conjunction with IRKernel and RStudio). Anaconda seems to work more succintly with python; as an example, I found that some older versions of R were not as stable as others. But R support is constantly growing! Also, check out the newly released &lt;a href=&#34;https://blog.rstudio.com/2018/10/09/rstudio-1-2-preview-reticulated-python/&#34; target=&#34;_blank&#34;&gt;RStudio 1.2, which will support Python&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;There&amp;rsquo;s more than one way to do this&lt;/em&gt;. If you have another solution or addition - let me know!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Running Jupyter Notebooks Remotely with Slurm</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</link>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</guid>
       <description>
 
 &lt;p&gt;I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I  prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command &lt;code&gt;jupyter notebook&lt;/code&gt; on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine. Rather, you need to create a connection between your local browser and the remote Jupyter session. Here I am showing a special case, where you might want to run jupyter notebooks on a larger compute node via an interactive session with slurm.&lt;/p&gt;
@@ -156,38 +488,16 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
     </item>
     
     <item>
-      <title>Eukaryotic Metagenome Assembled Genomes (MAGs)</title>
-      <link>https://alexanderlabwhoi.github.io/projects/euk-mags/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/projects/euk-mags/</guid>
-      <description>&lt;p&gt;Protists, or eukaryotic microbes, are key players in marine ecosystems, encompassing primary producers (phytoplankton), mixotrophs, and heterotrophs. Similar to their prokaryotic microbial counterparts (bacteria and archaea), many protists cannot be cultured, making the direct study of their biology in the lab challenging. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.g. metagenomics), have shed light on the ecological roles, evolutionary histories, and physiological capabilities of these organisms. Metagenomic analyses have traditionally focused on the analysis of species and gene content and shifts in relative abundance between samples. Recently, new computational approaches have been developed to facilitate the retrieval of nearly complete prokaryotic genomes from metagenomes, a process referred to as &amp;lsquo;binning&amp;rsquo; that generates Metagenome Assembled Genomes (MAGs). Genome binning approaches have yet to be applied to metagenomic data to specifically isolate eukaryotic MAGs.&lt;/p&gt;
-
-&lt;p&gt;This year the metagenomic data corresponding to protist size fractions (0.8  m - 2000  m) from Tara Oceans were published, spanning the world&amp;rsquo;s oceans. These data represent the largest metagenomic sequencing initiative focused on protists and provide the unique opportunity to retool existing prokaryotic binning approaches to construct new eukaryotic genomes. We are working to capitalize on the release of these data and the high-memory computational power available at WHOI to (1) establish a eukaryotic MAG pipeline for the assembly and binning of eukaryotic genomes from marine metagenomes, (2) test the efficacy this pipeline with a series of mock community metagenomes, and (3) apply the eukaryotic MAG pipeline to extract eukaryotic genomes out of the Tara Oceans metagenomes. This work will establish new computational approaches for the analysis of eukaryotic metagenomes that will be broadly applicable to all metagenomic samples.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Hello, world.</title>
-      <link>https://alexanderlabwhoi.github.io/post/firstpost/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
+      <link>https://alexanderlabwhoi.github.io/post/first/</link>
+      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/post/firstpost/</guid>
+      <guid>https://alexanderlabwhoi.github.io/post/first/</guid>
       <description>&lt;p&gt;Two months ago, I started in the Biology Department at the &lt;a href=&#34;whoi.edu&#34; target=&#34;_blank&#34;&gt;Woods Hole Oceanographic Institution&lt;/a&gt; as an Assistant Scientist. The processes has been otherworldly. Suddenly I find myself the steward of my own ship (read: lab). My emotional state seems to oscillate between excited exhilaration and existential terror (&lt;em&gt;O&lt;/em&gt; 3 kHz). I have spent the last 11 (or more) years working towards this very moment&amp;ndash; so it is surreal to have officially arrived. And now&amp;hellip; what? Grants, papers, setting up a wet lab, navigating tenure, defining my scientific brand?&lt;/p&gt;
 
 &lt;p&gt;One thing I would like to practice more than I have during previous career stages is making writing more of a habit. Voicing myself in a public sphere has always made me nervous (reference that time in first grade when I got a nosebleed while leading the class in the pledge of allegiance). Be it giving a scientific talk, speaking up in a meeting or seminar, or tweeting (oh hey, you, follow me &lt;a href=&#34;https://twitter.com/intent/user?screen_name=nekton4plankton&#34; target=&#34;_blank&#34;&gt;@nekton4plankton&lt;/a&gt;), I have to push by the jitters and psych myself up a bit.&lt;/p&gt;
 
 &lt;p&gt;So, consider this blog my attempt to habituate myself to making my thoughts more public. Topics to be covered will likely include: science, new PI life, computational blunders and wins, and life in a small, science-y fishing village.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Transcriptional Basis of Sinking</title>
-      <link>https://alexanderlabwhoi.github.io/projects/cosci/</link>
-      <pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/projects/cosci/</guid>
-      <description>&lt;p&gt;During the &lt;a href=&#34;http://deep-dom.blogspot.com/&#34; target=&#34;_blank&#34;&gt;DeepDOM&lt;/a&gt; cruise, we transited through the Amazon plume. The Amazon river is responsible for ~15% of all fresh water input to the world&amp;rsquo;s oceans. Consequently, this region represents a unique biogeochemical environment, characterized by low salinity and rich in terrestrial carbon and nutrients. In the low salinity lens of the plume, we discovered a blooming species of &lt;em&gt;Coscinodiscus&lt;/em&gt;, a centric diatom. We were able to monitor its physiological status in situ, perform field incubation experiments, and recover and isolate from this bloom to study in culture. Using these data we hope to address three questions: 1) What are the metabolic underpinnings of the &lt;em&gt;Coscinodiscus&lt;/em&gt; response to N, P, or Si stress? 2) Do N, P, or Si responses suggest a control on the &lt;em&gt;Coscinodiscus&lt;/em&gt; bloom in the Amazon Plume? and 3) How does competition affect physiological ecology?&lt;/p&gt;
 </description>
     </item>
     
@@ -274,6 +584,15 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
       <description></description>
     </item>
     

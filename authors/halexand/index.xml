@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>halexand on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/halexand/</link>
+    <description>Recent content in halexand on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 11 Mar 2019 18:30:13 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/halexand/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running Jupyter Notebooks Remotely with Slurm</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</link>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</guid>
+      <description>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command jupyter notebook on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine.</description>
+    </item>
+    
+    <item>
+      <title>Hello, world.</title>
+      <link>https://alexanderlabwhoi.github.io/post/first/</link>
+      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/first/</guid>
+      <description>Two months ago, I started in the Biology Department at the Woods Hole Oceanographic Institution as an Assistant Scientist. The processes has been otherworldly. Suddenly I find myself the steward of my own ship (read: lab). My emotional state seems to oscillate between excited exhilaration and existential terror (O 3 kHz). I have spent the last 11 (or more) years working towards this very moment&amp;ndash; so it is surreal to have officially arrived.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/halexand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/halexand/</guid>
+      <description>Harriet Alexander is an Assistant Scientist in the Biology Department at the Woods Hole Oceanographic Institution. Her lab works to better characterize the interplay of physiological ecology and diversity in the ocean with a focus on eukaryotic plankton. Much of her research has leveraged meta-omic data to derive insights into the diversity and function of these ecosystems.
+Before starting at a lab at WHOI in 2018, Harriet earned her Ph.D. in Biological Oceanography from the MIT-WHOI Joint Program with Sonya Dyhrman in 2016 and moved to University of California Davis where she worked as a postdoc in the Data Intensive Biology Lab with Titus Brown from 2016-2018.</description>
+    </item>
+    
+  </channel>
+</rss>

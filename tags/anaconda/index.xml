@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anaconda on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/anaconda/</link>
+    <description>Recent content in Anaconda on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 29 Apr 2019 16:06:30 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keeping my R life organized</title>
+      <link>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</guid>
+      <description>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.
+Installing Anaconda First, let&amp;rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions here to install.</description>
+    </item>
+    
+  </channel>
+</rss>

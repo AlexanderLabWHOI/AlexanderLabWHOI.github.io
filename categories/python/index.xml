@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/categories/python/</link>
+    <description>Recent content in python on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 11 Mar 2019 18:30:13 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running Jupyter Notebooks Remotely with Slurm</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</link>
+      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</guid>
+      <description>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command jupyter notebook on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine.</description>
+    </item>
+    
+  </channel>
+</rss>
