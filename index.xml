@@ -139,7 +139,7 @@ Platform: x86_64-apple-darwin13.4.0 (64-bit)
 
 &lt;p&gt;&lt;strong&gt;One of the major issues I have encountered is Jupyter calling the incorrect path (more below).&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&amp;rsquo;t use which R (as above) as that doesn&amp;rsquo;t answer where Jupyter is looking. Rather, you can use &lt;code&gt;jupyter kernelspec&lt;/code&gt;, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks &lt;a href=&#34;https://twitter.com/nekton4plankton/status/1116785847402209281&#34; target=&#34;_blank&#34;&gt;see tweet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&amp;rsquo;t use which R (as above) as that doesn&amp;rsquo;t answer where Jupyter is looking. Rather, you can use &lt;code&gt;jupyter kernelspec&lt;/code&gt;, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks &lt;a href=&#34;https://twitter.com/nekton4plankton/status/1116785847402209281&#34; target=&#34;_blank&#34;&gt;see twitter feed on the subject&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;To see what paths are being called by jupyter notebook type this:&lt;/p&gt;
 
