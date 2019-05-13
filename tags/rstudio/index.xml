@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>best practices on Alexander Lab @ WHOI</title>
-    <link>https://alexanderlabwhoi.github.io/tags/best-practices/</link>
-    <description>Recent content in best practices on Alexander Lab @ WHOI</description>
+    <title>RStudio on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/rstudio/</link>
+    <description>Recent content in RStudio on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
     <lastBuildDate>Mon, 29 Apr 2019 16:06:30 -0400</lastBuildDate>
     
-	<atom:link href="https://alexanderlabwhoi.github.io/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</guid>
       <description>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R and do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.
 Installing Anaconda First, let&amp;rsquo;s make sure Anaconda is installed.</description>
-    </item>
-    
-    <item>
-      <title>Integrating &#39;big data&#39; into aquatic ecology: Challenges and opportunities</title>
-      <link>https://alexanderlabwhoi.github.io/publication/durden2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/durden2017/</guid>
-      <description></description>
     </item>
     
   </channel>

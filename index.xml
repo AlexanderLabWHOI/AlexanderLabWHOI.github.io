@@ -18,7 +18,7 @@
       <guid>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</guid>
       <description>
 
-&lt;p&gt;I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.&lt;/p&gt;
+&lt;p&gt;I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R &lt;em&gt;and&lt;/em&gt; do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.&lt;/p&gt;
 
 &lt;h2 id=&#34;installing-anaconda&#34;&gt;Installing Anaconda&lt;/h2&gt;
 
@@ -109,7 +109,7 @@ Copyright (C) 2018 The R Foundation for Statistical Computing
 Platform: x86_64-apple-darwin13.4.0 (64-bit)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Because we created this R environment and specified &lt;code&gt;r-essentials&lt;/code&gt;, many popular packages have already been loaded. Check this by loading some basic libraries &lt;code&gt;library(ggplot2)&lt;/code&gt; or &amp;lsquo;library(dplyr)&amp;rsquo;. Convenient, eh?&lt;/p&gt;
+&lt;p&gt;Because we created this R environment and specified &lt;code&gt;r-essentials&lt;/code&gt;, many popular packages have already been loaded. Check this by loading some basic libraries &lt;code&gt;library(ggplot2)&lt;/code&gt; or &lt;code&gt;library(dplyr)&lt;/code&gt;. Convenient, eh?&lt;/p&gt;
 
 &lt;p&gt;Quit R &lt;code&gt;quit()&lt;/code&gt;, but don&amp;rsquo;t deactivate the &lt;code&gt;r_3.5.1&lt;/code&gt; environment.&lt;/p&gt;
 
@@ -131,15 +131,15 @@ Platform: x86_64-apple-darwin13.4.0 (64-bit)
 
 &lt;p&gt;This will open the &lt;code&gt;jupyter notebook&lt;/code&gt; home screen in browser window, showing your current directory. At the top right, you can click &lt;code&gt;New&lt;/code&gt; and see which kernels you can use to start a notebook (hopefully, Python 3 or R).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;resources/_gen/images/jupyternb-browser.png&#34; alt=&#34;Jupyter notebook dropdown&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;~&lt;img src=&#34;resources/_gen/images/jupyternb-browser.png&#34; alt=&#34;Jupyter notebook dropdown&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Select &lt;code&gt;R&lt;/code&gt; under the &amp;lsquo;New&amp;rsquo; dropdown menu (you can also launch a &lt;code&gt;Python3&lt;/code&gt; notebook&amp;hellip; but that isn&amp;rsquo;t what we are doing right now), and a new Untitled.ipynb will open. In the first cell, enter &lt;code&gt;version&lt;/code&gt; and execute the cell (SHIFT+ENTER to execute). This should print out the version of &lt;code&gt;R&lt;/code&gt; that the notebook is running&amp;ndash; which should be &lt;code&gt;3.5.1&lt;/code&gt;. You can also ensure this R notebook is running properly by loading some R libraries.&lt;/p&gt;
 
 &lt;p&gt;To close the notebook, click &lt;code&gt;Logout&lt;/code&gt; at the top right of the notebook open in your browser and/or CTRL+C in the terminal from where you launched the notebook. Close the browser windows.&lt;/p&gt;
 
-&lt;p&gt;One of the major issues I have encountered is Jupyter calling the incorrect path (more below).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;One of the major issues I have encountered is Jupyter calling the incorrect path (more below).&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&amp;rsquo;t use which R (as above) as that doesn&amp;rsquo;t answer where Jupyter is looking. Rather, you can use &lt;code&gt;jupyter kernelspec&lt;/code&gt;, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks (see tweet).&lt;/p&gt;
+&lt;p&gt;If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&amp;rsquo;t use which R (as above) as that doesn&amp;rsquo;t answer where Jupyter is looking. Rather, you can use &lt;code&gt;jupyter kernelspec&lt;/code&gt;, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks &lt;a href=&#34;https://twitter.com/nekton4plankton/status/1116785847402209281&#34; target=&#34;_blank&#34;&gt;see tweet&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;To see what paths are being called by jupyter notebook type this:&lt;/p&gt;
 
@@ -195,8 +195,6 @@ Platform: x86_64-apple-darwin13.4.0 (64-bit)
 &lt;p&gt;From my experience, a common issue I encountered was &lt;code&gt;jupyter notebook&lt;/code&gt; trying to use an &lt;code&gt;R&lt;/code&gt; version that was external to my environment (i.e. from an R version installed in my base environment or an old R version installed on my computer pre-anaconda). These issues manifest as IRKernel in &lt;code&gt;jupyter notebook&lt;/code&gt; never becomes active or dying immediately after launch. This cause of this problem was revealed with the &lt;code&gt;kernelspec&lt;/code&gt; command above.&lt;/p&gt;
 
 &lt;p&gt;One of the main lessons I learned in troubleshooting: don&amp;rsquo;t be afraid to &lt;strong&gt;destroy everything&lt;/strong&gt;. More specifically, if you run into issues and find that one or all of these paths are not shuttling through the correct R conda environment of your choice&amp;hellip; destroy and rebuild. Use this command (&lt;code&gt;jupyter kernelspec&lt;/code&gt;) to locate and destroy this other R option that jupyter notebook is defaulting to (but make sure you are not deleting another whole environment!).&lt;/p&gt;
-
-&lt;p&gt;#link to tweet from Harriet&lt;/p&gt;
 
 &lt;h3 id=&#34;opening-rstudio-within-a-conda-environment&#34;&gt;Opening RStudio within a conda environment&lt;/h3&gt;
 
@@ -270,11 +268,13 @@ which rstudio
 
 &lt;p&gt;If all things check out:&lt;/p&gt;
 
-&lt;p&gt;[x] Correct &lt;code&gt;R&lt;/code&gt; version in command line
- [x] Correct &lt;code&gt;R&lt;/code&gt; version in RStudio
- [x] Correct &lt;code&gt;R&lt;/code&gt; version in Jupyter Notebook
- [x] Path of &lt;code&gt;R&lt;/code&gt; aligns with your specified conda environment
- [x] Path of &lt;code&gt;rstudio&lt;/code&gt; aligns with your specified conda environment&lt;/p&gt;
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in command line&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in RStudio&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in Jupyter Notebook&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Path of &lt;code&gt;R&lt;/code&gt; aligns with your specified conda environment&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Path of &lt;code&gt;rstudio&lt;/code&gt; aligns with your specified conda environment&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;You can safely go ahead and create a new alias within your &lt;code&gt;.bash_profile&lt;/code&gt; :&lt;/p&gt;
 
@@ -327,8 +327,6 @@ conda install -c conda-forge r-cowplot
 conda install -c bioconda bioconductor-deseq
 conda install -c bioconda bioconductor-edger
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;#&lt;/p&gt;
 
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h2&gt;
 

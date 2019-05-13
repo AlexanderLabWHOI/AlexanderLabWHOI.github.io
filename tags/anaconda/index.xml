@@ -18,8 +18,8 @@
       <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</guid>
-      <description>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.
-Installing Anaconda First, let&amp;rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions here to install.</description>
+      <description>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R and do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.
+Installing Anaconda First, let&amp;rsquo;s make sure Anaconda is installed.</description>
     </item>
     
   </channel>

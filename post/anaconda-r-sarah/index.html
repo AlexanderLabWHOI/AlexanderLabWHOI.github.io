@@ -28,8 +28,8 @@
   
     
   
-  <meta name="description" content="I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.
-Installing Anaconda First, let&rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions here to install.">
+  <meta name="description" content="I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R and do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.
+Installing Anaconda First, let&rsquo;s make sure Anaconda is installed.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/">
@@ -137,8 +137,8 @@ Installing Anaconda First, let&rsquo;s make sure Anaconda is installed. If you d
   <meta property="og:site_name" content="Alexander Lab @ WHOI">
   <meta property="og:url" content="https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/">
   <meta property="og:title" content="Keeping my R life organized | Alexander Lab @ WHOI">
-  <meta property="og:description" content="I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.
-Installing Anaconda First, let&rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions here to install."><meta property="og:image" content="https://alexanderlabwhoi.github.io/img/static/img/logo/Alexander-lab-logo-01.png">
+  <meta property="og:description" content="I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R and do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.
+Installing Anaconda First, let&rsquo;s make sure Anaconda is installed."><meta property="og:image" content="https://alexanderlabwhoi.github.io/img/static/img/logo/Alexander-lab-logo-01.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2019-04-29T16:06:30-04:00">
@@ -508,7 +508,7 @@ Installing Anaconda First, let&rsquo;s make sure Anaconda is installed. If you d
     <div class="article-style" itemprop="articleBody">
       
 
-<p>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to keep my various R environments in order. I have decided to share my process.</p>
+<p>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R <em>and</em> do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.</p>
 
 <h2 id="installing-anaconda">Installing Anaconda</h2>
 
@@ -599,7 +599,7 @@ Copyright (C) 2018 The R Foundation for Statistical Computing
 Platform: x86_64-apple-darwin13.4.0 (64-bit)
 </code></pre>
 
-<p>Because we created this R environment and specified <code>r-essentials</code>, many popular packages have already been loaded. Check this by loading some basic libraries <code>library(ggplot2)</code> or &lsquo;library(dplyr)&rsquo;. Convenient, eh?</p>
+<p>Because we created this R environment and specified <code>r-essentials</code>, many popular packages have already been loaded. Check this by loading some basic libraries <code>library(ggplot2)</code> or <code>library(dplyr)</code>. Convenient, eh?</p>
 
 <p>Quit R <code>quit()</code>, but don&rsquo;t deactivate the <code>r_3.5.1</code> environment.</p>
 
@@ -621,15 +621,15 @@ Platform: x86_64-apple-darwin13.4.0 (64-bit)
 
 <p>This will open the <code>jupyter notebook</code> home screen in browser window, showing your current directory. At the top right, you can click <code>New</code> and see which kernels you can use to start a notebook (hopefully, Python 3 or R).</p>
 
-<p><img src="resources/_gen/images/jupyternb-browser.png" alt="Jupyter notebook dropdown" /></p>
+<p>~<img src="resources/_gen/images/jupyternb-browser.png" alt="Jupyter notebook dropdown" /></p>
 
 <p>Select <code>R</code> under the &lsquo;New&rsquo; dropdown menu (you can also launch a <code>Python3</code> notebook&hellip; but that isn&rsquo;t what we are doing right now), and a new Untitled.ipynb will open. In the first cell, enter <code>version</code> and execute the cell (SHIFT+ENTER to execute). This should print out the version of <code>R</code> that the notebook is running&ndash; which should be <code>3.5.1</code>. You can also ensure this R notebook is running properly by loading some R libraries.</p>
 
 <p>To close the notebook, click <code>Logout</code> at the top right of the notebook open in your browser and/or CTRL+C in the terminal from where you launched the notebook. Close the browser windows.</p>
 
-<p>One of the major issues I have encountered is Jupyter calling the incorrect path (more below).</p>
+<p><strong>One of the major issues I have encountered is Jupyter calling the incorrect path (more below).</strong></p>
 
-<p>If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&rsquo;t use which R (as above) as that doesn&rsquo;t answer where Jupyter is looking. Rather, you can use <code>jupyter kernelspec</code>, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks (see tweet).</p>
+<p>If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&rsquo;t use which R (as above) as that doesn&rsquo;t answer where Jupyter is looking. Rather, you can use <code>jupyter kernelspec</code>, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks <a href="https://twitter.com/nekton4plankton/status/1116785847402209281" target="_blank">see tweet</a>.</p>
 
 <p>To see what paths are being called by jupyter notebook type this:</p>
 
@@ -685,8 +685,6 @@ Platform: x86_64-apple-darwin13.4.0 (64-bit)
 <p>From my experience, a common issue I encountered was <code>jupyter notebook</code> trying to use an <code>R</code> version that was external to my environment (i.e. from an R version installed in my base environment or an old R version installed on my computer pre-anaconda). These issues manifest as IRKernel in <code>jupyter notebook</code> never becomes active or dying immediately after launch. This cause of this problem was revealed with the <code>kernelspec</code> command above.</p>
 
 <p>One of the main lessons I learned in troubleshooting: don&rsquo;t be afraid to <strong>destroy everything</strong>. More specifically, if you run into issues and find that one or all of these paths are not shuttling through the correct R conda environment of your choice&hellip; destroy and rebuild. Use this command (<code>jupyter kernelspec</code>) to locate and destroy this other R option that jupyter notebook is defaulting to (but make sure you are not deleting another whole environment!).</p>
-
-<p>#link to tweet from Harriet</p>
 
 <h3 id="opening-rstudio-within-a-conda-environment">Opening RStudio within a conda environment</h3>
 
@@ -760,11 +758,13 @@ which rstudio
 
 <p>If all things check out:</p>
 
-<p>[x] Correct <code>R</code> version in command line
- [x] Correct <code>R</code> version in RStudio
- [x] Correct <code>R</code> version in Jupyter Notebook
- [x] Path of <code>R</code> aligns with your specified conda environment
- [x] Path of <code>rstudio</code> aligns with your specified conda environment</p>
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Correct <code>R</code> version in command line</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Correct <code>R</code> version in RStudio</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Correct <code>R</code> version in Jupyter Notebook</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Path of <code>R</code> aligns with your specified conda environment</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Path of <code>rstudio</code> aligns with your specified conda environment</label></li>
+</ul>
 
 <p>You can safely go ahead and create a new alias within your <code>.bash_profile</code> :</p>
 
@@ -818,8 +818,6 @@ conda install -c bioconda bioconductor-deseq
 conda install -c bioconda bioconductor-edger
 </code></pre>
 
-<p>#</p>
-
 <h2 id="final-thoughts">Final thoughts</h2>
 
 <p><em>Don&rsquo;t be afraid of destruction</em>. Behind the scenes of this post, I completely removed and re-installed Anaconda on my computer at least twice and created and then deleted numerous environments. Starting with a clean slate turned out to be <em>necessary</em>.</p>
@@ -844,6 +842,10 @@ conda install -c bioconda bioconductor-edger
   <a class="badge badge-light" href="/tags/computation/">computation</a>
   
   <a class="badge badge-light" href="/tags/best-practices/">best practices</a>
+  
+  <a class="badge badge-light" href="/tags/rstudio/">RStudio</a>
+  
+  <a class="badge badge-light" href="/tags/jupyter-notebook/">jupyter notebook</a>
   
 </div>
 
@@ -879,7 +881,7 @@ conda install -c bioconda bioconductor-edger
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/authors/shu">Sarah Hu</a></h5>
     
-    <p class="card-text" itemprop="description">Sarah is a Postdoctoral Fellow at WHOI investigating the ecological roles microbial eukaryotes play in marine ecosystems. She is currently focused on characterizing the microbial eukaryotic communities found at deep sea hydrothermal vents to understand their place in marine food webs in the deep biosphere.</p>
+    <p class="card-text" itemprop="description">Sarah is a Postdoctoral Fellow in <a href="https://www2.whoi.edu/staff/jhuber/projects/" target="_blank">Julie Huber&rsquo;s lab at WHOI</a> investigating the ecological roles single-celled microbial eukaryotes play in marine ecosystems. She is currently focused on understanding how the microbial eukaryotic communities found in deep-sea hydrothermal vent ecosystems contribute to microbial food web dynamics.</p>
     <ul class="network-icon" aria-hidden="true">
       
       
