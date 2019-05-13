@@ -268,13 +268,11 @@ which rstudio
 
 &lt;p&gt;If all things check out:&lt;/p&gt;
 
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in command line&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in RStudio&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in Jupyter Notebook&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Path of &lt;code&gt;R&lt;/code&gt; aligns with your specified conda environment&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Path of &lt;code&gt;rstudio&lt;/code&gt; aligns with your specified conda environment&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;[x] Correct &lt;code&gt;R&lt;/code&gt; version in command line
+  [x] Correct &lt;code&gt;R&lt;/code&gt; version in RStudio
+  [x] Correct &lt;code&gt;R&lt;/code&gt; version in Jupyter Notebook
+  [x] Path of &lt;code&gt;R&lt;/code&gt; aligns with your specified conda environment
+  [x] Path of &lt;code&gt;rstudio&lt;/code&gt; aligns with your specified conda environment&lt;/p&gt;
 
 &lt;p&gt;You can safely go ahead and create a new alias within your &lt;code&gt;.bash_profile&lt;/code&gt; :&lt;/p&gt;
 
