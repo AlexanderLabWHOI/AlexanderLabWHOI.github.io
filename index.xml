@@ -131,7 +131,7 @@ Platform: x86_64-apple-darwin13.4.0 (64-bit)
 
 &lt;p&gt;This will open the &lt;code&gt;jupyter notebook&lt;/code&gt; home screen in browser window, showing your current directory. At the top right, you can click &lt;code&gt;New&lt;/code&gt; and see which kernels you can use to start a notebook (hopefully, Python 3 or R).&lt;/p&gt;
 
-&lt;p&gt;~&lt;img src=&#34;resources/_gen/images/jupyternb-browser.png&#34; alt=&#34;Jupyter notebook dropdown&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;resources/_gen/images/jupyternb-browser.png&#34; target=&#34;_blank&#34;&gt;Jupyter notebook dropdown&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Select &lt;code&gt;R&lt;/code&gt; under the &amp;lsquo;New&amp;rsquo; dropdown menu (you can also launch a &lt;code&gt;Python3&lt;/code&gt; notebook&amp;hellip; but that isn&amp;rsquo;t what we are doing right now), and a new Untitled.ipynb will open. In the first cell, enter &lt;code&gt;version&lt;/code&gt; and execute the cell (SHIFT+ENTER to execute). This should print out the version of &lt;code&gt;R&lt;/code&gt; that the notebook is running&amp;ndash; which should be &lt;code&gt;3.5.1&lt;/code&gt;. You can also ensure this R notebook is running properly by loading some R libraries.&lt;/p&gt;
 
