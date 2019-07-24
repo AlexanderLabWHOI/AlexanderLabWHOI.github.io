@@ -3,6 +3,12 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</loc>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</loc>
       <lastmod>2019-04-29T16:06:30-04:00</lastmod>
     </url>
@@ -146,6 +152,11 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/author/akrinos/</loc>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/author/halexand/</loc>
     </url>
   
@@ -234,7 +245,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/</loc>
-      <lastmod>2019-04-29T16:06:30-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -722,7 +733,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/hpc/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1261,7 +1272,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/post/</loc>
-      <lastmod>2019-04-29T16:06:30-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
     </url>
   
     <url>
@@ -1647,6 +1658,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/authors/akrinos/</loc>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/aquatic/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -1690,7 +1708,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/categories/bioinformatics/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1718,21 +1736,21 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/categories/computation/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/computing/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/conda/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1760,7 +1778,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/data-analysis/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1886,7 +1904,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/jupyter/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2061,7 +2079,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/categories/python/</loc>
-      <lastmod>2019-03-11T18:30:13-04:00</lastmod>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   

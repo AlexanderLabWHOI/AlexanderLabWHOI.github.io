@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>conda on Alexander Lab @ WHOI</title>
-    <link>https://alexanderlabwhoi.github.io/tags/conda/</link>
-    <description>Recent content in conda on Alexander Lab @ WHOI</description>
+    <title>akrinos on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/akrinos/</link>
+    <description>Recent content in akrinos on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
     <lastBuildDate>Tue, 23 Jul 2019 15:25:12 -0400</lastBuildDate>
     
-	<atom:link href="https://alexanderlabwhoi.github.io/tags/conda/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/akrinos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,12 +22,12 @@
     </item>
     
     <item>
-      <title>Running Jupyter Notebooks Remotely with Slurm</title>
-      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</link>
-      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/akrinos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</guid>
-      <description>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command jupyter notebook on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine.</description>
+      <guid>https://alexanderlabwhoi.github.io/author/akrinos/</guid>
+      <description>Arianna Krinos is a graduate student in the MIT-WHOI Joint Program in Biological Oceanography. She graduated from Virginia Tech in the fields of computer science and biology in May 2019. Past research experiences include amphibian skin microbiology for community classification and disease ecology, modeling of potential harmful algal blooms in lake ecosystems using a 1-D hydrodynamic model, MCMC methods for modeling atmospheric carbon dioxide concentrations, the physiology of lobster calcification, and individual based modeling of blue crabs in the Chesapeake Bay.</description>
     </item>
     
   </channel>

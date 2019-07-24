@@ -7,8 +7,102 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 29 Apr 2019 16:06:30 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 15:25:12 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Running Jupyter Notebooks Remotely Using Windows</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</link>
+      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</guid>
+      <description>
+
+&lt;p&gt;Harriet wrote an awesome blog post &lt;a href=&#34;https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; about how to use a Jupyter notebook connected to a remote server via SSH tunneling. Unfortunately, depending on your existing setup on your computer, you may have a few extra steps to wrangle if you have a PC. In this blog post, I&amp;rsquo;ll highlight what you should do after you get the Jupyter notebook running on the remote. In other words, you should have already gotten to the step where you spin up the Jupyter notebook, as in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jupyter notebook --no-browser --port=8888
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To get to this point, you will have probably used/installed PuTTY or a similar SSH client on your PC. This can be tricky as well if you&amp;rsquo;ve never done it before, so if you&amp;rsquo;re having trouble up to this point, I encourage you to check out a tutorial like &lt;a href=&#34;https://hostadvice.com/how-to/how-to-configure-putty-ssh-tunnel/&#34; target=&#34;_blank&#34;&gt;this one&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After you get the jupyter notebook spun up, you&amp;rsquo;re done working on the remote, and you have a few options for how to access some sort of terminal on your computer in order to tunnel the jupyter notebook to your local machine, so that you can use it in your browser like normal. You can set this up via port forwarding in PuTTY, but this limits the ports you can use for either the notebook on the remote or the port you&amp;rsquo;re forwarding to on your own computer. My favorite option is now to use Windows PowerShell, which is a native application on Windows computers (i.e., you get this pre-loaded on your machine). There are a few steps to this, but I think it&amp;rsquo;s ultimately the least amount of pain. I&amp;rsquo;ll also talk about two other options: MinTTY (I prefer to use it through CygWin) and the PuTTY port forwarding option.&lt;/p&gt;
+
+&lt;h2 id=&#34;option-1-windows-powershell&#34;&gt;Option 1: Windows PowerShell&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/winpowershell.PNG&#34; alt=&#34;Windows PowerShell&#34; title=&#34;PowerShell Interface&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you get the hang of it, I think of this as the simplest option. I mentioned that PowerShell is a native install on Windows, however, to get some of the newest features, you might have to upgrade to PowerShell 6, which can be done through PowerShell itself. Just open up PowerShell and type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;iex &amp;quot;&amp;amp; { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will cause a normal Windows installer a la XP to spin up. The default settings are probably fine, but feel free to choose anything you think you need (don&amp;rsquo;t worry, there aren&amp;rsquo;t too many options). If you had the old version of PowerShell, you&amp;rsquo;ll now need to open a separate window to get to PowerShell 6. It&amp;rsquo;s a bit of a pain, but at least in PowerShell 6 you can paste into the terminal using &lt;code&gt;Ctrl+V&lt;/code&gt; instead of left click! Silver linings.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/powershell6.PNG&#34; alt=&#34;Windows PowerShell 6&#34; title=&#34;PowerShell 6&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Side note&lt;/em&gt;: you probably (while you&amp;rsquo;re downloading things) want to take this opportunity to download an installer like &lt;a href=&#34;https://scoop.sh/&#34; target=&#34;_blank&#34;&gt;scoop&lt;/a&gt; or &lt;a href=&#34;https://chocolatey.org/&#34; target=&#34;_blank&#34;&gt;chocolatey&lt;/a&gt;. I like scoop better, but chocolatey has a nice GUI. It&amp;rsquo;ll make your life easier in the future. You can install scoop, for example, with the following single line on PowerShell 6:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you&amp;rsquo;ve got a PowerShell&amp;hellip;but you&amp;rsquo;ll probably not be too happy when you try to &lt;code&gt;ssh&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/ssh_error.PNG&#34; alt=&#34;SSH doesn&#39;t work immediately&#34; title=&#34;SSH Error&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s another step here, but a pretty simple one if you use the power of &lt;code&gt;git&lt;/code&gt;, which I assume here that you&amp;rsquo;ve already got installed on your machine. For most people, Git has &lt;code&gt;ssh&lt;/code&gt; included and is already installed in the &lt;a href=&#34;http://www.hurryupandwait.io/blog/need-an-ssh-client-on-windows-dont-use-putty-or-cygwinuse-git&#34; target=&#34;_blank&#34;&gt;base executable directory&lt;/a&gt;. So instead of installing anything extra, we are just going to add where &lt;code&gt;ssh&lt;/code&gt; is located via Git to our &lt;code&gt;$PATH&lt;/code&gt;. Note that we could have done this without PowerShell 6, but note that as a Windows user you&amp;rsquo;re probably going to want PowerShell 6 and Chocolatey/Scoop regardless.&lt;/p&gt;
+
+&lt;p&gt;So to add the Git folder we need to the &lt;code&gt;$PATH&lt;/code&gt;, we run the following two lines:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$new_path = &amp;quot;$env:PATH;C:/Program Files/Git/usr/bin&amp;quot;
+[Environment]::setEnvironmentVariable(&amp;quot;path&amp;quot;, $new_path)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is what I found worked best for me. If that in&amp;rsquo;t the location of Git for you (pretty unlikely on a Windows machine), you&amp;rsquo;ll need to go searching for it. The first and easiest line of defense is to go to your C drive and look for related &amp;ldquo;Program File&amp;rdquo; locations.&lt;/p&gt;
+
+&lt;p&gt;Now, &lt;code&gt;ssh&lt;/code&gt; should work, and you should be able to use the code that Harriet provided in [her post]() to get your Jupyter notebook tunneled. Try:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -t -t &amp;lt;my username&amp;gt;@&amp;lt;some HPC address, such as hpc.mit.edu&amp;gt; -L 8888:localhost:8888 ssh &amp;lt;our node&amp;gt; -L 8888:localhost:8888
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Replace the items in brackets with your specific situation). If this gives you issues, a good fix is to put colons before each 8888 instance (after the space). This can help Windows understand that what you&amp;rsquo;re signaling is a port.&lt;/p&gt;
+
+&lt;p&gt;You should be good to go! Just type localhost:8888 in your web browser and see if that works. One other thing: if you get a password screen, this isn&amp;rsquo;t your HPC password or anything. This is a Jupyter password. You can either (if you haven&amp;rsquo;t set a password) insert the token that should be displayed (a bunch of letters and numbers) in the remote, or (if you don&amp;rsquo;t see this), you&amp;rsquo;ll need to set a password. Back out of your running Jupyter notebook on the remote, and run &lt;code&gt;jupyter notebook password&lt;/code&gt;. This will prompt you to write and verify a password, which you&amp;rsquo;ll later enter into the window you see on your local machine, once you set up your SSH tunnel again. If this doesn&amp;rsquo;t work, it might be because the &lt;code&gt;config&lt;/code&gt; file isn&amp;rsquo;t always created automatically. Run &lt;code&gt;touch ~/.jupyter/jupyter_notebook_config.json&lt;/code&gt; to solve the issue (you might have to run &lt;code&gt;mkdir ~/.jupyter&lt;/code&gt; first, depending on just how much isn&amp;rsquo;t set up).&lt;/p&gt;
+
+&lt;h2 id=&#34;option-2-mintty&#34;&gt;Option 2: MinTTY&lt;/h2&gt;
+
+&lt;p&gt;I like using &lt;a href=&#34;https://cygwin.com/&#34; target=&#34;_blank&#34;&gt;CygWin&lt;/a&gt; for manipulating MinTTY (take it from their website: &amp;ldquo;get that Linux feeling&amp;hellip;on Windows&amp;rdquo; - don&amp;rsquo;t mind if I do!). &lt;em&gt;Make sure&lt;/em&gt; that you select MinTTY and its associated packages and debuggers when setting up CygWin. This will save you the trouble of having to download MinTTY separately. You also need to make sure &lt;code&gt;openssh&lt;/code&gt; and associated options are checked. If you forget anything, you can always re-run &lt;code&gt;setup.exe&lt;/code&gt; from your Downloads or wherever you&amp;rsquo;ve placed it. After you go through the motions of selecting a mirror and everything, it&amp;rsquo;ll allow you to update the packages you&amp;rsquo;re using rather than starting completely from scratch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/setup.PNG&#34; alt=&#34;Pick your package poison&#34; title=&#34;Picking Package Poison&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, at this point, you can either run &lt;code&gt;ssh&lt;/code&gt; directly from the CygWin terminal (you may want to run as administrator just in case when you&amp;rsquo;re starting out), or through MinTTY. Note that you can also use CygWin in place of PuTTY or the like to connect to the remote server you&amp;rsquo;re using in the first place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/mintty.PNG&#34; alt=&#34;MinTTY running SSH&#34; title=&#34;MinTTY&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Refer to the PowerShell section if you need help with setting up the tunneled Jupyter notebook beyond what is available in the base instructions.&lt;/p&gt;
+
+&lt;h2 id=&#34;option-3-putty&#34;&gt;Option 3: PuTTY&lt;/h2&gt;
+
+&lt;p&gt;I won&amp;rsquo;t say much about this option, because it&amp;rsquo;s honestly the option I like the least. But if you really want to, you can set up port forwarding directly through your PuTTY session. This way, when you start up your Jupyter notebook on a port, say 8888 like we&amp;rsquo;ve been using, it will be automatically tunneled to your local machine (theoretically&amp;hellip;but I&amp;rsquo;d be criticized by PuTTY enthusiasts for adding that caveat!).&lt;/p&gt;
+
+&lt;p&gt;First, open up PuTTY and make sure you&amp;rsquo;ve got all of your favorite settings loaded in, say by saving your profile.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/puttyconfig.PNG&#34; alt=&#34;PuTTY configuration&#34; title=&#34;First PuTTY configuration&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, go to Connection: SSH: Auth: Tunnels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/puttymenu.PNG&#34; alt=&#34;PuTTY menu where you need to be to tunnel&#34; title=&#34;PuTTY menu&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, you need to change a few things. You need to tell PuTTY that your source port is on the remote, and then give the port on the remote as well as the &lt;code&gt;localhost&lt;/code&gt; port you want to receive the connection:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/portforwardingputty.PNG&#34; alt=&#34;PuTTY configuration choices&#34; title=&#34;PuTTY port forwarding&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You also need to check the two boxes up top to make sure the ports are listening to each other (I forgot this while I was constructing this post).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/portforwardingputty_fixed.PNG&#34; alt=&#34;PuTTY configuration with the boxes checked&#34; title=&#34;Fixed the checkboxes&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If this worked, you should be all set. Just make sure the ports match. I don&amp;rsquo;t have a lot of luck with this and in the past I&amp;rsquo;ve used Firefox port forwarding to get it to work. Chrome is my browser of choice, so for multiple reasons I prefer options 1 and 2 in this post!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Keeping my R life organized</title>
@@ -582,15 +676,6 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
       <description></description>
     </item>
     

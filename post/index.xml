@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 29 Apr 2019 16:06:30 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 15:25:12 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Running Jupyter Notebooks Remotely Using Windows</title>
+      <link>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</link>
+      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</guid>
+      <description>Harriet wrote an awesome blog post here about how to use a Jupyter notebook connected to a remote server via SSH tunneling. Unfortunately, depending on your existing setup on your computer, you may have a few extra steps to wrangle if you have a PC. In this blog post, I&amp;rsquo;ll highlight what you should do after you get the Jupyter notebook running on the remote. In other words, you should have already gotten to the step where you spin up the Jupyter notebook, as in:</description>
+    </item>
     
     <item>
       <title>Keeping my R life organized</title>
