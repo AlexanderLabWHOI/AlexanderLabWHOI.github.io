@@ -162,6 +162,11 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/author/lblum/</loc>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/author/shu/</loc>
     </url>
   
@@ -1919,6 +1924,12 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/lab-setup/</loc>
       <lastmod>2018-11-11T18:35:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/lblum/</loc>
       <priority>0</priority>
     </url>
   
