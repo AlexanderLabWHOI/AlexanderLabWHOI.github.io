@@ -7,8 +7,28 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Tue, 23 Jul 2019 15:25:12 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 13:00:05 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Alexander Lab at OSM 2020</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-osm/</link>
+      <pubDate>Mon, 10 Feb 2020 13:00:05 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-osm/</guid>
+      <description>
+
+&lt;p&gt;I am heading to Ocean Sciences Meeting next week in San Diego along with &lt;a href=&#34;https://alexanderlabwhoi.github.io/authors/lblum/&#34;&gt;Laura Blum&lt;/a&gt;, an undergraduate researcher doing her thesis research with &lt;a href=&#34;https://twitter.com/microbiaki&#34; target=&#34;_blank&#34;&gt;Maria Pachiadaki&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/EggErin&#34; target=&#34;_blank&#34;&gt;Erin Eggleston&lt;/a&gt;, and myself. We have two presentations (that are bookending the meeting &amp;ndash;  Monday and Friday) that are both related to work we have been doing looking at MAGs from the larger size fraction metagenomic datasets generated as part of the Tara Expedition.&lt;/p&gt;
+
+&lt;h4 id=&#34;microbial-drivers-of-nitrogen-metabolism-searching-tara-oceans-metagenomes&#34;&gt;&lt;strong&gt;Microbial drivers of nitrogen metabolism: Searching Tara Oceans metagenomes&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Laura Blum&lt;/strong&gt;, Erin Eggleston, Maria Pachiadaki, &amp;amp; Harriet Alexander &lt;br&gt; Poster# MM14A-0283  &lt;br&gt; Monday 17 February 2020 16:00 - 18:00&lt;/p&gt;
+
+&lt;h4 id=&#34;eukaryotic-genome-discovery-scalable-and-automated-retrieval-of-eukaryotic-metagenome-assembled-genomes-mags-from-a-global-scale-dataset&#34;&gt;&lt;strong&gt;Eukaryotic genome discovery: Scalable and automated retrieval of eukaryotic metagenome assembled genomes (MAGs) from a global-scale dataset&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Harriet Alexander&lt;/strong&gt; &amp;amp;  Sarah K Hu &lt;br&gt; Session# OB53C: &lt;em&gt;Toward BioGeoSCAPES: Exploring Molecular Drivers of Ocean Metabolism and Biogeochemistry&lt;/em&gt; &lt;br&gt; Friday 21 February 2020 14:30 - 14:45, SDCC - 2, UL&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Running Jupyter Notebooks Remotely Using Windows</title>
@@ -667,15 +687,6 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/durden2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phosphorus availability regulates intracellular nucleotides in marine eukaryotic phytoplankton</title>
-      <link>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</guid>
       <description></description>
     </item>
     

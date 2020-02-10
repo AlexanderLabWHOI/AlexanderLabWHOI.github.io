@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Tue, 23 Jul 2019 15:25:12 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 13:00:05 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Alexander Lab at OSM 2020</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-osm/</link>
+      <pubDate>Mon, 10 Feb 2020 13:00:05 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-osm/</guid>
+      <description>I am heading to Ocean Sciences Meeting next week in San Diego along with Laura Blum, an undergraduate researcher doing her thesis research with Maria Pachiadaki, Erin Eggleston, and myself. We have two presentations (that are bookending the meeting &amp;ndash; Monday and Friday) that are both related to work we have been doing looking at MAGs from the larger size fraction metagenomic datasets generated as part of the Tara Expedition.</description>
+    </item>
     
     <item>
       <title>Running Jupyter Notebooks Remotely Using Windows</title>
