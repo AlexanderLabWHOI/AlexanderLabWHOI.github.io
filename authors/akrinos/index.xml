@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sat, 30 May 2020 15:25:12 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 15:25:12 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/akrinos/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Using `rclone` to manage data on a remote server via Google Drive</title>
       <link>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</link>
-      <pubDate>Sat, 30 May 2020 15:25:12 -0400</pubDate>
+      <pubDate>Tue, 02 Jun 2020 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</guid>
       <description>There are a lot of reasons to set up Google Drive integration on your remote HPC system. In particular if your institution has provided you access to G Suite, there is a lot of storage available on Google Drive. Sometimes you might want to access files from multiple HPC systems, or have them at your fingertips on your local machine in addition to a remote server. This blog post will go over how to set up and use rclone with Google Drive on your remote server.</description>
