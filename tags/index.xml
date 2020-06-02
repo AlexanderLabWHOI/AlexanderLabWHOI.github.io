@@ -42,7 +42,7 @@
     <item>
       <title>HPC</title>
       <link>https://alexanderlabwhoi.github.io/tags/hpc/</link>
-      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
+      <pubDate>Sat, 30 May 2020 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/hpc/</guid>
       <description></description>
@@ -168,7 +168,7 @@
     <item>
       <title>bioinformatics</title>
       <link>https://alexanderlabwhoi.github.io/tags/bioinformatics/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/bioinformatics/</guid>
       <description></description>
@@ -204,7 +204,7 @@
     <item>
       <title>computing</title>
       <link>https://alexanderlabwhoi.github.io/tags/computing/</link>
-      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
+      <pubDate>Sat, 30 May 2020 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/computing/</guid>
       <description></description>
@@ -213,7 +213,7 @@
     <item>
       <title>conda</title>
       <link>https://alexanderlabwhoi.github.io/tags/conda/</link>
-      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
+      <pubDate>Sat, 30 May 2020 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/conda/</guid>
       <description></description>
@@ -288,6 +288,15 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/data-sharing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data storage</title>
+      <link>https://alexanderlabwhoi.github.io/tags/data-storage/</link>
+      <pubDate>Sat, 30 May 2020 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/data-storage/</guid>
       <description></description>
     </item>
     
@@ -472,6 +481,15 @@
     </item>
     
     <item>
+      <title>metagenomics</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metagenomics/</link>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metagenomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>metalloenzyme</title>
       <link>https://alexanderlabwhoi.github.io/tags/metalloenzyme/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
@@ -483,7 +501,7 @@
     <item>
       <title>metatranscriptomics</title>
       <link>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</guid>
       <description></description>
@@ -672,7 +690,7 @@
     <item>
       <title>reproducibility</title>
       <link>https://alexanderlabwhoi.github.io/tags/reproducibility/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/reproducibility/</guid>
       <description></description>

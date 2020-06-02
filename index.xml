@@ -7,8 +7,128 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 10 Feb 2020 13:00:05 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 15:25:12 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using `rclone` to manage data on a remote server via Google Drive</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</link>
+      <pubDate>Sat, 30 May 2020 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</guid>
+      <description>
+
+&lt;p&gt;There are a lot of reasons to set up Google Drive integration on your remote HPC system. In particular if your institution has provided you access to G Suite, there is a lot of storage available on Google Drive. Sometimes you might want to access files from multiple HPC systems, or have them at your fingertips on your local machine in addition to a remote server. This blog post will go over how to set up and use &lt;code&gt;rclone&lt;/code&gt; with Google Drive on your remote server. You can learn more about &lt;code&gt;rclone&lt;/code&gt; and how to use it &lt;a href=&#34;https://rclone.org/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To get started, you&amp;rsquo;ll need to have a valid Google Drive account (personal or G Suite), and you&amp;rsquo;ll need to download &lt;code&gt;rclone&lt;/code&gt; on your HPC server. The easiest way to install &lt;code&gt;rclone&lt;/code&gt; is using &lt;code&gt;Anaconda&lt;/code&gt;. You can do this by setting up a brand new &lt;code&gt;conda&lt;/code&gt; environment, or by adding &lt;code&gt;rclone&lt;/code&gt; to an existing environment. To create a brand new &lt;code&gt;conda&lt;/code&gt; environment that you&amp;rsquo;ll always use each time you &lt;code&gt;rclone&lt;/code&gt;, run something like the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda create -n rcloneenv -c conda-forge rclone
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And to just install &lt;code&gt;rclone&lt;/code&gt; in an existing environment, type &lt;code&gt;conda install -c conda-forge rclone&lt;/code&gt;. Be careful about potential dependencies!&lt;/p&gt;
+
+&lt;p&gt;I had one HPC system I tried this on where the &lt;code&gt;conda&lt;/code&gt; installation of &lt;code&gt;rclone&lt;/code&gt; just didn&amp;rsquo;t want to work. In that case, I followed these steps:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
+unzip rclone-current-linux-amd64.zip
+chmod 755 rclone-*-linux-amd64/rclone
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which downloads the base &lt;code&gt;rclone&lt;/code&gt; package using &lt;code&gt;curl&lt;/code&gt;, unpacks it, and then changes the &lt;code&gt;rclone&lt;/code&gt; binary to an executable file, respectively. You might want to do this in a software downloads folder, and then execute:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;alias rclone=&#39;rclone-*-linux-amd64/rclone&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And/or add the directory to &lt;code&gt;\$PATH&lt;/code&gt;, using &lt;code&gt;PATH=\$PATH:rclone-*-linux-amd64/rclone&#39;, so that you can run&lt;/code&gt;rclone&lt;code&gt;anywhere. Note that this is a secondary, less desirable option to just using&lt;/code&gt;conda`.&lt;/p&gt;
+
+&lt;p&gt;Next, you&amp;rsquo;ll need to run &lt;code&gt;rclone config&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first few steps are easy. When prompted whether you&amp;rsquo;d like to add a new remote, set a configuration password, or quit, type &amp;ldquo;n&amp;rdquo;, for configuring a new remote. The next prompt will ask you for a name - this can be whatever you want. In this case, I&amp;rsquo;ll enter &lt;code&gt;gdrive&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The next prompt asks what kind of remote this is, which should be set to &amp;ldquo;Google Drive&amp;rdquo;. It&amp;rsquo;s 13th on the list for me, so I enter 13. You can also just write &amp;ldquo;drive&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/screenrclone1.png&#34; alt=&#34;`rclone` Terminal&#34; title=&#34;Terminal output after the first few simple steps of `rclone`.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next step prompts you for a Google API Cloud ID. Getting one is not as complicated as it may sound! You&amp;rsquo;ll need to go to &lt;a href=&#34;https://console.developers.google.com/&#34; target=&#34;_blank&#34;&gt;Google API Console&lt;/a&gt; (and make sure that you&amp;rsquo;re signed into the right Google account.&lt;/p&gt;
+
+&lt;p&gt;First, go to Google API Console and make sure you&amp;rsquo;re logged in. It should look something like the below screen, at which point you select &amp;ldquo;New Project&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI2.png&#34; alt=&#34;Google API Landing&#34; title=&#34;Home screen of Google API Cloud.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Name the project whatever you like - it isn&amp;rsquo;t really important.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI1.png&#34; alt=&#34;Google API New Project&#34; title=&#34;Project creation screen for Google API Cloud.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, go to your project screen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI3.png&#34; alt=&#34;Google API Project&#34; title=&#34;Project landing page for Google API Cloud.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll now need to navigate to the APIs Overview:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI4.png&#34; alt=&#34;Google APIs&#34; title=&#34;Link to APIs overview.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s tempting on this next screen to just click &amp;ldquo;Enable APIs and Services&amp;rdquo;, but that&amp;rsquo;s not what you want to do. Instead, head to the Credentials tab, then click &amp;ldquo;Configure Consent Screen&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI5.png&#34; alt=&#34;Google APIs Consent&#34; title=&#34;Configuring the consent screen.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This splits off momentarily if you&amp;rsquo;re using a personal account vs. a G Suite account.&lt;/p&gt;
+
+&lt;h2 id=&#34;case-1-you-re-using-a-personal-account-no-g-suite&#34;&gt;Case 1: You&amp;rsquo;re using a &amp;ldquo;personal account&amp;rdquo; (no G Suite)&lt;/h2&gt;
+
+&lt;p&gt;You need to select &amp;ldquo;External&amp;rdquo; on the consent configuration screen.&lt;/p&gt;
+
+&lt;h2 id=&#34;case-2-you-re-using-a-g-suite-account&#34;&gt;Case 2: You&amp;rsquo;re using a G Suite account&lt;/h2&gt;
+
+&lt;p&gt;You can use &amp;ldquo;External&amp;rdquo; (more inclusive), or &amp;ldquo;Internal&amp;rdquo;, if you want only users that are using an account that&amp;rsquo;s part of your G Suite organization to be able to modify/move these files (for example, if I am setting this up using an @whoi.edu email account, part of the WHOI G Suite Organization, using &amp;ldquo;Internal&amp;rdquo; will limit activity to other WHOI users). External will still require that users have a Google account, and that they are going through all the steps that you have.&lt;/p&gt;
+
+&lt;p&gt;The only option you need to change on the next screen is entering &amp;ldquo;rclone&amp;rdquo; for the application requesting access (though, ultimately, what you enter here is unlikely to make much of a difference.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI6.png&#34; alt=&#34;Google APIs Application&#34; title=&#34;Disclosing that you&#39;re generating the key for `rclone`.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, you can scroll all the way down and hit &amp;ldquo;Save&amp;rdquo;, then navigate back to the Credentials tab, where you&amp;rsquo;ll now select that enticing &amp;ldquo;Create Credentials&amp;rdquo; button:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI7.png&#34; alt=&#34;Google APIs Create Credentials&#34; title=&#34;Creating credentials using your newly set OAuth settings.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And then selecting &amp;ldquo;OAuth client ID&amp;rdquo;.  For &amp;ldquo;Application Type&amp;rdquo;, select &amp;ldquo;Desktop app.&amp;rdquo; What you name it doesn&amp;rsquo;t matter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI8.png&#34; alt=&#34;Google APIs Desktop App&#34; title=&#34;Selecting that you&#39;re using this key for a desktop application.&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And voilà! You now have a Client ID and a Client Secret, which you&amp;rsquo;ll copy sequentially and paste into the relevant prompts back at your remote server. The next question will ask what kind of consent you want to give Google Drive. If you&amp;rsquo;re interested in using &lt;code&gt;rclone&lt;/code&gt; most effectively, and reading/writing/updating files, you&amp;rsquo;ll need to input &amp;ldquo;drive&amp;rdquo; or 1, in order to give Google Drive full file permissions.&lt;/p&gt;
+
+&lt;p&gt;Now you can just hit enter a few times, to accept the default values for the following prompts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;root_folder_id&lt;/li&gt;
+&lt;li&gt;service_account_file&lt;/li&gt;
+&lt;li&gt;Edit advanced config? (unless you&amp;rsquo;re interested in changing upload/download speeds/chunk sizes - advanced users only!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But &lt;strong&gt;don&amp;rsquo;t&lt;/strong&gt; use the default setting for the next prompt! It&amp;rsquo;ll be tempting to just keep clicking enter, but you need to type &amp;ldquo;n&amp;rdquo; if you&amp;rsquo;re on a remote server. Otherwise, the application will try to conduct authentication locally, which isn&amp;rsquo;t possible unless you&amp;rsquo;re using tunneling on your HPC. When you select &amp;ldquo;n&amp;rdquo;, rclone will generate a link for you to visit. Select the same Google account that you used for the previous steps, and then select &amp;ldquo;Allow.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Then, you&amp;rsquo;ll get another authentication code to copy/paste. You&amp;rsquo;ve probably never heard about Team Drives, so unless you have, select no for the next option (or hit enter). As long as everything looks okay, go ahead and accept the new remote, then enter &amp;ldquo;q&amp;rdquo; to exit the configuration.&lt;/p&gt;
+
+&lt;p&gt;One other important point is that you&amp;rsquo;ll need to be connected to the Internet when you are doing you &lt;code&gt;rclone&lt;/code&gt;ing. This might be a little difficult if you are using a worker node on your HPC system that doesn&amp;rsquo;t have access to the Internet. Depending on your system&amp;rsquo;s configuration, you may need to use the login node when you use &lt;code&gt;rclone&lt;/code&gt; (which should be avoided unless your system specifically limits Internet usage to the login node).&lt;/p&gt;
+
+&lt;p&gt;Now your Google Drive is hooked up to your remote server!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rclone copy /path/to/local/files gdrive:files
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will copy files from &lt;code&gt;/path/to/local/files&lt;/code&gt; locally on your HPC to your Google Drive, in the &lt;code&gt;files&lt;/code&gt; folder (make sure to use the name that you entered when you configured the remote).&lt;/p&gt;
+
+&lt;p&gt;If files change, either locally or on Google Drive, you can use &lt;code&gt;sync&lt;/code&gt; to update them. For example, if I want to update Google Drive with my local files:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rclone sync /path/to/local/files gdrive:files
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But if I want to get the most recent Google Drive version:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rclone sync gdrive:files /path/to/local/files 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Only the second argument is modified/updated. Happy &lt;code&gt;rclone&lt;/code&gt;ing!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Alexander Lab at OSM 2020</title>
@@ -27,6 +147,33 @@
 &lt;h4 id=&#34;eukaryotic-genome-discovery-scalable-and-automated-retrieval-of-eukaryotic-metagenome-assembled-genomes-mags-from-a-global-scale-dataset&#34;&gt;&lt;strong&gt;Eukaryotic genome discovery: Scalable and automated retrieval of eukaryotic metagenome assembled genomes (MAGs) from a global-scale dataset&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;Harriet Alexander&lt;/strong&gt; &amp;amp;  Sarah K Hu &lt;br&gt; Session# OB53C: &lt;em&gt;Toward BioGeoSCAPES: Exploring Molecular Drivers of Ocean Metabolism and Biogeochemistry&lt;/em&gt; &lt;br&gt; Friday 21 February 2020 14:30 - 14:45, SDCC - 2, UL&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bioinformatics in Light of Intercallibration</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</link>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</guid>
+      <description>&lt;p&gt;A month ago, I had the opportunity to participate in the Oceans Carbon Biogeochemistry Nucleic Acids ‘Omics Standardization and Intercalibration Workshop hosted at UNC Chappel Hill. The goal of this workshop was to come together as a community and discuss the challenges (and opportunities) we face as we continue to gather samples across the ocean for various nucleic acid omics (metabarcoding or amplicon sequencing, metagenomics, and metatranscriptomics). As was done through GeoTraces, intercomparability of measures requires consistency of measures ntercallibration is absolutely necesseary&lt;/p&gt;
+
+&lt;p&gt;The meeting brought together a group of experts in these types of &amp;lsquo;omic measurements.&lt;/p&gt;
+
+&lt;p&gt;The first day progressed as a series of high-level talks on the state of the field in various metrics&lt;/p&gt;
+
+&lt;p&gt;I was asked to give a general talk on the state of the field of bioinformatics and &amp;lsquo;omics workflows and how computational biology relates to intercallibration efforts. A rather broad topic for a 15 minute talk, if you ask me, but a fun challenge and it really got me thinking. What is the role of bioinformatics in intercallibration? I spent a lot of time thinking about the issue in the months leading up to the conference and chatted about it with Maria, Sarah, and Arianna.&lt;/p&gt;
+
+&lt;p&gt;After a lot of musing I settled upon a few higher-order thoughts on the subject:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Bioinformatics is absolutely crucial but not assessing the degree of intercalibration.&lt;/li&gt;
+&lt;li&gt;Computational biology is a constantly evolving field; there is utility in reanalysis; no perfect tool exists.&lt;/li&gt;
+&lt;li&gt;Pipelines and workflow engines will help us keep up with the evolution of computational biology.&lt;/li&gt;
+&lt;li&gt;Bioinformatics is not going to be the most challenging step in this process.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In this post I&lt;/p&gt;
 </description>
     </item>
     
@@ -669,24 +816,6 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
       <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/harke2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Virus-host relationships of marine single-celled eukaryotes resolved from metatranscriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Integrating &#39;big data&#39; into aquatic ecology: Challenges and opportunities</title>
-      <link>https://alexanderlabwhoi.github.io/publication/durden2017/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/durden2017/</guid>
       <description></description>
     </item>
     

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2020 14:38:55 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/tags/metatranscriptomics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bioinformatics in Light of Intercallibration</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</link>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</guid>
+      <description>A month ago, I had the opportunity to participate in the Oceans Carbon Biogeochemistry Nucleic Acids ‘Omics Standardization and Intercalibration Workshop hosted at UNC Chappel Hill. The goal of this workshop was to come together as a community and discuss the challenges (and opportunities) we face as we continue to gather samples across the ocean for various nucleic acid omics (metabarcoding or amplicon sequencing, metagenomics, and metatranscriptomics). As was done through GeoTraces, intercomparability of measures requires consistency of measures ntercallibration is absolutely necesseary</description>
+    </item>
     
     <item>
       <title>Transcriptional patterns identify resource controls on the diazotroph Trichodesmium in the Atlantic and Pacific oceans</title>

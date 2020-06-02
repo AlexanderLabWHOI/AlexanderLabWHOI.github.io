@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 10 Feb 2020 13:00:05 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 15:25:12 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using `rclone` to manage data on a remote server via Google Drive</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</link>
+      <pubDate>Sat, 30 May 2020 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</guid>
+      <description>There are a lot of reasons to set up Google Drive integration on your remote HPC system. In particular if your institution has provided you access to G Suite, there is a lot of storage available on Google Drive. Sometimes you might want to access files from multiple HPC systems, or have them at your fingertips on your local machine in addition to a remote server. This blog post will go over how to set up and use rclone with Google Drive on your remote server.</description>
+    </item>
     
     <item>
       <title>Alexander Lab at OSM 2020</title>
@@ -19,6 +28,15 @@
       
       <guid>https://alexanderlabwhoi.github.io/post/2020-osm/</guid>
       <description>I am heading to Ocean Sciences Meeting next week in San Diego along with Laura Blum, an undergraduate researcher doing her thesis research with Maria Pachiadaki, Erin Eggleston, and myself. We have two presentations (that are bookending the meeting &amp;ndash; Monday and Friday) that are both related to work we have been doing looking at MAGs from the larger size fraction metagenomic datasets generated as part of the Tara Expedition.</description>
+    </item>
+    
+    <item>
+      <title>Bioinformatics in Light of Intercallibration</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</link>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</guid>
+      <description>A month ago, I had the opportunity to participate in the Oceans Carbon Biogeochemistry Nucleic Acids ‘Omics Standardization and Intercalibration Workshop hosted at UNC Chappel Hill. The goal of this workshop was to come together as a community and discuss the challenges (and opportunities) we face as we continue to gather samples across the ocean for various nucleic acid omics (metabarcoding or amplicon sequencing, metagenomics, and metatranscriptomics). As was done through GeoTraces, intercomparability of measures requires consistency of measures ntercallibration is absolutely necesseary</description>
     </item>
     
     <item>

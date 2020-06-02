@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 18:30:13 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 13:00:05 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/halexand/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Alexander Lab at OSM 2020</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-osm/</link>
+      <pubDate>Mon, 10 Feb 2020 13:00:05 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-osm/</guid>
+      <description>I am heading to Ocean Sciences Meeting next week in San Diego along with Laura Blum, an undergraduate researcher doing her thesis research with Maria Pachiadaki, Erin Eggleston, and myself. We have two presentations (that are bookending the meeting &amp;ndash; Monday and Friday) that are both related to work we have been doing looking at MAGs from the larger size fraction metagenomic datasets generated as part of the Tara Expedition.</description>
+    </item>
+    
+    <item>
+      <title>Bioinformatics in Light of Intercallibration</title>
+      <link>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</link>
+      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</guid>
+      <description>A month ago, I had the opportunity to participate in the Oceans Carbon Biogeochemistry Nucleic Acids ‘Omics Standardization and Intercalibration Workshop hosted at UNC Chappel Hill. The goal of this workshop was to come together as a community and discuss the challenges (and opportunities) we face as we continue to gather samples across the ocean for various nucleic acid omics (metabarcoding or amplicon sequencing, metagenomics, and metatranscriptomics). As was done through GeoTraces, intercomparability of measures requires consistency of measures ntercallibration is absolutely necesseary</description>
+    </item>
     
     <item>
       <title>Running Jupyter Notebooks Remotely with Slurm</title>
