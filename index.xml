@@ -7,8 +7,35 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Tue, 02 Jun 2020 15:25:12 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2020 12:04:32 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Johnson 2020</title>
+      <link>https://alexanderlabwhoi.github.io/tmp/johnson-2020/</link>
+      <pubDate>Wed, 16 Sep 2020 12:04:32 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tmp/johnson-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Johnson 2020</title>
+      <link>https://alexanderlabwhoi.github.io/publication/johnson-2020/</link>
+      <pubDate>Wed, 16 Sep 2020 12:03:33 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/johnson-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Caron 2016</title>
+      <link>https://alexanderlabwhoi.github.io/content/publication/caron-2016/</link>
+      <pubDate>Wed, 16 Sep 2020 11:58:37 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/content/publication/caron-2016/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Using `rclone` to manage data on a remote server via Google Drive</title>
@@ -147,33 +174,6 @@ chmod 755 rclone-*-linux-amd64/rclone
 &lt;h4 id=&#34;eukaryotic-genome-discovery-scalable-and-automated-retrieval-of-eukaryotic-metagenome-assembled-genomes-mags-from-a-global-scale-dataset&#34;&gt;&lt;strong&gt;Eukaryotic genome discovery: Scalable and automated retrieval of eukaryotic metagenome assembled genomes (MAGs) from a global-scale dataset&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;Harriet Alexander&lt;/strong&gt; &amp;amp;  Sarah K Hu &lt;br&gt; Session# OB53C: &lt;em&gt;Toward BioGeoSCAPES: Exploring Molecular Drivers of Ocean Metabolism and Biogeochemistry&lt;/em&gt; &lt;br&gt; Friday 21 February 2020 14:30 - 14:45, SDCC - 2, UL&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bioinformatics in Light of Intercallibration</title>
-      <link>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</link>
-      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</guid>
-      <description>&lt;p&gt;A month ago, I had the opportunity to participate in the Oceans Carbon Biogeochemistry Nucleic Acids ‘Omics Standardization and Intercalibration Workshop hosted at UNC Chappel Hill. The goal of this workshop was to come together as a community and discuss the challenges (and opportunities) we face as we continue to gather samples across the ocean for various nucleic acid omics (metabarcoding or amplicon sequencing, metagenomics, and metatranscriptomics). As was done through GeoTraces, intercomparability of measures requires consistency of measures ntercallibration is absolutely necesseary&lt;/p&gt;
-
-&lt;p&gt;The meeting brought together a group of experts in these types of &amp;lsquo;omic measurements.&lt;/p&gt;
-
-&lt;p&gt;The first day progressed as a series of high-level talks on the state of the field in various metrics&lt;/p&gt;
-
-&lt;p&gt;I was asked to give a general talk on the state of the field of bioinformatics and &amp;lsquo;omics workflows and how computational biology relates to intercallibration efforts. A rather broad topic for a 15 minute talk, if you ask me, but a fun challenge and it really got me thinking. What is the role of bioinformatics in intercallibration? I spent a lot of time thinking about the issue in the months leading up to the conference and chatted about it with Maria, Sarah, and Arianna.&lt;/p&gt;
-
-&lt;p&gt;After a lot of musing I settled upon a few higher-order thoughts on the subject:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Bioinformatics is absolutely crucial but not assessing the degree of intercalibration.&lt;/li&gt;
-&lt;li&gt;Computational biology is a constantly evolving field; there is utility in reanalysis; no perfect tool exists.&lt;/li&gt;
-&lt;li&gt;Pipelines and workflow engines will help us keep up with the evolution of computational biology.&lt;/li&gt;
-&lt;li&gt;Bioinformatics is not going to be the most challenging step in this process.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;In this post I&lt;/p&gt;
 </description>
     </item>
     
@@ -798,24 +798,6 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
       <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/guy-haim2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Transcriptional response of the harmful raphidophyte Heterosigma akashiwo to nitrate and phosphate stress</title>
-      <link>https://alexanderlabwhoi.github.io/publication/haley2017/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/haley2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Conserved transcriptional responses to nutrient stress in bloom-forming algae</title>
-      <link>https://alexanderlabwhoi.github.io/publication/harke2017/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/harke2017/</guid>
       <description></description>
     </item>
     

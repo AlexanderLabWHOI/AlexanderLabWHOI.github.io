@@ -31,15 +31,6 @@
     </item>
     
     <item>
-      <title>Bioinformatics in Light of Intercallibration</title>
-      <link>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</link>
-      <pubDate>Wed, 15 Jan 2020 14:38:55 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2020-calibrating-omics/</guid>
-      <description>A month ago, I had the opportunity to participate in the Oceans Carbon Biogeochemistry Nucleic Acids ‘Omics Standardization and Intercalibration Workshop hosted at UNC Chappel Hill. The goal of this workshop was to come together as a community and discuss the challenges (and opportunities) we face as we continue to gather samples across the ocean for various nucleic acid omics (metabarcoding or amplicon sequencing, metagenomics, and metatranscriptomics). As was done through GeoTraces, intercomparability of measures requires consistency of measures ntercallibration is absolutely necesseary</description>
-    </item>
-    
-    <item>
       <title>Running Jupyter Notebooks Remotely Using Windows</title>
       <link>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</link>
       <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
