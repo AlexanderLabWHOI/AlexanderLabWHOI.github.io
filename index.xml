@@ -20,15 +20,6 @@
     </item>
     
     <item>
-      <title>Johnson 2020</title>
-      <link>https://alexanderlabwhoi.github.io/publication/johnson-2020/</link>
-      <pubDate>Wed, 16 Sep 2020 12:03:33 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/johnson-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Caron 2016</title>
       <link>https://alexanderlabwhoi.github.io/content/publication/caron-2016/</link>
       <pubDate>Wed, 16 Sep 2020 11:58:37 -0400</pubDate>
@@ -158,6 +149,15 @@ chmod 755 rclone-*-linux-amd64/rclone
     </item>
     
     <item>
+      <title>Auxotrophic interactions:  A stabilizing attribute of aquatic microbial communities?</title>
+      <link>https://alexanderlabwhoi.github.io/publication/johnson-2020/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/johnson-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Alexander Lab at OSM 2020</title>
       <link>https://alexanderlabwhoi.github.io/post/2020-osm/</link>
       <pubDate>Mon, 10 Feb 2020 13:00:05 -0500</pubDate>
@@ -175,6 +175,15 @@ chmod 755 rclone-*-linux-amd64/rclone
 
 &lt;p&gt;&lt;strong&gt;Harriet Alexander&lt;/strong&gt; &amp;amp;  Sarah K Hu &lt;br&gt; Session# OB53C: &lt;em&gt;Toward BioGeoSCAPES: Exploring Molecular Drivers of Ocean Metabolism and Biogeochemistry&lt;/em&gt; &lt;br&gt; Friday 21 February 2020 14:30 - 14:45, SDCC - 2, UL&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Transcriptional response of Emiliania huxleyi under changing nutrient environments in the North Pacific Subtropical Gyre</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander-2020/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -789,15 +798,6 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
       <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/hu2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>What are the type, direction, and strength of species, community, and ecosystem responses to warming in aquatic mesocosm studies and their dependency on experimental characteristics? A systematic review protocol</title>
-      <link>https://alexanderlabwhoi.github.io/publication/guy-haim2017/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/guy-haim2017/</guid>
       <description></description>
     </item>
     
