@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mmarsbris on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/mmarsbris/</link>
+    <description>Recent content in mmarsbris on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/mmarsbris/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/mmarsbris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/mmarsbris/</guid>
+      <description>Maggi Brisbin is a postdoc at WHOI. She recently completed her PhD at the Okinawa Institute of Science and Technology in Okinawa, Japan. Her thesis work focused on the symbiotic relationship between the haptophyte algae, Phaeocystis, and acantharian hosts. Maggi is particularly interested in how interactions between the smallest organisms can affect large scale processes in the ocean. At WHOI she will continue to study microbial interactions and will focus on how bacteria might influence the ecological success of different Phaeocystis species in varying environmental conditions.</description>
+    </item>
+    
+  </channel>
+</rss>

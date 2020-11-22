@@ -203,6 +203,11 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/author/mmarsbris/</loc>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/author/shu/</loc>
     </url>
   
@@ -1804,15 +1809,15 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/categories/bioinformatics/</loc>
-      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/tags/bioinformatics/</loc>
+      <lastmod>2018-10-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/tags/bioinformatics/</loc>
-      <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/categories/bioinformatics/</loc>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1832,15 +1837,15 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/categories/computation/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/tags/computation/</loc>
+      <lastmod>2019-04-29T16:06:30-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/tags/computation/</loc>
-      <lastmod>2019-04-29T16:06:30-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/categories/computation/</loc>
+      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1860,14 +1865,14 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/categories/conferences/</loc>
+      <loc>https://alexanderlabwhoi.github.io/tags/conferences/</loc>
       <lastmod>2020-02-10T13:00:05-05:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/tags/conferences/</loc>
+      <loc>https://alexanderlabwhoi.github.io/categories/conferences/</loc>
       <lastmod>2020-02-10T13:00:05-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -2141,6 +2146,12 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/microcosm/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/mmarsbris/</loc>
       <priority>0</priority>
     </url>
   
