@@ -3,6 +3,12 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/post/2021-02-hiring/</loc>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tmp/johnson-2020/</loc>
       <lastmod>2020-09-16T12:04:32-04:00</lastmod>
     </url>
@@ -283,8 +289,15 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/alexander-lab/</loc>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/</loc>
-      <lastmod>2020-09-16T12:04:32-04:00</lastmod>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1275,6 +1288,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/categories/news/</loc>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/authors/nicholas-a-bokulich/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -1339,7 +1359,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/post/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
     </url>
   
     <url>
@@ -1991,6 +2011,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/genomics/</loc>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/global-warming/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -1999,7 +2026,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/halexand/</loc>
-      <lastmod>2020-02-10T13:00:05-05:00</lastmod>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2007,6 +2034,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/harmful-algal-bloom/</loc>
       <lastmod>2017-09-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/hiring/</loc>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2138,6 +2172,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/modeling/</loc>
       <lastmod>2020-06-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/molecular/</loc>
+      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
