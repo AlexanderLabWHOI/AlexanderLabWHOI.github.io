@@ -37,6 +37,24 @@
     </item>
     
     <item>
+      <title>EUKulele: Taxonomic annotation of the unsung eukaryotic microbes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DMSP synthesis genes distinguish two types of DMSP producer phenotypes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mc-parland-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mc-parland-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Johnson 2020</title>
       <link>https://alexanderlabwhoi.github.io/tmp/johnson-2020/</link>
       <pubDate>Wed, 16 Sep 2020 12:04:32 -0400</pubDate>
@@ -793,29 +811,6 @@ PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
 
 &lt;p&gt;So, consider this blog my attempt to habituate myself to making my thoughts more public. Topics to be covered will likely include: science, new PI life, computational blunders and wins, and life in a small, science-y fishing village.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</title>
-      <link>https://alexanderlabwhoi.github.io/publication/bolyen2018/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/bolyen2018/</guid>
-      <description>
-
-&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;We present QIIME 2, an open-source microbiome data science platform accessible to users spanning the microbiome research ecosystem, from scientists and engineers to clinicians and policy makers. QIIME 2 provides new features that will drive the next generation of microbiome research. These include interactive spatial and temporal analysis and visualization tools, support for metabolomics and shotgun metagenomics analysis, and automated data provenance tracking to ensure reproducible, transparent microbiome data science.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Transcriptional patterns identify resource controls on the diazotroph Trichodesmium in the Atlantic and Pacific oceans</title>
-      <link>https://alexanderlabwhoi.github.io/publication/rouco2018/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/rouco2018/</guid>
-      <description></description>
     </item>
     
   </channel>
