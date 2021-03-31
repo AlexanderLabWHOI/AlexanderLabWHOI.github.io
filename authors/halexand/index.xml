@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Tue, 09 Feb 2021 15:25:12 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 30 Mar 2021 15:25:12 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/halexand/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fixing my matplotlib font woes</title>
+      <link>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</link>
+      <pubDate>Tue, 30 Mar 2021 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</guid>
+      <description>Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this other blog post for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extendability and power for my notebooks that my personal laptop can&amp;rsquo;t handle, minimizing file storage on my local machine, etc.</description>
+    </item>
     
     <item>
       <title>We are hiring!</title>

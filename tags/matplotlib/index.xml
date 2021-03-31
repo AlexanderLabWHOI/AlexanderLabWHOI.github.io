@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on Alexander Lab @ WHOI</title>
-    <link>https://alexanderlabwhoi.github.io/tags/python/</link>
-    <description>Recent content in python on Alexander Lab @ WHOI</description>
+    <title>matplotlib on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/matplotlib/</link>
+    <description>Recent content in matplotlib on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
     <lastBuildDate>Tue, 30 Mar 2021 15:25:12 -0400</lastBuildDate>
     
-	<atom:link href="https://alexanderlabwhoi.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

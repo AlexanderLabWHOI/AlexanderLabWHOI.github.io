@@ -3,6 +3,12 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</loc>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/post/2021-02-hiring/</loc>
       <lastmod>2021-02-09T15:25:12-04:00</lastmod>
     </url>
@@ -316,7 +322,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/</loc>
-      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1427,7 +1433,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/post/</loc>
-      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
     </url>
   
     <url>
@@ -1912,7 +1918,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/categories/computation/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2009,6 +2015,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/data-visualization/</loc>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/de-novo-assembly/</loc>
       <lastmod>2018-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -2065,6 +2078,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/fonts/</loc>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/freshwater/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -2101,7 +2121,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/halexand/</loc>
-      <lastmod>2021-02-09T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2164,6 +2184,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/marine-microbial-eukaryote/</loc>
       <lastmod>2018-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/matplotlib/</loc>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2345,6 +2372,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/protists/</loc>
       <lastmod>2016-11-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/python/</loc>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
