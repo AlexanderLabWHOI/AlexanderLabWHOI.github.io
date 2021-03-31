@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Linux machine font issues">
+  <meta name="description" content="How to install MS core fonts with conda">
 
   
   <link rel="alternate" hreflang="en-us" href="https://alexanderlabwhoi.github.io/post/2021-03-missingfont/">
@@ -136,7 +136,7 @@
   <meta property="og:site_name" content="Alexander Lab @ WHOI">
   <meta property="og:url" content="https://alexanderlabwhoi.github.io/post/2021-03-missingfont/">
   <meta property="og:title" content="Fixing my matplotlib font woes | Alexander Lab @ WHOI">
-  <meta property="og:description" content="Linux machine font issues"><meta property="og:image" content="https://alexanderlabwhoi.github.io/post/2021-03-missingfont/featured.png">
+  <meta property="og:description" content="How to install MS core fonts with conda"><meta property="og:image" content="https://alexanderlabwhoi.github.io/post/2021-03-missingfont/featured.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2021-03-30T15:25:12-04:00">
@@ -697,7 +697,7 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this <a href="/post/2019-03-08_jpn_slurm/" target="_blank">other blog post</a> for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extendability and power for my notebooks that my personal laptop can&rsquo;t handle, minimizing file storage on my local machine, etc. etc.).</p>
+<p>Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this <a href="/post/2019-03-08_jpn_slurm/" target="_blank">other blog post</a> for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extensibility and power for my notebooks that my personal laptop can&rsquo;t handle, minimizing file storage on my local machine, etc. etc.).</p>
 
 <p>However, I <em>could not</em> get any of my font specifications to work in <code>matplotlib</code> (or any dependent programs) in my notebooks that I was running via ssh tunnel. Period.</p>
 
@@ -711,7 +711,7 @@
 plt.rcParams[&quot;font.family&quot;] = &quot;sans-serif&quot;
 </code></pre>
 
-<p>And also when I modified my <code>matplotlibrc</code> file (which you can think of as the <code>.bashrc</code> file equivalent in <code>matplotlib</code>).</p>
+<p>And also when I modified my <code>matplotlibrc</code> file (more on that later).</p>
 
 <p>I figured I was simply doing something wrong and eventually gave up on trying to fix it and just succumbed to my fate of manually changing fonts post-plotting in Adobe Illustrator. I did this for&hellip; several years.</p>
 
@@ -719,15 +719,19 @@ plt.rcParams[&quot;font.family&quot;] = &quot;sans-serif&quot;
 
 <p><img src="resources/picard-meme-facepalm.jpg" alt="Facepalm" title="Facepalm" /></p>
 
+<p>As <a href="/authors/akrinos/" target="_blank">Arianna</a> said (slacked, really) when I asked for her comments on this blog post: &ldquo;This is because unlike an OS that we’re used to working with that’s all set up out-of-the-box, HPC admins don’t really have a need to use anything but some kind of Courier New.&rdquo;</p>
+
+<p>Too true.</p>
+
 <p>And so, I present to you&hellip;</p>
 
 <h2 id="how-to-specify-fonts-in-matplotlib-when-you-are-working-on-a-linux-system">How to specify fonts in <code>matplotlib</code> when you are working on a Linux system:</h2>
 
-<p>First off, I highly recommend using <code>conda</code> environments for your plotting analysis. Regardless of what you do, the following should work&hellip; but I do recommend trying to tidy up your work spaces with <code>conda</code>.</p>
+<p>First off, I highly recommend using <code>conda</code> environments to manage research computational environments&ndash; it can enhance reproducibility and avoid package conflicts (<a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/data-science.html" target="_blank">more here</a>). For the purposes of this tutorial, I will assume that you have created a <code>conda</code> environment that has <code>matplotlib</code> installed. For the sake of demonstration my environment is called <code>general_plotting</code>.</p>
 
-<p>Conveniently, there is a conda package <a href="https://anaconda.org/conda-forge/mscorefonts" target="_blank"><code>mscorefonts</code></a> that contains all the &ldquo;core fonts&rdquo; that are used for the Web. These fonts include: Andale Mono, Arial, Arial Black, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana, and Webdings. While not totally comprehensive, it provides enough font variability for my purposes.</p>
+<p>Conveniently, there is a conda package <a href="https://anaconda.org/conda-forge/mscorefonts" target="_blank"><code>mscorefonts</code></a> that contains all the &ldquo;core fonts&rdquo; that are used for the Web. These fonts include: Andale Mono, Arial, Arial Black, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana, and Webdings. While not totally comprehensive, it provides enough font variety for my purposes.</p>
 
-<p>After having activated whatever environment you are using (for the sake of demonstration mine is called <code>general_plotting</code>), you can then install the <code>mscorefonts</code> package.</p>
+<p>After having activated whatever environment you are using, you can install the <code>mscorefonts</code> package.</p>
 
 <pre><code>conda activate general_plotting
 conda install -c conda-forge mscorefonts
@@ -742,7 +746,24 @@ conda install -c conda-forge mscorefonts
 
 <p>Now, any adjustments you want to make should be fairly straightforward!</p>
 
-<p>I have found it easiest to directly edit my <code>matplotlibrc</code> file as I generally like to use Arial as the default font for all my plots. This file can be a bit buried (especially if you are using <code>conda</code> environments). One easy way to find your file is to open a notebook within whatever environment you are using and type the following:</p>
+<p>Now, you should be able to specify a font in your notebook preamble as you wish:</p>
+
+<pre><code>import matplotlib
+matplotlib.rcParams['font.family'] = &quot;sans-serif&quot;
+matplotlib.rcParams['font.sans-serif'] = &quot;Comic Sans MS&quot;
+</code></pre>
+
+<p>The above would make all plots in the notebook default to Comic Sans.</p>
+
+<p>You should also be able to specify fonts directly on some figure portion (e.g. y-label):</p>
+
+<pre><code>fig, ax = plt.plot(x,y) #some random variables
+ax.set_ylabel(&quot;First variable&quot;, fontname=&quot;Arial&quot;, fontsize=12)
+</code></pre>
+
+<h2 id="setting-a-default-font">Setting a default font</h2>
+
+<p>I generally like all my plots to look relatively similar. My preferred font is Arial &ndash; it is tidy and generally easy to read. If you want to specify a default font for all your plots without having to specify the <code>rcParams</code> in each notebook you can modify the <code>matplotlibrc</code> file for your environment. You can think of the <code>matplotlibrc</code> as similar to your <code>.bashrc</code> &ndash; it controls some of the basic functionality and preferences for your <code>matplotlib</code> plotting. This file can be a bit buried (especially when using <code>conda</code> environments). One easy way to find your file is to open a notebook within whatever environment you are using and type the following:</p>
 
 <pre><code>import matplotlib
 print(matplotlib.matplotlib_fname())
@@ -761,7 +782,7 @@ font.sans-serif: Arial
 <pre><code>pdf.fonttype:       42
 </code></pre>
 
-<p>And with that, I say to you happy plotting! You can now change your fonts as you please and not be stuck with DejaVu Sans (a font that I really, <em>really</em>, <strong>REALLY</strong> dislike).</p>
+<p>You can now change your fonts as you please and not be stuck with DejaVu Sans (a font that I really, <em>really</em>, <strong>REALLY</strong> dislike).</p>
 
 <p>Happy plotting!</p>
 
