@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cnobrega on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/cnobrega/</link>
+    <description>Recent content in cnobrega on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/cnobrega/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/cnobrega/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/cnobrega/</guid>
+      <description>Celeste Nobrega is an undergraduate student in the class of 2022 at Wheaton College. She is working towards a degree in Bioinformatics, and is excited about her coursework including genomics, biology, ecology, statistics, and computer science. Past research experiences in 2020 include studying the effects of chronic cortisol exposure in zebrafish embryos where she focused my project on the response in gene expression to different cortisol treatments and collection times. In 2019, she worked on a software development and research team for a webtool called Lexos.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -217,6 +217,11 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/author/cnobrega/</loc>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/author/halexand/</loc>
     </url>
   
@@ -1905,6 +1910,12 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/climate-change/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/cnobrega/</loc>
       <priority>0</priority>
     </url>
   
