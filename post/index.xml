@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>`XQuartz` and remote integration for RStudio</title>
+      <link>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</link>
+      <pubDate>Wed, 17 Mar 2021 10:11:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</guid>
+      <description>RStudio was once my favorite and most often-used IDE. And there are still a lot of reasons to use it, even if you&amp;rsquo;ve gotten used to something like Spyder or Jupyter. RStudio is a clean IDE that allows you to simultaneously view your filesystem, environment variables, R scripts, and console, and is all very specifically tailored to R, which is important in many cases (R is an amazing but finicky language).</description>
+    </item>
+    
+    <item>
       <title>We are hiring!</title>
       <link>https://alexanderlabwhoi.github.io/post/2021-02-hiring/</link>
       <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>

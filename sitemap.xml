@@ -9,6 +9,12 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</loc>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/post/2021-02-hiring/</loc>
       <lastmod>2021-02-09T15:25:12-04:00</lastmod>
     </url>
@@ -223,6 +229,11 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/author/halexand/</loc>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/author/krice/</loc>
     </url>
   
     <url>
@@ -850,7 +861,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/hpc/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1457,14 +1468,14 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/r/</loc>
-      <lastmod>2019-04-29T16:06:30-04:00</lastmod>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/rstudio/</loc>
-      <lastmod>2019-04-29T16:06:30-04:00</lastmod>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1839,7 +1850,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/akrinos/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1936,14 +1947,14 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/computing/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/conda/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1992,7 +2003,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/categories/data-management/</loc>
-      <lastmod>2020-06-02T15:25:12-04:00</lastmod>
+      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2168,6 +2179,12 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/jupyter-notebook/</loc>
       <lastmod>2019-04-29T16:06:30-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/krice/</loc>
       <priority>0</priority>
     </url>
   
