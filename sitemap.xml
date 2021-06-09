@@ -3,14 +3,14 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</loc>
-      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</loc>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
     </url>
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</loc>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
     </url>
   
     <url>
@@ -338,7 +338,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/</loc>
-      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -861,7 +861,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/hpc/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1449,7 +1449,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/post/</loc>
-      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
     </url>
   
     <url>
@@ -1468,14 +1468,14 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/r/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/rstudio/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1850,7 +1850,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/akrinos/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1898,15 +1898,15 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/categories/bioinformatics/</loc>
-      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/tags/bioinformatics/</loc>
+      <lastmod>2018-10-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/tags/bioinformatics/</loc>
-      <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/categories/bioinformatics/</loc>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1932,13 +1932,6 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/categories/computation/</loc>
-      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
       <loc>https://alexanderlabwhoi.github.io/tags/computation/</loc>
       <lastmod>2019-04-29T16:06:30-04:00</lastmod>
       <priority>0</priority>
@@ -1946,28 +1939,35 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/categories/computation/</loc>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/computing/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/conda/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://alexanderlabwhoi.github.io/categories/conferences/</loc>
-      <lastmod>2020-02-10T13:00:05-05:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/conferences/</loc>
+      <lastmod>2020-02-10T13:00:05-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/categories/conferences/</loc>
       <lastmod>2020-02-10T13:00:05-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -2003,7 +2003,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/categories/data-management/</loc>
-      <lastmod>2021-03-17T10:11:12-04:00</lastmod>
+      <lastmod>2021-06-09T10:11:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2405,15 +2405,15 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/categories/python/</loc>
-      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/tags/python/</loc>
+      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/tags/python/</loc>
-      <lastmod>2021-03-30T15:25:12-04:00</lastmod>
+      <loc>https://alexanderlabwhoi.github.io/categories/python/</loc>
+      <lastmod>2019-07-23T15:25:12-04:00</lastmod>
       <priority>0</priority>
     </url>
   

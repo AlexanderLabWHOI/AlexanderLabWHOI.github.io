@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Tue, 30 Mar 2021 15:25:12 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jun 2021 10:11:12 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/categories/computation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>`XQuartz` and remote integration for RStudio</title>
+      <link>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</link>
+      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</guid>
+      <description>RStudio was once my favorite and most often-used IDE. And there are still a lot of reasons to use it, even if you&amp;rsquo;ve gotten used to something like Spyder or Jupyter. RStudio is a clean IDE that allows you to simultaneously view your filesystem, environment variables, R scripts, and console, and is all very specifically tailored to R, which is important in many cases (R is an amazing but finicky language).</description>
+    </item>
     
     <item>
       <title>Fixing my matplotlib font woes</title>
@@ -19,15 +28,6 @@
       
       <guid>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</guid>
       <description>Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this other blog post for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extensibility and power for my notebooks that my personal laptop can&amp;rsquo;t handle, minimizing file storage on my local machine, etc.</description>
-    </item>
-    
-    <item>
-      <title>`XQuartz` and remote integration for RStudio</title>
-      <link>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</link>
-      <pubDate>Wed, 17 Mar 2021 10:11:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</guid>
-      <description>RStudio was once my favorite and most often-used IDE. And there are still a lot of reasons to use it, even if you&amp;rsquo;ve gotten used to something like Spyder or Jupyter. RStudio is a clean IDE that allows you to simultaneously view your filesystem, environment variables, R scripts, and console, and is all very specifically tailored to R, which is important in many cases (R is an amazing but finicky language).</description>
     </item>
     
     <item>
