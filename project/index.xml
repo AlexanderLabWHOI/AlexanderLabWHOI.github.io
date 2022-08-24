@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/project/</link>
+    <description>Recent content in Projects on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 02 Jul 2021 15:15:49 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bio-GO-SHIP: Linking marine biodiversity and biogeochemistry</title>
+      <link>https://alexanderlabwhoi.github.io/project/biogoship/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/biogoship/</guid>
+      <description>The Bio-GO-SHIP program aims to integrate the latest biological observing technologies into the Global Ocean Ship-based Hydrographic Investigation Program (GO-SHIP, http://go-ship.org/). GO-SHIP runs a global repeat-section effort, wherein reference sections that transect major ocean regions are sampled every decade to observe global changes. Bio-GO-SHIP measurements will include optical, flow cytometric, metagenomic and metatranscriptomic, and particulate sampling. Compared to previous global ocean sequencing efforts, Bio-GO-SHIP will sample biological parameters at high spatial and vertical resolution, with ‘omic samples being taken approximately every degree, or approximately 26.</description>
+    </item>
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
+      <description>Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics).</description>
+    </item>
+    
+    <item>
+      <title>Ecological Role of Eukaryotic Pangenomes</title>
+      <link>https://alexanderlabwhoi.github.io/project/ehuxleyi/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/ehuxleyi/</guid>
+      <description>Coccolithophores, a group of calcifying marine phytoplankton within the phylum Haptophyta, play a significant role in marine biogeochemical cycles, particularly in those of carbon and sulfur. Emiliania huxleyi is one of the most abundant extant coccolithophore species in the ocean, typified by its cosmopolitan distribution and ability to form large blooms. Intra-specific variability in physiology (e.g. enzymatic rates, morphology, growth rates) of E. huxleyi has long been known in cultured isolates.</description>
+    </item>
+    
+    <item>
+      <title>EukHeist: Recovering Eukaryotic MAGs from Metagenomes</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukheist/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukheist/</guid>
+      <description>Eukaryotic microbes, or protists, are key drivers of marine ecosystems, with roles ranging from primary producers (phytoplankton) to consumers (heterotrophs or mixotrophs). As with their bacteria and archaea, many protists are difficult or impossible to culture. This has limited our ability to directly interrogate their biology in the laboratory and has led us to underestimate their diversity across marine ecosystems. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.</description>
+    </item>
+    
+    <item>
+      <title>Phaeocystis</title>
+      <link>https://alexanderlabwhoi.github.io/project/phaeocystis/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/phaeocystis/</guid>
+      <description>Phytoplankton blooms are central to the ecology of Cape Cod Bay, where historically spring blooms of diatoms have been rapidly grazed, shuttling biomass through the food web. In more recent years, blooms of a haptophyte, Phaeocystis pouchetii have become more frequent in Cape Cod Bay. These organisms produce large gelatinous colonies, which prevents blooms of this haptophyte from being effectively grazed, hence reducing carbon cycling in the upper water column. We are partnering with the Center for Coastal Studies in Provincetown to find and study these blooms.</description>
+    </item>
+    
+    <item>
+      <title>SeqWell for Marine Microbes</title>
+      <link>https://alexanderlabwhoi.github.io/project/seqwell/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/seqwell/</guid>
+      <description>A central project aim is adaptation of a new single cell transcriptome (SCT) sequencing approach called SeqWell for analysis of natural microbial communities. The method addresses two overarching obstacles to microbial symbiosis investigations: 1) the requirement that symbionts be brought into culture for ‘omics analyses, and 2) time resolution limits on bulk approaches because populations are asynchronous. With enough SCTs, pseudotime methods can establish the time course of host and symbiont interactions.</description>
+    </item>
+    
+    <item>
+      <title>Thermal Acclimation in Emiliania huxleyi</title>
+      <link>https://alexanderlabwhoi.github.io/project/thermal_ehux/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/thermal_ehux/</guid>
+      <description>Emiliania huxleyi is a globally-distributed coccolithophore with a major influence on beogeochemical cycling via the production of large, ephemeral blooms. Because of its global distribution, Emiliania huxleyi has a wide thermal range and apparently a high capacity for short-term acclimation and long-term adaptation to thermal conditions. We are studying this capacity in the lab via both traditional experimental acclimation approaches in semi-continuous culture, and via tracking gene expression changes in response to thermal conditioning in the taxon via transcriptomics.</description>
+    </item>
+    
+    <item>
+      <title>eukrhythmic: automating metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukrhythmic/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukrhythmic/</guid>
+      <description>Metatranscriptomics is a useful probe into the members of an ecological community, capturing community members and their potential functions in a single sequencing effort. Because transcribed RNA is sequenced, via thorough processing of metatrancriptomes, we can decipher both the members constituting a community as well as the genes that each member was expressing at the instant that the sample was collected. Metatranscriptomics is a relatively immature pursuit as compared to genomics or transcriptomics.</description>
+    </item>
+    
+  </channel>
+</rss>

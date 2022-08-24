@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thermal on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/thermal/</link>
+    <description>Recent content in Thermal on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 02 Jul 2021 15:15:49 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/thermal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thermal Acclimation in Emiliania huxleyi</title>
+      <link>https://alexanderlabwhoi.github.io/project/thermal_ehux/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/thermal_ehux/</guid>
+      <description>Emiliania huxleyi is a globally-distributed coccolithophore with a major influence on beogeochemical cycling via the production of large, ephemeral blooms. Because of its global distribution, Emiliania huxleyi has a wide thermal range and apparently a high capacity for short-term acclimation and long-term adaptation to thermal conditions. We are studying this capacity in the lab via both traditional experimental acclimation approaches in semi-continuous culture, and via tracking gene expression changes in response to thermal conditioning in the taxon via transcriptomics.</description>
+    </item>
+    
+  </channel>
+</rss>

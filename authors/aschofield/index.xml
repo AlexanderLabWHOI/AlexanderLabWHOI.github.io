@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aschofield on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/aschofield/</link>
+    <description>Recent content in aschofield on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/aschofield/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/aschofield/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/aschofield/</guid>
+      <description>Alese is currently pursuing a degree in Biology from Massasoit Community College. A lifelong leaner and science-lover, her studies have spanned a variety of subjects, including how urbanization impacts native pollinators; community outreach through a floating classroom to encourage children to engage with the marine world around them; and most recently, has begun to study the effect of rising oceanic temperatures on bacterial vitamin-B12 metabolism via Altermonas macleodii and Ruegeria pomeryoi.</description>
+    </item>
+    
+  </channel>
+</rss>

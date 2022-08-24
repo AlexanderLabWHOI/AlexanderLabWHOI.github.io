@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bio-GO-SHIP on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/bio-go-ship/</link>
+    <description>Recent content in Bio-GO-SHIP on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 02 Jul 2021 15:15:49 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/bio-go-ship/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bio-GO-SHIP: Linking marine biodiversity and biogeochemistry</title>
+      <link>https://alexanderlabwhoi.github.io/project/biogoship/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/biogoship/</guid>
+      <description>The Bio-GO-SHIP program aims to integrate the latest biological observing technologies into the Global Ocean Ship-based Hydrographic Investigation Program (GO-SHIP, http://go-ship.org/). GO-SHIP runs a global repeat-section effort, wherein reference sections that transect major ocean regions are sampled every decade to observe global changes. Bio-GO-SHIP measurements will include optical, flow cytometric, metagenomic and metatranscriptomic, and particulate sampling. Compared to previous global ocean sequencing efforts, Bio-GO-SHIP will sample biological parameters at high spatial and vertical resolution, with ‘omic samples being taken approximately every degree, or approximately 26.</description>
+    </item>
+    
+  </channel>
+</rss>

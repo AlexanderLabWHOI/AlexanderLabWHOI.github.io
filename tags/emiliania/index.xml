@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emiliania on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/tags/emiliania/</link>
+    <description>Recent content in Emiliania on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 02 Jul 2021 15:15:49 -0400</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/tags/emiliania/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ecological Role of Eukaryotic Pangenomes</title>
+      <link>https://alexanderlabwhoi.github.io/project/ehuxleyi/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/ehuxleyi/</guid>
+      <description>Coccolithophores, a group of calcifying marine phytoplankton within the phylum Haptophyta, play a significant role in marine biogeochemical cycles, particularly in those of carbon and sulfur. Emiliania huxleyi is one of the most abundant extant coccolithophore species in the ocean, typified by its cosmopolitan distribution and ability to form large blooms. Intra-specific variability in physiology (e.g. enzymatic rates, morphology, growth rates) of E. huxleyi has long been known in cultured isolates.</description>
+    </item>
+    
+    <item>
+      <title>SeqWell for Marine Microbes</title>
+      <link>https://alexanderlabwhoi.github.io/project/seqwell/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/seqwell/</guid>
+      <description>A central project aim is adaptation of a new single cell transcriptome (SCT) sequencing approach called SeqWell for analysis of natural microbial communities. The method addresses two overarching obstacles to microbial symbiosis investigations: 1) the requirement that symbionts be brought into culture for ‘omics analyses, and 2) time resolution limits on bulk approaches because populations are asynchronous. With enough SCTs, pseudotime methods can establish the time course of host and symbiont interactions.</description>
+    </item>
+    
+    <item>
+      <title>Thermal Acclimation in Emiliania huxleyi</title>
+      <link>https://alexanderlabwhoi.github.io/project/thermal_ehux/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/thermal_ehux/</guid>
+      <description>Emiliania huxleyi is a globally-distributed coccolithophore with a major influence on beogeochemical cycling via the production of large, ephemeral blooms. Because of its global distribution, Emiliania huxleyi has a wide thermal range and apparently a high capacity for short-term acclimation and long-term adaptation to thermal conditions. We are studying this capacity in the lab via both traditional experimental acclimation approaches in semi-continuous culture, and via tracking gene expression changes in response to thermal conditioning in the taxon via transcriptomics.</description>
+    </item>
+    
+  </channel>
+</rss>

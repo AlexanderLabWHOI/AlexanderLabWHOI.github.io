@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jul 2021 15:15:49 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/tags/mags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
+      <description>Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics).</description>
+    </item>
+    
+    <item>
+      <title>EukHeist: Recovering Eukaryotic MAGs from Metagenomes</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukheist/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukheist/</guid>
+      <description>Eukaryotic microbes, or protists, are key drivers of marine ecosystems, with roles ranging from primary producers (phytoplankton) to consumers (heterotrophs or mixotrophs). As with their bacteria and archaea, many protists are difficult or impossible to culture. This has limited our ability to directly interrogate their biology in the laboratory and has led us to underestimate their diversity across marine ecosystems. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.</description>
+    </item>
     
     <item>
       <title>EUKulele: Taxonomic annotation of the unsung eukaryotic microbes</title>

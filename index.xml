@@ -7,8 +7,122 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Wed, 09 Jun 2021 10:11:12 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jul 2021 15:15:49 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bio-GO-SHIP: Linking marine biodiversity and biogeochemistry</title>
+      <link>https://alexanderlabwhoi.github.io/project/biogoship/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/biogoship/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://biogoship.org/&#34; target=&#34;_blank&#34;&gt;Bio-GO-SHIP&lt;/a&gt; program aims to integrate the latest biological observing technologies into the Global Ocean Ship-based Hydrographic Investigation Program (GO-SHIP, &lt;a href=&#34;http://go-ship.org/&#34; target=&#34;_blank&#34;&gt;http://go-ship.org/&lt;/a&gt;). GO-SHIP runs a global repeat-section effort, wherein reference sections that transect major ocean regions are sampled every decade to observe global changes. Bio-GO-SHIP measurements will include optical, flow cytometric, metagenomic and metatranscriptomic, and particulate sampling. Compared to previous global ocean sequencing efforts, Bio-GO-SHIP will sample biological parameters at high spatial and vertical resolution, with ‘omic samples being taken approximately every degree, or approximately 26.5km on average between samples. My group is focused on the collection, sequencing, and preliminary assembly data product curation of the ‘omic dataset in conjunction with Adam Martiny’s lab&amp;ndash; with my lab taking the lead on the eukaryotic component.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Funding for this project provided by NOAA and the Simons Foundation&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
+      <description>&lt;p&gt;Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics). The freely-available tool is implemented as a Python package and installable via both &lt;code&gt;pip&lt;/code&gt; and &lt;code&gt;conda&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project Repository&lt;/strong&gt;: &lt;a href=&#34;https://github.com/AlexanderLabWHOI/eukulele&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/eukulele&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ecological Role of Eukaryotic Pangenomes</title>
+      <link>https://alexanderlabwhoi.github.io/project/ehuxleyi/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/ehuxleyi/</guid>
+      <description>&lt;p&gt;Coccolithophores, a group of calcifying marine phytoplankton within the phylum Haptophyta, play a significant role in marine biogeochemical cycles, particularly in those of carbon and sulfur. &lt;em&gt;Emiliania huxleyi&lt;/em&gt; is one of the most abundant extant coccolithophore species in the ocean, typified by its cosmopolitan distribution and ability to form large blooms. Intra-specific variability in physiology (e.g. enzymatic rates, morphology, growth rates) of &lt;em&gt;E. huxleyi&lt;/em&gt; has long been known in cultured isolates. The capacity for this variability was revealed through the genome sequencing of many &lt;em&gt;E. huxleyi&lt;/em&gt; strains, the results of which suggested that &lt;em&gt;E. huxleyi&lt;/em&gt; has a ‘pan genome,’ with gene content varying across strains. Intensive study of another ecologically significant taxa with a pan genome, the cyanobacteria &lt;em&gt;Prochlorococcus&lt;/em&gt;, has connected the variability of the pan genome to its niche separation and biogeographical distribution. Similar to &lt;em&gt;Prochlorococcus&lt;/em&gt;, intra-specific genomic variability may underpin the success of &lt;em&gt;E. huxleyi&lt;/em&gt; across diverse environmental conditions and underlie its observed physiological variability. Here we are combining a series of genomic, computational field surveys, and laboratory-based experiments designed to identify the function of the pan genome in &lt;em&gt;E. huxleyi&lt;/em&gt; ecology and biogeography. Through this project, we will address the questions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Is there structure to the variable gene content across strains in the pan genome of &lt;em&gt;E. huxleyi&lt;/em&gt;?&lt;/li&gt;
+&lt;li&gt;Does the environment select for particular strains of &lt;em&gt;E. huxleyi&lt;/em&gt; based on the content of the variable portion of the pan genome?&lt;/li&gt;
+&lt;li&gt;Does the composition of the variable gene set determine strain success under shifting environmental conditions?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Funding for this project provided by the National Science Foundation&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EukHeist: Recovering Eukaryotic MAGs from Metagenomes</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukheist/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukheist/</guid>
+      <description>&lt;p&gt;Eukaryotic microbes, or protists, are key drivers of marine ecosystems, with roles ranging from primary producers (phytoplankton) to consumers (heterotrophs or mixotrophs). As with their bacteria and archaea, many protists are difficult or impossible to culture. This has limited our ability to directly interrogate their biology in the laboratory and has led us to underestimate their diversity across marine ecosystems. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.g. metagenomics, metatranscriptomics), have shed light on the ecological roles, evolutionary histories, and physiological capabilities of these organisms.&lt;/p&gt;
+
+&lt;p&gt;EukHeist presents a scalable and reproducible bioinformatic pipeline to facilitate the retrieval of eukaryotic metagenome assembled genomes (MAGs) from mixed metagenomes, called EUKHeist (&lt;a href=&#34;https://github.com/AlexanderLabWHOI/EUKHeist&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/EUKHeist&lt;/a&gt;). EUKHeist streamlines and automates the discovery, recovery, quality assessment, and analysis of eukaryotic metagenome assembled genomes (MAGs) from mixed community metagenomes. EukHeist incorporates taxonoßßmic annotation through EUKulele (&lt;a href=&#34;https://github.com/AlexanderLabWHOI/EUKulele&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/EUKulele&lt;/a&gt;) as well as scalable structural and functional annotation of coding regions in eukaryotic MAGs with EukMetaSanity (&lt;a href=&#34;https://github.com/cjneely10/EukMetaSanity&#34; target=&#34;_blank&#34;&gt;https://github.com/cjneely10/EukMetaSanity&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project repository:&lt;/strong&gt; &lt;a href=&#34;https://github.com/AlexanderLabWHOI/EUKHeist&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/EUKHeist&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Funding for this project provided by the Simons Foundation and WHOI&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Phaeocystis</title>
+      <link>https://alexanderlabwhoi.github.io/project/phaeocystis/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/phaeocystis/</guid>
+      <description>&lt;p&gt;Phytoplankton blooms are central to the ecology of Cape Cod Bay, where historically spring blooms of diatoms have been rapidly grazed, shuttling biomass through the food web. In more recent years, blooms of a haptophyte, &lt;em&gt;Phaeocystis pouchetii&lt;/em&gt; have become more frequent in Cape Cod Bay. These organisms produce large gelatinous colonies, which prevents blooms of this haptophyte from being effectively grazed, hence reducing carbon cycling in the upper water column. We are partnering with the Center for Coastal Studies in Provincetown to find and study these blooms.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Funding from the Simons Foundation&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SeqWell for Marine Microbes</title>
+      <link>https://alexanderlabwhoi.github.io/project/seqwell/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/seqwell/</guid>
+      <description>&lt;p&gt;A central project aim is adaptation of a new single cell transcriptome (SCT) sequencing approach called &lt;a href=&#34;https://shaleklab.com/publication/seq-well-portable-low-cost-rna-sequencing-of-single-cells-at-high-throughput/&#34; target=&#34;_blank&#34;&gt;SeqWell&lt;/a&gt; for analysis of natural microbial communities. The method addresses two overarching obstacles to microbial symbiosis investigations: 1) the requirement that symbionts be brought into culture for ‘omics analyses, and 2) time resolution limits on bulk approaches because populations are asynchronous. With enough SCTs, pseudotime methods can establish the time course of host and symbiont interactions. SeqWell is a straightforward settling-chamber based system that can capture &amp;gt;10,000 SCTs in a single experiment. Compared to competing methods, it is also low-cost and readily adaptable for a broad range of protist shapes and sizes. We aim to address three major challenges inherent to scRNAseq of protist communities in the environment: 1) the morphological diversity (size/shapes) of protists across taxonomic groups; 2) cost; and 3) a need for bioinformatic pipelines that can analyze SCTs from natural microbial communities.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Funding for this project provided by the Moore Foundation&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thermal Acclimation in Emiliania huxleyi</title>
+      <link>https://alexanderlabwhoi.github.io/project/thermal_ehux/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/thermal_ehux/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Emiliania huxleyi&lt;/em&gt; is a globally-distributed coccolithophore with a major influence on beogeochemical cycling via the production of large, ephemeral blooms. Because of its global distribution, &lt;em&gt;Emiliania huxleyi&lt;/em&gt; has a wide thermal range and apparently a high capacity for short-term acclimation and long-term adaptation to thermal conditions. We are studying this capacity in the lab via both traditional experimental acclimation approaches in semi-continuous culture, and via tracking gene expression changes in response to thermal conditioning in the taxon via transcriptomics. Through this project, we will address the questions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Is the growth rate or the response time to change more vulnerable to thermal conditioning?&lt;/li&gt;
+&lt;li&gt;Does &lt;em&gt;Emiliania huxleyi&lt;/em&gt;&amp;rsquo;s capacity to survive in diverse thermal condition increase with exposure time?&lt;/li&gt;
+&lt;li&gt;What can we learn from more transcriptomic data under precise thermal experimental conditions? Can we apply this to unpacking global &amp;lsquo;omics datasets?&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>eukrhythmic: automating metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukrhythmic/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukrhythmic/</guid>
+      <description>&lt;p&gt;Metatranscriptomics is a useful probe into the members of an ecological community, capturing community members and their potential functions in a single sequencing effort. Because transcribed RNA is sequenced, via thorough processing of metatrancriptomes, we can decipher both the members constituting a community as well as the genes that each member was expressing at the instant that the sample was collected. Metatranscriptomics is a relatively immature pursuit as compared to genomics or transcriptomics. However, even more palpable is the lack of thorough analysis and readily available tools for metatranscriptomes from the environment. More complicated still is the use of metatranscriptomes for eukaryotes from the environment, many of which have not been previously or thoroughly sequenced and have complex genetic features. Eukrhythmic is an approach to consolidating existing assembly effort for environmental eukaryotes. The pipeline includes assembly via multiple external assembly tools, and then a process of consolidating those assemblies based on sequential clustering steps. Also included with the pipeline is the option to perform downstream functional and taxonomic annotation of retrieved transcripts.&lt;/p&gt;
+
+&lt;p&gt;The goal of this project is both to validate and provide support for the efforts of [marine] microbial ecologists that use metatranscriptomics to assess community structure and function, and to provide a tool that researchers can use to assemble their own environmental metatranscriptomes. Some questions associated with this project are:
+1. Can we recover complex communities from shuffled metatranscriptomic sequencing reads?
+2. Does the choice of assembler affect the quality of the assembly output?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project Repository&lt;/strong&gt;: &lt;a href=&#34;https://github.com/AlexanderLabWHOI/eukrhythmic&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/eukrhythmic&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>`XQuartz` and remote integration for RStudio</title>
@@ -76,6 +190,15 @@ debug1: confirm x11
 
 &lt;p&gt;&lt;img src=&#34;resources/xquartz_symbol.png&#34; alt=&#34;XQuartz in Taskbar&#34; title=&#34;Where your window will be if you have a Mac.&#34; /&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>The osmolyte ties that bind: genomic insights into synthesis and breakdown of organic osmolytes in marine microbes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mc-parland-20210/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mc-parland-20210/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -229,733 +352,6 @@ font.sans-serif: Arial
       <pubDate>Wed, 16 Sep 2020 12:04:32 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tmp/johnson-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Caron 2016</title>
-      <link>https://alexanderlabwhoi.github.io/content/publication/caron-2016/</link>
-      <pubDate>Wed, 16 Sep 2020 11:58:37 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/content/publication/caron-2016/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Using `rclone` to manage data on a remote server via Google Drive</title>
-      <link>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</link>
-      <pubDate>Tue, 02 Jun 2020 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2020-05-30-rclone/</guid>
-      <description>
-
-&lt;p&gt;There are a lot of reasons to set up Google Drive integration on your remote HPC system. In particular if your institution has provided you access to G Suite, there is a lot of storage available on Google Drive. Sometimes you might want to access files from multiple HPC systems, or have them at your fingertips on your local machine in addition to a remote server. This blog post will go over how to set up and use &lt;code&gt;rclone&lt;/code&gt; with Google Drive on your remote server. You can learn more about &lt;code&gt;rclone&lt;/code&gt; and how to use it &lt;a href=&#34;https://rclone.org/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To get started, you&amp;rsquo;ll need to have a valid Google Drive account (personal or G Suite), and you&amp;rsquo;ll need to download &lt;code&gt;rclone&lt;/code&gt; on your HPC server. The easiest way to install &lt;code&gt;rclone&lt;/code&gt; is using &lt;code&gt;Anaconda&lt;/code&gt;. You can do this by setting up a brand new &lt;code&gt;conda&lt;/code&gt; environment, or by adding &lt;code&gt;rclone&lt;/code&gt; to an existing environment. To create a brand new &lt;code&gt;conda&lt;/code&gt; environment that you&amp;rsquo;ll always use each time you &lt;code&gt;rclone&lt;/code&gt;, run something like the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda create -n rcloneenv -c conda-forge rclone
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And to just install &lt;code&gt;rclone&lt;/code&gt; in an existing environment, type &lt;code&gt;conda install -c conda-forge rclone&lt;/code&gt;. Be careful about potential dependencies!&lt;/p&gt;
-
-&lt;p&gt;I had one HPC system I tried this on where the &lt;code&gt;conda&lt;/code&gt; installation of &lt;code&gt;rclone&lt;/code&gt; just didn&amp;rsquo;t want to work. In that case, I followed these steps:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
-unzip rclone-current-linux-amd64.zip
-chmod 755 rclone-*-linux-amd64/rclone
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Which downloads the base &lt;code&gt;rclone&lt;/code&gt; package using &lt;code&gt;curl&lt;/code&gt;, unpacks it, and then changes the &lt;code&gt;rclone&lt;/code&gt; binary to an executable file, respectively. You might want to do this in a software downloads folder, and then execute:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;alias rclone=&#39;rclone-*-linux-amd64/rclone&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And/or add the directory to &lt;code&gt;\$PATH&lt;/code&gt;, using &lt;code&gt;PATH=\$PATH:rclone-*-linux-amd64/rclone&#39;, so that you can run&lt;/code&gt;rclone&lt;code&gt;anywhere. Note that this is a secondary, less desirable option to just using&lt;/code&gt;conda`.&lt;/p&gt;
-
-&lt;p&gt;Next, you&amp;rsquo;ll need to run &lt;code&gt;rclone config&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The first few steps are easy. When prompted whether you&amp;rsquo;d like to add a new remote, set a configuration password, or quit, type &amp;ldquo;n&amp;rdquo;, for configuring a new remote. The next prompt will ask you for a name - this can be whatever you want. In this case, I&amp;rsquo;ll enter &lt;code&gt;gdrive&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The next prompt asks what kind of remote this is, which should be set to &amp;ldquo;Google Drive&amp;rdquo;. It&amp;rsquo;s 13th on the list for me, so I enter 13. You can also just write &amp;ldquo;drive&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/screenrclone1.png&#34; alt=&#34;`rclone` Terminal&#34; title=&#34;Terminal output after the first few simple steps of `rclone`.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The next step prompts you for a Google API Cloud ID. Getting one is not as complicated as it may sound! You&amp;rsquo;ll need to go to &lt;a href=&#34;https://console.developers.google.com/&#34; target=&#34;_blank&#34;&gt;Google API Console&lt;/a&gt; (and make sure that you&amp;rsquo;re signed into the right Google account.&lt;/p&gt;
-
-&lt;p&gt;First, go to Google API Console and make sure you&amp;rsquo;re logged in. It should look something like the below screen, at which point you select &amp;ldquo;New Project&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI2.png&#34; alt=&#34;Google API Landing&#34; title=&#34;Home screen of Google API Cloud.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Name the project whatever you like - it isn&amp;rsquo;t really important.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI1.png&#34; alt=&#34;Google API New Project&#34; title=&#34;Project creation screen for Google API Cloud.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, go to your project screen:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI3.png&#34; alt=&#34;Google API Project&#34; title=&#34;Project landing page for Google API Cloud.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll now need to navigate to the APIs Overview:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI4.png&#34; alt=&#34;Google APIs&#34; title=&#34;Link to APIs overview.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s tempting on this next screen to just click &amp;ldquo;Enable APIs and Services&amp;rdquo;, but that&amp;rsquo;s not what you want to do. Instead, head to the Credentials tab, then click &amp;ldquo;Configure Consent Screen&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI5.png&#34; alt=&#34;Google APIs Consent&#34; title=&#34;Configuring the consent screen.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This splits off momentarily if you&amp;rsquo;re using a personal account vs. a G Suite account.&lt;/p&gt;
-
-&lt;h2 id=&#34;case-1-you-re-using-a-personal-account-no-g-suite&#34;&gt;Case 1: You&amp;rsquo;re using a &amp;ldquo;personal account&amp;rdquo; (no G Suite)&lt;/h2&gt;
-
-&lt;p&gt;You need to select &amp;ldquo;External&amp;rdquo; on the consent configuration screen.&lt;/p&gt;
-
-&lt;h2 id=&#34;case-2-you-re-using-a-g-suite-account&#34;&gt;Case 2: You&amp;rsquo;re using a G Suite account&lt;/h2&gt;
-
-&lt;p&gt;You can use &amp;ldquo;External&amp;rdquo; (more inclusive), or &amp;ldquo;Internal&amp;rdquo;, if you want only users that are using an account that&amp;rsquo;s part of your G Suite organization to be able to modify/move these files (for example, if I am setting this up using an @whoi.edu email account, part of the WHOI G Suite Organization, using &amp;ldquo;Internal&amp;rdquo; will limit activity to other WHOI users). External will still require that users have a Google account, and that they are going through all the steps that you have.&lt;/p&gt;
-
-&lt;p&gt;The only option you need to change on the next screen is entering &amp;ldquo;rclone&amp;rdquo; for the application requesting access (though, ultimately, what you enter here is unlikely to make much of a difference.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI6.png&#34; alt=&#34;Google APIs Application&#34; title=&#34;Disclosing that you&#39;re generating the key for `rclone`.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, you can scroll all the way down and hit &amp;ldquo;Save&amp;rdquo;, then navigate back to the Credentials tab, where you&amp;rsquo;ll now select that enticing &amp;ldquo;Create Credentials&amp;rdquo; button:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI7.png&#34; alt=&#34;Google APIs Create Credentials&#34; title=&#34;Creating credentials using your newly set OAuth settings.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And then selecting &amp;ldquo;OAuth client ID&amp;rdquo;.  For &amp;ldquo;Application Type&amp;rdquo;, select &amp;ldquo;Desktop app.&amp;rdquo; What you name it doesn&amp;rsquo;t matter.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/GoogleAPI8.png&#34; alt=&#34;Google APIs Desktop App&#34; title=&#34;Selecting that you&#39;re using this key for a desktop application.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And voilà! You now have a Client ID and a Client Secret, which you&amp;rsquo;ll copy sequentially and paste into the relevant prompts back at your remote server. The next question will ask what kind of consent you want to give Google Drive. If you&amp;rsquo;re interested in using &lt;code&gt;rclone&lt;/code&gt; most effectively, and reading/writing/updating files, you&amp;rsquo;ll need to input &amp;ldquo;drive&amp;rdquo; or 1, in order to give Google Drive full file permissions.&lt;/p&gt;
-
-&lt;p&gt;Now you can just hit enter a few times, to accept the default values for the following prompts:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;root_folder_id&lt;/li&gt;
-&lt;li&gt;service_account_file&lt;/li&gt;
-&lt;li&gt;Edit advanced config? (unless you&amp;rsquo;re interested in changing upload/download speeds/chunk sizes - advanced users only!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But &lt;strong&gt;don&amp;rsquo;t&lt;/strong&gt; use the default setting for the next prompt! It&amp;rsquo;ll be tempting to just keep clicking enter, but you need to type &amp;ldquo;n&amp;rdquo; if you&amp;rsquo;re on a remote server. Otherwise, the application will try to conduct authentication locally, which isn&amp;rsquo;t possible unless you&amp;rsquo;re using tunneling on your HPC. When you select &amp;ldquo;n&amp;rdquo;, rclone will generate a link for you to visit. Select the same Google account that you used for the previous steps, and then select &amp;ldquo;Allow.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Then, you&amp;rsquo;ll get another authentication code to copy/paste. You&amp;rsquo;ve probably never heard about Team Drives, so unless you have, select no for the next option (or hit enter). As long as everything looks okay, go ahead and accept the new remote, then enter &amp;ldquo;q&amp;rdquo; to exit the configuration.&lt;/p&gt;
-
-&lt;p&gt;One other important point is that you&amp;rsquo;ll need to be connected to the Internet when you are doing you &lt;code&gt;rclone&lt;/code&gt;ing. This might be a little difficult if you are using a worker node on your HPC system that doesn&amp;rsquo;t have access to the Internet. Depending on your system&amp;rsquo;s configuration, you may need to use the login node when you use &lt;code&gt;rclone&lt;/code&gt; (which should be avoided unless your system specifically limits Internet usage to the login node).&lt;/p&gt;
-
-&lt;p&gt;Now your Google Drive is hooked up to your remote server!&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rclone copy /path/to/local/files gdrive:files
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Will copy files from &lt;code&gt;/path/to/local/files&lt;/code&gt; locally on your HPC to your Google Drive, in the &lt;code&gt;files&lt;/code&gt; folder (make sure to use the name that you entered when you configured the remote).&lt;/p&gt;
-
-&lt;p&gt;If files change, either locally or on Google Drive, you can use &lt;code&gt;sync&lt;/code&gt; to update them. For example, if I want to update Google Drive with my local files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rclone sync /path/to/local/files gdrive:files
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But if I want to get the most recent Google Drive version:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rclone sync gdrive:files /path/to/local/files 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Only the second argument is modified/updated. Happy &lt;code&gt;rclone&lt;/code&gt;ing!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Auxotrophic interactions:  A stabilizing attribute of aquatic microbial communities?</title>
-      <link>https://alexanderlabwhoi.github.io/publication/johnson-2020/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/johnson-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Alexander Lab at OSM 2020</title>
-      <link>https://alexanderlabwhoi.github.io/post/2020-osm/</link>
-      <pubDate>Mon, 10 Feb 2020 13:00:05 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2020-osm/</guid>
-      <description>
-
-&lt;p&gt;I am heading to Ocean Sciences Meeting next week in San Diego along with &lt;a href=&#34;https://alexanderlabwhoi.github.io/authors/lblum/&#34;&gt;Laura Blum&lt;/a&gt;, an undergraduate researcher doing her thesis research with &lt;a href=&#34;https://twitter.com/microbiaki&#34; target=&#34;_blank&#34;&gt;Maria Pachiadaki&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/EggErin&#34; target=&#34;_blank&#34;&gt;Erin Eggleston&lt;/a&gt;, and myself. We have two presentations (that are bookending the meeting &amp;ndash;  Monday and Friday) that are both related to work we have been doing looking at MAGs from the larger size fraction metagenomic datasets generated as part of the Tara Expedition.&lt;/p&gt;
-
-&lt;h4 id=&#34;microbial-drivers-of-nitrogen-metabolism-searching-tara-oceans-metagenomes&#34;&gt;&lt;strong&gt;Microbial drivers of nitrogen metabolism: Searching Tara Oceans metagenomes&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;Laura Blum&lt;/strong&gt;, Erin Eggleston, Maria Pachiadaki, &amp;amp; Harriet Alexander &lt;br&gt; Poster# MM14A-0283  &lt;br&gt; Monday 17 February 2020 16:00 - 18:00&lt;/p&gt;
-
-&lt;h4 id=&#34;eukaryotic-genome-discovery-scalable-and-automated-retrieval-of-eukaryotic-metagenome-assembled-genomes-mags-from-a-global-scale-dataset&#34;&gt;&lt;strong&gt;Eukaryotic genome discovery: Scalable and automated retrieval of eukaryotic metagenome assembled genomes (MAGs) from a global-scale dataset&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;Harriet Alexander&lt;/strong&gt; &amp;amp;  Sarah K Hu &lt;br&gt; Session# OB53C: &lt;em&gt;Toward BioGeoSCAPES: Exploring Molecular Drivers of Ocean Metabolism and Biogeochemistry&lt;/em&gt; &lt;br&gt; Friday 21 February 2020 14:30 - 14:45, SDCC - 2, UL&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Transcriptional response of Emiliania huxleyi under changing nutrient environments in the North Pacific Subtropical Gyre</title>
-      <link>https://alexanderlabwhoi.github.io/publication/alexander-2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/alexander-2020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Running Jupyter Notebooks Remotely Using Windows</title>
-      <link>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</link>
-      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/</guid>
-      <description>
-
-&lt;p&gt;Harriet wrote an awesome blog post &lt;a href=&#34;https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; about how to use a Jupyter notebook connected to a remote server via SSH tunneling. Unfortunately, depending on your existing setup on your computer, you may have a few extra steps to wrangle if you have a PC. In this blog post, I&amp;rsquo;ll highlight what you should do after you get the Jupyter notebook running on the remote. In other words, you should have already gotten to the step where you spin up the Jupyter notebook, as in:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;jupyter notebook --no-browser --port=8888
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To get to this point, you will have probably used/installed PuTTY or a similar SSH client on your PC. This can be tricky as well if you&amp;rsquo;ve never done it before, so if you&amp;rsquo;re having trouble up to this point, I encourage you to check out a tutorial like &lt;a href=&#34;https://hostadvice.com/how-to/how-to-configure-putty-ssh-tunnel/&#34; target=&#34;_blank&#34;&gt;this one&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;After you get the jupyter notebook spun up, you&amp;rsquo;re done working on the remote, and you have a few options for how to access some sort of terminal on your computer in order to tunnel the jupyter notebook to your local machine, so that you can use it in your browser like normal. You can set this up via port forwarding in PuTTY, but this limits the ports you can use for either the notebook on the remote or the port you&amp;rsquo;re forwarding to on your own computer. My favorite option is now to use Windows PowerShell, which is a native application on Windows computers (i.e., you get this pre-loaded on your machine). There are a few steps to this, but I think it&amp;rsquo;s ultimately the least amount of pain. I&amp;rsquo;ll also talk about two other options: MinTTY (I prefer to use it through CygWin) and the PuTTY port forwarding option.&lt;/p&gt;
-
-&lt;h2 id=&#34;option-1-windows-powershell&#34;&gt;Option 1: Windows PowerShell&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/winpowershell.PNG&#34; alt=&#34;Windows PowerShell&#34; title=&#34;PowerShell Interface&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you get the hang of it, I think of this as the simplest option. I mentioned that PowerShell is a native install on Windows, however, to get some of the newest features, you might have to upgrade to PowerShell 6, which can be done through PowerShell itself. Just open up PowerShell and type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;iex &amp;quot;&amp;amp; { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will cause a normal Windows installer a la XP to spin up. The default settings are probably fine, but feel free to choose anything you think you need (don&amp;rsquo;t worry, there aren&amp;rsquo;t too many options). If you had the old version of PowerShell, you&amp;rsquo;ll now need to open a separate window to get to PowerShell 6. It&amp;rsquo;s a bit of a pain, but at least in PowerShell 6 you can paste into the terminal using &lt;code&gt;Ctrl+V&lt;/code&gt; instead of left click! Silver linings.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/powershell6.PNG&#34; alt=&#34;Windows PowerShell 6&#34; title=&#34;PowerShell 6&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Side note&lt;/em&gt;: you probably (while you&amp;rsquo;re downloading things) want to take this opportunity to download an installer like &lt;a href=&#34;https://scoop.sh/&#34; target=&#34;_blank&#34;&gt;scoop&lt;/a&gt; or &lt;a href=&#34;https://chocolatey.org/&#34; target=&#34;_blank&#34;&gt;chocolatey&lt;/a&gt;. I like scoop better, but chocolatey has a nice GUI. It&amp;rsquo;ll make your life easier in the future. You can install scoop, for example, with the following single line on PowerShell 6:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you&amp;rsquo;ve got a PowerShell&amp;hellip;but you&amp;rsquo;ll probably not be too happy when you try to &lt;code&gt;ssh&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/ssh_error.PNG&#34; alt=&#34;SSH doesn&#39;t work immediately&#34; title=&#34;SSH Error&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s another step here, but a pretty simple one if you use the power of &lt;code&gt;git&lt;/code&gt;, which I assume here that you&amp;rsquo;ve already got installed on your machine. For most people, Git has &lt;code&gt;ssh&lt;/code&gt; included and is already installed in the &lt;a href=&#34;http://www.hurryupandwait.io/blog/need-an-ssh-client-on-windows-dont-use-putty-or-cygwinuse-git&#34; target=&#34;_blank&#34;&gt;base executable directory&lt;/a&gt;. So instead of installing anything extra, we are just going to add where &lt;code&gt;ssh&lt;/code&gt; is located via Git to our &lt;code&gt;$PATH&lt;/code&gt;. Note that we could have done this without PowerShell 6, but note that as a Windows user you&amp;rsquo;re probably going to want PowerShell 6 and Chocolatey/Scoop regardless.&lt;/p&gt;
-
-&lt;p&gt;So to add the Git folder we need to the &lt;code&gt;$PATH&lt;/code&gt;, we run the following two lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$new_path = &amp;quot;$env:PATH;C:/Program Files/Git/usr/bin&amp;quot;
-[Environment]::setEnvironmentVariable(&amp;quot;path&amp;quot;, $new_path)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is what I found worked best for me. If that in&amp;rsquo;t the location of Git for you (pretty unlikely on a Windows machine), you&amp;rsquo;ll need to go searching for it. The first and easiest line of defense is to go to your C drive and look for related &amp;ldquo;Program File&amp;rdquo; locations.&lt;/p&gt;
-
-&lt;p&gt;Now, &lt;code&gt;ssh&lt;/code&gt; should work, and you should be able to use the code that Harriet provided in [her post]() to get your Jupyter notebook tunneled. Try:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ssh -t -t &amp;lt;my username&amp;gt;@&amp;lt;some HPC address, such as hpc.mit.edu&amp;gt; -L 8888:localhost:8888 ssh &amp;lt;our node&amp;gt; -L 8888:localhost:8888
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(Replace the items in brackets with your specific situation). If this gives you issues, a good fix is to put colons before each 8888 instance (after the space). This can help Windows understand that what you&amp;rsquo;re signaling is a port.&lt;/p&gt;
-
-&lt;p&gt;You should be good to go! Just type localhost:8888 in your web browser and see if that works. One other thing: if you get a password screen, this isn&amp;rsquo;t your HPC password or anything. This is a Jupyter password. You can either (if you haven&amp;rsquo;t set a password) insert the token that should be displayed (a bunch of letters and numbers) in the remote, or (if you don&amp;rsquo;t see this), you&amp;rsquo;ll need to set a password. Back out of your running Jupyter notebook on the remote, and run &lt;code&gt;jupyter notebook password&lt;/code&gt;. This will prompt you to write and verify a password, which you&amp;rsquo;ll later enter into the window you see on your local machine, once you set up your SSH tunnel again. If this doesn&amp;rsquo;t work, it might be because the &lt;code&gt;config&lt;/code&gt; file isn&amp;rsquo;t always created automatically. Run &lt;code&gt;touch ~/.jupyter/jupyter_notebook_config.json&lt;/code&gt; to solve the issue (you might have to run &lt;code&gt;mkdir ~/.jupyter&lt;/code&gt; first, depending on just how much isn&amp;rsquo;t set up).&lt;/p&gt;
-
-&lt;h2 id=&#34;option-2-mintty&#34;&gt;Option 2: MinTTY&lt;/h2&gt;
-
-&lt;p&gt;I like using &lt;a href=&#34;https://cygwin.com/&#34; target=&#34;_blank&#34;&gt;CygWin&lt;/a&gt; for manipulating MinTTY (take it from their website: &amp;ldquo;get that Linux feeling&amp;hellip;on Windows&amp;rdquo; - don&amp;rsquo;t mind if I do!). &lt;em&gt;Make sure&lt;/em&gt; that you select MinTTY and its associated packages and debuggers when setting up CygWin. This will save you the trouble of having to download MinTTY separately. You also need to make sure &lt;code&gt;openssh&lt;/code&gt; and associated options are checked. If you forget anything, you can always re-run &lt;code&gt;setup.exe&lt;/code&gt; from your Downloads or wherever you&amp;rsquo;ve placed it. After you go through the motions of selecting a mirror and everything, it&amp;rsquo;ll allow you to update the packages you&amp;rsquo;re using rather than starting completely from scratch.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/setup.PNG&#34; alt=&#34;Pick your package poison&#34; title=&#34;Picking Package Poison&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now, at this point, you can either run &lt;code&gt;ssh&lt;/code&gt; directly from the CygWin terminal (you may want to run as administrator just in case when you&amp;rsquo;re starting out), or through MinTTY. Note that you can also use CygWin in place of PuTTY or the like to connect to the remote server you&amp;rsquo;re using in the first place.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/mintty.PNG&#34; alt=&#34;MinTTY running SSH&#34; title=&#34;MinTTY&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Refer to the PowerShell section if you need help with setting up the tunneled Jupyter notebook beyond what is available in the base instructions.&lt;/p&gt;
-
-&lt;h2 id=&#34;option-3-putty&#34;&gt;Option 3: PuTTY&lt;/h2&gt;
-
-&lt;p&gt;I won&amp;rsquo;t say much about this option, because it&amp;rsquo;s honestly the option I like the least. But if you really want to, you can set up port forwarding directly through your PuTTY session. This way, when you start up your Jupyter notebook on a port, say 8888 like we&amp;rsquo;ve been using, it will be automatically tunneled to your local machine (theoretically&amp;hellip;but I&amp;rsquo;d be criticized by PuTTY enthusiasts for adding that caveat!).&lt;/p&gt;
-
-&lt;p&gt;First, open up PuTTY and make sure you&amp;rsquo;ve got all of your favorite settings loaded in, say by saving your profile.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/puttyconfig.PNG&#34; alt=&#34;PuTTY configuration&#34; title=&#34;First PuTTY configuration&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, go to Connection: SSH: Auth: Tunnels.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/puttymenu.PNG&#34; alt=&#34;PuTTY menu where you need to be to tunnel&#34; title=&#34;PuTTY menu&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, you need to change a few things. You need to tell PuTTY that your source port is on the remote, and then give the port on the remote as well as the &lt;code&gt;localhost&lt;/code&gt; port you want to receive the connection:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/portforwardingputty.PNG&#34; alt=&#34;PuTTY configuration choices&#34; title=&#34;PuTTY port forwarding&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You also need to check the two boxes up top to make sure the ports are listening to each other (I forgot this while I was constructing this post).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/portforwardingputty_fixed.PNG&#34; alt=&#34;PuTTY configuration with the boxes checked&#34; title=&#34;Fixed the checkboxes&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If this worked, you should be all set. Just make sure the ports match. I don&amp;rsquo;t have a lot of luck with this and in the past I&amp;rsquo;ve used Firefox port forwarding to get it to work. Chrome is my browser of choice, so for multiple reasons I prefer options 1 and 2 in this post!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Keeping my R life organized</title>
-      <link>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</link>
-      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/</guid>
-      <description>
-
-&lt;p&gt;I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R &lt;em&gt;and&lt;/em&gt; do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.&lt;/p&gt;
-
-&lt;h2 id=&#34;installing-anaconda&#34;&gt;Installing Anaconda&lt;/h2&gt;
-
-&lt;p&gt;First, let&amp;rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions &lt;a href=&#34;https://docs.anaconda.com/anaconda/install/&#34; target=&#34;_blank&#34;&gt;here to install&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Once you have Anaconda installed, check the version.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda -V
-# I&#39;m currently running v4.6.8
-which conda
-# Location on my computer: /Users/shu/anaconda3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;why-did-you-make-me-install-anaconda&#34;&gt;Why did you make me install anaconda?&lt;/h3&gt;
-
-&lt;p&gt;Briefly, Anaconda, or conda, is a software package manager. Anaconda will make your scientific programming life easier by facilitating software installations for many programs or packages. You can google &amp;lsquo;conda install for software X&amp;rsquo;, and often find a single line command to install the most recent version of that software.&lt;/p&gt;
-
-&lt;p&gt;Even better, Anaconda allows you to create compartmentalized computational environments  (called &amp;ldquo;conda environments&amp;rdquo; in this post) where you can install any mixture of things you require without accidentally messing up other software downloads on your computer. You can use these conda environments in any number of ways&amp;ndash; they can be program-specific (for the running of one specific tool) or project-specific (to store versions for a whole workflow). For instance, I&amp;rsquo;m working on a collaborative project which requires building bioinformatic pipelines with several different programs. It is key that my collaborator and I maintain the same versions of software, so code that we write individually can be easily shared. For this, we created and shared a conda environment. &lt;a href=&#34;https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html&#34; target=&#34;_blank&#34;&gt;More info on getting started with conda here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Conda environments have been widely adopted as a means of facilitating reproducible computation across the Python ecosystem&amp;ndash; but is now expanding to include other programming languages such as R (more &lt;a href=&#34;https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Below, documents how I have built up conda environments to run specific versions of R, including RStudio and jupyter notebooks.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;creating-a-conda-environment-for-r&#34;&gt;Creating a conda environment for R&lt;/h2&gt;
-
-&lt;p&gt;First, list the conda environments you have locally:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda info --envs
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The output should list all the conda environments you have created. An asterisk will denote where you currently are, likely &amp;lsquo;base&amp;rsquo;. Additionally, your command line will be preceded with &amp;lsquo;(base)&amp;rsquo; to denote you are in your base conda environment.&lt;/p&gt;
-
-&lt;p&gt;First, we will generate a specific R environment for R v3.5.1 (most recent version available through Anaconda, as of April 2019).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda create --name r_3.5.1 -c r r=3.5.1 r-essentials
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;What is happening in this command?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&amp;lsquo;conda create &amp;ndash;name r_3.5.1&amp;rsquo; creates a new conda environment that will be called &amp;lsquo;r_3.5.1&amp;rsquo;.&lt;/li&gt;
-&lt;li&gt;&amp;rsquo;-c r r=3.5.1&amp;rsquo; specifies to use the &amp;lsquo;r&amp;rsquo; channel for installation. In this particular case, we also specify r=3.5.1. Without this last part, conda will automatically install the most recent version of R.&lt;/li&gt;
-&lt;li&gt;&amp;lsquo;r-essentials&amp;rsquo;, upon installing R-related packages, you need to add &amp;lsquo;r-&amp;rsquo; ahead of the package name. r-essentials is a package bundle which has a lot of the most basic and commonly used R packages. A &lt;a href=&#34;http://repo.anaconda.com/pkgs/r/&#34; target=&#34;_blank&#34;&gt;full list of packages&lt;/a&gt; available for conda install.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This installation will take a few minutes and at the end you should see something like the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pip 19.1############################################################################################################################################## | 100%
-r-highr 0.7########################################################################################################################################### | 100%
-r-sourcetools 0.1.7################################################################################################################################### | 100%
-Preparing transaction: done
-Verifying transaction: done
-Executing transaction: done
-#
-# To activate this environment, use:
-# &amp;gt; source activate r_3.5.1
-#
-# To deactivate an active environment, use:
-# &amp;gt; source deactivate
-#
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, list your conda environments again with &lt;code&gt;conda info --envs&lt;/code&gt;. You should now see the new environment listed:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;base                  *  /Users/shu/anaconda3
-r_3.5.1                  /Users/shu/anaconda3/envs/r_3.5.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To activate your newly created R environment type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;source activate r_3.5.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Your terminal prompt should now be preceded by your conda environment name, in this case &lt;code&gt;(r_3.5.1)&lt;/code&gt;, and the asterisk should be listed next to &lt;code&gt;r_3.5.1&lt;/code&gt; rather than &lt;code&gt;base&lt;/code&gt;in the &lt;code&gt;conda info --envs&lt;/code&gt; output.&lt;/p&gt;
-
-&lt;h3 id=&#34;check-that-the-correct-r-version-is-running&#34;&gt;Check that the correct R version is running&lt;/h3&gt;
-
-&lt;p&gt;We can check the version of R in two ways.&lt;/p&gt;
-
-&lt;p&gt;First, launch R by typing &lt;code&gt;R&lt;/code&gt;, you should see R version 3.5.1 (&amp;ldquo;Feather Spray&amp;rdquo;) load. IF you got an error about the &amp;ldquo;java&amp;rdquo; command-line tool, &lt;a href=&#34;https://www.theitsage.com/fix-java-command-line-tool-popup-mac/&#34; target=&#34;_blank&#34;&gt;visit this site to fix it.&lt;/a&gt;. I got this error using anything &amp;gt;10.10 on Mac OS X.&lt;/p&gt;
-
-&lt;p&gt;The first line after typing &lt;code&gt;R&lt;/code&gt; should be:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;R version 3.5.1 (2018-07-02) -- &amp;quot;Feather Spray&amp;quot;
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin13.4.0 (64-bit)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Because we created this R environment and specified &lt;code&gt;r-essentials&lt;/code&gt;, many popular packages have already been loaded. Check this by loading some basic libraries &lt;code&gt;library(ggplot2)&lt;/code&gt; or &lt;code&gt;library(dplyr)&lt;/code&gt;. Convenient, eh?&lt;/p&gt;
-
-&lt;p&gt;Quit R &lt;code&gt;quit()&lt;/code&gt;, but don&amp;rsquo;t deactivate the &lt;code&gt;r_3.5.1&lt;/code&gt; environment.&lt;/p&gt;
-
-&lt;p&gt;Second, we can also directly check which R is being called by our $PATH in the conda environment by typing &lt;code&gt;which R&lt;/code&gt;. This should output something like the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/Users/shu/anaconda3/envs/r_3.5.1/bin/R
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This indicates that &lt;code&gt;R&lt;/code&gt; is being called from the bin in your newly created conda environment (&lt;code&gt;anaconda3/envs/r_3.5.1/bin/&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Keep this path in mind as we set up &lt;code&gt;jupyter notebook&lt;/code&gt; and &lt;code&gt;RStudio&lt;/code&gt; below, as they also need to launch R from this same location.&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-a-jupyter-notebook-in-r&#34;&gt;Creating a jupyter notebook in R&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://irkernel.github.io&#34; target=&#34;_blank&#34;&gt;Jupyter notebook for R&lt;/a&gt; was included in the r-essential package download. To launch, type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;jupyter notebook
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will open the &lt;code&gt;jupyter notebook&lt;/code&gt; home screen in browser window, showing your current directory. At the top right, you can click &lt;code&gt;New&lt;/code&gt; and see which kernels you can use to start a notebook (hopefully, Python 3 or R).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;resources/_gen/images/jupyternb-browser.png&#34; target=&#34;_blank&#34;&gt;Jupyter notebook dropdown&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Select &lt;code&gt;R&lt;/code&gt; under the &amp;lsquo;New&amp;rsquo; dropdown menu (you can also launch a &lt;code&gt;Python3&lt;/code&gt; notebook&amp;hellip; but that isn&amp;rsquo;t what we are doing right now), and a new Untitled.ipynb will open. In the first cell, enter &lt;code&gt;version&lt;/code&gt; and execute the cell (SHIFT+ENTER to execute). This should print out the version of &lt;code&gt;R&lt;/code&gt; that the notebook is running&amp;ndash; which should be &lt;code&gt;3.5.1&lt;/code&gt;. You can also ensure this R notebook is running properly by loading some R libraries.&lt;/p&gt;
-
-&lt;p&gt;To close the notebook, click &lt;code&gt;Logout&lt;/code&gt; at the top right of the notebook open in your browser and/or CTRL+C in the terminal from where you launched the notebook. Close the browser windows.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;One of the major issues I have encountered is Jupyter calling the incorrect path (more below).&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&amp;rsquo;t use which R (as above) as that doesn&amp;rsquo;t answer where Jupyter is looking. Rather, you can use &lt;code&gt;jupyter kernelspec&lt;/code&gt;, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks &lt;a href=&#34;https://twitter.com/nekton4plankton/status/1116785847402209281&#34; target=&#34;_blank&#34;&gt;see twitter feed for that eureka moment&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To see what paths are being called by jupyter notebook type this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;jupyter kernelspec list --json
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As an example, here is my output:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-  &amp;quot;kernelspecs&amp;quot;: {
-    &amp;quot;python3&amp;quot;: {
-      &amp;quot;resource_dir&amp;quot;: &amp;quot;/Users/shu/anaconda3/envs/r_3.5.1/share/jupyter/kernels/python3&amp;quot;,
-      &amp;quot;spec&amp;quot;: {
-        &amp;quot;argv&amp;quot;: [
-          &amp;quot;/Users/shu/anaconda3/envs/r_3.5.1/bin/python&amp;quot;,
-          &amp;quot;-m&amp;quot;,
-          &amp;quot;ipykernel_launcher&amp;quot;,
-          &amp;quot;-f&amp;quot;,
-          &amp;quot;{connection_file}&amp;quot;
-        ],
-        &amp;quot;env&amp;quot;: {},
-        &amp;quot;display_name&amp;quot;: &amp;quot;Python 3&amp;quot;,
-        &amp;quot;language&amp;quot;: &amp;quot;python&amp;quot;,
-        &amp;quot;interrupt_mode&amp;quot;: &amp;quot;signal&amp;quot;,
-        &amp;quot;metadata&amp;quot;: {}
-      }
-    },
-    &amp;quot;ir&amp;quot;: {
-      &amp;quot;resource_dir&amp;quot;: &amp;quot;/Users/shu/anaconda3/envs/r_3.5.1/share/jupyter/kernels/ir&amp;quot;,
-      &amp;quot;spec&amp;quot;: {
-        &amp;quot;argv&amp;quot;: [
-          &amp;quot;R&amp;quot;,
-          &amp;quot;--slave&amp;quot;,
-          &amp;quot;-e&amp;quot;,
-          &amp;quot;IRkernel::main()&amp;quot;,
-          &amp;quot;--args&amp;quot;,
-          &amp;quot;{connection_file}&amp;quot;
-        ],
-        &amp;quot;env&amp;quot;: {},
-        &amp;quot;display_name&amp;quot;: &amp;quot;R&amp;quot;,
-        &amp;quot;language&amp;quot;: &amp;quot;R&amp;quot;,
-        &amp;quot;interrupt_mode&amp;quot;: &amp;quot;signal&amp;quot;,
-        &amp;quot;metadata&amp;quot;: {}
-      }
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This command returns the paths (&lt;code&gt;resource_dir&lt;/code&gt;) that the &lt;code&gt;jupyter notebook&lt;/code&gt; when opened in the &lt;code&gt;r_3.5.1&lt;/code&gt; environment is accessing. The key point is that you should see that &lt;code&gt;resource_dir&lt;/code&gt; for both &lt;code&gt;python&lt;/code&gt; and &lt;code&gt;ir&lt;/code&gt; (read: &lt;code&gt;R&lt;/code&gt;) kernels should be within your conda environment path (&lt;code&gt;.../anaconda3/envs/r_3.5.1/...&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;From my experience, a common issue I encountered was &lt;code&gt;jupyter notebook&lt;/code&gt; trying to use an &lt;code&gt;R&lt;/code&gt; version that was external to my environment (i.e. from an R version installed in my base environment or an old R version installed on my computer pre-anaconda). These issues manifest as IRKernel in &lt;code&gt;jupyter notebook&lt;/code&gt; never becomes active or dying immediately after launch. This cause of this problem was revealed with the &lt;code&gt;kernelspec&lt;/code&gt; command above.&lt;/p&gt;
-
-&lt;p&gt;One of the main lessons I learned in troubleshooting: don&amp;rsquo;t be afraid to &lt;strong&gt;destroy everything&lt;/strong&gt;. More specifically, if you run into issues and find that one or all of these paths are not shuttling through the correct R conda environment of your choice&amp;hellip; destroy and rebuild. Use this command (&lt;code&gt;jupyter kernelspec&lt;/code&gt;) to locate and destroy this other R option that jupyter notebook is defaulting to (but make sure you are not deleting another whole environment!).&lt;/p&gt;
-
-&lt;h3 id=&#34;opening-rstudio-within-a-conda-environment&#34;&gt;Opening RStudio within a conda environment&lt;/h3&gt;
-
-&lt;p&gt;To run &lt;code&gt;RStudio&lt;/code&gt; in our environment, we can use the single-line conda command &lt;code&gt;conda install -c r rstudio&lt;/code&gt;. However, it is important to specify the version of &lt;code&gt;R&lt;/code&gt; that we want to install:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda install -c r r=3.5.1 rstudio
-# As of April 2019, this installs RStudio v1.1.456
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Launch RStudio by typing &lt;code&gt;rstudio&lt;/code&gt;. The first line in the RStudio console should be the same as when we launched R from the command line directly &lt;code&gt;R version 3.5.1 (2018-07-02) -- &amp;quot;Feather Spray&amp;quot;&lt;/code&gt;. To close RStudio, you can close RStudio itself, or CTRL+C in the terminal from where you launched it.&lt;/p&gt;
-
-&lt;p&gt;Moreover, by creating a specific alias, we can more precisely tell RStudio to open as a specific version (within a conda environment).&lt;/p&gt;
-
-&lt;p&gt;First, perform a check to make sure &lt;code&gt;RStudio&lt;/code&gt; is launching from the same location as &lt;code&gt;R&lt;/code&gt; in this environment.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;which R
-# Output: /Users/sarahhu/anaconda3/envs/r_3.5.1/bin/R
-which rstudio
-# Output: /Users/sarahhu/anaconda3/envs/r_3.5.1/bin/rstudio
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Copy the output from &lt;code&gt;which R&lt;/code&gt; and open your bash profile (&lt;code&gt;~/.bash_profile&lt;/code&gt;) using a text editor.&lt;/p&gt;
-
-&lt;p&gt;Add this line:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# R version alias
-alias rstu3.5=&amp;quot;RSTUDIO_WHICH_R=/Users/shu/anaconda3/envs/r_3.5.1/bin/R open -a rstudio&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can then source your bash profile to add that command to your current terminal session.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Source bash profile
-source ~/.bash_profile
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Make sure you are still in your r_3.5.1 environment (sourcing your bash profile may place you back in your base environment). From the command line (in your r_3.5.1 environment) you can now type rstu3.5 to launch RStudio. I highly recommend opening RStudio from the command line using this alias you created! I found it was a much more stable way to work with RStudio.&lt;/p&gt;
-
-&lt;h2 id=&#34;creating-a-conda-environment-with-a-different-r-version&#34;&gt;Creating a conda environment with a different R version&lt;/h2&gt;
-
-&lt;p&gt;Alright, so this is the moment of truth: can you successfully support two &lt;em&gt;different&lt;/em&gt; &lt;code&gt;R&lt;/code&gt; versions on your computer with conda environments?&lt;/p&gt;
-
-&lt;p&gt;First, (if you aren&amp;rsquo;t already) logout of the &lt;code&gt;r_3.5.1&lt;/code&gt; conda environment with &lt;code&gt;conda deactivate&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s try installing an older version of &lt;code&gt;R&lt;/code&gt;&amp;ndash; 3.4.3. So, we will repeat the above instructions to create a new environment, but specify &lt;code&gt;R&lt;/code&gt;&amp;ndash; 3.4.3.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Create new R environment with R version 3.4.3
-conda create --name r_3.4.3 -c r r=3.4.3 r-essentials
-
-# Enter environment
-source activate r_3.4.3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, we can do the same checks that we did above. First, launch &lt;code&gt;R&lt;/code&gt; on the command line and then spin up a &lt;code&gt;jupyter notebook&lt;/code&gt; with an &lt;code&gt;R&lt;/code&gt; kernel to check that they are both running &lt;code&gt;R v3.4.3&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next, reinstall RStudio with &lt;code&gt;R v.3.4.3&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Install RStudio
-conda install -c r r=3.4.3 rstudio
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And then ensure that you are running the correct version by opening RStudio from the command line (&lt;code&gt;rstudio&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;You should then double check the paths of &lt;code&gt;R&lt;/code&gt; and &lt;code&gt;rstudio&lt;/code&gt; within this environment:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Check outputs
-which R
-# Output: /Users/shu/anaconda3/envs/r_3.4.3/bin/R
-which rstudio
-# Output: /Users/shu/anaconda3/envs/r_3.4.3/bin/rstudio
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If all things check out:&lt;/p&gt;
-
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in command line&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in RStudio&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Correct &lt;code&gt;R&lt;/code&gt; version in Jupyter Notebook&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Path of &lt;code&gt;R&lt;/code&gt; aligns with your specified conda environment&lt;/label&gt;&lt;/li&gt;
-&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Path of &lt;code&gt;rstudio&lt;/code&gt; aligns with your specified conda environment&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can safely go ahead and create a new alias within your &lt;code&gt;.bash_profile&lt;/code&gt; :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;alias rstu3.4=&amp;quot;RSTUDIO_WHICH_R=/Users/shu/anaconda3/envs/r_3.4.3/bin/R open -a rstudio&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, now when you list your conda environments &lt;code&gt;conda info --envs&lt;/code&gt; you will see both new R environments.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# conda environments:
-#
-base                     /Users/shu/anaconda3
-r_3.4.3               *  /Users/shu/anaconda3/envs/r_3.4.3
-r_3.5.1                  /Users/shu/anaconda3/envs/r_3.5.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;what-other-r-versions-are-available-for-conda-install&#34;&gt;What other R versions are available for conda install?&lt;/h3&gt;
-
-&lt;p&gt;To check out other available R versions built through conda you can search the R channel using conda:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda search -c r r
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;installing-r-packages&#34;&gt;Installing R packages&lt;/h2&gt;
-
-&lt;p&gt;To install other R packages, rather than use &amp;lsquo;install.packages()&amp;rsquo; in the R console, I recommend googling conda + PACKAGE-NAME or searching the conda &lt;code&gt;R&lt;/code&gt; channel (&lt;code&gt;conda search -f r-PACKAGENAME&lt;/code&gt;) for the package you want to install. When you are ready to install a package, make sure you are in the conda environment with whatever &lt;code&gt;R&lt;/code&gt; version you want the package installed and type &lt;code&gt;conda install -c r r-PACKAGENAME&lt;/code&gt;. This approach to R package installs is &lt;em&gt;life changing&lt;/em&gt;, especially if you&amp;rsquo;re all too familiar with &lt;code&gt;non-zero exit status&lt;/code&gt; or random failures when attempting to install R packages.&lt;/p&gt;
-
-&lt;p&gt;You can also view your list of installed R packages in your environment, &lt;code&gt;conda list r-&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;conda-channels-for-r-package-installation&#34;&gt;Conda channels for R package installation&lt;/h3&gt;
-
-&lt;p&gt;Some package groups require installation through a different conda channel. Two of the main ones I use are bioconductor &lt;a href=&#34;https://bioconda.github.io&#34; target=&#34;_blank&#34;&gt;Bioconda&lt;/a&gt; and &lt;a href=&#34;https://conda-forge.org&#34; target=&#34;_blank&#34;&gt;conda-forge&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To set this up, configure your R environment by executing these commands in &lt;em&gt;this exact order&lt;/em&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Type these commands in this exact order:
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To install a package using one of these channels, use &amp;ldquo;-c&amp;rdquo; in the conda install command. For instance to install &lt;a href=&#34;https://cran.r-project.org/web/packages/compositions/compositions.pdf&#34; target=&#34;_blank&#34;&gt;compositions&lt;/a&gt; and &lt;a href=&#34;https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html&#34; target=&#34;_blank&#34;&gt;cowplot&lt;/a&gt;, you need to use the &lt;a href=&#34;https://conda-forge.org&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;conda-forge&lt;/code&gt;&lt;/a&gt; channel. &lt;a href=&#34;https://anaconda.org/conda-forge/r-compositions&#34; target=&#34;_blank&#34;&gt;See install information here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda install -c conda-forge r-compositions
-conda install -c conda-forge r-cowplot
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Other examples which require Bioconda:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda install -c bioconda bioconductor-decontam
-conda install -c bioconda bioconductor-deseq
-conda install -c bioconda bioconductor-edger
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Don&amp;rsquo;t be afraid of destruction&lt;/em&gt;. Behind the scenes of this post, I completely removed and re-installed Anaconda on my computer at least twice and created and then deleted numerous environments. Starting with a clean slate turned out to be &lt;em&gt;necessary&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Another reason to not shy away from destruction is that it is a way towards a more reproducible work process. After deleting and reinstalling Anaconda (and every other conda environment to my name), I was able to easily reinstate the environment my collaborator and I share with no issues (you can rebuild!). And now, I can return to whichever R version I need for a given project by navigating between my R conda environments. &lt;a href=&#34;https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=environment&#34; target=&#34;_blank&#34;&gt;How much fun is it to be organized?&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Anaconda was built with Python in mind&lt;/em&gt;. My motivation for this post was that it was difficult to find a working solution to partition R versions using conda environments (especially in conjunction with IRKernel and RStudio). Anaconda seems to work more succintly with python; as an example, I found that some older versions of R were not as stable as others. But R support is constantly growing! Also, check out the newly released &lt;a href=&#34;https://blog.rstudio.com/2018/10/09/rstudio-1-2-preview-reticulated-python/&#34; target=&#34;_blank&#34;&gt;RStudio 1.2, which will support Python&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;There&amp;rsquo;s more than one way to do this&lt;/em&gt;. If you have another solution or addition - let me know!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Running Jupyter Notebooks Remotely with Slurm</title>
-      <link>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</link>
-      <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</guid>
-      <description>
-
-&lt;p&gt;I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I  prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command &lt;code&gt;jupyter notebook&lt;/code&gt; on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine. Rather, you need to create a connection between your local browser and the remote Jupyter session. Here I am showing a special case, where you might want to run jupyter notebooks on a larger compute node via an interactive session with slurm.&lt;/p&gt;
-
-&lt;h2 id=&#34;starting-your-interactive-job-with-slurm&#34;&gt;Starting your interactive job with slurm&lt;/h2&gt;
-
-&lt;p&gt;First things first: start up a &lt;code&gt;tmux&lt;/code&gt; session (or &lt;code&gt;screen&lt;/code&gt; if you prefer). If I am looking to have some program running for longer than I am wanting to keep a terminal window open &amp;ndash; &lt;code&gt;tmux&lt;/code&gt; or &lt;code&gt;screen&lt;/code&gt; are great options as they keep your session from timing out on remote machines. I have a preference for &lt;a href=&#34;https://superuser.com/questions/236158/tmux-vs-screen&#34; target=&#34;_blank&#34;&gt;tmux&lt;/a&gt;, but it is really up to you.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tmux new -s jupyter
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now that we are in our new tmux session, it is time to request an real-time run on the remote HPC. Using the slurm command &lt;a href=&#34;https://slurm.schedmd.com/srun.html&#34; target=&#34;_blank&#34;&gt;srun&lt;/a&gt;, I am asking for 2 hours to run on two CPUs on a queue called main. You can customize this to your needs and resources by requesting more nodes, memory, etc.:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;srun -p main --time=02:00:00 --ntasks-per-node 2 --pty bash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will log you onto some node which will be noted in your command prompt. For example, my command line prompt changed from &lt;code&gt;halexander@hpc&lt;/code&gt; to &lt;code&gt;halexander@node1&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I have many commands that I like in my &lt;code&gt;.bash_profile&lt;/code&gt; that are not otherwise carried over to this new machine that we just logged into, so go ahead and source my bash profile (&lt;code&gt;source ~/.bash_profile&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&#34;creating-a-conda-environment-and-starting-a-jupyter-notebook&#34;&gt;Creating a conda environment and starting a jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;I like to run each of my various projects in its own conda environment. There are many reasons for this: reproducibility, control over program versions, dealing with conflicting package requirements, and, especially for on a shared compute resource (like an HPC), bypassing having root permission for installing programs. Another nice bonus for this particular case is that conda environments will automatically have &lt;code&gt;jupyter&lt;/code&gt; installed. So, create a conda environment (if you haven&amp;rsquo;t already):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda create conda-env
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and activate it:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;source activate conda-env
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You should now see that your terminal prompt has changed to something like the following, indicating that you are logged onto the interactive node and working within the conda-env environment:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(conda-env) halexander@node1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;One issue I encountered (that may be specific to my local HPC) that I want to note. If I try to run the command &lt;code&gt;jupyter notebook&lt;/code&gt; right away I get the following error:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Traceback (most recent call last):
-  File &amp;quot;/address/home/halexander/.conda/envs/conda-env/lib/python3.6/site-packages/traitlets/traitlets.py&amp;quot;, line 528, in get
-    value = obj._trait_values[self.name]
-KeyError: &#39;runtime_dir&#39;
-....
-PermissionError: [Errno 13] Permission denied: &#39;/run/user/12746&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To get around this issue I found some help on &lt;a href=&#34;https://stackoverflow.com/questions/35878178/jupyter-notebook-permission-error&#34; target=&#34;_blank&#34;&gt;StackOverflow&lt;/a&gt;. (Google is your friend for pesky errors like this.) This simple export command fixed my problem:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export XDG_RUNTIME_DIR=&amp;quot;&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, it is time to start up a jupyter notebook! On the remote machine type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;jupyter notebook --no-browser --port=8888
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(Note, the default is for jupyter notebook to automatically open a browser &amp;ndash; but we can&amp;rsquo;t do that on a remote server, so we bypass that function with the &lt;code&gt;--no-browser&lt;/code&gt; flag.)&lt;/p&gt;
-
-&lt;p&gt;I regularly want to run this command and hate typing, so I went ahead and created a function to streamline this process:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function jpt(){
-    jupyter notebook --no-browser --port=$1
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This allows you to just type &lt;code&gt;jpt&lt;/code&gt; and a port number and the command will be taken care of. If you want to use this function, simply copy the above and place it in your &lt;code&gt;.bash_profile&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now, &lt;code&gt;jpt 8888&lt;/code&gt; will start a jupyter notebook on the port 8888.&lt;/p&gt;
-
-&lt;p&gt;If all is well, after running the above command, you should see something like the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[I 14:22:55.931 NotebookApp] Writing notebook server cookie secret to /hpc/home/halexander/.local/share/jupyter/runtime/notebook_cookie_secret
-[I 14:23:01.371 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
-[I 14:23:01.371 NotebookApp] Serving notebooks from local directory: /vortexfs1/scratch/halexander/tara/sourmash-analysis
-[I 14:23:01.371 NotebookApp] The Jupyter Notebook is running at:
-[I 14:23:01.371 NotebookApp] http://localhost:8888/
-[I 14:23:01.371 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;##Creating an SSH tunnel&lt;/p&gt;
-
-&lt;p&gt;You are now ready to create a &lt;a href=&#34;https://en.wikipedia.org/wiki/Tunneling_protocol&#34; target=&#34;_blank&#34;&gt;tunnel&lt;/a&gt; from your local computer to the jupyter notebook running on the HPC.&lt;/p&gt;
-
-&lt;p&gt;Open a new terminal on your local machine. In the above example, I started a notebook on &lt;code&gt;node1&lt;/code&gt; at port &lt;code&gt;8888&lt;/code&gt; and my username is &lt;code&gt;halexander&lt;/code&gt; and the address of my HPC is &lt;code&gt;hpc.address.edu&lt;/code&gt;. So, to create the tunnel I would type the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ssh -t -t halexander@hpc.address.edu -L 8888:localhost:8888 ssh node1 -L 8888:localhost:8888
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is a lot of typing, so it is simpler to create another bash function that you can put in your local &lt;code&gt;.bash_profile&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function jptnode(){
-    # Forwards port $1 from node $2 into port $1 on the local machine and listens to it
-        ssh -t -t halexander@hpc.address.edu -L $1:localhost:$1 ssh $2 -L $1:localhost:$1
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You will of course want to customize the above function to contain your username in place of &lt;code&gt;halexander&lt;/code&gt; and the address of your hpc in place of &lt;code&gt;hpc.address.edu&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;$&lt;/code&gt; indicates the input variables in this function, with &lt;code&gt;$1&lt;/code&gt; being the port you specified for the jupyter notebook and &lt;code&gt;$2&lt;/code&gt; being the name of the node you are running the notebook on. So, to use this function you would type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;jptnode 8888 node1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once you run this, you should notice that your terminal window has been logged on to your remote HPC and then logged onto the requested node.&lt;/p&gt;
-
-&lt;p&gt;You can now open your browser of choice and go to &lt;code&gt;localhost:8888&lt;/code&gt; and you should see the jupyter dashboard. You should be able to start working in jupyter notebooks, downloading data, or do any other things you want to do through the jupyter dashboard. Make sure to shutdown the jupyter notebook when you are done.&lt;/p&gt;
-
-&lt;h2 id=&#34;a-few-important-notes&#34;&gt;A few important notes&lt;/h2&gt;
-
-&lt;p&gt;1) Before you connect to a remote server with jupyter notebook make sure that you have configured jupyter with password information. You can do this by editing the &lt;code&gt;jupyter-notebook_config.json&lt;/code&gt; which is usually located in &lt;code&gt;~/.jupyter&lt;/code&gt; or by typing:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;jupyter notebook password
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;which will prompt you for a password that will be used for future notebooks.&lt;/p&gt;
-
-&lt;p&gt;2) Make sure you shutdown  your jupyter notebook when you are done. To do this, you can log back onto the tmux session you started earlier (&lt;code&gt;tmux a -t jupyter&lt;/code&gt;) where the jupyter notebook is running and use &lt;code&gt;ctrl-C&lt;/code&gt; should shutdown the jupyter notebook. If you run into issues with a port still being used, chances are that a notebook is still running somewhere.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Keeping it light: (Re)analyzing community-wide datasets without major infrastructure</title>
-      <link>https://alexanderlabwhoi.github.io/publication/alexander2018/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/alexander2018/</guid>
       <description></description>
     </item>
     

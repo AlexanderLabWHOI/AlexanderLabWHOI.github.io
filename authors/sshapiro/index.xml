@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sshapiro on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/sshapiro/</link>
+    <description>Recent content in sshapiro on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/sshapiro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/sshapiro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/sshapiro/</guid>
+      <description>Sara Shapiro is a research assistant for the Alexander and the Tepolt Labs at WHOI. She received her Masters of Oceanography degree from the Graduate School of Oceanography at the University of Rhode Island (URI); this compliments her Bachelor of Science degree in Marine Biology, also from URI. Past research experiences include performing morphological and genetic analysis on deep-sea coral samples from the Chukchi Sea, microscopy analysis of phytoplankton samples from the North Atlantic, biodiversity studies of both the benthic ecology of Narragansett Bay and the diversity of the Sargassum Seaweed ecosystem, and studying crab diversity in the intertidal zone of the North Atlantic coast.</description>
+    </item>
+    
+  </channel>
+</rss>
