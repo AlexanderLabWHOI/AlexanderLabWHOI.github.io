@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.1.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Alexander Lab">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="How to use anvi&#39;o in interactive mode specifically on WHOI&#39;s server">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-65421302-2', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://alexanderlabwhoi.github.io/index.xml" type="application/rss+xml" title="Alexander Lab @ WHOI">
+  <link rel="feed" href="https://alexanderlabwhoi.github.io/index.xml" type="application/rss+xml" title="Alexander Lab @ WHOI">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@nekton4plankton">
+  <meta property="twitter:creator" content="@nekton4plankton">
+  
+  <meta property="og:site_name" content="Alexander Lab @ WHOI">
+  <meta property="og:url" content="https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/">
+  <meta property="og:title" content="Using anvi&#39;o in interactive mode | Alexander Lab @ WHOI">
+  <meta property="og:description" content="How to use anvi&#39;o in interactive mode specifically on WHOI&#39;s server"><meta property="og:image" content="https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/featured.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2022-10-24T15:25:12-04:00">
+  
+  <meta property="article:modified_time" content="2022-10-24T15:25:12-04:00">
+  
+
+  
+
+  
+
+  <title>Using anvi&#39;o in interactive mode | Alexander Lab @ WHOI</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Alexander Lab @ WHOI</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#people">
+            
+            <span>People</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/publication">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/post">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/conduct">
+            
+            <span>Conduct</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/join">
+            
+            <span>Join</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <div class="featured-image" style="background-image: url('/post/2022-10-24_anvio/featured_hu95a124d9eecfc895967c1c3f1a0333e5_9425581_800x0_resize_lanczos_2.png');"></div>
+  
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Using anvi&#39;o in interactive mode</h1>
+
+        
+        <p class="page-subtitle">Mostly just a bunch of installation steps</p>
+        
+
+        
+
+
+
+<meta content="2022-10-24 15:25:12 -0400 EDT" itemprop="datePublished">
+<meta content="2022-10-24 15:25:12 -0400 EDT" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/akrinos/">Arianna Krinos</a></span></span>
+  
+
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Oct 24, 2022</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2022-10-24_anvio/#disqus_thread"></a>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/computation/">computation</a>
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Using%20anvi%27o%20in%20interactive%20mode&amp;url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f&amp;title=Using%20anvi%27o%20in%20interactive%20mode"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f&amp;title=Using%20anvi%27o%20in%20interactive%20mode"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Using%20anvi%27o%20in%20interactive%20mode&amp;body=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/post/2022-10-24_anvio/featured_hu95a124d9eecfc895967c1c3f1a0333e5_9425581_680x500_fill_q90_lanczos_center_2.png" itemprop="image" alt="">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Using anvi&#39;o in interactive mode</h1>
+
+  
+  <p class="page-subtitle">Mostly just a bunch of installation steps</p>
+  
+
+  
+
+
+
+<meta content="2022-10-24 15:25:12 -0400 EDT" itemprop="datePublished">
+<meta content="2022-10-24 15:25:12 -0400 EDT" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">
+        
+
+      
+      
+      
+        <a href="/authors/akrinos/">Arianna Krinos</a></span></span>
+  
+
+
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Oct 24, 2022</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2022-10-24_anvio/#disqus_thread"></a>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/computation/">computation</a>
+    
+  </span>
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Using%20anvi%27o%20in%20interactive%20mode&amp;url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f&amp;title=Using%20anvi%27o%20in%20interactive%20mode"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f&amp;title=Using%20anvi%27o%20in%20interactive%20mode"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Using%20anvi%27o%20in%20interactive%20mode&amp;body=https%3a%2f%2falexanderlabwhoi.github.io%2fpost%2f2022-10-24_anvio%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Anvi&rsquo;o is a powerful tool for analyzing and vizualizing &lsquo;omics data, much of which relies on one&rsquo;s ability to visualize those data. On Poseidon, it can sometimes be difficult to work with these kinds of plotting tools, because we&rsquo;re working on the command line. To use anvi&rsquo;o interactively on Poseidon, we need to go through a few extra steps.</p>
+
+<p>I&rsquo;ll walk you through the whole installation of anvi&rsquo;o here from start to finish! Most of these instructions are also available on anvio.org. The other half of these instructions are mostly in the posts <a href="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/" target="_blank">here</a> (for Mac) and <a href="https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/" target="_blank">here</a> (for Windows) that we&rsquo;ve previously uploaded to the blog!</p>
+
+<h3 id="step-one-create-a-fresh-conda-environment-for-anvi-o-and-install-dependencies">Step One: create a fresh <code>conda</code> environment for anvi&rsquo;o and install dependencies</h3>
+
+<p>I like using <code>mamba</code>. That will make the rest of your installs much faster. So I&rsquo;ve modified anvi&rsquo;o&rsquo;s installation instructions a little bit to fit that principle. After logging into Poseidon&rsquo;s login node (and making sure that you have the most recent and/or your preferred anaconda module loaded), we&rsquo;ll run:</p>
+
+<pre><code>conda create -y --name anvio python=3.6 mamba
+</code></pre>
+
+<p>We&rsquo;ll wait for that to finish, then execute <code>conda activate anvio</code> (or whatever you chose to name your environment! Next, we have a whole list of packages we&rsquo;ll want mamba to go ahead and (efficiently) install for us in order for anvi&rsquo;o to work. You should be able to just copy, paste, and execute this entire code block right in your terminal window.</p>
+
+<pre><code>mamba install -y -c bioconda &quot;sqlite&gt;=3.31.1&quot;
+mamba install -y -c bioconda prodigal
+mamba install -y -c bioconda mcl
+mamba install -y -c bioconda muscle=3.8.1551
+mamba install -y -c bioconda hmmer
+mamba install -y -c bioconda diamond
+mamba install -y -c bioconda blast
+mamba install -y -c bioconda megahit
+mamba install -y -c bioconda spades
+mamba install -y -c bioconda bowtie2 tbb=2019.8
+mamba install -y -c bioconda bwa
+mamba install -y -c bioconda samtools=1.9
+mamba install -y -c bioconda centrifuge
+mamba install -y -c bioconda trimal
+mamba install -y -c bioconda iqtree
+mamba install -y -c bioconda trnascan-se
+mamba install -y -c bioconda r-base
+mamba install -y -c bioconda r-stringi
+mamba install -y -c bioconda r-tidyverse
+mamba install -y -c bioconda r-magrittr
+mamba install -y -c bioconda r-optparse
+mamba install -y -c bioconda bioconductor-qvalue
+mamba install -y -c bioconda fasttree
+mamba install -y -c bioconda vmatch
+mamba install -y -c bioconda fastani ## anvio says you don't need this one
+</code></pre>
+
+<p>Note: anvi&rsquo;o&rsquo;s website says that you don&rsquo;t need the <code>fastani</code> package installed for the software to work. The install went fine for me. The whole install process might take quite a while, depending on the speed of the connection. If you elect to use <code>conda</code> over <code>mamba</code>, it will take a <em>lot</em> longer.</p>
+
+<h3 id="step-two-actually-install-anvi-o">Step Two: actually install anvi&rsquo;o</h3>
+
+<p>You should execute this in a folder where you don&rsquo;t mind software files being downloaded to:</p>
+
+<pre><code>curl -L https://github.com/merenlab/anvio/releases/download/v7.1/anvio-7.1.tar.gz \
+        --output anvio-7.1.tar.gz
+pip install anvio-7.1.tar.gz
+</code></pre>
+
+<p>Now, you should be good to go to run anvi&rsquo;o!</p>
+
+<h3 id="step-three-get-a-worker-node-spun-up-to-do-your-bidding">Step Three: get a worker node spun up to do your bidding</h3>
+
+<p>We&rsquo;ll run an interactive job on Poseidon using <code>srun</code>. You can modify this command as needed if you want this job to go for longer than two hours&hellip;or if people are hogging all the <code>compute</code> nodes and you need to hedge your bets with a pre-empt-able <code>scavenger</code> run, for example.</p>
+
+<pre><code>srun -p compute --time=02:00:00 --mem=50gb --pty bash
+</code></pre>
+
+<p>Eventually, this should log you into a clean worker node, so your prompt should change from <username>@poseidon-l<1 or 2>.whoi.edu to <username>@pn&lt;# of node you were assigned&gt;. Now, you&rsquo;re ready to not annoy the IT department by executing expensive programs on the common login node! Make sure now to <code>conda activate anvio</code>.</p>
+
+<h3 id="step-four-run-anvi-o-interactive-but-make-sure-to-specify-a-port">Step Four: run anvi&rsquo;o interactive, but make sure to specify a port</h3>
+
+<p>In order to run this, I am going to use the example the <a href="https://merenlab.org/2016/02/27/the-anvio-interactive-interface/" target="_blank">Eren lab</a> provides, since I don&rsquo;t use anvi&rsquo;o much. Note that their link is broken on their tutorial website. I found one that works <a href="https://github.com/meren/anvio/blob/master/anvio/tests/sandbox/example-newick-tree.txt" target="_blank">here</a>. I just saved the Newick text at that link to a file called <code>meren_tree.txt</code>, then (inside my interactive session!), I executed:</p>
+
+<pre><code>anvi-interactive -t meren_tree.txt -p profile.db --title 'Simple tree test' --server-only -P 5785
+</code></pre>
+
+<h3 id="step-five-log-into-your-node-and-forward-that-port-to-your-browser">Step Five: log into your node and forward that port to your browser</h3>
+
+<p>All of these steps are straight out of our tutorial on running a Jupyter notebook remotely that I linked above. If you use Windows, be sure to check out that post - I&rsquo;m only using the Mac command here.</p>
+
+<pre><code>ssh -t -t &lt;username&gt;@poseidon-l1.whoi.edu -L 5785:localhost:5785 ssh &lt;the name of the &quot;pn&quot; node from above that showed up when you ran srun&gt; -L 5785:localhost:5785
+</code></pre>
+
+<p>To summarize, above you need to swap out:
+- your own username
+- the port number if you changed it
+- the name of the worker node you ssh&rsquo;d into</p>
+
+<p>For example, if my username is &ldquo;akrinos&rdquo;, I used port 5786, and I ssh&rsquo;d into &ldquo;pn075&rdquo;, I would type:</p>
+
+<pre><code>ssh -t -t akrinos@poseidon-l1.whoi.edu -L 5786:localhost:5786 ssh pn075 -L 5786:localhost:5786
+</code></pre>
+
+<p>Be sure to check out our more detailed post on ssh tunneling if you want shortcuts for doing this!</p>
+
+<h3 id="step-six-access-your-interactive-session">Step Six: access your interactive session</h3>
+
+<p>Simply type <code>localhost:5786</code> into your web browser (replacing this second number with your present node), and you should be able to see your anvi&rsquo;o interactive session! Feel free to use any <code>anvi-interactive</code> command and accessory files that you want to after creating/uploading those files on Poseidon.</p>
+
+<p>Happy interacting!s</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/python/">python</a>
+  
+  <a class="badge badge-light" href="/tags/data-visualization/">data visualization</a>
+  
+  <a class="badge badge-light" href="/tags/anvio/">anvio</a>
+  
+  <a class="badge badge-light" href="/tags/bioinformatics/">bioinformatics</a>
+  
+  <a class="badge badge-light" href="/tags/genomics/">genomics</a>
+  
+</div>
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/akrinos/avatar_hud0a79a6e506ba5fa7de5231a4f7caedf_4130219_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/akrinos">Arianna Krinos</a></h5>
+    <h6 class="card-subtitle">Graduate Student</h6>
+    <p class="card-text" itemprop="description">Arianna is a graduate student in the Alexander Lab working with Harriet &amp; Mick Follows at MIT.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/ariannakrinos" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=dguBKzUAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/akrinos" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://orcid.org/0000-0001-9767-8392" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://drive.google.com/file/d/16WQzyWgEAPQgNc77MkJVYG6BDqGohPXn/view?usp=sharing" target="_blank" rel="noopener">
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://akrinos.github.io" target="_blank" rel="noopener">
+          <i class="fas fa-home"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/2021-03-missingfont/">Fixing my matplotlib font woes</a></li>
+          
+          <li><a href="/post/2021-02-hiring/">We are hiring!</a></li>
+          
+          <li><a href="/publication/bolyen2018/">QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "alexanderlabwhoi-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+      <script async defer src="//maps.googleapis.com/maps/api/js?key="></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//alexanderlabwhoi-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+
+  </body>
+</html>
+

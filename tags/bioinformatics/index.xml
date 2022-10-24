@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 24 Oct 2022 15:25:12 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/tags/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using anvi&#39;o in interactive mode</title>
+      <link>https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/</link>
+      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/</guid>
+      <description>Anvi&amp;rsquo;o is a powerful tool for analyzing and vizualizing &amp;lsquo;omics data, much of which relies on one&amp;rsquo;s ability to visualize those data. On Poseidon, it can sometimes be difficult to work with these kinds of plotting tools, because we&amp;rsquo;re working on the command line. To use anvi&amp;rsquo;o interactively on Poseidon, we need to go through a few extra steps.
+I&amp;rsquo;ll walk you through the whole installation of anvi&amp;rsquo;o here from start to finish!</description>
+    </item>
     
     <item>
       <title>QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</title>
