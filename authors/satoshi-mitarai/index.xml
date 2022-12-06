@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Satoshi Mitarai on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/satoshi-mitarai/</link>
+    <description>Recent content in Satoshi Mitarai on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/satoshi-mitarai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microbiomes of bloom-forming Phaeocystis algae are stable and consistently recruited, with both symbiotic and opportunistic modes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

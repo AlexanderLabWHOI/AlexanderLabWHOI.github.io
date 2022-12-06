@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>**Harriet Alexander**</title>
       <link>https://alexanderlabwhoi.github.io/authors/harriet-alexander/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/harriet-alexander/</guid>
       <description></description>
@@ -31,11 +31,38 @@
     </item>
     
     <item>
+      <title>*Arianna Krinos*</title>
+      <link>https://alexanderlabwhoi.github.io/authors/arianna-krinos/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/arianna-krinos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>*Margaret Mars Brisbin* §</title>
+      <link>https://alexanderlabwhoi.github.io/authors/margaret-mars-brisbin-/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/margaret-mars-brisbin-/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Abigail Heithoff</title>
       <link>https://alexanderlabwhoi.github.io/authors/abigail-heithoff/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/abigail-heithoff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adam Martiny</title>
+      <link>https://alexanderlabwhoi.github.io/authors/adam-martiny/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/adam-martiny/</guid>
       <description></description>
     </item>
     
@@ -580,6 +607,15 @@
     </item>
     
     <item>
+      <title>Emmanuel Boss</title>
+      <link>https://alexanderlabwhoi.github.io/authors/emmanuel-boss/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/emmanuel-boss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Eric A. Webb</title>
       <link>https://alexanderlabwhoi.github.io/authors/eric-a.-webb/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
@@ -688,6 +724,15 @@
     </item>
     
     <item>
+      <title>Heather Benway</title>
+      <link>https://alexanderlabwhoi.github.io/authors/heather-benway/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/heather-benway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Heidi J. Smith</title>
       <link>https://alexanderlabwhoi.github.io/authors/heidi-j.-smith/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
@@ -756,6 +801,15 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/jamie-morton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jason R Graff</title>
+      <link>https://alexanderlabwhoi.github.io/authors/jason-r-graff/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/jason-r-graff/</guid>
       <description></description>
     </item>
     
@@ -1122,7 +1176,7 @@
     <item>
       <title>Luke R Thompson</title>
       <link>https://alexanderlabwhoi.github.io/authors/luke-r-thompson/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/luke-r-thompson/</guid>
       <description></description>
@@ -1140,7 +1194,7 @@
     <item>
       <title>Mak A Saito</title>
       <link>https://alexanderlabwhoi.github.io/authors/mak-a-saito/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/mak-a-saito/</guid>
       <description></description>
@@ -1300,6 +1354,15 @@
     </item>
     
     <item>
+      <title>Natalie Cohen</title>
+      <link>https://alexanderlabwhoi.github.io/authors/natalie-cohen/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/natalie-cohen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Natalie R Cohen</title>
       <link>https://alexanderlabwhoi.github.io/authors/natalie-r-cohen/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
@@ -1323,6 +1386,15 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/nicola-segata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nicole J Poulton</title>
+      <link>https://alexanderlabwhoi.github.io/authors/nicole-j-poulton/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/nicole-j-poulton/</guid>
       <description></description>
     </item>
     
@@ -1444,6 +1516,15 @@
     </item>
     
     <item>
+      <title>Robert H Lampe</title>
+      <link>https://alexanderlabwhoi.github.io/authors/robert-h-lampe/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/robert-h-lampe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ruth Ley</title>
       <link>https://alexanderlabwhoi.github.io/authors/ruth-ley/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
@@ -1491,7 +1572,7 @@
     <item>
       <title>Sarah K Hu</title>
       <link>https://alexanderlabwhoi.github.io/authors/sarah-k-hu/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/sarah-k-hu/</guid>
       <description></description>
@@ -1512,6 +1593,15 @@
       <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/sarah-rosengard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Satoshi Mitarai</title>
+      <link>https://alexanderlabwhoi.github.io/authors/satoshi-mitarai/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/satoshi-mitarai/</guid>
       <description></description>
     </item>
     
@@ -1566,6 +1656,15 @@
       <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/sonya-t.-dyhrman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sophie Clayton</title>
+      <link>https://alexanderlabwhoi.github.io/authors/sophie-clayton/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/sophie-clayton/</guid>
       <description></description>
     </item>
     

@@ -115,6 +115,33 @@ pip install anvio-7.1.tar.gz
     </item>
     
     <item>
+      <title>Bio-GO-SHIP: The Time Is Right to Establish Global Repeat Sections of Ocean Biology</title>
+      <link>https://alexanderlabwhoi.github.io/publication/clayton-2022-bio/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/clayton-2022-bio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marine microeukaryote metatranscriptomics: sample processing and bioinformatic workflow recommendations for ecological applications</title>
+      <link>https://alexanderlabwhoi.github.io/publication/cohen-2022-marine/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/cohen-2022-marine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microbiomes of bloom-forming Phaeocystis algae are stable and consistently recruited, with both symbiotic and opportunistic modes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bio-GO-SHIP: Linking marine biodiversity and biogeochemistry</title>
       <link>https://alexanderlabwhoi.github.io/project/biogoship/</link>
       <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
@@ -404,50 +431,6 @@ font.sans-serif: Arial
 
 &lt;p&gt;[Thanks to Arianna for commenting on this blog post for me :)]&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>We are hiring!</title>
-      <link>https://alexanderlabwhoi.github.io/post/2021-02-hiring/</link>
-      <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2021-02-hiring/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Are you a recent (or not so recent) graduate with an interest in biological oceanography or marine biology? Do you have molecular biology experience in the lab? Are you curious to learn more about how molecular biology can be used to study environmental systems?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I am excited to announce that &lt;a href=&#34;https://directory.whoi.edu/profile/ctepolt/&#34; target=&#34;_blank&#34;&gt;Carolyn Tepolt&lt;/a&gt; and I are looking to hire a &lt;em&gt;joint&lt;/em&gt; research assistant (i.e. lab tech) to join our labs at the &lt;a href=&#34;https://www.whoi.edu/&#34; target=&#34;_blank&#34;&gt;Woods Hole Oceanographic Institution&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Here is the position description from the &lt;a href=&#34;https://careers-whoi.icims.com/jobs/1395/research-assistant/job?mobile=false&amp;amp;width=1020&amp;amp;height=500&amp;amp;bga=true&amp;amp;needsRedirect=false&amp;amp;jan1offset=-300&amp;amp;jun1offset=-240&#34; target=&#34;_blank&#34;&gt;official job posting&lt;/a&gt;:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The Alexander and Tepolt labs at WHOI are seeking a motivated individual with prior laboratory experience to support genetic research in marine systems as a technician. The Alexander lab studies the biogeochemical functioning and physiological ecology of eukaryotic plankton, and the Tepolt lab studies population genetics and rapid adaptation in marine invertebrates. Time will be split between these two labs, and the technician will be a full and participating member of both lab groups. We will train the right candidate on specific lab protocols, but the position requires some prior experience and comfort with general molecular biology techniques (e.g. pipetting, PCR, etc.). This position is primarily lab-based and is ideal for a candidate who wishes to gain experience in the application of advanced genetic and molecular approaches to the study of marine organisms and ocean ecosystems.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This position is particularly exciting as it provides the opportunity to work directly in two labs that employ &lt;em&gt;different&lt;/em&gt; cutting-edge molecular approaches to study &lt;em&gt;distinct&lt;/em&gt; systems.&lt;/p&gt;
-
-&lt;p&gt;In my lab, we are interested in trying to understand the ecological role protists (microbial eukaryotes) in the broader marine environment&amp;ndash; with a particular focus on phytoplankton. We leverage a variety of approaches including genomics and transcriptomics to study individual microbial isolates as well as &lt;em&gt;meta&lt;/em&gt;-genomics and &lt;em&gt;meta&lt;/em&gt;-transcriptomics to study mixed communities of microbial organisms. In this position you would be involved in the culturing of various single-celled plankton, the design and execution of culture experiments, and the testing and execution of various molecular techniques (e.g. Nanopore sequencing for protistan genomics).&lt;/p&gt;
-
-&lt;p&gt;The Tepolt lab is focused understanding adaptation in marine populations of metazoans (that are many orders of magnitude larger than the protists we work on in my lab). I encourage you to checkout &lt;a href=&#34;https://www2.whoi.edu/site/tepoltlab/&#34; target=&#34;_blank&#34;&gt;her website&lt;/a&gt; and her &lt;a href=&#34;https://www2.whoi.edu/site/tepoltlab/were-hiring/&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt; on the job opening to learn more about the awesome projects she has going on.&lt;/p&gt;
-
-&lt;p&gt;Both Carolyn and I are committed to building a &lt;a href=&#34;https://alexanderlabwhoi.github.io/conduct&#34;&gt;diverse research group&lt;/a&gt; that is united by their interest in ocean life (of all sizes)! So, if this position sounds interesting to you, we encourage you learn more and apply through the official job WHOI advertisement &lt;a href=&#34;https://careers-whoi.icims.com/jobs/1395/research-assistant/job?mobile=false&amp;amp;width=1020&amp;amp;height=500&amp;amp;bga=true&amp;amp;needsRedirect=false&amp;amp;jan1offset=-300&amp;amp;jun1offset=-240&#34; target=&#34;_blank&#34;&gt;HERE&lt;/a&gt;. We will begin reviewing applications &lt;strong&gt;March 5, 2021&lt;/strong&gt;, so please submit your application by that date to ensure full consideration.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>EUKulele: Taxonomic annotation of the unsung eukaryotic microbes</title>
-      <link>https://alexanderlabwhoi.github.io/publication/krinos-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DMSP synthesis genes distinguish two types of DMSP producer phenotypes</title>
-      <link>https://alexanderlabwhoi.github.io/publication/mc-parland-2021/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/mc-parland-2021/</guid>
-      <description></description>
     </item>
     
   </channel>

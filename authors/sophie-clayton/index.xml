@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sophie Clayton on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/sophie-clayton/</link>
+    <description>Recent content in Sophie Clayton on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/sophie-clayton/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bio-GO-SHIP: The Time Is Right to Establish Global Repeat Sections of Ocean Biology</title>
+      <link>https://alexanderlabwhoi.github.io/publication/clayton-2022-bio/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/clayton-2022-bio/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

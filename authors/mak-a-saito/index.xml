@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sun, 01 Jan 2012 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/mak-a-saito/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Microbiomes of bloom-forming Phaeocystis algae are stable and consistently recruited, with both symbiotic and opportunistic modes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Identifying reference genes with stable expression from high throughput sequence data</title>
