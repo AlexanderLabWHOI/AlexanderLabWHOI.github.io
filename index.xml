@@ -7,8 +7,17 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 24 Oct 2022 15:25:12 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reverse engineering environmental metatranscriptomes clarifies best practices for eukaryotic assembly</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2023/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Using anvi&#39;o in interactive mode</title>
@@ -330,107 +339,6 @@ debug1: confirm x11
       
       <guid>https://alexanderlabwhoi.github.io/publication/mc-parland-20210/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Fixing my matplotlib font woes</title>
-      <link>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</link>
-      <pubDate>Tue, 30 Mar 2021 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</guid>
-      <description>
-
-&lt;p&gt;Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this &lt;a href=&#34;https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/&#34; target=&#34;_blank&#34;&gt;other blog post&lt;/a&gt; for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extensibility and power for my notebooks that my personal laptop can&amp;rsquo;t handle, minimizing file storage on my local machine, etc. etc.).&lt;/p&gt;
-
-&lt;p&gt;However, I &lt;em&gt;could not&lt;/em&gt; get any of my font specifications to work in &lt;code&gt;matplotlib&lt;/code&gt; (or any dependent programs) in my notebooks that I was running via ssh tunnel. Period.&lt;/p&gt;
-
-&lt;p&gt;I constantly got some variation of &lt;code&gt;findfont: Font family [&#39;sans-serif&#39;] not found. Falling back to DejaVu Sans.&lt;/code&gt;.:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/error-message.png&#34; alt=&#34;Error message&#34; title=&#34;Error message from `matplotlib`&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This happened both when I directly specified the font in my notebook:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import matplotlib.pyplot as plt
-plt.rcParams[&amp;quot;font.family&amp;quot;] = &amp;quot;sans-serif&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And also when I modified my &lt;code&gt;matplotlibrc&lt;/code&gt; file (more on that later).&lt;/p&gt;
-
-&lt;p&gt;I figured I was simply doing something wrong and eventually gave up on trying to fix it and just succumbed to my fate of manually changing fonts post-plotting in Adobe Illustrator. I did this for&amp;hellip; several years.&lt;/p&gt;
-
-&lt;p&gt;And then yesterday, I had an epiphany. My remote HPC probably doesn&amp;rsquo;t have Microsoft  fonts installed.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/picard-meme-facepalm.jpg&#34; alt=&#34;Facepalm&#34; title=&#34;Facepalm&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As &lt;a href=&#34;https://alexanderlabwhoi.github.io/authors/akrinos/&#34; target=&#34;_blank&#34;&gt;Arianna&lt;/a&gt; said (slacked, really) when I asked for her comments on this blog post: &amp;ldquo;This is because unlike an OS that we’re used to working with that’s all set up out-of-the-box, HPC admins don’t really have a need to use anything but some kind of Courier New.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Too true.&lt;/p&gt;
-
-&lt;p&gt;And so, I present to you&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-specify-fonts-in-matplotlib-when-you-are-working-on-a-linux-system&#34;&gt;How to specify fonts in &lt;code&gt;matplotlib&lt;/code&gt; when you are working on a Linux system:&lt;/h2&gt;
-
-&lt;p&gt;First off, I highly recommend using &lt;code&gt;conda&lt;/code&gt; environments to manage research computational environments&amp;ndash; it can enhance reproducibility and avoid package conflicts (&lt;a href=&#34;https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/data-science.html&#34; target=&#34;_blank&#34;&gt;more here&lt;/a&gt;). For the purposes of this tutorial, I will assume that you have created a &lt;code&gt;conda&lt;/code&gt; environment that has &lt;code&gt;matplotlib&lt;/code&gt; installed. For the sake of demonstration my environment is called &lt;code&gt;general_plotting&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Conveniently, there is a conda package &lt;a href=&#34;https://anaconda.org/conda-forge/mscorefonts&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;mscorefonts&lt;/code&gt;&lt;/a&gt; that contains all the &amp;ldquo;core fonts&amp;rdquo; that are used for the Web. These fonts include: Andale Mono, Arial, Arial Black, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana, and Webdings. While not totally comprehensive, it provides enough font variety for my purposes.&lt;/p&gt;
-
-&lt;p&gt;After having activated whatever environment you are using, you can install the &lt;code&gt;mscorefonts&lt;/code&gt; package.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda activate general_plotting
-conda install -c conda-forge mscorefonts
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will install and make those fonts available to you within your environment. We are almost done&amp;ndash; but a few more steps just to make it work.&lt;/p&gt;
-
-&lt;p&gt;I found that I had to delete my cached &lt;code&gt;matplotlib&lt;/code&gt; folder. If you have &lt;code&gt;conda&lt;/code&gt; installed I believe that it should be located in your home directory; however, if you can&amp;rsquo;t find it there leave me a comment below.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rm ~/.cache/matplotlib -rf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, any adjustments you want to make should be fairly straightforward!&lt;/p&gt;
-
-&lt;p&gt;Now, you should be able to specify a font in your notebook preamble as you wish:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import matplotlib
-matplotlib.rcParams[&#39;font.family&#39;] = &amp;quot;sans-serif&amp;quot;
-matplotlib.rcParams[&#39;font.sans-serif&#39;] = &amp;quot;Comic Sans MS&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The above would make all plots in the notebook default to Comic Sans.&lt;/p&gt;
-
-&lt;p&gt;You should also be able to specify fonts directly on some figure portion (e.g. y-label):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;fig, ax = plt.plot(x,y) #some random variables
-ax.set_ylabel(&amp;quot;First variable&amp;quot;, fontname=&amp;quot;Arial&amp;quot;, fontsize=12)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;setting-a-default-font&#34;&gt;Setting a default font&lt;/h2&gt;
-
-&lt;p&gt;I generally like all my plots to look relatively similar. My preferred font is Arial &amp;ndash; it is tidy and generally easy to read. If you want to specify a default font for all your plots without having to specify the &lt;code&gt;rcParams&lt;/code&gt; in each notebook you can modify the &lt;code&gt;matplotlibrc&lt;/code&gt; file for your environment. You can think of the &lt;code&gt;matplotlibrc&lt;/code&gt; as similar to your &lt;code&gt;.bashrc&lt;/code&gt; &amp;ndash; it controls some of the basic functionality and preferences for your &lt;code&gt;matplotlib&lt;/code&gt; plotting. This file can be a bit buried (especially when using &lt;code&gt;conda&lt;/code&gt; environments). One easy way to find your file is to open a notebook within whatever environment you are using and type the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import matplotlib
-print(matplotlib.matplotlib_fname())
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This command will print the absolute path to your &lt;code&gt;matplotlibrc&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Within this file, I edited the file such that I uncommented the following lines and made the following specifications:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;font.family:  sans-serif
-font.sans-serif: Arial
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As a random aside while you have your &lt;code&gt;matplotlibrc&lt;/code&gt; file open and handy, you should consider changing your &lt;code&gt;pdf.fonttype&lt;/code&gt; to &lt;code&gt;TrueType&lt;/code&gt; rather than the default &lt;code&gt;Type 3&lt;/code&gt;. If you go to edit or tinker with a &lt;code&gt;.pdf&lt;/code&gt; file sometime down the line, you might be upset to discover that all the fonts have been converted to vectors (or outlined shapes of the fonts that can&amp;rsquo;t be easily altered). You can set your default behavior to be exporting editable &lt;code&gt;TrueType&lt;/code&gt; fonts by finding &lt;code&gt;pdf.fonttype&lt;/code&gt; in &lt;code&gt;matplotlibrc&lt;/code&gt; and uncommenting it and changing it as follows:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pdf.fonttype:       42
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can now change your fonts as you please and not be stuck with DejaVu Sans (a font that I really, &lt;em&gt;really&lt;/em&gt;, &lt;strong&gt;REALLY&lt;/strong&gt; dislike).&lt;/p&gt;
-
-&lt;p&gt;Happy plotting!&lt;/p&gt;
-
-&lt;p&gt;[Thanks to Arianna for commenting on this blog post for me :)]&lt;/p&gt;
-</description>
     </item>
     
   </channel>

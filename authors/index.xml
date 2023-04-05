@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,14 +15,14 @@
     <item>
       <title>**Harriet Alexander**</title>
       <link>https://alexanderlabwhoi.github.io/authors/harriet-alexander/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/harriet-alexander/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>*Arianna I Krinos §*</title>
+      <title>*Arianna I Krinos* §</title>
       <link>https://alexanderlabwhoi.github.io/authors/arianna-i-krinos-/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
       
@@ -31,11 +31,20 @@
     </item>
     
     <item>
-      <title>*Arianna Krinos*</title>
-      <link>https://alexanderlabwhoi.github.io/authors/arianna-krinos/</link>
+      <title>*Arianna I. Krinos* §</title>
+      <link>https://alexanderlabwhoi.github.io/authors/arianna-i.-krinos-/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/arianna-i.-krinos-/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>*Arianna Krinos* §</title>
+      <link>https://alexanderlabwhoi.github.io/authors/arianna-krinos-/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/authors/arianna-krinos/</guid>
+      <guid>https://alexanderlabwhoi.github.io/authors/arianna-krinos-/</guid>
       <description></description>
     </item>
     
@@ -1300,6 +1309,15 @@
     </item>
     
     <item>
+      <title>Michael J. Follows</title>
+      <link>https://alexanderlabwhoi.github.io/authors/michael-j.-follows/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/michael-j.-follows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Michael Shaffer</title>
       <link>https://alexanderlabwhoi.github.io/authors/michael-shaffer/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
@@ -1368,6 +1386,15 @@
       <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/authors/natalie-r-cohen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natalie R. Cohen</title>
+      <link>https://alexanderlabwhoi.github.io/authors/natalie-r.-cohen/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/authors/natalie-r.-cohen/</guid>
       <description></description>
     </item>
     
