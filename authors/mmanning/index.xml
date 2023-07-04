@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mmanning on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/mmanning/</link>
+    <description>Recent content in mmanning on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/mmanning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/mmanning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/mmanning/</guid>
+      <description>Miah Manning is a Ph.D. student through the MIT-WHOI Joint Program. She has a B.A. in Biological Sciences from Rutgers University-New Brunswick. She is part of the Alexander lab, studying phytoplankton ecology and genomics in the context of harmful algal blooms (HABs). Miah&amp;rsquo;s past research includes studying phytoplankton composition changes along the West Antarctic Peninsula (WAP) as part of the Palmer Long-Term Ecological Research Project (Pal-LTER). She also studied the photophysiological response of Karenia brevis, the algae associated with Florida Red Tides, to bloom mitigation compounds at the Mote Marine Laboratory.</description>
+    </item>
+    
+  </channel>
+</rss>
