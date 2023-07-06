@@ -322,6 +322,11 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/author/jhickman/</loc>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/author/krice/</loc>
     </url>
   
@@ -2508,6 +2513,12 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/housekeeping-genes/</loc>
       <lastmod>2012-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/jhickman/</loc>
       <priority>0</priority>
     </url>
   

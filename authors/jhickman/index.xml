@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jhickman on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/jhickman/</link>
+    <description>Recent content in jhickman on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/jhickman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/jhickman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/jhickman/</guid>
+      <description>Jo Hickman is a graduate student in the MIT-WHOI Joint Program in Biological Oceanography. They graduated from Utah Valley University with degrees in bioinformatics, earth science, and philosophy. Past research experiences include mangrove metagenomics for community classification and conservation ecology, elevated trace metal concentrations from anthropogenic sources in lake ecosystems, microbial biogeography and community composition across Wallace&amp;rsquo;s Line, accuracy and efficacy of metagenomic tools in model versus non-model systems, the social implications of nuclear waste in the Navajo Nation, and the ecological, economic, and infrastructural possibility of agroforestry between cacao and cashew in Guinea-Bissau.</description>
+    </item>
+    
+  </channel>
+</rss>
