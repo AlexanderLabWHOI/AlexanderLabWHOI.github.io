@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rhamilton on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/rhamilton/</link>
+    <description>Recent content in rhamilton on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/rhamilton/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/rhamilton/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/rhamilton/</guid>
+      <description>Rayna Hamilton is a Research Assistant III working with the Alexander, Tepolt and Pachiadaki labs at WHOI. She has B.Sc. in Genetics from the University of Manitoba and an M.S. in Bioinformatics from Johns Hopkins University. Her past research includes investigating mitochondrial and ribosomal DNA barcoding potential in the order Lepidoptera. Currently, Rayna is working in the Alexander lab to improve genome annotation of the coccolithophore Emiliania huxleyi.</description>
+    </item>
+    
+  </channel>
+</rss>
