@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpalermo on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/cpalermo/</link>
+    <description>Recent content in cpalermo on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/cpalermo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/cpalermo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/cpalermo/</guid>
+      <description>Christine Palermo is a postdoc at WHOI in the Center for Oceans and Human Health. She completed her PhD in environmental science at the University of Toronto Mississauga, where she studied viral and bacterial communities in a freshwater harbor of the Great Lakes that experiences eutrophication and harmful algal blooms. Working at WHOI in the Alexander and Brosnahan labs, she will continue to study the influence of viruses on influence bloom-forming algae such as Pseudo-nitzschia and Alexandrium using computational, culturing, and molecular methods.</description>
+    </item>
+    
+  </channel>
+</rss>
