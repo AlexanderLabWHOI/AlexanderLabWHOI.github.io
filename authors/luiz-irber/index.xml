@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Luiz Irber on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/luiz-irber/</link>
+    <description>Recent content in Luiz Irber on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/luiz-irber/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>sourmash v4: A multitool to quickly search, compare, and analyze genomic and metagenomic data sets</title>
+      <link>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

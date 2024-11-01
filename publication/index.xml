@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Microeukaryote metabolism across the western North Atlantic Ocean revealed through autonomous underwater profiling</title>
+      <link>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Molecular forecasting of toxic bloom events</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander-2024-molecular/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander-2024-molecular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Dawn of the BioGeoSCAPES Program</title>
+      <link>https://alexanderlabwhoi.github.io/publication/saito-2024-dawn/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/saito-2024-dawn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sourmash v4: A multitool to quickly search, compare, and analyze genomic and metagenomic data sets</title>
+      <link>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Reverse engineering environmental metatranscriptomes clarifies best practices for eukaryotic assembly</title>

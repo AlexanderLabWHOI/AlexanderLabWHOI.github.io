@@ -7,8 +7,44 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Microeukaryote metabolism across the western North Atlantic Ocean revealed through autonomous underwater profiling</title>
+      <link>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Molecular forecasting of toxic bloom events</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander-2024-molecular/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander-2024-molecular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Dawn of the BioGeoSCAPES Program</title>
+      <link>https://alexanderlabwhoi.github.io/publication/saito-2024-dawn/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/saito-2024-dawn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sourmash v4: A multitool to quickly search, compare, and analyze genomic and metagenomic data sets</title>
+      <link>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Reverse engineering environmental metatranscriptomes clarifies best practices for eukaryotic assembly</title>
@@ -230,115 +266,6 @@ pip install anvio-7.1.tar.gz
 
 &lt;p&gt;&lt;em&gt;Funding for this project provided by the Moore Foundation&lt;/em&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Thermal Acclimation in Emiliania huxleyi</title>
-      <link>https://alexanderlabwhoi.github.io/project/thermal_ehux/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/thermal_ehux/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Emiliania huxleyi&lt;/em&gt; is a globally-distributed coccolithophore with a major influence on beogeochemical cycling via the production of large, ephemeral blooms. Because of its global distribution, &lt;em&gt;Emiliania huxleyi&lt;/em&gt; has a wide thermal range and apparently a high capacity for short-term acclimation and long-term adaptation to thermal conditions. We are studying this capacity in the lab via both traditional experimental acclimation approaches in semi-continuous culture, and via tracking gene expression changes in response to thermal conditioning in the taxon via transcriptomics. Through this project, we will address the questions:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Is the growth rate or the response time to change more vulnerable to thermal conditioning?&lt;/li&gt;
-&lt;li&gt;Does &lt;em&gt;Emiliania huxleyi&lt;/em&gt;&amp;rsquo;s capacity to survive in diverse thermal condition increase with exposure time?&lt;/li&gt;
-&lt;li&gt;What can we learn from more transcriptomic data under precise thermal experimental conditions? Can we apply this to unpacking global &amp;lsquo;omics datasets?&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>eukrhythmic: automating metatranscriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/project/eukrhythmic/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/eukrhythmic/</guid>
-      <description>&lt;p&gt;Metatranscriptomics is a useful probe into the members of an ecological community, capturing community members and their potential functions in a single sequencing effort. Because transcribed RNA is sequenced, via thorough processing of metatrancriptomes, we can decipher both the members constituting a community as well as the genes that each member was expressing at the instant that the sample was collected. Metatranscriptomics is a relatively immature pursuit as compared to genomics or transcriptomics. However, even more palpable is the lack of thorough analysis and readily available tools for metatranscriptomes from the environment. More complicated still is the use of metatranscriptomes for eukaryotes from the environment, many of which have not been previously or thoroughly sequenced and have complex genetic features. Eukrhythmic is an approach to consolidating existing assembly effort for environmental eukaryotes. The pipeline includes assembly via multiple external assembly tools, and then a process of consolidating those assemblies based on sequential clustering steps. Also included with the pipeline is the option to perform downstream functional and taxonomic annotation of retrieved transcripts.&lt;/p&gt;
-
-&lt;p&gt;The goal of this project is both to validate and provide support for the efforts of [marine] microbial ecologists that use metatranscriptomics to assess community structure and function, and to provide a tool that researchers can use to assemble their own environmental metatranscriptomes. Some questions associated with this project are:
-1. Can we recover complex communities from shuffled metatranscriptomic sequencing reads?
-2. Does the choice of assembler affect the quality of the assembly output?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Project Repository&lt;/strong&gt;: &lt;a href=&#34;https://github.com/AlexanderLabWHOI/eukrhythmic&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/eukrhythmic&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>`XQuartz` and remote integration for RStudio</title>
-      <link>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</link>
-      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/post/2021-03-17-xquartz/</guid>
-      <description>&lt;p&gt;&lt;code&gt;RStudio&lt;/code&gt; was once my favorite and most often-used IDE. And there are still a lot of reasons to use it, even if you&amp;rsquo;ve gotten used to something like &lt;code&gt;Spyder&lt;/code&gt; or &lt;code&gt;Jupyter&lt;/code&gt;. &lt;code&gt;RStudio&lt;/code&gt; is a clean IDE that allows you to simultaneously view your filesystem, environment variables, &lt;code&gt;R&lt;/code&gt; scripts, and console, and is all very specifically tailored to &lt;code&gt;R&lt;/code&gt;, which is important in many cases (&lt;code&gt;R&lt;/code&gt; is an amazing but finicky language). There are many occasions when doing &amp;ldquo;big data&amp;rdquo;-esque work on an HPC in which you may need access to an IDE. The perhaps most frequent situations are visualizing/exploring data and debugging.&lt;/p&gt;
-
-&lt;p&gt;For this tutorial, you&amp;rsquo;ll need a few things. The first thing is the most important, and it&amp;rsquo;s a little bit out of your hands. Your HPC system needs to be set up for X11 forwarding, which is a way to access the graphical window being spun up by the remote system (with access to all the files on that system) on your own computer. So we&amp;rsquo;re taking the visual output that the HPC can generate but doesn&amp;rsquo;t have the display to visualize, and sending it somewhere on our own computer. Namely, we&amp;rsquo;ll use &lt;code&gt;XQuartz&lt;/code&gt; to visualize this incoming data stream, which is the second prerequisite.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;X11&lt;/code&gt;-related software you&amp;rsquo;ll need on your computer differs based on whether you are a Mac or a PC. &lt;a href=&#34;https://kb.thayer.dartmouth.edu/article/336-x11-for-windows-and-mac&#34; target=&#34;_blank&#34;&gt;This website&lt;/a&gt; contains links to both. If you&amp;rsquo;re on Mac, you&amp;rsquo;ll need to download &lt;code&gt;XQuartz&lt;/code&gt;, and if you&amp;rsquo;re on PC, it&amp;rsquo;ll be &lt;code&gt;Xming&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The third prerequisite is that you need &lt;code&gt;RStudio&lt;/code&gt; installed somehow on your HPC system. My preferred method of doing this is via &lt;code&gt;conda&lt;/code&gt;. While we&amp;rsquo;re at it, we should also install some dependencies that will come up in your use of &lt;code&gt;R&lt;/code&gt;. Once you have &lt;code&gt;conda&lt;/code&gt; set up, you can use the following command to set up an &lt;code&gt;R&lt;/code&gt; environment that should work:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda create -n myRenv -c r r-essentials r-base rstudio r-lattice
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Okay, now that we&amp;rsquo;re through the prerequisites, we can start setting up an &lt;code&gt;RStudio&lt;/code&gt; window on our remote HPC. First, try logging into your remote HPC with &lt;code&gt;XQuartz&lt;/code&gt; enabled, like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ssh -v -X &amp;lt;your username&amp;gt;@&amp;lt;your HPC address&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you&amp;rsquo;re not used to using the &lt;code&gt;-v&lt;/code&gt; (verbose) flag when you log in, this will be an unwelcome spam to your screen. But the reason I suggest this is that you can sift through all of that noise to look for a line that looks something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;debug1: Requesting X11 forwarding with authentication spoofing.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So that you know your HPC system indeed is set up for &lt;code&gt;X11&lt;/code&gt; forwarding and isn&amp;rsquo;t just ignoring the flag you offered it.&lt;/p&gt;
-
-&lt;p&gt;Next, we want to set up a compute or interactive node that we can use for long enough to get our work in &lt;code&gt;RStudio&lt;/code&gt; finished. This may differ system-to-system. If you&amp;rsquo;re using SLURM, you can use a command like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;srun --time=&amp;lt;some time limit&amp;gt; -p &amp;lt;queue to use&amp;gt; --mem=&amp;lt;some memory requirement&amp;gt; --pty bash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once you&amp;rsquo;re allocated resources, you should see a prompt that displays the new node you&amp;rsquo;ve been redirected to. Next, you&amp;rsquo;ll type &lt;code&gt;exit&lt;/code&gt; into the window to leave this node and return to your original node (most likely the login node). This is because we need to log into this new node that we reserved with that &lt;code&gt;-X&lt;/code&gt; flag, in order for it to recognize our request to use &lt;code&gt;X11&lt;/code&gt; forwarding. So, remembering the node that you were dispatched to, type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ssh -X &amp;lt;your user&amp;gt;@&amp;lt;your new node&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;(Depending on your present location, you might not need the username). Now, we can activate that &lt;code&gt;conda&lt;/code&gt; environment that we prepared before getting started.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;conda activate myRenv
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Which should make &lt;code&gt;RStudio&lt;/code&gt; available to you. Now, we&amp;rsquo;re ready to launch &lt;code&gt;RStudio&lt;/code&gt;! Your &lt;code&gt;XQuartz&lt;/code&gt; or &lt;code&gt;Xming&lt;/code&gt; window should pop up for you automatically when you type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;rstudio --x11
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You may also see this output in your terminal:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;debug1: client_input_channel_open: ctype x11 rchan 3 win 65536 max 16384
-debug1: client_request_x11: request from 127.0.0.1 46360
-debug1: x11_connect_display: $DISPLAY is launchd
-debug1: channel 1: new [x11]
-debug1: confirm x11
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Which is good. In your &lt;code&gt;XQuartz&lt;/code&gt; application, you would see something like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/rstudio_api.png&#34; alt=&#34;RStudio Window in XQuartz&#34; title=&#34;What your snazzy new RStudio window should now look like.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Note that if the window doesn&amp;rsquo;t pop up, you can just select the &lt;code&gt;X&lt;/code&gt; [marks the spot] in the taskbar to find your instance of &lt;code&gt;XQuartz&lt;/code&gt; or similar, where your &lt;code&gt;RStudio&lt;/code&gt; window should be patiently waiting, assuming you didn&amp;rsquo;t get any errors.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;resources/xquartz_symbol.png&#34; alt=&#34;XQuartz in Taskbar&#34; title=&#34;Where your window will be if you have a Mac.&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The osmolyte ties that bind: genomic insights into synthesis and breakdown of organic osmolytes in marine microbes</title>
-      <link>https://alexanderlabwhoi.github.io/publication/mc-parland-20210/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/publication/mc-parland-20210/</guid>
-      <description></description>
     </item>
     
   </channel>
