@@ -7,8 +7,17 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Intraspecific diversity in thermal performance determines phytoplankton ecological niche</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2025-intraspecific/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2025-intraspecific/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Microeukaryote metabolism across the western North Atlantic Ocean revealed through autonomous underwater profiling</title>
@@ -16,6 +25,15 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Missing microbial eukaryotes and misleading meta-omic conclusions</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</guid>
       <description></description>
     </item>
     
@@ -241,30 +259,6 @@ pip install anvio-7.1.tar.gz
 &lt;p&gt;&lt;strong&gt;Project repository:&lt;/strong&gt; &lt;a href=&#34;https://github.com/AlexanderLabWHOI/EUKHeist&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/EUKHeist&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Funding for this project provided by the Simons Foundation and WHOI&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Phaeocystis</title>
-      <link>https://alexanderlabwhoi.github.io/project/phaeocystis/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/phaeocystis/</guid>
-      <description>&lt;p&gt;Phytoplankton blooms are central to the ecology of Cape Cod Bay, where historically spring blooms of diatoms have been rapidly grazed, shuttling biomass through the food web. In more recent years, blooms of a haptophyte, &lt;em&gt;Phaeocystis pouchetii&lt;/em&gt; have become more frequent in Cape Cod Bay. These organisms produce large gelatinous colonies, which prevents blooms of this haptophyte from being effectively grazed, hence reducing carbon cycling in the upper water column. We are partnering with the Center for Coastal Studies in Provincetown to find and study these blooms.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Funding from the Simons Foundation&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SeqWell for Marine Microbes</title>
-      <link>https://alexanderlabwhoi.github.io/project/seqwell/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/seqwell/</guid>
-      <description>&lt;p&gt;A central project aim is adaptation of a new single cell transcriptome (SCT) sequencing approach called &lt;a href=&#34;https://shaleklab.com/publication/seq-well-portable-low-cost-rna-sequencing-of-single-cells-at-high-throughput/&#34; target=&#34;_blank&#34;&gt;SeqWell&lt;/a&gt; for analysis of natural microbial communities. The method addresses two overarching obstacles to microbial symbiosis investigations: 1) the requirement that symbionts be brought into culture for ‘omics analyses, and 2) time resolution limits on bulk approaches because populations are asynchronous. With enough SCTs, pseudotime methods can establish the time course of host and symbiont interactions. SeqWell is a straightforward settling-chamber based system that can capture &amp;gt;10,000 SCTs in a single experiment. Compared to competing methods, it is also low-cost and readily adaptable for a broad range of protist shapes and sizes. We aim to address three major challenges inherent to scRNAseq of protist communities in the environment: 1) the morphological diversity (size/shapes) of protists across taxonomic groups; 2) cost; and 3) a need for bioinformatic pipelines that can analyze SCTs from natural microbial communities.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Funding for this project provided by the Moore Foundation&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

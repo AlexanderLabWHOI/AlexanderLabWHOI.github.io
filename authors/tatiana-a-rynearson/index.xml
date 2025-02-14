@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sun, 01 Jan 2012 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/tatiana-a-rynearson/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Missing microbial eukaryotes and misleading meta-omic conclusions</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Identifying reference genes with stable expression from high throughput sequence data</title>

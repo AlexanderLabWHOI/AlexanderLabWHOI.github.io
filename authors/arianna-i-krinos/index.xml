@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/arianna-i-krinos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Intraspecific diversity in thermal performance determines phytoplankton ecological niche</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2025-intraspecific/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2025-intraspecific/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Microeukaryote metabolism across the western North Atlantic Ocean revealed through autonomous underwater profiling</title>
@@ -18,6 +27,15 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Missing microbial eukaryotes and misleading meta-omic conclusions</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</guid>
       <description></description>
     </item>
     
