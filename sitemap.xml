@@ -348,6 +348,11 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/author/cdapino/</loc>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/author/cnobrega/</loc>
     </url>
   
@@ -2558,6 +2563,12 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/blooms/</loc>
       <lastmod>2015-11-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/cdapino/</loc>
       <priority>0</priority>
     </url>
   

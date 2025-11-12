@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cdapino on Alexander Lab @ WHOI</title>
+    <link>https://alexanderlabwhoi.github.io/authors/cdapino/</link>
+    <description>Recent content in cdapino on Alexander Lab @ WHOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    
+	<atom:link href="https://alexanderlabwhoi.github.io/authors/cdapino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://alexanderlabwhoi.github.io/author/cdapino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/author/cdapino/</guid>
+      <description>Cecilia Dapino is an undergraduate student at Case Western Reserve University (CWRU) in Cleveland, Ohio. She is set to receive her B.S. in Biology and Statistics in spring 2026.
+Ceci worked as a 2025 Summer Student Fellow in the Alexander Lab, working on identifying and classifying Gephyrocapsa huxleyi viruses with genomic data and bioinformatics computer software. Now, as a guest student, she will be continuing this research in pursuit of her senior capstone at CWRU.</description>
+    </item>
+    
+  </channel>
+</rss>
