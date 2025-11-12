@@ -3,7 +3,25 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/publication/perneel-2025-case/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/publication/mars-2024-exploring/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/publication/krinos-2025-intraspecific/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/publication/levine-2025-microbial/</loc>
       <lastmod>2025-01-01T00:00:00-05:00</lastmod>
     </url>
   
@@ -155,12 +173,6 @@
     
       <loc>https://alexanderlabwhoi.github.io/tmp/johnson-2020/</loc>
       <lastmod>2020-09-16T12:04:32-04:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://alexanderlabwhoi.github.io/content/publication/caron-2016/</loc>
-      <lastmod>2020-09-16T11:58:37-04:00</lastmod>
     </url>
   
     <url>
@@ -421,14 +433,14 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/harriet-alexander/</loc>
-      <lastmod>2024-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/arianna-i-krinos-/</loc>
-      <lastmod>2021-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -442,14 +454,14 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/arianna-krinos-/</loc>
-      <lastmod>2022-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/margaret-mars-brisbin-/</loc>
-      <lastmod>2022-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -609,6 +621,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/authors/andreas-norlin/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/authors/andrew-e.-allen/</loc>
       <lastmod>2016-11-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -639,13 +658,6 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/anupriya-tripathi/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://alexanderlabwhoi.github.io/authors/arianna-i-krinos/</loc>
-      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -694,6 +706,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/</loc>
       <lastmod>2024-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/benjamin-a.-s.-van-mooy/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -887,13 +906,6 @@
   
     <url>
     
-      <loc>https://alexanderlabwhoi.github.io/content/</loc>
-      <lastmod>2020-09-16T11:58:37-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
       <loc>https://alexanderlabwhoi.github.io/authors/cora-a.-johnston/</loc>
       <lastmod>2017-12-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -1013,6 +1025,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/authors/eliott-flaum/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/authors/elizabeth-b-kujawinski/</loc>
       <lastmod>2024-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -1043,6 +1062,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/emily-cope/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/emily-j.-zakem/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1106,6 +1132,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/erin-m-bertrand/</loc>
       <lastmod>2012-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/erin-m.-bertrand/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1183,13 +1216,6 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/hannes-holste/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://alexanderlabwhoi.github.io/authors/harriet-alexander/</loc>
-      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1309,6 +1335,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/jessica-l-metcalf/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/jessica-turner/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1636,6 +1669,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/authors/mak-saito/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/authors/manimozhiyan-arumugam/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -1645,13 +1685,6 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/marref/</loc>
       <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://alexanderlabwhoi.github.io/authors/margaret-mars-brisbin/</loc>
-      <lastmod>2024-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1715,6 +1748,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/max-von-hippel/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/mccaela-acord/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1790,6 +1830,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/authors/michiel-perneel/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/authors/mingxun-wang/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -1840,7 +1887,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/authors/naomi-m.-levine/</loc>
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -1918,6 +1965,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/pangenomes/</loc>
       <lastmod>2021-07-02T15:15:49-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/pascal-i-habl%C3%BCtzel/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2021,6 +2075,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/rstudio/</loc>
       <lastmod>2021-06-09T10:11:12-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/rachel-davitt/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2185,6 +2246,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/authors/shavonna-bent/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/authors/sheean-t-haley/</loc>
       <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
@@ -2255,6 +2323,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/authors/steven-maere/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/authors/steven-w.-wilhelm/</loc>
       <lastmod>2017-06-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -2264,6 +2339,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/susan-holmes/</loc>
       <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/suzana-g.-leles/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2376,6 +2458,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/authors/victoria-campbell/</loc>
       <lastmod>2018-04-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/authors/victoria-j.-coles/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2955,7 +3044,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</loc>
-      <lastmod>2021-07-02T15:15:49-04:00</lastmod>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -2969,7 +3058,7 @@
     <url>
     
       <loc>https://alexanderlabwhoi.github.io/tags/microbial-ecology/</loc>
-      <lastmod>2018-10-01T00:00:00-04:00</lastmod>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -3071,6 +3160,13 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/phaeocystis-antarctica/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/phosphorus/</loc>
       <lastmod>2018-06-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -3078,8 +3174,29 @@
   
     <url>
     
+      <loc>https://alexanderlabwhoi.github.io/tags/phycosphere/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
       <loc>https://alexanderlabwhoi.github.io/tags/phytoplankton/</loc>
       <lastmod>2018-04-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/phytoplanktonbacteria-interactions/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/polar-microbial-ecology/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -3184,6 +3301,13 @@
     
       <loc>https://alexanderlabwhoi.github.io/tags/software/</loc>
       <lastmod>2021-01-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://alexanderlabwhoi.github.io/tags/southern-ocean/</loc>
+      <lastmod>2025-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
   

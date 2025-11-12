@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Harriet Alexander on Alexander Lab @ WHOI</title>
+    <title>**Harriet Alexander** on Alexander Lab @ WHOI</title>
     <link>https://alexanderlabwhoi.github.io/authors/harriet-alexander/</link>
-    <description>Recent content in Harriet Alexander on Alexander Lab @ WHOI</description>
+    <description>Recent content in **Harriet Alexander** on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
@@ -11,6 +11,24 @@
     
 	<atom:link href="https://alexanderlabwhoi.github.io/authors/harriet-alexander/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A case for absolute gene expression estimates in microbiome studies using metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/perneel-2025-case/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/perneel-2025-case/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring the Phaeosphere: Characterizing the microbiomes of Phaeocystis antarctica colonies from the coastal Southern Ocean and laboratory culture</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mars-2024-exploring/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mars-2024-exploring/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Intraspecific diversity in thermal performance determines phytoplankton ecological niche</title>
@@ -22,11 +40,299 @@
     </item>
     
     <item>
+      <title>Microbial Ecology to Ocean Carbon Cycling: From Genomes to Numerical Models</title>
+      <link>https://alexanderlabwhoi.github.io/publication/levine-2025-microbial/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/levine-2025-microbial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microeukaryote metabolism across the western North Atlantic Ocean revealed through autonomous underwater profiling</title>
+      <link>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/cohen-2024-microeukaryote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Missing microbial eukaryotes and misleading meta-omic conclusions</title>
       <link>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Molecular forecasting of toxic bloom events</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander-2024-molecular/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander-2024-molecular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Dawn of the BioGeoSCAPES Program</title>
+      <link>https://alexanderlabwhoi.github.io/publication/saito-2024-dawn/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/saito-2024-dawn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sourmash v4: A multitool to quickly search, compare, and analyze genomic and metagenomic data sets</title>
+      <link>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/irber-2024-sourmash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reverse engineering environmental metatranscriptomes clarifies best practices for eukaryotic assembly</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2023/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bio-GO-SHIP: The Time Is Right to Establish Global Repeat Sections of Ocean Biology</title>
+      <link>https://alexanderlabwhoi.github.io/publication/clayton-2022-bio/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/clayton-2022-bio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marine microeukaryote metatranscriptomics: sample processing and bioinformatic workflow recommendations for ecological applications</title>
+      <link>https://alexanderlabwhoi.github.io/publication/cohen-2022-marine/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/cohen-2022-marine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microbiomes of bloom-forming Phaeocystis algae are stable and consistently recruited, with both symbiotic and opportunistic modes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mars-2022-microbiomes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The osmolyte ties that bind: genomic insights into synthesis and breakdown of organic osmolytes in marine microbes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mc-parland-20210/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mc-parland-20210/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation of the unsung eukaryotic microbes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DMSP synthesis genes distinguish two types of DMSP producer phenotypes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mc-parland-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mc-parland-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Auxotrophic interactions:  A stabilizing attribute of aquatic microbial communities?</title>
+      <link>https://alexanderlabwhoi.github.io/publication/johnson-2020/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/johnson-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transcriptional response of Emiliania huxleyi under changing nutrient environments in the North Pacific Subtropical Gyre</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keeping it light: (Re)analyzing community-wide datasets without major infrastructure</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Re-assembly, quality evaluation, and annotation of 678 microbial eukaryotic reference transcriptomes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/johnson2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/johnson2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science</title>
+      <link>https://alexanderlabwhoi.github.io/publication/bolyen2018/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/bolyen2018/</guid>
+      <description>Abstract We present QIIME 2, an open-source microbiome data science platform accessible to users spanning the microbiome research ecosystem, from scientists and engineers to clinicians and policy makers. QIIME 2 provides new features that will drive the next generation of microbiome research. These include interactive spatial and temporal analysis and visualization tools, support for metabolomics and shotgun metagenomics analysis, and automated data provenance tracking to ensure reproducible, transparent microbiome data science.</description>
+    </item>
+    
+    <item>
+      <title>Transcriptional patterns identify resource controls on the diazotroph Trichodesmium in the Atlantic and Pacific oceans</title>
+      <link>https://alexanderlabwhoi.github.io/publication/rouco2018/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/rouco2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shifting metabolic priorities among key protistan taxa within and below the euphotic zone</title>
+      <link>https://alexanderlabwhoi.github.io/publication/hu2018/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/hu2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What are the type, direction, and strength of species, community, and ecosystem responses to warming in aquatic mesocosm studies and their dependency on experimental characteristics? A systematic review protocol</title>
+      <link>https://alexanderlabwhoi.github.io/publication/guy-haim2017/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/guy-haim2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transcriptional response of the harmful raphidophyte Heterosigma akashiwo to nitrate and phosphate stress</title>
+      <link>https://alexanderlabwhoi.github.io/publication/haley2017/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/haley2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conserved transcriptional responses to nutrient stress in bloom-forming algae</title>
+      <link>https://alexanderlabwhoi.github.io/publication/harke2017/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/harke2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virus-host relationships of marine single-celled eukaryotes resolved from metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/moniruzzaman2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrating &#39;big data&#39; into aquatic ecology: Challenges and opportunities</title>
+      <link>https://alexanderlabwhoi.github.io/publication/durden2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/durden2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phosphorus availability regulates intracellular nucleotides in marine eukaryotic phytoplankton</title>
+      <link>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/kujawinski2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probing the evolution, ecology and physiology of marine protists using transcriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/caron2016/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/caron2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Variable depth distribution of Trichodesmium clades in the North Pacific Ocean</title>
+      <link>https://alexanderlabwhoi.github.io/publication/rouco2016/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/rouco2016/</guid>
+      <description> Abstract </description>
+    </item>
+    
+    <item>
+      <title>Functional group-specific traits drive phytoplankton dynamics in the oligotrophic ocean</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2015a/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2015a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metatranscriptome analyses indicate resource partitioning between diatoms in the field</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2015/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sixty Years of Sverdrup: A Retrospective of Progress in the Study of Phytoplankton Blooms</title>
+      <link>https://alexanderlabwhoi.github.io/publication/fischer2014/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/fischer2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identifying reference genes with stable expression from high throughput sequence data</title>
+      <link>https://alexanderlabwhoi.github.io/publication/alexander2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/alexander2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The transcriptome and proteome of the diatom Thalassiosira pseudonana reveal a diverse phosphorus stress response</title>
+      <link>https://alexanderlabwhoi.github.io/publication/dyhrman2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/dyhrman2012/</guid>
       <description></description>
     </item>
     

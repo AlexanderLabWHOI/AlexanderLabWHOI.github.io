@@ -11,11 +11,38 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>A case for absolute gene expression estimates in microbiome studies using metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/publication/perneel-2025-case/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/perneel-2025-case/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring the Phaeosphere: Characterizing the microbiomes of Phaeocystis antarctica colonies from the coastal Southern Ocean and laboratory culture</title>
+      <link>https://alexanderlabwhoi.github.io/publication/mars-2024-exploring/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/mars-2024-exploring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Intraspecific diversity in thermal performance determines phytoplankton ecological niche</title>
       <link>https://alexanderlabwhoi.github.io/publication/krinos-2025-intraspecific/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/krinos-2025-intraspecific/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microbial Ecology to Ocean Carbon Cycling: From Genomes to Numerical Models</title>
+      <link>https://alexanderlabwhoi.github.io/publication/levine-2025-microbial/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/levine-2025-microbial/</guid>
       <description></description>
     </item>
     
@@ -213,52 +240,6 @@ pip install anvio-7.1.tar.gz
       <description>&lt;p&gt;The &lt;a href=&#34;http://biogoship.org/&#34; target=&#34;_blank&#34;&gt;Bio-GO-SHIP&lt;/a&gt; program aims to integrate the latest biological observing technologies into the Global Ocean Ship-based Hydrographic Investigation Program (GO-SHIP, &lt;a href=&#34;http://go-ship.org/&#34; target=&#34;_blank&#34;&gt;http://go-ship.org/&lt;/a&gt;). GO-SHIP runs a global repeat-section effort, wherein reference sections that transect major ocean regions are sampled every decade to observe global changes. Bio-GO-SHIP measurements will include optical, flow cytometric, metagenomic and metatranscriptomic, and particulate sampling. Compared to previous global ocean sequencing efforts, Bio-GO-SHIP will sample biological parameters at high spatial and vertical resolution, with ‘omic samples being taken approximately every degree, or approximately 26.5km on average between samples. My group is focused on the collection, sequencing, and preliminary assembly data product curation of the ‘omic dataset in conjunction with Adam Martiny’s lab&amp;ndash; with my lab taking the lead on the eukaryotic component.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Funding for this project provided by NOAA and the Simons Foundation&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>EUKulele: Taxonomic annotation</title>
-      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
-      <description>&lt;p&gt;Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics). The freely-available tool is implemented as a Python package and installable via both &lt;code&gt;pip&lt;/code&gt; and &lt;code&gt;conda&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Project Repository&lt;/strong&gt;: &lt;a href=&#34;https://github.com/AlexanderLabWHOI/eukulele&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/eukulele&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ecological Role of Eukaryotic Pangenomes</title>
-      <link>https://alexanderlabwhoi.github.io/project/ehuxleyi/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/ehuxleyi/</guid>
-      <description>&lt;p&gt;Coccolithophores, a group of calcifying marine phytoplankton within the phylum Haptophyta, play a significant role in marine biogeochemical cycles, particularly in those of carbon and sulfur. &lt;em&gt;Emiliania huxleyi&lt;/em&gt; is one of the most abundant extant coccolithophore species in the ocean, typified by its cosmopolitan distribution and ability to form large blooms. Intra-specific variability in physiology (e.g. enzymatic rates, morphology, growth rates) of &lt;em&gt;E. huxleyi&lt;/em&gt; has long been known in cultured isolates. The capacity for this variability was revealed through the genome sequencing of many &lt;em&gt;E. huxleyi&lt;/em&gt; strains, the results of which suggested that &lt;em&gt;E. huxleyi&lt;/em&gt; has a ‘pan genome,’ with gene content varying across strains. Intensive study of another ecologically significant taxa with a pan genome, the cyanobacteria &lt;em&gt;Prochlorococcus&lt;/em&gt;, has connected the variability of the pan genome to its niche separation and biogeographical distribution. Similar to &lt;em&gt;Prochlorococcus&lt;/em&gt;, intra-specific genomic variability may underpin the success of &lt;em&gt;E. huxleyi&lt;/em&gt; across diverse environmental conditions and underlie its observed physiological variability. Here we are combining a series of genomic, computational field surveys, and laboratory-based experiments designed to identify the function of the pan genome in &lt;em&gt;E. huxleyi&lt;/em&gt; ecology and biogeography. Through this project, we will address the questions:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Is there structure to the variable gene content across strains in the pan genome of &lt;em&gt;E. huxleyi&lt;/em&gt;?&lt;/li&gt;
-&lt;li&gt;Does the environment select for particular strains of &lt;em&gt;E. huxleyi&lt;/em&gt; based on the content of the variable portion of the pan genome?&lt;/li&gt;
-&lt;li&gt;Does the composition of the variable gene set determine strain success under shifting environmental conditions?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;em&gt;Funding for this project provided by the National Science Foundation&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>EukHeist: Recovering Eukaryotic MAGs from Metagenomes</title>
-      <link>https://alexanderlabwhoi.github.io/project/eukheist/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/eukheist/</guid>
-      <description>&lt;p&gt;Eukaryotic microbes, or protists, are key drivers of marine ecosystems, with roles ranging from primary producers (phytoplankton) to consumers (heterotrophs or mixotrophs). As with their bacteria and archaea, many protists are difficult or impossible to culture. This has limited our ability to directly interrogate their biology in the laboratory and has led us to underestimate their diversity across marine ecosystems. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.g. metagenomics, metatranscriptomics), have shed light on the ecological roles, evolutionary histories, and physiological capabilities of these organisms.&lt;/p&gt;
-
-&lt;p&gt;EukHeist presents a scalable and reproducible bioinformatic pipeline to facilitate the retrieval of eukaryotic metagenome assembled genomes (MAGs) from mixed metagenomes, called EUKHeist (&lt;a href=&#34;https://github.com/AlexanderLabWHOI/EUKHeist&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/EUKHeist&lt;/a&gt;). EUKHeist streamlines and automates the discovery, recovery, quality assessment, and analysis of eukaryotic metagenome assembled genomes (MAGs) from mixed community metagenomes. EukHeist incorporates taxonoßßmic annotation through EUKulele (&lt;a href=&#34;https://github.com/AlexanderLabWHOI/EUKulele&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/EUKulele&lt;/a&gt;) as well as scalable structural and functional annotation of coding regions in eukaryotic MAGs with EukMetaSanity (&lt;a href=&#34;https://github.com/cjneely10/EukMetaSanity&#34; target=&#34;_blank&#34;&gt;https://github.com/cjneely10/EukMetaSanity&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Project repository:&lt;/strong&gt; &lt;a href=&#34;https://github.com/AlexanderLabWHOI/EUKHeist&#34; target=&#34;_blank&#34;&gt;https://github.com/AlexanderLabWHOI/EUKHeist&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Funding for this project provided by the Simons Foundation and WHOI&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
