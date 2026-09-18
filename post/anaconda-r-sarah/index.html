@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.73.0" />
 
   
 
@@ -547,58 +547,34 @@ Installing Anaconda First, let&rsquo;s make sure Anaconda is installed."><meta p
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<p>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R <em>and</em> do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.</p>
-
+      <p>I recently found myself setting up a new computer, spinning up ~23864283.34 new projects in R, and wanting to stay somewhat organized in the process. After doing some digging, I decided to give Anaconda environments a try to have the ability to run different versions of R <em>and</em> do this across R on the command line, RStudio, and jupyter notebooks (IRKernel). I have decided to share my process.</p>
 <h2 id="installing-anaconda">Installing Anaconda</h2>
-
-<p>First, let&rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions <a href="https://docs.anaconda.com/anaconda/install/" target="_blank">here to install</a>.</p>
-
+<p>First, let&rsquo;s make sure Anaconda is installed. If you do not have Anaconda, follow instructions <a href="https://docs.anaconda.com/anaconda/install/">here to install</a>.</p>
 <p>Once you have Anaconda installed, check the version.</p>
-
 <pre><code>conda -V
 # I'm currently running v4.6.8
 which conda
 # Location on my computer: /Users/shu/anaconda3
-</code></pre>
-
-<h3 id="why-did-you-make-me-install-anaconda">Why did you make me install anaconda?</h3>
-
+</code></pre><h3 id="why-did-you-make-me-install-anaconda">Why did you make me install anaconda?</h3>
 <p>Briefly, Anaconda, or conda, is a software package manager. Anaconda will make your scientific programming life easier by facilitating software installations for many programs or packages. You can google &lsquo;conda install for software X&rsquo;, and often find a single line command to install the most recent version of that software.</p>
-
-<p>Even better, Anaconda allows you to create compartmentalized computational environments  (called &ldquo;conda environments&rdquo; in this post) where you can install any mixture of things you require without accidentally messing up other software downloads on your computer. You can use these conda environments in any number of ways&ndash; they can be program-specific (for the running of one specific tool) or project-specific (to store versions for a whole workflow). For instance, I&rsquo;m working on a collaborative project which requires building bioinformatic pipelines with several different programs. It is key that my collaborator and I maintain the same versions of software, so code that we write individually can be easily shared. For this, we created and shared a conda environment. <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html" target="_blank">More info on getting started with conda here</a>.</p>
-
-<p>Conda environments have been widely adopted as a means of facilitating reproducible computation across the Python ecosystem&ndash; but is now expanding to include other programming languages such as R (more <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/" target="_blank">here</a>).</p>
-
+<p>Even better, Anaconda allows you to create compartmentalized computational environments  (called &ldquo;conda environments&rdquo; in this post) where you can install any mixture of things you require without accidentally messing up other software downloads on your computer. You can use these conda environments in any number of ways&ndash; they can be program-specific (for the running of one specific tool) or project-specific (to store versions for a whole workflow). For instance, I&rsquo;m working on a collaborative project which requires building bioinformatic pipelines with several different programs. It is key that my collaborator and I maintain the same versions of software, so code that we write individually can be easily shared. For this, we created and shared a conda environment. <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html">More info on getting started with conda here</a>.</p>
+<p>Conda environments have been widely adopted as a means of facilitating reproducible computation across the Python ecosystem&ndash; but is now expanding to include other programming languages such as R (more <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/using-r-language/">here</a>).</p>
 <p><strong>Below, documents how I have built up conda environments to run specific versions of R, including RStudio and jupyter notebooks.</strong></p>
-
 <h2 id="creating-a-conda-environment-for-r">Creating a conda environment for R</h2>
-
 <p>First, list the conda environments you have locally:</p>
-
 <pre><code>conda info --envs
-</code></pre>
-
-<p>The output should list all the conda environments you have created. An asterisk will denote where you currently are, likely &lsquo;base&rsquo;. Additionally, your command line will be preceded with &lsquo;(base)&rsquo; to denote you are in your base conda environment.</p>
-
+</code></pre><p>The output should list all the conda environments you have created. An asterisk will denote where you currently are, likely &lsquo;base&rsquo;. Additionally, your command line will be preceded with &lsquo;(base)&rsquo; to denote you are in your base conda environment.</p>
 <p>First, we will generate a specific R environment for R v3.5.1 (most recent version available through Anaconda, as of April 2019).</p>
-
 <pre><code>conda create --name r_3.5.1 -c r r=3.5.1 r-essentials
-</code></pre>
-
-<blockquote>
+</code></pre><blockquote>
 <p><strong>What is happening in this command?</strong></p>
-
 <ul>
 <li>&lsquo;conda create &ndash;name r_3.5.1&rsquo; creates a new conda environment that will be called &lsquo;r_3.5.1&rsquo;.</li>
-<li>&rsquo;-c r r=3.5.1&rsquo; specifies to use the &lsquo;r&rsquo; channel for installation. In this particular case, we also specify r=3.5.1. Without this last part, conda will automatically install the most recent version of R.</li>
-<li>&lsquo;r-essentials&rsquo;, upon installing R-related packages, you need to add &lsquo;r-&rsquo; ahead of the package name. r-essentials is a package bundle which has a lot of the most basic and commonly used R packages. A <a href="http://repo.anaconda.com/pkgs/r/" target="_blank">full list of packages</a> available for conda install.</li>
+<li>&lsquo;-c r r=3.5.1&rsquo; specifies to use the &lsquo;r&rsquo; channel for installation. In this particular case, we also specify r=3.5.1. Without this last part, conda will automatically install the most recent version of R.</li>
+<li>&lsquo;r-essentials&rsquo;, upon installing R-related packages, you need to add &lsquo;r-&rsquo; ahead of the package name. r-essentials is a package bundle which has a lot of the most basic and commonly used R packages. A <a href="http://repo.anaconda.com/pkgs/r/">full list of packages</a> available for conda install.</li>
 </ul>
 </blockquote>
-
 <p>This installation will take a few minutes and at the end you should see something like the following:</p>
-
 <pre><code>pip 19.1############################################################################################################################################## | 100%
 r-highr 0.7########################################################################################################################################### | 100%
 r-sourcetools 0.1.7################################################################################################################################### | 100%
@@ -612,74 +588,38 @@ Executing transaction: done
 # To deactivate an active environment, use:
 # &gt; source deactivate
 #
-</code></pre>
-
-<p>Now, list your conda environments again with <code>conda info --envs</code>. You should now see the new environment listed:</p>
-
+</code></pre><p>Now, list your conda environments again with <code>conda info --envs</code>. You should now see the new environment listed:</p>
 <pre><code>base                  *  /Users/shu/anaconda3
 r_3.5.1                  /Users/shu/anaconda3/envs/r_3.5.1
-</code></pre>
-
-<p>To activate your newly created R environment type:</p>
-
+</code></pre><p>To activate your newly created R environment type:</p>
 <pre><code>source activate r_3.5.1
-</code></pre>
-
-<p>Your terminal prompt should now be preceded by your conda environment name, in this case <code>(r_3.5.1)</code>, and the asterisk should be listed next to <code>r_3.5.1</code> rather than <code>base</code>in the <code>conda info --envs</code> output.</p>
-
+</code></pre><p>Your terminal prompt should now be preceded by your conda environment name, in this case <code>(r_3.5.1)</code>, and the asterisk should be listed next to <code>r_3.5.1</code> rather than <code>base </code>in the <code>conda info --envs</code> output.</p>
 <h3 id="check-that-the-correct-r-version-is-running">Check that the correct R version is running</h3>
-
 <p>We can check the version of R in two ways.</p>
-
-<p>First, launch R by typing <code>R</code>, you should see R version 3.5.1 (&ldquo;Feather Spray&rdquo;) load. IF you got an error about the &ldquo;java&rdquo; command-line tool, <a href="https://www.theitsage.com/fix-java-command-line-tool-popup-mac/" target="_blank">visit this site to fix it.</a>. I got this error using anything &gt;10.10 on Mac OS X.</p>
-
+<p>First, launch R by typing <code>R</code>, you should see R version 3.5.1 (&ldquo;Feather Spray&rdquo;) load. IF you got an error about the &ldquo;java&rdquo; command-line tool, <a href="https://www.theitsage.com/fix-java-command-line-tool-popup-mac/">visit this site to fix it.</a>. I got this error using anything &gt;10.10 on Mac OS X.</p>
 <p>The first line after typing <code>R</code> should be:</p>
-
 <pre><code>R version 3.5.1 (2018-07-02) -- &quot;Feather Spray&quot;
 Copyright (C) 2018 The R Foundation for Statistical Computing
 Platform: x86_64-apple-darwin13.4.0 (64-bit)
-</code></pre>
-
-<p>Because we created this R environment and specified <code>r-essentials</code>, many popular packages have already been loaded. Check this by loading some basic libraries <code>library(ggplot2)</code> or <code>library(dplyr)</code>. Convenient, eh?</p>
-
+</code></pre><p>Because we created this R environment and specified <code>r-essentials</code>, many popular packages have already been loaded. Check this by loading some basic libraries <code>library(ggplot2)</code> or <code>library(dplyr)</code>. Convenient, eh?</p>
 <p>Quit R <code>quit()</code>, but don&rsquo;t deactivate the <code>r_3.5.1</code> environment.</p>
-
 <p>Second, we can also directly check which R is being called by our $PATH in the conda environment by typing <code>which R</code>. This should output something like the following:</p>
-
 <pre><code>/Users/shu/anaconda3/envs/r_3.5.1/bin/R
-</code></pre>
-
-<p>This indicates that <code>R</code> is being called from the bin in your newly created conda environment (<code>anaconda3/envs/r_3.5.1/bin/</code>).</p>
-
+</code></pre><p>This indicates that <code>R</code> is being called from the bin in your newly created conda environment (<code>anaconda3/envs/r_3.5.1/bin/</code>).</p>
 <p>Keep this path in mind as we set up <code>jupyter notebook</code> and <code>RStudio</code> below, as they also need to launch R from this same location.</p>
-
 <h3 id="creating-a-jupyter-notebook-in-r">Creating a jupyter notebook in R</h3>
-
-<p><a href="https://irkernel.github.io" target="_blank">Jupyter notebook for R</a> was included in the r-essential package download. To launch, type:</p>
-
+<p><a href="https://irkernel.github.io">Jupyter notebook for R</a> was included in the r-essential package download. To launch, type:</p>
 <pre><code>jupyter notebook
-</code></pre>
-
-<p>This will open the <code>jupyter notebook</code> home screen in browser window, showing your current directory. At the top right, you can click <code>New</code> and see which kernels you can use to start a notebook (hopefully, Python 3 or R).</p>
-
-<p><a href="resources/_gen/images/jupyternb-browser.png" target="_blank">Jupyter notebook dropdown</a></p>
-
+</code></pre><p>This will open the <code>jupyter notebook</code> home screen in browser window, showing your current directory. At the top right, you can click <code>New</code> and see which kernels you can use to start a notebook (hopefully, Python 3 or R).</p>
+<p><a href="resources/_gen/images/jupyternb-browser.png">Jupyter notebook dropdown</a></p>
 <p>Select <code>R</code> under the &lsquo;New&rsquo; dropdown menu (you can also launch a <code>Python3</code> notebook&hellip; but that isn&rsquo;t what we are doing right now), and a new Untitled.ipynb will open. In the first cell, enter <code>version</code> and execute the cell (SHIFT+ENTER to execute). This should print out the version of <code>R</code> that the notebook is running&ndash; which should be <code>3.5.1</code>. You can also ensure this R notebook is running properly by loading some R libraries.</p>
-
 <p>To close the notebook, click <code>Logout</code> at the top right of the notebook open in your browser and/or CTRL+C in the terminal from where you launched the notebook. Close the browser windows.</p>
-
 <p><strong>One of the major issues I have encountered is Jupyter calling the incorrect path (more below).</strong></p>
-
-<p>If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&rsquo;t use which R (as above) as that doesn&rsquo;t answer where Jupyter is looking. Rather, you can use <code>jupyter kernelspec</code>, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks <a href="https://twitter.com/nekton4plankton/status/1116785847402209281" target="_blank">see twitter feed for that eureka moment</a>.</p>
-
+<p>If for some reason when you create this new notebook and you notice that the version is incorrect you can dig a bit deeper into the kernel details. To do this, you can&rsquo;t use which R (as above) as that doesn&rsquo;t answer where Jupyter is looking. Rather, you can use <code>jupyter kernelspec</code>, a command that I have found invaluable in troubleshooting any PATH issues in jupyter notebooks <a href="https://twitter.com/nekton4plankton/status/1116785847402209281">see twitter feed for that eureka moment</a>.</p>
 <p>To see what paths are being called by jupyter notebook type this:</p>
-
 <pre><code>jupyter kernelspec list --json
 
-</code></pre>
-
-<p>As an example, here is my output:</p>
-
+</code></pre><p>As an example, here is my output:</p>
 <pre><code>{
   &quot;kernelspecs&quot;: {
     &quot;python3&quot;: {
@@ -719,154 +659,88 @@ Platform: x86_64-apple-darwin13.4.0 (64-bit)
     }
   }
 }
-</code></pre>
-
-<p>This command returns the paths (<code>resource_dir</code>) that the <code>jupyter notebook</code> when opened in the <code>r_3.5.1</code> environment is accessing. The key point is that you should see that <code>resource_dir</code> for both <code>python</code> and <code>ir</code> (read: <code>R</code>) kernels should be within your conda environment path (<code>.../anaconda3/envs/r_3.5.1/...</code>).</p>
-
+</code></pre><p>This command returns the paths (<code>resource_dir</code>) that the <code>jupyter notebook</code> when opened in the <code>r_3.5.1</code> environment is accessing. The key point is that you should see that <code>resource_dir</code> for both <code>python</code> and <code>ir</code> (read: <code>R</code>) kernels should be within your conda environment path (<code>.../anaconda3/envs/r_3.5.1/...</code>).</p>
 <p>From my experience, a common issue I encountered was <code>jupyter notebook</code> trying to use an <code>R</code> version that was external to my environment (i.e. from an R version installed in my base environment or an old R version installed on my computer pre-anaconda). These issues manifest as IRKernel in <code>jupyter notebook</code> never becomes active or dying immediately after launch. This cause of this problem was revealed with the <code>kernelspec</code> command above.</p>
-
 <p>One of the main lessons I learned in troubleshooting: don&rsquo;t be afraid to <strong>destroy everything</strong>. More specifically, if you run into issues and find that one or all of these paths are not shuttling through the correct R conda environment of your choice&hellip; destroy and rebuild. Use this command (<code>jupyter kernelspec</code>) to locate and destroy this other R option that jupyter notebook is defaulting to (but make sure you are not deleting another whole environment!).</p>
-
 <h3 id="opening-rstudio-within-a-conda-environment">Opening RStudio within a conda environment</h3>
-
 <p>To run <code>RStudio</code> in our environment, we can use the single-line conda command <code>conda install -c r rstudio</code>. However, it is important to specify the version of <code>R</code> that we want to install:</p>
-
 <pre><code>conda install -c r r=3.5.1 rstudio
 # As of April 2019, this installs RStudio v1.1.456
-</code></pre>
-
-<p>Launch RStudio by typing <code>rstudio</code>. The first line in the RStudio console should be the same as when we launched R from the command line directly <code>R version 3.5.1 (2018-07-02) -- &quot;Feather Spray&quot;</code>. To close RStudio, you can close RStudio itself, or CTRL+C in the terminal from where you launched it.</p>
-
+</code></pre><p>Launch RStudio by typing <code>rstudio</code>. The first line in the RStudio console should be the same as when we launched R from the command line directly <code>R version 3.5.1 (2018-07-02) -- &quot;Feather Spray&quot;</code>. To close RStudio, you can close RStudio itself, or CTRL+C in the terminal from where you launched it.</p>
 <p>Moreover, by creating a specific alias, we can more precisely tell RStudio to open as a specific version (within a conda environment).</p>
-
 <p>First, perform a check to make sure <code>RStudio</code> is launching from the same location as <code>R</code> in this environment.</p>
-
 <pre><code>which R
 # Output: /Users/sarahhu/anaconda3/envs/r_3.5.1/bin/R
 which rstudio
 # Output: /Users/sarahhu/anaconda3/envs/r_3.5.1/bin/rstudio
-</code></pre>
-
-<p>Copy the output from <code>which R</code> and open your bash profile (<code>~/.bash_profile</code>) using a text editor.</p>
-
+</code></pre><p>Copy the output from <code>which R</code> and open your bash profile (<code>~/.bash_profile</code>) using a text editor.</p>
 <p>Add this line:</p>
-
 <pre><code># R version alias
 alias rstu3.5=&quot;RSTUDIO_WHICH_R=/Users/shu/anaconda3/envs/r_3.5.1/bin/R open -a rstudio&quot;
-</code></pre>
-
-<p>You can then source your bash profile to add that command to your current terminal session.</p>
-
+</code></pre><p>You can then source your bash profile to add that command to your current terminal session.</p>
 <pre><code># Source bash profile
 source ~/.bash_profile
-</code></pre>
-
-<p>Make sure you are still in your r_3.5.1 environment (sourcing your bash profile may place you back in your base environment). From the command line (in your r_3.5.1 environment) you can now type rstu3.5 to launch RStudio. I highly recommend opening RStudio from the command line using this alias you created! I found it was a much more stable way to work with RStudio.</p>
-
+</code></pre><p>Make sure you are still in your r_3.5.1 environment (sourcing your bash profile may place you back in your base environment). From the command line (in your r_3.5.1 environment) you can now type rstu3.5 to launch RStudio. I highly recommend opening RStudio from the command line using this alias you created! I found it was a much more stable way to work with RStudio.</p>
 <h2 id="creating-a-conda-environment-with-a-different-r-version">Creating a conda environment with a different R version</h2>
-
 <p>Alright, so this is the moment of truth: can you successfully support two <em>different</em> <code>R</code> versions on your computer with conda environments?</p>
-
 <p>First, (if you aren&rsquo;t already) logout of the <code>r_3.5.1</code> conda environment with <code>conda deactivate</code>.</p>
-
 <p>Let&rsquo;s try installing an older version of <code>R</code>&ndash; 3.4.3. So, we will repeat the above instructions to create a new environment, but specify <code>R</code>&ndash; 3.4.3.</p>
-
 <pre><code># Create new R environment with R version 3.4.3
 conda create --name r_3.4.3 -c r r=3.4.3 r-essentials
 
 # Enter environment
 source activate r_3.4.3
-</code></pre>
-
-<p>Now, we can do the same checks that we did above. First, launch <code>R</code> on the command line and then spin up a <code>jupyter notebook</code> with an <code>R</code> kernel to check that they are both running <code>R v3.4.3</code>.</p>
-
+</code></pre><p>Now, we can do the same checks that we did above. First, launch <code>R</code> on the command line and then spin up a <code>jupyter notebook</code> with an <code>R</code> kernel to check that they are both running <code>R v3.4.3</code>.</p>
 <p>Next, reinstall RStudio with <code>R v.3.4.3</code></p>
-
 <pre><code># Install RStudio
 conda install -c r r=3.4.3 rstudio
-</code></pre>
-
-<p>And then ensure that you are running the correct version by opening RStudio from the command line (<code>rstudio</code>).</p>
-
+</code></pre><p>And then ensure that you are running the correct version by opening RStudio from the command line (<code>rstudio</code>).</p>
 <p>You should then double check the paths of <code>R</code> and <code>rstudio</code> within this environment:</p>
-
 <pre><code># Check outputs
 which R
 # Output: /Users/shu/anaconda3/envs/r_3.4.3/bin/R
 which rstudio
 # Output: /Users/shu/anaconda3/envs/r_3.4.3/bin/rstudio
-</code></pre>
-
-<p>If all things check out:</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> Correct <code>R</code> version in command line</label></li>
-<li><label><input type="checkbox" checked disabled class="task-list-item"> Correct <code>R</code> version in RStudio</label></li>
-<li><label><input type="checkbox" checked disabled class="task-list-item"> Correct <code>R</code> version in Jupyter Notebook</label></li>
-<li><label><input type="checkbox" checked disabled class="task-list-item"> Path of <code>R</code> aligns with your specified conda environment</label></li>
-<li><label><input type="checkbox" checked disabled class="task-list-item"> Path of <code>rstudio</code> aligns with your specified conda environment</label></li>
+</code></pre><p>If all things check out:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Correct <code>R</code> version in command line</li>
+<li><input checked="" disabled="" type="checkbox"> Correct <code>R</code> version in RStudio</li>
+<li><input checked="" disabled="" type="checkbox"> Correct <code>R</code> version in Jupyter Notebook</li>
+<li><input checked="" disabled="" type="checkbox"> Path of <code>R</code> aligns with your specified conda environment</li>
+<li><input checked="" disabled="" type="checkbox"> Path of <code>rstudio</code> aligns with your specified conda environment</li>
 </ul>
-
 <p>You can safely go ahead and create a new alias within your <code>.bash_profile</code> :</p>
-
 <pre><code>alias rstu3.4=&quot;RSTUDIO_WHICH_R=/Users/shu/anaconda3/envs/r_3.4.3/bin/R open -a rstudio&quot;
-</code></pre>
-
-<p>Finally, now when you list your conda environments <code>conda info --envs</code> you will see both new R environments.</p>
-
+</code></pre><p>Finally, now when you list your conda environments <code>conda info --envs</code> you will see both new R environments.</p>
 <pre><code># conda environments:
 #
 base                     /Users/shu/anaconda3
 r_3.4.3               *  /Users/shu/anaconda3/envs/r_3.4.3
 r_3.5.1                  /Users/shu/anaconda3/envs/r_3.5.1
-</code></pre>
-
-<h3 id="what-other-r-versions-are-available-for-conda-install">What other R versions are available for conda install?</h3>
-
+</code></pre><h3 id="what-other-r-versions-are-available-for-conda-install">What other R versions are available for conda install?</h3>
 <p>To check out other available R versions built through conda you can search the R channel using conda:</p>
-
 <pre><code>conda search -c r r
-</code></pre>
-
-<h2 id="installing-r-packages">Installing R packages</h2>
-
+</code></pre><h2 id="installing-r-packages">Installing R packages</h2>
 <p>To install other R packages, rather than use &lsquo;install.packages()&rsquo; in the R console, I recommend googling conda + PACKAGE-NAME or searching the conda <code>R</code> channel (<code>conda search -f r-PACKAGENAME</code>) for the package you want to install. When you are ready to install a package, make sure you are in the conda environment with whatever <code>R</code> version you want the package installed and type <code>conda install -c r r-PACKAGENAME</code>. This approach to R package installs is <em>life changing</em>, especially if you&rsquo;re all too familiar with <code>non-zero exit status</code> or random failures when attempting to install R packages.</p>
-
 <p>You can also view your list of installed R packages in your environment, <code>conda list r-</code>.</p>
-
 <h3 id="conda-channels-for-r-package-installation">Conda channels for R package installation</h3>
-
-<p>Some package groups require installation through a different conda channel. Two of the main ones I use are bioconductor <a href="https://bioconda.github.io" target="_blank">Bioconda</a> and <a href="https://conda-forge.org" target="_blank">conda-forge</a>.</p>
-
+<p>Some package groups require installation through a different conda channel. Two of the main ones I use are bioconductor <a href="https://bioconda.github.io">Bioconda</a> and <a href="https://conda-forge.org">conda-forge</a>.</p>
 <p>To set this up, configure your R environment by executing these commands in <em>this exact order</em>:</p>
-
 <pre><code># Type these commands in this exact order:
 conda config --add channels defaults
 conda config --add channels bioconda
 conda config --add channels conda-forge
-</code></pre>
-
-<p>To install a package using one of these channels, use &ldquo;-c&rdquo; in the conda install command. For instance to install <a href="https://cran.r-project.org/web/packages/compositions/compositions.pdf" target="_blank">compositions</a> and <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html" target="_blank">cowplot</a>, you need to use the <a href="https://conda-forge.org" target="_blank"><code>conda-forge</code></a> channel. <a href="https://anaconda.org/conda-forge/r-compositions" target="_blank">See install information here</a>.</p>
-
+</code></pre><p>To install a package using one of these channels, use &ldquo;-c&rdquo; in the conda install command. For instance to install <a href="https://cran.r-project.org/web/packages/compositions/compositions.pdf">compositions</a> and <a href="https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html">cowplot</a>, you need to use the <a href="https://conda-forge.org"><code>conda-forge</code></a> channel. <a href="https://anaconda.org/conda-forge/r-compositions">See install information here</a>.</p>
 <pre><code>conda install -c conda-forge r-compositions
 conda install -c conda-forge r-cowplot
-</code></pre>
-
-<p>Other examples which require Bioconda:</p>
-
+</code></pre><p>Other examples which require Bioconda:</p>
 <pre><code>conda install -c bioconda bioconductor-decontam
 conda install -c bioconda bioconductor-deseq
 conda install -c bioconda bioconductor-edger
-</code></pre>
-
-<h2 id="final-thoughts">Final thoughts</h2>
-
+</code></pre><h2 id="final-thoughts">Final thoughts</h2>
 <p><em>Don&rsquo;t be afraid of destruction</em>. Behind the scenes of this post, I completely removed and re-installed Anaconda on my computer at least twice and created and then deleted numerous environments. Starting with a clean slate turned out to be <em>necessary</em>.</p>
-
-<p>Another reason to not shy away from destruction is that it is a way towards a more reproducible work process. After deleting and reinstalling Anaconda (and every other conda environment to my name), I was able to easily reinstate the environment my collaborator and I share with no issues (you can rebuild!). And now, I can return to whichever R version I need for a given project by navigating between my R conda environments. <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=environment" target="_blank">How much fun is it to be organized?</a>.</p>
-
-<p><em>Anaconda was built with Python in mind</em>. My motivation for this post was that it was difficult to find a working solution to partition R versions using conda environments (especially in conjunction with IRKernel and RStudio). Anaconda seems to work more succintly with python; as an example, I found that some older versions of R were not as stable as others. But R support is constantly growing! Also, check out the newly released <a href="https://blog.rstudio.com/2018/10/09/rstudio-1-2-preview-reticulated-python/" target="_blank">RStudio 1.2, which will support Python</a></p>
-
+<p>Another reason to not shy away from destruction is that it is a way towards a more reproducible work process. After deleting and reinstalling Anaconda (and every other conda environment to my name), I was able to easily reinstate the environment my collaborator and I share with no issues (you can rebuild!). And now, I can return to whichever R version I need for a given project by navigating between my R conda environments. <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=environment">How much fun is it to be organized?</a>.</p>
+<p><em>Anaconda was built with Python in mind</em>. My motivation for this post was that it was difficult to find a working solution to partition R versions using conda environments (especially in conjunction with IRKernel and RStudio). Anaconda seems to work more succintly with python; as an example, I found that some older versions of R were not as stable as others. But R support is constantly growing! Also, check out the newly released <a href="https://blog.rstudio.com/2018/10/09/rstudio-1-2-preview-reticulated-python/">RStudio 1.2, which will support Python</a></p>
 <p><em>There&rsquo;s more than one way to do this</em>. If you have another solution or addition - let me know!</p>
 
     </div>
@@ -882,11 +756,11 @@ conda install -c bioconda bioconductor-edger
   
   <a class="badge badge-light" href="/tags/computation/">computation</a>
   
-  <a class="badge badge-light" href="/tags/best-practices/">best practices</a>
+  <a class="badge badge-light" href="">best practices</a>
   
   <a class="badge badge-light" href="/tags/rstudio/">RStudio</a>
   
-  <a class="badge badge-light" href="/tags/jupyter-notebook/">jupyter notebook</a>
+  <a class="badge badge-light" href="">jupyter notebook</a>
   
 </div>
 
@@ -922,7 +796,7 @@ conda install -c bioconda bioconductor-edger
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/authors/shu">Sarah Hu</a></h5>
     
-    <p class="card-text" itemprop="description">Sarah is a Postdoctoral Fellow in <a href="https://www2.whoi.edu/staff/jhuber/projects/" target="_blank">Julie Huber&rsquo;s lab at WHOI</a> investigating the ecological roles single-celled microbial eukaryotes play in marine ecosystems. She is currently focused on understanding how the microbial eukaryotic communities found in deep-sea hydrothermal vent ecosystems contribute to microbial food web dynamics.</p>
+    <p class="card-text" itemprop="description">Sarah is a Postdoctoral Fellow in <a href="https://www2.whoi.edu/staff/jhuber/projects/">Julie Huber&rsquo;s lab at WHOI</a> investigating the ecological roles single-celled microbial eukaryotes play in marine ecosystems. She is currently focused on understanding how the microbial eukaryotic communities found in deep-sea hydrothermal vent ecosystems contribute to microbial food web dynamics.</p>
     <ul class="network-icon" aria-hidden="true">
       
       
@@ -1060,7 +934,7 @@ conda install -c bioconda bioconductor-edger
   
 
   <p class="powered-by">
-    &copy; 2019 &middot; 
+    © 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1206,7 +1080,7 @@ conda install -c bioconda bioconductor-edger
     
     
     
-    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
 
   </body>
 </html>

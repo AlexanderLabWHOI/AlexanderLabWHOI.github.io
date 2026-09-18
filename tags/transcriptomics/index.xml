@@ -1,16 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>transcriptomics on Alexander Lab @ WHOI</title>
+    <title>Transcriptomics on Alexander Lab @ WHOI</title>
     <link>https://alexanderlabwhoi.github.io/tags/transcriptomics/</link>
-    <description>Recent content in transcriptomics on Alexander Lab @ WHOI</description>
+    <description>Recent content in Transcriptomics on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jul 2021 15:15:49 -0400</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/tags/transcriptomics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>eukrhythmic: automating metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukrhythmic/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukrhythmic/</guid>
+      <description>Metatranscriptomics is a useful probe into the members of an ecological community, capturing community members and their potential functions in a single sequencing effort. Because transcribed RNA is sequenced, via thorough processing of metatrancriptomes, we can decipher both the members constituting a community as well as the genes that each member was expressing at the instant that the sample was collected. Metatranscriptomics is a relatively immature pursuit as compared to genomics or transcriptomics.</description>
+    </item>
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
+      <description>Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics).</description>
+    </item>
+    
+    <item>
+      <title>Thermal Acclimation in Emiliania huxleyi</title>
+      <link>https://alexanderlabwhoi.github.io/project/thermal_ehux/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/thermal_ehux/</guid>
+      <description>Emiliania huxleyi is a globally-distributed coccolithophore with a major influence on beogeochemical cycling via the production of large, ephemeral blooms. Because of its global distribution, Emiliania huxleyi has a wide thermal range and apparently a high capacity for short-term acclimation and long-term adaptation to thermal conditions. We are studying this capacity in the lab via both traditional experimental acclimation approaches in semi-continuous culture, and via tracking gene expression changes in response to thermal conditioning in the taxon via transcriptomics.</description>
+    </item>
     
     <item>
       <title>Transcriptional response of the harmful raphidophyte Heterosigma akashiwo to nitrate and phosphate stress</title>

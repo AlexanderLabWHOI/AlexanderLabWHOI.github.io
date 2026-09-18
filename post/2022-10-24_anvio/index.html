@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.73.0" />
 
   
 
@@ -714,21 +714,12 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<p>Anvi&rsquo;o is a powerful tool for analyzing and vizualizing &lsquo;omics data, much of which relies on one&rsquo;s ability to visualize those data. On Poseidon, it can sometimes be difficult to work with these kinds of plotting tools, because we&rsquo;re working on the command line. To use anvi&rsquo;o interactively on Poseidon, we need to go through a few extra steps.</p>
-
-<p>I&rsquo;ll walk you through the whole installation of anvi&rsquo;o here from start to finish! Most of these instructions are also available on anvio.org. The other half of these instructions are mostly in the posts <a href="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/" target="_blank">here</a> (for Mac) and <a href="https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/" target="_blank">here</a> (for Windows) that we&rsquo;ve previously uploaded to the blog!</p>
-
-<h3 id="step-one-create-a-fresh-conda-environment-for-anvi-o-and-install-dependencies">Step One: create a fresh <code>conda</code> environment for anvi&rsquo;o and install dependencies</h3>
-
+      <p>Anvi&rsquo;o is a powerful tool for analyzing and vizualizing &lsquo;omics data, much of which relies on one&rsquo;s ability to visualize those data. On Poseidon, it can sometimes be difficult to work with these kinds of plotting tools, because we&rsquo;re working on the command line. To use anvi&rsquo;o interactively on Poseidon, we need to go through a few extra steps.</p>
+<p>I&rsquo;ll walk you through the whole installation of anvi&rsquo;o here from start to finish! Most of these instructions are also available on anvio.org. The other half of these instructions are mostly in the posts <a href="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/">here</a> (for Mac) and <a href="https://alexanderlabwhoi.github.io/post/2019-07-24-slurm-win/">here</a> (for Windows) that we&rsquo;ve previously uploaded to the blog!</p>
+<h3 id="step-one-create-a-fresh-conda-environment-for-anvio-and-install-dependencies">Step One: create a fresh <code>conda</code> environment for anvi&rsquo;o and install dependencies</h3>
 <p>I like using <code>mamba</code>. That will make the rest of your installs much faster. So I&rsquo;ve modified anvi&rsquo;o&rsquo;s installation instructions a little bit to fit that principle. After logging into Poseidon&rsquo;s login node (and making sure that you have the most recent and/or your preferred anaconda module loaded), we&rsquo;ll run:</p>
-
 <pre><code>conda create -y --name anvio python=3.6 mamba
-</code></pre>
-
-<p>We&rsquo;ll wait for that to finish, then execute <code>conda activate anvio</code> (or whatever you chose to name your environment! Next, we have a whole list of packages we&rsquo;ll want mamba to go ahead and (efficiently) install for us in order for anvi&rsquo;o to work. You should be able to just copy, paste, and execute this entire code block right in your terminal window.</p>
-
+</code></pre><p>We&rsquo;ll wait for that to finish, then execute <code>conda activate anvio</code> (or whatever you chose to name your environment! Next, we have a whole list of packages we&rsquo;ll want mamba to go ahead and (efficiently) install for us in order for anvi&rsquo;o to work. You should be able to just copy, paste, and execute this entire code block right in your terminal window.</p>
 <pre><code>mamba install -y -c bioconda &quot;sqlite&gt;=3.31.1&quot;
 mamba install -y -c bioconda prodigal
 mamba install -y -c bioconda mcl
@@ -754,60 +745,34 @@ mamba install -y -c bioconda bioconductor-qvalue
 mamba install -y -c bioconda fasttree
 mamba install -y -c bioconda vmatch
 mamba install -y -c bioconda fastani ## anvio says you don't need this one
-</code></pre>
-
-<p>Note: anvi&rsquo;o&rsquo;s website says that you don&rsquo;t need the <code>fastani</code> package installed for the software to work. The install went fine for me. The whole install process might take quite a while, depending on the speed of the connection. If you elect to use <code>conda</code> over <code>mamba</code>, it will take a <em>lot</em> longer.</p>
-
-<h3 id="step-two-actually-install-anvi-o">Step Two: actually install anvi&rsquo;o</h3>
-
+</code></pre><p>Note: anvi&rsquo;o&rsquo;s website says that you don&rsquo;t need the <code>fastani</code> package installed for the software to work. The install went fine for me. The whole install process might take quite a while, depending on the speed of the connection. If you elect to use <code>conda</code> over <code>mamba</code>, it will take a <em>lot</em> longer.</p>
+<h3 id="step-two-actually-install-anvio">Step Two: actually install anvi&rsquo;o</h3>
 <p>You should execute this in a folder where you don&rsquo;t mind software files being downloaded to:</p>
-
 <pre><code>curl -L https://github.com/merenlab/anvio/releases/download/v7.1/anvio-7.1.tar.gz \
         --output anvio-7.1.tar.gz
 pip install anvio-7.1.tar.gz
-</code></pre>
-
-<p>Now, you should be good to go to run anvi&rsquo;o!</p>
-
+</code></pre><p>Now, you should be good to go to run anvi&rsquo;o!</p>
 <h3 id="step-three-get-a-worker-node-spun-up-to-do-your-bidding">Step Three: get a worker node spun up to do your bidding</h3>
-
 <p>We&rsquo;ll run an interactive job on Poseidon using <code>srun</code>. You can modify this command as needed if you want this job to go for longer than two hours&hellip;or if people are hogging all the <code>compute</code> nodes and you need to hedge your bets with a pre-empt-able <code>scavenger</code> run, for example.</p>
-
 <pre><code>srun -p compute --time=02:00:00 --mem=50gb --pty bash
-</code></pre>
-
-<p>Eventually, this should log you into a clean worker node, so your prompt should change from <username>@poseidon-l<1 or 2>.whoi.edu to <username>@pn&lt;# of node you were assigned&gt;. Now, you&rsquo;re ready to not annoy the IT department by executing expensive programs on the common login node! Make sure now to <code>conda activate anvio</code>.</p>
-
-<h3 id="step-four-run-anvi-o-interactive-but-make-sure-to-specify-a-port">Step Four: run anvi&rsquo;o interactive, but make sure to specify a port</h3>
-
-<p>In order to run this, I am going to use the example the <a href="https://merenlab.org/2016/02/27/the-anvio-interactive-interface/" target="_blank">Eren lab</a> provides, since I don&rsquo;t use anvi&rsquo;o much. Note that their link is broken on their tutorial website. I found one that works <a href="https://github.com/meren/anvio/blob/master/anvio/tests/sandbox/example-newick-tree.txt" target="_blank">here</a>. I just saved the Newick text at that link to a file called <code>meren_tree.txt</code>, then (inside my interactive session!), I executed:</p>
-
+</code></pre><p>Eventually, this should log you into a clean worker node, so your prompt should change from <!-- raw HTML omitted -->@poseidon-l&lt;1 or 2&gt;.whoi.edu to <!-- raw HTML omitted -->@pn&lt;# of node you were assigned&gt;. Now, you&rsquo;re ready to not annoy the IT department by executing expensive programs on the common login node! Make sure now to <code>conda activate anvio</code>.</p>
+<h3 id="step-four-run-anvio-interactive-but-make-sure-to-specify-a-port">Step Four: run anvi&rsquo;o interactive, but make sure to specify a port</h3>
+<p>In order to run this, I am going to use the example the <a href="https://merenlab.org/2016/02/27/the-anvio-interactive-interface/">Eren lab</a> provides, since I don&rsquo;t use anvi&rsquo;o much. Note that their link is broken on their tutorial website. I found one that works <a href="https://github.com/meren/anvio/blob/master/anvio/tests/sandbox/example-newick-tree.txt">here</a>. I just saved the Newick text at that link to a file called <code>meren_tree.txt</code>, then (inside my interactive session!), I executed:</p>
 <pre><code>anvi-interactive -t meren_tree.txt -p profile.db --title 'Simple tree test' --server-only -P 5785
-</code></pre>
-
-<h3 id="step-five-log-into-your-node-and-forward-that-port-to-your-browser">Step Five: log into your node and forward that port to your browser</h3>
-
+</code></pre><h3 id="step-five-log-into-your-node-and-forward-that-port-to-your-browser">Step Five: log into your node and forward that port to your browser</h3>
 <p>All of these steps are straight out of our tutorial on running a Jupyter notebook remotely that I linked above. If you use Windows, be sure to check out that post - I&rsquo;m only using the Mac command here.</p>
-
 <pre><code>ssh -t -t &lt;username&gt;@poseidon-l1.whoi.edu -L 5785:localhost:5785 ssh &lt;the name of the &quot;pn&quot; node from above that showed up when you ran srun&gt; -L 5785:localhost:5785
-</code></pre>
-
-<p>To summarize, above you need to swap out:
-- your own username
-- the port number if you changed it
-- the name of the worker node you ssh&rsquo;d into</p>
-
+</code></pre><p>To summarize, above you need to swap out:</p>
+<ul>
+<li>your own username</li>
+<li>the port number if you changed it</li>
+<li>the name of the worker node you ssh&rsquo;d into</li>
+</ul>
 <p>For example, if my username is &ldquo;akrinos&rdquo;, I used port 5786, and I ssh&rsquo;d into &ldquo;pn075&rdquo;, I would type:</p>
-
 <pre><code>ssh -t -t akrinos@poseidon-l1.whoi.edu -L 5786:localhost:5786 ssh pn075 -L 5786:localhost:5786
-</code></pre>
-
-<p>Be sure to check out our more detailed post on ssh tunneling if you want shortcuts for doing this!</p>
-
+</code></pre><p>Be sure to check out our more detailed post on ssh tunneling if you want shortcuts for doing this!</p>
 <h3 id="step-six-access-your-interactive-session">Step Six: access your interactive session</h3>
-
 <p>Simply type <code>localhost:5786</code> into your web browser (replacing this second number with your present node), and you should be able to see your anvi&rsquo;o interactive session! Feel free to use any <code>anvi-interactive</code> command and accessory files that you want to after creating/uploading those files on Poseidon.</p>
-
 <p>Happy interacting!s</p>
 
     </div>
@@ -819,7 +784,7 @@ pip install anvio-7.1.tar.gz
   
   <a class="badge badge-light" href="/tags/python/">python</a>
   
-  <a class="badge badge-light" href="/tags/data-visualization/">data visualization</a>
+  <a class="badge badge-light" href="">data visualization</a>
   
   <a class="badge badge-light" href="/tags/anvio/">anvio</a>
   
@@ -1020,7 +985,7 @@ pip install anvio-7.1.tar.gz
   
 
   <p class="powered-by">
-    &copy; 2019 &middot; 
+    © 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1166,7 +1131,7 @@ pip install anvio-7.1.tar.gz
     
     
     
-    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
 
   </body>
 </html>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.73.0" />
 
   
 
@@ -484,7 +484,7 @@
     
     <a href="/categories/computation/">computation</a>, 
     
-    <a href="/categories/data-management/">data management</a>
+    <a href="">data management</a>
     
   </span>
   
@@ -641,7 +641,7 @@
     
     <a href="/categories/computation/">computation</a>, 
     
-    <a href="/categories/data-management/">data management</a>
+    <a href="">data management</a>
     
   </span>
   
@@ -719,64 +719,33 @@
 
     <div class="article-style" itemprop="articleBody">
       <p><code>RStudio</code> was once my favorite and most often-used IDE. And there are still a lot of reasons to use it, even if you&rsquo;ve gotten used to something like <code>Spyder</code> or <code>Jupyter</code>. <code>RStudio</code> is a clean IDE that allows you to simultaneously view your filesystem, environment variables, <code>R</code> scripts, and console, and is all very specifically tailored to <code>R</code>, which is important in many cases (<code>R</code> is an amazing but finicky language). There are many occasions when doing &ldquo;big data&rdquo;-esque work on an HPC in which you may need access to an IDE. The perhaps most frequent situations are visualizing/exploring data and debugging.</p>
-
 <p>For this tutorial, you&rsquo;ll need a few things. The first thing is the most important, and it&rsquo;s a little bit out of your hands. Your HPC system needs to be set up for X11 forwarding, which is a way to access the graphical window being spun up by the remote system (with access to all the files on that system) on your own computer. So we&rsquo;re taking the visual output that the HPC can generate but doesn&rsquo;t have the display to visualize, and sending it somewhere on our own computer. Namely, we&rsquo;ll use <code>XQuartz</code> to visualize this incoming data stream, which is the second prerequisite.</p>
-
-<p>The <code>X11</code>-related software you&rsquo;ll need on your computer differs based on whether you are a Mac or a PC. <a href="https://kb.thayer.dartmouth.edu/article/336-x11-for-windows-and-mac" target="_blank">This website</a> contains links to both. If you&rsquo;re on Mac, you&rsquo;ll need to download <code>XQuartz</code>, and if you&rsquo;re on PC, it&rsquo;ll be <code>Xming</code>.</p>
-
+<p>The <code>X11</code>-related software you&rsquo;ll need on your computer differs based on whether you are a Mac or a PC. <a href="https://kb.thayer.dartmouth.edu/article/336-x11-for-windows-and-mac">This website</a> contains links to both. If you&rsquo;re on Mac, you&rsquo;ll need to download <code>XQuartz</code>, and if you&rsquo;re on PC, it&rsquo;ll be <code>Xming</code>.</p>
 <p>The third prerequisite is that you need <code>RStudio</code> installed somehow on your HPC system. My preferred method of doing this is via <code>conda</code>. While we&rsquo;re at it, we should also install some dependencies that will come up in your use of <code>R</code>. Once you have <code>conda</code> set up, you can use the following command to set up an <code>R</code> environment that should work:</p>
-
 <pre><code>conda create -n myRenv -c r r-essentials r-base rstudio r-lattice
-</code></pre>
-
-<p>Okay, now that we&rsquo;re through the prerequisites, we can start setting up an <code>RStudio</code> window on our remote HPC. First, try logging into your remote HPC with <code>XQuartz</code> enabled, like so:</p>
-
+</code></pre><p>Okay, now that we&rsquo;re through the prerequisites, we can start setting up an <code>RStudio</code> window on our remote HPC. First, try logging into your remote HPC with <code>XQuartz</code> enabled, like so:</p>
 <pre><code>ssh -v -X &lt;your username&gt;@&lt;your HPC address&gt;
-</code></pre>
-
-<p>If you&rsquo;re not used to using the <code>-v</code> (verbose) flag when you log in, this will be an unwelcome spam to your screen. But the reason I suggest this is that you can sift through all of that noise to look for a line that looks something like this:</p>
-
+</code></pre><p>If you&rsquo;re not used to using the <code>-v</code> (verbose) flag when you log in, this will be an unwelcome spam to your screen. But the reason I suggest this is that you can sift through all of that noise to look for a line that looks something like this:</p>
 <pre><code>debug1: Requesting X11 forwarding with authentication spoofing.
-</code></pre>
-
-<p>So that you know your HPC system indeed is set up for <code>X11</code> forwarding and isn&rsquo;t just ignoring the flag you offered it.</p>
-
+</code></pre><p>So that you know your HPC system indeed is set up for <code>X11</code> forwarding and isn&rsquo;t just ignoring the flag you offered it.</p>
 <p>Next, we want to set up a compute or interactive node that we can use for long enough to get our work in <code>RStudio</code> finished. This may differ system-to-system. If you&rsquo;re using SLURM, you can use a command like this:</p>
-
 <pre><code>srun --time=&lt;some time limit&gt; -p &lt;queue to use&gt; --mem=&lt;some memory requirement&gt; --pty bash
-</code></pre>
-
-<p>Once you&rsquo;re allocated resources, you should see a prompt that displays the new node you&rsquo;ve been redirected to. Next, you&rsquo;ll type <code>exit</code> into the window to leave this node and return to your original node (most likely the login node). This is because we need to log into this new node that we reserved with that <code>-X</code> flag, in order for it to recognize our request to use <code>X11</code> forwarding. So, remembering the node that you were dispatched to, type:</p>
-
+</code></pre><p>Once you&rsquo;re allocated resources, you should see a prompt that displays the new node you&rsquo;ve been redirected to. Next, you&rsquo;ll type <code>exit</code> into the window to leave this node and return to your original node (most likely the login node). This is because we need to log into this new node that we reserved with that <code>-X</code> flag, in order for it to recognize our request to use <code>X11</code> forwarding. So, remembering the node that you were dispatched to, type:</p>
 <pre><code>ssh -X &lt;your user&gt;@&lt;your new node&gt;
-</code></pre>
-
-<p>(Depending on your present location, you might not need the username). Now, we can activate that <code>conda</code> environment that we prepared before getting started.</p>
-
+</code></pre><p>(Depending on your present location, you might not need the username). Now, we can activate that <code>conda</code> environment that we prepared before getting started.</p>
 <pre><code>conda activate myRenv
-</code></pre>
-
-<p>Which should make <code>RStudio</code> available to you. Now, we&rsquo;re ready to launch <code>RStudio</code>! Your <code>XQuartz</code> or <code>Xming</code> window should pop up for you automatically when you type:</p>
-
+</code></pre><p>Which should make <code>RStudio</code> available to you. Now, we&rsquo;re ready to launch <code>RStudio</code>! Your <code>XQuartz</code> or <code>Xming</code> window should pop up for you automatically when you type:</p>
 <pre><code>rstudio --x11
-</code></pre>
-
-<p>You may also see this output in your terminal:</p>
-
+</code></pre><p>You may also see this output in your terminal:</p>
 <pre><code>debug1: client_input_channel_open: ctype x11 rchan 3 win 65536 max 16384
 debug1: client_request_x11: request from 127.0.0.1 46360
 debug1: x11_connect_display: $DISPLAY is launchd
 debug1: channel 1: new [x11]
 debug1: confirm x11
-</code></pre>
-
-<p>Which is good. In your <code>XQuartz</code> application, you would see something like this:</p>
-
-<p><img src="resources/rstudio_api.png" alt="RStudio Window in XQuartz" title="What your snazzy new RStudio window should now look like." /></p>
-
+</code></pre><p>Which is good. In your <code>XQuartz</code> application, you would see something like this:</p>
+<p><img src="resources/rstudio_api.png" alt="RStudio Window in XQuartz" title="What your snazzy new RStudio window should now look like."></p>
 <p>Note that if the window doesn&rsquo;t pop up, you can just select the <code>X</code> [marks the spot] in the taskbar to find your instance of <code>XQuartz</code> or similar, where your <code>RStudio</code> window should be patiently waiting, assuming you didn&rsquo;t get any errors.</p>
-
-<p><img src="resources/xquartz_symbol.png" alt="XQuartz in Taskbar" title="Where your window will be if you have a Mac." /></p>
+<p><img src="resources/xquartz_symbol.png" alt="XQuartz in Taskbar" title="Where your window will be if you have a Mac."></p>
 
     </div>
 
@@ -990,7 +959,7 @@ debug1: confirm x11
   
 
   <p class="powered-by">
-    &copy; 2019 &middot; 
+    © 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1136,7 +1105,7 @@ debug1: confirm x11
     
     
     
-    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
 
   </body>
 </html>

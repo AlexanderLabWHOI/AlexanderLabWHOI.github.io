@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.73.0" />
 
   
 
@@ -484,7 +484,7 @@
     
     <a href="/categories/computation/">computation</a>, 
     
-    <a href="/categories/data-management/">data management</a>
+    <a href="">data management</a>
     
   </span>
   
@@ -641,7 +641,7 @@
     
     <a href="/categories/computation/">computation</a>, 
     
-    <a href="/categories/data-management/">data management</a>
+    <a href="">data management</a>
     
   </span>
   
@@ -718,117 +718,61 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<p>There are a lot of reasons to set up Google Drive integration on your remote HPC system. In particular if your institution has provided you access to G Suite, there is a lot of storage available on Google Drive. Sometimes you might want to access files from multiple HPC systems, or have them at your fingertips on your local machine in addition to a remote server. This blog post will go over how to set up and use <code>rclone</code> with Google Drive on your remote server. You can learn more about <code>rclone</code> and how to use it <a href="https://rclone.org/" target="_blank">here</a>.</p>
-
+      <p>There are a lot of reasons to set up Google Drive integration on your remote HPC system. In particular if your institution has provided you access to G Suite, there is a lot of storage available on Google Drive. Sometimes you might want to access files from multiple HPC systems, or have them at your fingertips on your local machine in addition to a remote server. This blog post will go over how to set up and use <code>rclone</code> with Google Drive on your remote server. You can learn more about <code>rclone</code> and how to use it <a href="https://rclone.org/">here</a>.</p>
 <p>To get started, you&rsquo;ll need to have a valid Google Drive account (personal or G Suite), and you&rsquo;ll need to download <code>rclone</code> on your HPC server. The easiest way to install <code>rclone</code> is using <code>Anaconda</code>. You can do this by setting up a brand new <code>conda</code> environment, or by adding <code>rclone</code> to an existing environment. To create a brand new <code>conda</code> environment that you&rsquo;ll always use each time you <code>rclone</code>, run something like the following command:</p>
-
 <pre><code>conda create -n rcloneenv -c conda-forge rclone
-</code></pre>
-
-<p>And to just install <code>rclone</code> in an existing environment, type <code>conda install -c conda-forge rclone</code>. Be careful about potential dependencies!</p>
-
+</code></pre><p>And to just install <code>rclone</code> in an existing environment, type <code>conda install -c conda-forge rclone</code>. Be careful about potential dependencies!</p>
 <p>I had one HPC system I tried this on where the <code>conda</code> installation of <code>rclone</code> just didn&rsquo;t want to work. In that case, I followed these steps:</p>
-
 <pre><code>curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
 unzip rclone-current-linux-amd64.zip
 chmod 755 rclone-*-linux-amd64/rclone
-</code></pre>
-
-<p>Which downloads the base <code>rclone</code> package using <code>curl</code>, unpacks it, and then changes the <code>rclone</code> binary to an executable file, respectively. You might want to do this in a software downloads folder, and then execute:</p>
-
+</code></pre><p>Which downloads the base <code>rclone</code> package using <code>curl</code>, unpacks it, and then changes the <code>rclone</code> binary to an executable file, respectively. You might want to do this in a software downloads folder, and then execute:</p>
 <pre><code>alias rclone='rclone-*-linux-amd64/rclone'
-</code></pre>
-
-<p>And/or add the directory to <code>\$PATH</code>, using <code>PATH=\$PATH:rclone-*-linux-amd64/rclone', so that you can run</code>rclone<code>anywhere. Note that this is a secondary, less desirable option to just using</code>conda`.</p>
-
+</code></pre><p>And/or add the directory to <code>\$PATH</code>, using <code>PATH=\$PATH:rclone-*-linux-amd64/rclone', so that you can run </code>rclone<code>anywhere. Note that this is a secondary, less desirable option to just using</code>conda`.</p>
 <p>Next, you&rsquo;ll need to run <code>rclone config</code>.</p>
-
 <p>The first few steps are easy. When prompted whether you&rsquo;d like to add a new remote, set a configuration password, or quit, type &ldquo;n&rdquo;, for configuring a new remote. The next prompt will ask you for a name - this can be whatever you want. In this case, I&rsquo;ll enter <code>gdrive</code>.</p>
-
 <p>The next prompt asks what kind of remote this is, which should be set to &ldquo;Google Drive&rdquo;. It&rsquo;s 13th on the list for me, so I enter 13. You can also just write &ldquo;drive&rdquo;.</p>
-
-<p><img src="resources/screenrclone1.png" alt="`rclone` Terminal" title="Terminal output after the first few simple steps of `rclone`." /></p>
-
-<p>The next step prompts you for a Google API Cloud ID. Getting one is not as complicated as it may sound! You&rsquo;ll need to go to <a href="https://console.developers.google.com/" target="_blank">Google API Console</a> (and make sure that you&rsquo;re signed into the right Google account.</p>
-
+<p><img src="resources/screenrclone1.png" alt="rclone Terminal" title="Terminal output after the first few simple steps of `rclone`."></p>
+<p>The next step prompts you for a Google API Cloud ID. Getting one is not as complicated as it may sound! You&rsquo;ll need to go to <a href="https://console.developers.google.com/">Google API Console</a> (and make sure that you&rsquo;re signed into the right Google account.</p>
 <p>First, go to Google API Console and make sure you&rsquo;re logged in. It should look something like the below screen, at which point you select &ldquo;New Project&rdquo;.</p>
-
-<p><img src="resources/GoogleAPI2.png" alt="Google API Landing" title="Home screen of Google API Cloud." /></p>
-
+<p><img src="resources/GoogleAPI2.png" alt="Google API Landing" title="Home screen of Google API Cloud."></p>
 <p>Name the project whatever you like - it isn&rsquo;t really important.</p>
-
-<p><img src="resources/GoogleAPI1.png" alt="Google API New Project" title="Project creation screen for Google API Cloud." /></p>
-
+<p><img src="resources/GoogleAPI1.png" alt="Google API New Project" title="Project creation screen for Google API Cloud."></p>
 <p>Next, go to your project screen:</p>
-
-<p><img src="resources/GoogleAPI3.png" alt="Google API Project" title="Project landing page for Google API Cloud." /></p>
-
+<p><img src="resources/GoogleAPI3.png" alt="Google API Project" title="Project landing page for Google API Cloud."></p>
 <p>You&rsquo;ll now need to navigate to the APIs Overview:</p>
-
-<p><img src="resources/GoogleAPI4.png" alt="Google APIs" title="Link to APIs overview." /></p>
-
+<p><img src="resources/GoogleAPI4.png" alt="Google APIs" title="Link to APIs overview."></p>
 <p>It&rsquo;s tempting on this next screen to just click &ldquo;Enable APIs and Services&rdquo;, but that&rsquo;s not what you want to do. Instead, head to the Credentials tab, then click &ldquo;Configure Consent Screen&rdquo;.</p>
-
-<p><img src="resources/GoogleAPI5.png" alt="Google APIs Consent" title="Configuring the consent screen." /></p>
-
+<p><img src="resources/GoogleAPI5.png" alt="Google APIs Consent" title="Configuring the consent screen."></p>
 <p>This splits off momentarily if you&rsquo;re using a personal account vs. a G Suite account.</p>
-
-<h2 id="case-1-you-re-using-a-personal-account-no-g-suite">Case 1: You&rsquo;re using a &ldquo;personal account&rdquo; (no G Suite)</h2>
-
+<h2 id="case-1-youre-using-a-personal-account-no-g-suite">Case 1: You&rsquo;re using a &ldquo;personal account&rdquo; (no G Suite)</h2>
 <p>You need to select &ldquo;External&rdquo; on the consent configuration screen.</p>
-
-<h2 id="case-2-you-re-using-a-g-suite-account">Case 2: You&rsquo;re using a G Suite account</h2>
-
+<h2 id="case-2-youre-using-a-g-suite-account">Case 2: You&rsquo;re using a G Suite account</h2>
 <p>You can use &ldquo;External&rdquo; (more inclusive), or &ldquo;Internal&rdquo;, if you want only users that are using an account that&rsquo;s part of your G Suite organization to be able to modify/move these files (for example, if I am setting this up using an @whoi.edu email account, part of the WHOI G Suite Organization, using &ldquo;Internal&rdquo; will limit activity to other WHOI users). External will still require that users have a Google account, and that they are going through all the steps that you have.</p>
-
 <p>The only option you need to change on the next screen is entering &ldquo;rclone&rdquo; for the application requesting access (though, ultimately, what you enter here is unlikely to make much of a difference.</p>
-
-<p><img src="resources/GoogleAPI6.png" alt="Google APIs Application" title="Disclosing that you're generating the key for `rclone`." /></p>
-
+<p><img src="resources/GoogleAPI6.png" alt="Google APIs Application" title="Disclosing that you're generating the key for `rclone`."></p>
 <p>Next, you can scroll all the way down and hit &ldquo;Save&rdquo;, then navigate back to the Credentials tab, where you&rsquo;ll now select that enticing &ldquo;Create Credentials&rdquo; button:</p>
-
-<p><img src="resources/GoogleAPI7.png" alt="Google APIs Create Credentials" title="Creating credentials using your newly set OAuth settings." /></p>
-
+<p><img src="resources/GoogleAPI7.png" alt="Google APIs Create Credentials" title="Creating credentials using your newly set OAuth settings."></p>
 <p>And then selecting &ldquo;OAuth client ID&rdquo;.  For &ldquo;Application Type&rdquo;, select &ldquo;Desktop app.&rdquo; What you name it doesn&rsquo;t matter.</p>
-
-<p><img src="resources/GoogleAPI8.png" alt="Google APIs Desktop App" title="Selecting that you're using this key for a desktop application." /></p>
-
+<p><img src="resources/GoogleAPI8.png" alt="Google APIs Desktop App" title="Selecting that you're using this key for a desktop application."></p>
 <p>And voilà! You now have a Client ID and a Client Secret, which you&rsquo;ll copy sequentially and paste into the relevant prompts back at your remote server. The next question will ask what kind of consent you want to give Google Drive. If you&rsquo;re interested in using <code>rclone</code> most effectively, and reading/writing/updating files, you&rsquo;ll need to input &ldquo;drive&rdquo; or 1, in order to give Google Drive full file permissions.</p>
-
 <p>Now you can just hit enter a few times, to accept the default values for the following prompts:</p>
-
 <ul>
 <li>root_folder_id</li>
 <li>service_account_file</li>
 <li>Edit advanced config? (unless you&rsquo;re interested in changing upload/download speeds/chunk sizes - advanced users only!)</li>
 </ul>
-
 <p>But <strong>don&rsquo;t</strong> use the default setting for the next prompt! It&rsquo;ll be tempting to just keep clicking enter, but you need to type &ldquo;n&rdquo; if you&rsquo;re on a remote server. Otherwise, the application will try to conduct authentication locally, which isn&rsquo;t possible unless you&rsquo;re using tunneling on your HPC. When you select &ldquo;n&rdquo;, rclone will generate a link for you to visit. Select the same Google account that you used for the previous steps, and then select &ldquo;Allow.&rdquo;</p>
-
 <p>Then, you&rsquo;ll get another authentication code to copy/paste. You&rsquo;ve probably never heard about Team Drives, so unless you have, select no for the next option (or hit enter). As long as everything looks okay, go ahead and accept the new remote, then enter &ldquo;q&rdquo; to exit the configuration.</p>
-
 <p>One other important point is that you&rsquo;ll need to be connected to the Internet when you are doing you <code>rclone</code>ing. This might be a little difficult if you are using a worker node on your HPC system that doesn&rsquo;t have access to the Internet. Depending on your system&rsquo;s configuration, you may need to use the login node when you use <code>rclone</code> (which should be avoided unless your system specifically limits Internet usage to the login node).</p>
-
 <p>Now your Google Drive is hooked up to your remote server!</p>
-
 <pre><code>rclone copy /path/to/local/files gdrive:files
-</code></pre>
-
-<p>Will copy files from <code>/path/to/local/files</code> locally on your HPC to your Google Drive, in the <code>files</code> folder (make sure to use the name that you entered when you configured the remote).</p>
-
+</code></pre><p>Will copy files from <code>/path/to/local/files</code> locally on your HPC to your Google Drive, in the <code>files</code> folder (make sure to use the name that you entered when you configured the remote).</p>
 <p>If files change, either locally or on Google Drive, you can use <code>sync</code> to update them. For example, if I want to update Google Drive with my local files:</p>
-
 <pre><code>rclone sync /path/to/local/files gdrive:files
-</code></pre>
-
-<p>But if I want to get the most recent Google Drive version:</p>
-
+</code></pre><p>But if I want to get the most recent Google Drive version:</p>
 <pre><code>rclone sync gdrive:files /path/to/local/files 
-</code></pre>
-
-<p>Only the second argument is modified/updated. Happy <code>rclone</code>ing!</p>
+</code></pre><p>Only the second argument is modified/updated. Happy <code>rclone</code>ing!</p>
 
     </div>
 
@@ -843,7 +787,7 @@ chmod 755 rclone-*-linux-amd64/rclone
   
   <a class="badge badge-light" href="/tags/computing/">computing</a>
   
-  <a class="badge badge-light" href="/tags/data-storage/">data storage</a>
+  <a class="badge badge-light" href="">data storage</a>
   
 </div>
 
@@ -1036,7 +980,7 @@ chmod 755 rclone-*-linux-amd64/rclone
   
 
   <p class="powered-by">
-    &copy; 2019 &middot; 
+    © 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1182,7 +1126,7 @@ chmod 755 rclone-*-linux-amd64/rclone
     
     
     
-    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
 
   </body>
 </html>

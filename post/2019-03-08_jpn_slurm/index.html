@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.73.0" />
 
   
 
@@ -558,124 +558,69 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<p>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I  prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command <code>jupyter notebook</code> on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine. Rather, you need to create a connection between your local browser and the remote Jupyter session. Here I am showing a special case, where you might want to run jupyter notebooks on a larger compute node via an interactive session with slurm.</p>
-
+      <p>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I  prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command <code>jupyter notebook</code> on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine. Rather, you need to create a connection between your local browser and the remote Jupyter session. Here I am showing a special case, where you might want to run jupyter notebooks on a larger compute node via an interactive session with slurm.</p>
 <h2 id="starting-your-interactive-job-with-slurm">Starting your interactive job with slurm</h2>
-
-<p>First things first: start up a <code>tmux</code> session (or <code>screen</code> if you prefer). If I am looking to have some program running for longer than I am wanting to keep a terminal window open &ndash; <code>tmux</code> or <code>screen</code> are great options as they keep your session from timing out on remote machines. I have a preference for <a href="https://superuser.com/questions/236158/tmux-vs-screen" target="_blank">tmux</a>, but it is really up to you.</p>
-
+<p>First things first: start up a <code>tmux</code> session (or <code>screen</code> if you prefer). If I am looking to have some program running for longer than I am wanting to keep a terminal window open &ndash; <code>tmux</code> or <code>screen</code> are great options as they keep your session from timing out on remote machines. I have a preference for <a href="https://superuser.com/questions/236158/tmux-vs-screen">tmux</a>, but it is really up to you.</p>
 <pre><code>tmux new -s jupyter
-</code></pre>
-
-<p>Now that we are in our new tmux session, it is time to request an real-time run on the remote HPC. Using the slurm command <a href="https://slurm.schedmd.com/srun.html" target="_blank">srun</a>, I am asking for 2 hours to run on two CPUs on a queue called main. You can customize this to your needs and resources by requesting more nodes, memory, etc.:</p>
-
+</code></pre><p>Now that we are in our new tmux session, it is time to request an real-time run on the remote HPC. Using the slurm command <a href="https://slurm.schedmd.com/srun.html">srun</a>, I am asking for 2 hours to run on two CPUs on a queue called main. You can customize this to your needs and resources by requesting more nodes, memory, etc.:</p>
 <pre><code>srun -p main --time=02:00:00 --ntasks-per-node 2 --pty bash
-</code></pre>
-
-<p>This will log you onto some node which will be noted in your command prompt. For example, my command line prompt changed from <code>halexander@hpc</code> to <code>halexander@node1</code>.</p>
-
+</code></pre><p>This will log you onto some node which will be noted in your command prompt. For example, my command line prompt changed from <code>halexander@hpc</code> to <code>halexander@node1</code>.</p>
 <p>I have many commands that I like in my <code>.bash_profile</code> that are not otherwise carried over to this new machine that we just logged into, so go ahead and source my bash profile (<code>source ~/.bash_profile</code>).</p>
-
 <h2 id="creating-a-conda-environment-and-starting-a-jupyter-notebook">Creating a conda environment and starting a jupyter notebook</h2>
-
 <p>I like to run each of my various projects in its own conda environment. There are many reasons for this: reproducibility, control over program versions, dealing with conflicting package requirements, and, especially for on a shared compute resource (like an HPC), bypassing having root permission for installing programs. Another nice bonus for this particular case is that conda environments will automatically have <code>jupyter</code> installed. So, create a conda environment (if you haven&rsquo;t already):</p>
-
 <pre><code>conda create conda-env
-</code></pre>
-
-<p>and activate it:</p>
-
+</code></pre><p>and activate it:</p>
 <pre><code>source activate conda-env
-</code></pre>
-
-<p>You should now see that your terminal prompt has changed to something like the following, indicating that you are logged onto the interactive node and working within the conda-env environment:</p>
-
+</code></pre><p>You should now see that your terminal prompt has changed to something like the following, indicating that you are logged onto the interactive node and working within the conda-env environment:</p>
 <pre><code>(conda-env) halexander@node1
-</code></pre>
-
-<p>One issue I encountered (that may be specific to my local HPC) that I want to note. If I try to run the command <code>jupyter notebook</code> right away I get the following error:</p>
-
+</code></pre><p>One issue I encountered (that may be specific to my local HPC) that I want to note. If I try to run the command <code>jupyter notebook</code> right away I get the following error:</p>
 <pre><code>Traceback (most recent call last):
   File &quot;/address/home/halexander/.conda/envs/conda-env/lib/python3.6/site-packages/traitlets/traitlets.py&quot;, line 528, in get
     value = obj._trait_values[self.name]
 KeyError: 'runtime_dir'
 ....
 PermissionError: [Errno 13] Permission denied: '/run/user/12746'
-</code></pre>
-
-<p>To get around this issue I found some help on <a href="https://stackoverflow.com/questions/35878178/jupyter-notebook-permission-error" target="_blank">StackOverflow</a>. (Google is your friend for pesky errors like this.) This simple export command fixed my problem:</p>
-
+</code></pre><p>To get around this issue I found some help on <a href="https://stackoverflow.com/questions/35878178/jupyter-notebook-permission-error">StackOverflow</a>. (Google is your friend for pesky errors like this.) This simple export command fixed my problem:</p>
 <pre><code>export XDG_RUNTIME_DIR=&quot;&quot;
-</code></pre>
-
-<p>Now, it is time to start up a jupyter notebook! On the remote machine type:</p>
-
+</code></pre><p>Now, it is time to start up a jupyter notebook! On the remote machine type:</p>
 <pre><code>jupyter notebook --no-browser --port=8888
-</code></pre>
-
-<p>(Note, the default is for jupyter notebook to automatically open a browser &ndash; but we can&rsquo;t do that on a remote server, so we bypass that function with the <code>--no-browser</code> flag.)</p>
-
+</code></pre><p>(Note, the default is for jupyter notebook to automatically open a browser &ndash; but we can&rsquo;t do that on a remote server, so we bypass that function with the <code>--no-browser</code> flag.)</p>
 <p>I regularly want to run this command and hate typing, so I went ahead and created a function to streamline this process:</p>
-
 <pre><code>function jpt(){
     jupyter notebook --no-browser --port=$1
 }
-</code></pre>
-
-<p>This allows you to just type <code>jpt</code> and a port number and the command will be taken care of. If you want to use this function, simply copy the above and place it in your <code>.bash_profile</code>.</p>
-
+</code></pre><p>This allows you to just type <code>jpt</code> and a port number and the command will be taken care of. If you want to use this function, simply copy the above and place it in your <code>.bash_profile</code>.</p>
 <p>Now, <code>jpt 8888</code> will start a jupyter notebook on the port 8888.</p>
-
 <p>If all is well, after running the above command, you should see something like the following:</p>
-
 <pre><code>[I 14:22:55.931 NotebookApp] Writing notebook server cookie secret to /hpc/home/halexander/.local/share/jupyter/runtime/notebook_cookie_secret
 [I 14:23:01.371 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
 [I 14:23:01.371 NotebookApp] Serving notebooks from local directory: /vortexfs1/scratch/halexander/tara/sourmash-analysis
 [I 14:23:01.371 NotebookApp] The Jupyter Notebook is running at:
 [I 14:23:01.371 NotebookApp] http://localhost:8888/
 [I 14:23:01.371 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-</code></pre>
-
-<p>##Creating an SSH tunnel</p>
-
-<p>You are now ready to create a <a href="https://en.wikipedia.org/wiki/Tunneling_protocol" target="_blank">tunnel</a> from your local computer to the jupyter notebook running on the HPC.</p>
-
+</code></pre><p>##Creating an SSH tunnel</p>
+<p>You are now ready to create a <a href="https://en.wikipedia.org/wiki/Tunneling_protocol">tunnel</a> from your local computer to the jupyter notebook running on the HPC.</p>
 <p>Open a new terminal on your local machine. In the above example, I started a notebook on <code>node1</code> at port <code>8888</code> and my username is <code>halexander</code> and the address of my HPC is <code>hpc.address.edu</code>. So, to create the tunnel I would type the following:</p>
-
 <pre><code>ssh -t -t halexander@hpc.address.edu -L 8888:localhost:8888 ssh node1 -L 8888:localhost:8888
-</code></pre>
-
-<p>This is a lot of typing, so it is simpler to create another bash function that you can put in your local <code>.bash_profile</code>.</p>
-
+</code></pre><p>This is a lot of typing, so it is simpler to create another bash function that you can put in your local <code>.bash_profile</code>.</p>
 <pre><code>function jptnode(){
     # Forwards port $1 from node $2 into port $1 on the local machine and listens to it
         ssh -t -t halexander@hpc.address.edu -L $1:localhost:$1 ssh $2 -L $1:localhost:$1
 }
-</code></pre>
-
-<p>You will of course want to customize the above function to contain your username in place of <code>halexander</code> and the address of your hpc in place of <code>hpc.address.edu</code>.</p>
-
+</code></pre><p>You will of course want to customize the above function to contain your username in place of <code>halexander</code> and the address of your hpc in place of <code>hpc.address.edu</code>.</p>
 <p>The <code>$</code> indicates the input variables in this function, with <code>$1</code> being the port you specified for the jupyter notebook and <code>$2</code> being the name of the node you are running the notebook on. So, to use this function you would type:</p>
-
 <pre><code>jptnode 8888 node1
-</code></pre>
-
-<p>Once you run this, you should notice that your terminal window has been logged on to your remote HPC and then logged onto the requested node.</p>
-
+</code></pre><p>Once you run this, you should notice that your terminal window has been logged on to your remote HPC and then logged onto the requested node.</p>
 <p>You can now open your browser of choice and go to <code>localhost:8888</code> and you should see the jupyter dashboard. You should be able to start working in jupyter notebooks, downloading data, or do any other things you want to do through the jupyter dashboard. Make sure to shutdown the jupyter notebook when you are done.</p>
-
 <h2 id="a-few-important-notes">A few important notes</h2>
-
-<p>1) Before you connect to a remote server with jupyter notebook make sure that you have configured jupyter with password information. You can do this by editing the <code>jupyter-notebook_config.json</code> which is usually located in <code>~/.jupyter</code> or by typing:</p>
-
+<ol>
+<li>Before you connect to a remote server with jupyter notebook make sure that you have configured jupyter with password information. You can do this by editing the <code>jupyter-notebook_config.json</code> which is usually located in <code>~/.jupyter</code> or by typing:</li>
+</ol>
 <pre><code>jupyter notebook password
-</code></pre>
-
-<p>which will prompt you for a password that will be used for future notebooks.</p>
-
-<p>2) Make sure you shutdown  your jupyter notebook when you are done. To do this, you can log back onto the tmux session you started earlier (<code>tmux a -t jupyter</code>) where the jupyter notebook is running and use <code>ctrl-C</code> should shutdown the jupyter notebook. If you run into issues with a port still being used, chances are that a notebook is still running somewhere.</p>
+</code></pre><p>which will prompt you for a password that will be used for future notebooks.</p>
+<ol start="2">
+<li>Make sure you shutdown  your jupyter notebook when you are done. To do this, you can log back onto the tmux session you started earlier (<code>tmux a -t jupyter</code>) where the jupyter notebook is running and use <code>ctrl-C</code> should shutdown the jupyter notebook. If you run into issues with a port still being used, chances are that a notebook is still running somewhere.</li>
+</ol>
 
     </div>
 
@@ -692,7 +637,7 @@ PermissionError: [Errno 13] Permission denied: '/run/user/12746'
   
   <a class="badge badge-light" href="/tags/computing/">computing</a>
   
-  <a class="badge badge-light" href="/tags/data-analysis/">data analysis</a>
+  <a class="badge badge-light" href="">data analysis</a>
   
 </div>
 
@@ -856,7 +801,7 @@ PermissionError: [Errno 13] Permission denied: '/run/user/12746'
   
 
   <p class="powered-by">
-    &copy; 2019 &middot; 
+    © 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1002,7 +947,7 @@ PermissionError: [Errno 13] Permission denied: '/run/user/12746'
     
     
     
-    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
 
   </body>
 </html>

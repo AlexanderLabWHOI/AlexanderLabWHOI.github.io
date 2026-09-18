@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Alexander Lab @ WHOI</title>
@@ -7,784 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://alexanderlabwhoi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>AMP</title>
-      <link>https://alexanderlabwhoi.github.io/tags/amp/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/amp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Alexander Lab</title>
-      <link>https://alexanderlabwhoi.github.io/tags/alexander-lab/</link>
-      <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/alexander-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Anaconda</title>
-      <link>https://alexanderlabwhoi.github.io/tags/anaconda/</link>
-      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/anaconda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Aureococcus anophagefferens</title>
-      <link>https://alexanderlabwhoi.github.io/tags/aureococcus-anophagefferens/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/aureococcus-anophagefferens/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bio-GO-SHIP</title>
-      <link>https://alexanderlabwhoi.github.io/tags/bio-go-ship/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/bio-go-ship/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Community-Ecology</title>
-      <link>https://alexanderlabwhoi.github.io/tags/community-ecology/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/community-ecology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computation</title>
-      <link>https://alexanderlabwhoi.github.io/tags/computation/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/computation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DMSP</title>
-      <link>https://alexanderlabwhoi.github.io/tags/dmsp/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/dmsp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ehux</title>
-      <link>https://alexanderlabwhoi.github.io/tags/ehux/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/ehux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Emiliania</title>
-      <link>https://alexanderlabwhoi.github.io/tags/emiliania/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/emiliania/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Eukaryote</title>
-      <link>https://alexanderlabwhoi.github.io/tags/eukaryote/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/eukaryote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Genomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/genomics/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/genomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HPC</title>
-      <link>https://alexanderlabwhoi.github.io/tags/hpc/</link>
-      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/hpc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Heterosigma akashiwo</title>
-      <link>https://alexanderlabwhoi.github.io/tags/heterosigma-akashiwo/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/heterosigma-akashiwo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MAGs</title>
-      <link>https://alexanderlabwhoi.github.io/tags/mags/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/mags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MMETSP</title>
-      <link>https://alexanderlabwhoi.github.io/tags/mmetsp/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/mmetsp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MarRef</title>
-      <link>https://alexanderlabwhoi.github.io/tags/marref/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/marref/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Metagenome</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metagenome/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metagenome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Metagenome-Assembled</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metagenome-assembled/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metagenome-assembled/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Metatranscriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pangenomes</title>
-      <link>https://alexanderlabwhoi.github.io/tags/pangenomes/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/pangenomes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phaeocystis</title>
-      <link>https://alexanderlabwhoi.github.io/tags/phaeocystis/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/phaeocystis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://alexanderlabwhoi.github.io/tags/r/</link>
-      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RStudio</title>
-      <link>https://alexanderlabwhoi.github.io/tags/rstudio/</link>
-      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/rstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Station ALOHA</title>
-      <link>https://alexanderlabwhoi.github.io/tags/station-aloha/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/station-aloha/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sverdrup</title>
-      <link>https://alexanderlabwhoi.github.io/tags/sverdrup/</link>
-      <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/sverdrup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tara Oceans</title>
-      <link>https://alexanderlabwhoi.github.io/tags/tara-oceans/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/tara-oceans/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thalassiosira pseudonana</title>
-      <link>https://alexanderlabwhoi.github.io/tags/thalassiosira-pseudonana/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/thalassiosira-pseudonana/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thermal</title>
-      <link>https://alexanderlabwhoi.github.io/tags/thermal/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/thermal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Transcriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/transcriptomics/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/transcriptomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Trichodesmium</title>
-      <link>https://alexanderlabwhoi.github.io/tags/trichodesmium/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/trichodesmium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>anvio</title>
-      <link>https://alexanderlabwhoi.github.io/tags/anvio/</link>
-      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/anvio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>aquatic</title>
-      <link>https://alexanderlabwhoi.github.io/tags/aquatic/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/aquatic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>automated pipeline</title>
-      <link>https://alexanderlabwhoi.github.io/tags/automated-pipeline/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/automated-pipeline/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>auxtrophy</title>
-      <link>https://alexanderlabwhoi.github.io/tags/auxtrophy/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/auxtrophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>best practices</title>
-      <link>https://alexanderlabwhoi.github.io/tags/best-practices/</link>
-      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/best-practices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>big data</title>
-      <link>https://alexanderlabwhoi.github.io/tags/big-data/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/big-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>biogeochemistry</title>
-      <link>https://alexanderlabwhoi.github.io/tags/biogeochemistry/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/biogeochemistry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bioinformatics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/bioinformatics/</link>
-      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/bioinformatics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blooms</title>
-      <link>https://alexanderlabwhoi.github.io/tags/blooms/</link>
-      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/blooms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>climate change</title>
-      <link>https://alexanderlabwhoi.github.io/tags/climate-change/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/climate-change/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>computation</title>
-      <link>https://alexanderlabwhoi.github.io/tags/computation/</link>
-      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/computation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>computing</title>
-      <link>https://alexanderlabwhoi.github.io/tags/computing/</link>
-      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>conda</title>
-      <link>https://alexanderlabwhoi.github.io/tags/conda/</link>
-      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/conda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>conferences</title>
-      <link>https://alexanderlabwhoi.github.io/tags/conferences/</link>
-      <pubDate>Mon, 10 Feb 2020 13:00:05 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/conferences/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>conserved response</title>
-      <link>https://alexanderlabwhoi.github.io/tags/conserved-response/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/conserved-response/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>critical depth hypothesis</title>
-      <link>https://alexanderlabwhoi.github.io/tags/critical-depth-hypothesis/</link>
-      <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/critical-depth-hypothesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cyber infrastructure</title>
-      <link>https://alexanderlabwhoi.github.io/tags/cyber-infrastructure/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/cyber-infrastructure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data analysis</title>
-      <link>https://alexanderlabwhoi.github.io/tags/data-analysis/</link>
-      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/data-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data reuse</title>
-      <link>https://alexanderlabwhoi.github.io/tags/data-reuse/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/data-reuse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data science</title>
-      <link>https://alexanderlabwhoi.github.io/tags/data-science/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data sharing</title>
-      <link>https://alexanderlabwhoi.github.io/tags/data-sharing/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/data-sharing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data storage</title>
-      <link>https://alexanderlabwhoi.github.io/tags/data-storage/</link>
-      <pubDate>Tue, 02 Jun 2020 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/data-storage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data visualization</title>
-      <link>https://alexanderlabwhoi.github.io/tags/data-visualization/</link>
-      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/data-visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>de novo assembly</title>
-      <link>https://alexanderlabwhoi.github.io/tags/de-novo-assembly/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/de-novo-assembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>diatom</title>
-      <link>https://alexanderlabwhoi.github.io/tags/diatom/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/diatom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>diversity</title>
-      <link>https://alexanderlabwhoi.github.io/tags/diversity/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/diversity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ecological traits</title>
-      <link>https://alexanderlabwhoi.github.io/tags/ecological-traits/</link>
-      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/ecological-traits/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>estuarine</title>
-      <link>https://alexanderlabwhoi.github.io/tags/estuarine/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/estuarine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>eukaryotes</title>
-      <link>https://alexanderlabwhoi.github.io/tags/eukaryotes/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/eukaryotes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>evolution</title>
-      <link>https://alexanderlabwhoi.github.io/tags/evolution/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/evolution/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>experimental design</title>
-      <link>https://alexanderlabwhoi.github.io/tags/experimental-design/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/experimental-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fonts</title>
-      <link>https://alexanderlabwhoi.github.io/tags/fonts/</link>
-      <pubDate>Tue, 30 Mar 2021 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/fonts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>freshwater</title>
-      <link>https://alexanderlabwhoi.github.io/tags/freshwater/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/freshwater/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>functional diversity</title>
-      <link>https://alexanderlabwhoi.github.io/tags/functional-diversity/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/functional-diversity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>functional prediction</title>
-      <link>https://alexanderlabwhoi.github.io/tags/functional-prediction/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/functional-prediction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gene expression</title>
-      <link>https://alexanderlabwhoi.github.io/tags/gene-expression/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/gene-expression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>genomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/genomics/</link>
-      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/genomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>global</title>
-      <link>https://alexanderlabwhoi.github.io/tags/global/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/global/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>global warming</title>
-      <link>https://alexanderlabwhoi.github.io/tags/global-warming/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/global-warming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>harmful algal bloom</title>
-      <link>https://alexanderlabwhoi.github.io/tags/harmful-algal-bloom/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/harmful-algal-bloom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hiring</title>
-      <link>https://alexanderlabwhoi.github.io/tags/hiring/</link>
-      <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/hiring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>housekeeping genes</title>
-      <link>https://alexanderlabwhoi.github.io/tags/housekeeping-genes/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/housekeeping-genes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jupyter</title>
-      <link>https://alexanderlabwhoi.github.io/tags/jupyter/</link>
-      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/jupyter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jupyter notebook</title>
-      <link>https://alexanderlabwhoi.github.io/tags/jupyter-notebook/</link>
-      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/jupyter-notebook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lab setup</title>
-      <link>https://alexanderlabwhoi.github.io/tags/lab-setup/</link>
-      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/lab-setup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>marine</title>
-      <link>https://alexanderlabwhoi.github.io/tags/marine/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/marine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>marine microbial eukaryote</title>
-      <link>https://alexanderlabwhoi.github.io/tags/marine-microbial-eukaryote/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/marine-microbial-eukaryote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>matplotlib</title>
-      <link>https://alexanderlabwhoi.github.io/tags/matplotlib/</link>
-      <pubDate>Tue, 30 Mar 2021 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/matplotlib/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mesocosm</title>
-      <link>https://alexanderlabwhoi.github.io/tags/mesocosm/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/mesocosm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>metabolites</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metabolites/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metabolites/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>metabolomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metabolomics/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metabolomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>metagenome</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metagenome/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metagenome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>metagenomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metagenomics/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metagenomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>metalloenzyme</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metalloenzyme/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metalloenzyme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>metatranscriptome</title>
-      <link>https://alexanderlabwhoi.github.io/tags/metatranscriptome/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/metatranscriptome/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>metatranscriptomics</title>
@@ -792,15 +18,6 @@
       <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/metatranscriptomics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>methodology</title>
-      <link>https://alexanderlabwhoi.github.io/tags/methodology/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/methodology/</guid>
       <description></description>
     </item>
     
@@ -814,114 +31,6 @@
     </item>
     
     <item>
-      <title>microbiome</title>
-      <link>https://alexanderlabwhoi.github.io/tags/microbiome/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/microbiome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>microcosm</title>
-      <link>https://alexanderlabwhoi.github.io/tags/microcosm/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/microcosm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>modeling</title>
-      <link>https://alexanderlabwhoi.github.io/tags/modeling/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/modeling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>molecular</title>
-      <link>https://alexanderlabwhoi.github.io/tags/molecular/</link>
-      <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/molecular/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>new PI</title>
-      <link>https://alexanderlabwhoi.github.io/tags/new-pi/</link>
-      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/new-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>niche partitioning</title>
-      <link>https://alexanderlabwhoi.github.io/tags/niche-partitioning/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/niche-partitioning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nitrogen</title>
-      <link>https://alexanderlabwhoi.github.io/tags/nitrogen/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/nitrogen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nucelosides</title>
-      <link>https://alexanderlabwhoi.github.io/tags/nucelosides/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/nucelosides/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nutrient</title>
-      <link>https://alexanderlabwhoi.github.io/tags/nutrient/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/nutrient/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nutrient physiology</title>
-      <link>https://alexanderlabwhoi.github.io/tags/nutrient-physiology/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/nutrient-physiology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>open data</title>
-      <link>https://alexanderlabwhoi.github.io/tags/open-data/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/open-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>osmolytes</title>
-      <link>https://alexanderlabwhoi.github.io/tags/osmolytes/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/osmolytes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>phaeocystis antarctica</title>
       <link>https://alexanderlabwhoi.github.io/tags/phaeocystis-antarctica/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
@@ -931,29 +40,11 @@
     </item>
     
     <item>
-      <title>phosphorus</title>
-      <link>https://alexanderlabwhoi.github.io/tags/phosphorus/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/phosphorus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>phycosphere</title>
       <link>https://alexanderlabwhoi.github.io/tags/phycosphere/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/phycosphere/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>phytoplankton</title>
-      <link>https://alexanderlabwhoi.github.io/tags/phytoplankton/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/phytoplankton/</guid>
       <description></description>
     </item>
     
@@ -976,29 +67,47 @@
     </item>
     
     <item>
-      <title>proteomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/proteomics/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      <title>southern ocean</title>
+      <link>https://alexanderlabwhoi.github.io/tags/southern-ocean/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/proteomics/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/southern-ocean/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>protist</title>
-      <link>https://alexanderlabwhoi.github.io/tags/protist/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      <title>anvio</title>
+      <link>https://alexanderlabwhoi.github.io/tags/anvio/</link>
+      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/protist/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/anvio/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>protists</title>
-      <link>https://alexanderlabwhoi.github.io/tags/protists/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <title>bioinformatics</title>
+      <link>https://alexanderlabwhoi.github.io/tags/bioinformatics/</link>
+      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/protists/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/bioinformatics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data visualization</title>
+      <link>https://alexanderlabwhoi.github.io/tags/data-visualization/</link>
+      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genomics</title>
+      <link>https://alexanderlabwhoi.github.io/tags/genomics/</link>
+      <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/genomics/</guid>
       <description></description>
     </item>
     
@@ -1012,56 +121,110 @@
     </item>
     
     <item>
-      <title>qRT-PCR</title>
-      <link>https://alexanderlabwhoi.github.io/tags/qrt-pcr/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      <title>Bio-GO-SHIP</title>
+      <link>https://alexanderlabwhoi.github.io/tags/bio-go-ship/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/qrt-pcr/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/bio-go-ship/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>re-analysis</title>
-      <link>https://alexanderlabwhoi.github.io/tags/re-analysis/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      <title>Community-Ecology</title>
+      <link>https://alexanderlabwhoi.github.io/tags/community-ecology/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/re-analysis/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/community-ecology/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>reference gene</title>
-      <link>https://alexanderlabwhoi.github.io/tags/reference-gene/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      <title>computation</title>
+      <link>https://alexanderlabwhoi.github.io/tags/computation/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/reference-gene/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/computation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>relative gene expression</title>
-      <link>https://alexanderlabwhoi.github.io/tags/relative-gene-expression/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      <title>Emiliania</title>
+      <link>https://alexanderlabwhoi.github.io/tags/emiliania/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/relative-gene-expression/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/emiliania/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>reproducibility</title>
-      <link>https://alexanderlabwhoi.github.io/tags/reproducibility/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      <title>Eukaryote</title>
+      <link>https://alexanderlabwhoi.github.io/tags/eukaryote/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/reproducibility/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/eukaryote/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>rt-qpcr</title>
-      <link>https://alexanderlabwhoi.github.io/tags/rt-qpcr/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      <title>global</title>
+      <link>https://alexanderlabwhoi.github.io/tags/global/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/rt-qpcr/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/global/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MAGs</title>
+      <link>https://alexanderlabwhoi.github.io/tags/mags/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/mags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metagenome</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metagenome/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metagenome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metagenome-Assembled</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metagenome-assembled/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metagenome-assembled/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metagenomics</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metagenomics/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metagenomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pangenomes</title>
+      <link>https://alexanderlabwhoi.github.io/tags/pangenomes/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/pangenomes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phaeocystis</title>
+      <link>https://alexanderlabwhoi.github.io/tags/phaeocystis/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/phaeocystis/</guid>
       <description></description>
     </item>
     
@@ -1075,38 +238,200 @@
     </item>
     
     <item>
+      <title>Tara Oceans</title>
+      <link>https://alexanderlabwhoi.github.io/tags/tara-oceans/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/tara-oceans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thermal</title>
+      <link>https://alexanderlabwhoi.github.io/tags/thermal/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/thermal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transcriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/tags/transcriptomics/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/transcriptomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computing</title>
+      <link>https://alexanderlabwhoi.github.io/tags/computing/</link>
+      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conda</title>
+      <link>https://alexanderlabwhoi.github.io/tags/conda/</link>
+      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/conda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HPC</title>
+      <link>https://alexanderlabwhoi.github.io/tags/hpc/</link>
+      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/hpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://alexanderlabwhoi.github.io/tags/r/</link>
+      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RStudio</title>
+      <link>https://alexanderlabwhoi.github.io/tags/rstudio/</link>
+      <pubDate>Wed, 09 Jun 2021 10:11:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DMSP</title>
+      <link>https://alexanderlabwhoi.github.io/tags/dmsp/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/dmsp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional prediction</title>
+      <link>https://alexanderlabwhoi.github.io/tags/functional-prediction/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/functional-prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MarRef</title>
+      <link>https://alexanderlabwhoi.github.io/tags/marref/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/marref/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metatranscriptome</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metatranscriptome/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metatranscriptome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MMETSP</title>
+      <link>https://alexanderlabwhoi.github.io/tags/mmetsp/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/mmetsp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>osmolytes</title>
+      <link>https://alexanderlabwhoi.github.io/tags/osmolytes/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/osmolytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protists</title>
+      <link>https://alexanderlabwhoi.github.io/tags/protists/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/protists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fonts</title>
+      <link>https://alexanderlabwhoi.github.io/tags/fonts/</link>
+      <pubDate>Tue, 30 Mar 2021 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/fonts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>matplotlib</title>
+      <link>https://alexanderlabwhoi.github.io/tags/matplotlib/</link>
+      <pubDate>Tue, 30 Mar 2021 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/matplotlib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alexander Lab</title>
+      <link>https://alexanderlabwhoi.github.io/tags/alexander-lab/</link>
+      <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/alexander-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hiring</title>
+      <link>https://alexanderlabwhoi.github.io/tags/hiring/</link>
+      <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/hiring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>molecular</title>
+      <link>https://alexanderlabwhoi.github.io/tags/molecular/</link>
+      <pubDate>Tue, 09 Feb 2021 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/molecular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eukaryotes</title>
+      <link>https://alexanderlabwhoi.github.io/tags/eukaryotes/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/eukaryotes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>software</title>
       <link>https://alexanderlabwhoi.github.io/tags/software/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>southern ocean</title>
-      <link>https://alexanderlabwhoi.github.io/tags/southern-ocean/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/southern-ocean/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>stress</title>
-      <link>https://alexanderlabwhoi.github.io/tags/stress/</link>
-      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/stress/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sub-euphotic</title>
-      <link>https://alexanderlabwhoi.github.io/tags/sub-euphotic/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/tags/sub-euphotic/</guid>
       <description></description>
     </item>
     
@@ -1129,11 +454,452 @@
     </item>
     
     <item>
-      <title>transcriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/tags/transcriptomics/</link>
+      <title>data storage</title>
+      <link>https://alexanderlabwhoi.github.io/tags/data-storage/</link>
+      <pubDate>Tue, 02 Jun 2020 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/data-storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>auxtrophy</title>
+      <link>https://alexanderlabwhoi.github.io/tags/auxtrophy/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/auxtrophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metabolites</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metabolites/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metabolites/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modeling</title>
+      <link>https://alexanderlabwhoi.github.io/tags/modeling/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conferences</title>
+      <link>https://alexanderlabwhoi.github.io/tags/conferences/</link>
+      <pubDate>Mon, 10 Feb 2020 13:00:05 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ehux</title>
+      <link>https://alexanderlabwhoi.github.io/tags/ehux/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/ehux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nutrient physiology</title>
+      <link>https://alexanderlabwhoi.github.io/tags/nutrient-physiology/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/nutrient-physiology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data analysis</title>
+      <link>https://alexanderlabwhoi.github.io/tags/data-analysis/</link>
+      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jupyter</title>
+      <link>https://alexanderlabwhoi.github.io/tags/jupyter/</link>
+      <pubDate>Tue, 23 Jul 2019 15:25:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/jupyter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://alexanderlabwhoi.github.io/tags/anaconda/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/anaconda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>best practices</title>
+      <link>https://alexanderlabwhoi.github.io/tags/best-practices/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/best-practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jupyter notebook</title>
+      <link>https://alexanderlabwhoi.github.io/tags/jupyter-notebook/</link>
+      <pubDate>Mon, 29 Apr 2019 16:06:30 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/jupyter-notebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automated pipeline</title>
+      <link>https://alexanderlabwhoi.github.io/tags/automated-pipeline/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/automated-pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data reuse</title>
+      <link>https://alexanderlabwhoi.github.io/tags/data-reuse/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/data-reuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>de novo assembly</title>
+      <link>https://alexanderlabwhoi.github.io/tags/de-novo-assembly/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/de-novo-assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>marine microbial eukaryote</title>
+      <link>https://alexanderlabwhoi.github.io/tags/marine-microbial-eukaryote/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/marine-microbial-eukaryote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open data</title>
+      <link>https://alexanderlabwhoi.github.io/tags/open-data/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/open-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protist</title>
+      <link>https://alexanderlabwhoi.github.io/tags/protist/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/protist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>re-analysis</title>
+      <link>https://alexanderlabwhoi.github.io/tags/re-analysis/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/re-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reproducibility</title>
+      <link>https://alexanderlabwhoi.github.io/tags/reproducibility/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/reproducibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lab setup</title>
+      <link>https://alexanderlabwhoi.github.io/tags/lab-setup/</link>
+      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/lab-setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>new PI</title>
+      <link>https://alexanderlabwhoi.github.io/tags/new-pi/</link>
+      <pubDate>Sun, 11 Nov 2018 18:35:12 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/new-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://alexanderlabwhoi.github.io/tags/data-science/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microbiome</title>
+      <link>https://alexanderlabwhoi.github.io/tags/microbiome/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/microbiome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biogeochemistry</title>
+      <link>https://alexanderlabwhoi.github.io/tags/biogeochemistry/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/biogeochemistry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gene expression</title>
+      <link>https://alexanderlabwhoi.github.io/tags/gene-expression/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/gene-expression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metalloenzyme</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metalloenzyme/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metalloenzyme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phosphorus</title>
+      <link>https://alexanderlabwhoi.github.io/tags/phosphorus/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/phosphorus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qRT-PCR</title>
+      <link>https://alexanderlabwhoi.github.io/tags/qrt-pcr/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/qrt-pcr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Station ALOHA</title>
+      <link>https://alexanderlabwhoi.github.io/tags/station-aloha/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/station-aloha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trichodesmium</title>
+      <link>https://alexanderlabwhoi.github.io/tags/trichodesmium/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/trichodesmium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phytoplankton</title>
+      <link>https://alexanderlabwhoi.github.io/tags/phytoplankton/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/phytoplankton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sub-euphotic</title>
+      <link>https://alexanderlabwhoi.github.io/tags/sub-euphotic/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/sub-euphotic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aquatic</title>
+      <link>https://alexanderlabwhoi.github.io/tags/aquatic/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/aquatic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>climate change</title>
+      <link>https://alexanderlabwhoi.github.io/tags/climate-change/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/climate-change/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>estuarine</title>
+      <link>https://alexanderlabwhoi.github.io/tags/estuarine/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/estuarine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>experimental design</title>
+      <link>https://alexanderlabwhoi.github.io/tags/experimental-design/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/experimental-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freshwater</title>
+      <link>https://alexanderlabwhoi.github.io/tags/freshwater/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/freshwater/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>global warming</title>
+      <link>https://alexanderlabwhoi.github.io/tags/global-warming/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/global-warming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>marine</title>
+      <link>https://alexanderlabwhoi.github.io/tags/marine/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/marine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mesocosm</title>
+      <link>https://alexanderlabwhoi.github.io/tags/mesocosm/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/mesocosm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>methodology</title>
+      <link>https://alexanderlabwhoi.github.io/tags/methodology/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/methodology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microcosm</title>
+      <link>https://alexanderlabwhoi.github.io/tags/microcosm/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/microcosm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>harmful algal bloom</title>
+      <link>https://alexanderlabwhoi.github.io/tags/harmful-algal-bloom/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
       
-      <guid>https://alexanderlabwhoi.github.io/tags/transcriptomics/</guid>
+      <guid>https://alexanderlabwhoi.github.io/tags/harmful-algal-bloom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heterosigma akashiwo</title>
+      <link>https://alexanderlabwhoi.github.io/tags/heterosigma-akashiwo/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/heterosigma-akashiwo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nutrient</title>
+      <link>https://alexanderlabwhoi.github.io/tags/nutrient/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/nutrient/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conserved response</title>
+      <link>https://alexanderlabwhoi.github.io/tags/conserved-response/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/conserved-response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diatom</title>
+      <link>https://alexanderlabwhoi.github.io/tags/diatom/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/diatom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nitrogen</title>
+      <link>https://alexanderlabwhoi.github.io/tags/nitrogen/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/nitrogen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aureococcus anophagefferens</title>
+      <link>https://alexanderlabwhoi.github.io/tags/aureococcus-anophagefferens/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/aureococcus-anophagefferens/</guid>
       <description></description>
     </item>
     
@@ -1152,6 +918,195 @@
       <pubDate>Thu, 01 Jun 2017 00:00:00 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/tags/virus-host/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMP</title>
+      <link>https://alexanderlabwhoi.github.io/tags/amp/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/amp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>big data</title>
+      <link>https://alexanderlabwhoi.github.io/tags/big-data/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cyber infrastructure</title>
+      <link>https://alexanderlabwhoi.github.io/tags/cyber-infrastructure/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/cyber-infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data sharing</title>
+      <link>https://alexanderlabwhoi.github.io/tags/data-sharing/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/data-sharing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metabolomics</title>
+      <link>https://alexanderlabwhoi.github.io/tags/metabolomics/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/metabolomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nucelosides</title>
+      <link>https://alexanderlabwhoi.github.io/tags/nucelosides/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/nucelosides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>evolution</title>
+      <link>https://alexanderlabwhoi.github.io/tags/evolution/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/evolution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional diversity</title>
+      <link>https://alexanderlabwhoi.github.io/tags/functional-diversity/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/functional-diversity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diversity</title>
+      <link>https://alexanderlabwhoi.github.io/tags/diversity/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/diversity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blooms</title>
+      <link>https://alexanderlabwhoi.github.io/tags/blooms/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/blooms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ecological traits</title>
+      <link>https://alexanderlabwhoi.github.io/tags/ecological-traits/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/ecological-traits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>niche partitioning</title>
+      <link>https://alexanderlabwhoi.github.io/tags/niche-partitioning/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/niche-partitioning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>critical depth hypothesis</title>
+      <link>https://alexanderlabwhoi.github.io/tags/critical-depth-hypothesis/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/critical-depth-hypothesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sverdrup</title>
+      <link>https://alexanderlabwhoi.github.io/tags/sverdrup/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/sverdrup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>housekeeping genes</title>
+      <link>https://alexanderlabwhoi.github.io/tags/housekeeping-genes/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/housekeeping-genes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>proteomics</title>
+      <link>https://alexanderlabwhoi.github.io/tags/proteomics/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/proteomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reference gene</title>
+      <link>https://alexanderlabwhoi.github.io/tags/reference-gene/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/reference-gene/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relative gene expression</title>
+      <link>https://alexanderlabwhoi.github.io/tags/relative-gene-expression/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/relative-gene-expression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rt-qpcr</title>
+      <link>https://alexanderlabwhoi.github.io/tags/rt-qpcr/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/rt-qpcr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stress</title>
+      <link>https://alexanderlabwhoi.github.io/tags/stress/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/stress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thalassiosira pseudonana</title>
+      <link>https://alexanderlabwhoi.github.io/tags/thalassiosira-pseudonana/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/tags/thalassiosira-pseudonana/</guid>
       <description></description>
     </item>
     

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Arianna I Krinos on Alexander Lab @ WHOI</title>
+    <title>*Arianna I Krinos* § on Alexander Lab @ WHOI</title>
     <link>https://alexanderlabwhoi.github.io/authors/arianna-i-krinos/</link>
-    <description>Recent content in Arianna I Krinos on Alexander Lab @ WHOI</description>
+    <description>Recent content in *Arianna I Krinos* § on Alexander Lab @ WHOI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
@@ -36,6 +36,15 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/publication/krinos-2024-missing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation of the unsung eukaryotic microbes</title>
+      <link>https://alexanderlabwhoi.github.io/publication/krinos-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/publication/krinos-2021/</guid>
       <description></description>
     </item>
     

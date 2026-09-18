@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.1.0">
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.73.0" />
 
   
 
@@ -714,97 +714,50 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<p>Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this <a href="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/" target="_blank">other blog post</a> for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extensibility and power for my notebooks that my personal laptop can&rsquo;t handle, minimizing file storage on my local machine, etc. etc.).</p>
-
+      <p>Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this <a href="https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/">other blog post</a> for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extensibility and power for my notebooks that my personal laptop can&rsquo;t handle, minimizing file storage on my local machine, etc. etc.).</p>
 <p>However, I <em>could not</em> get any of my font specifications to work in <code>matplotlib</code> (or any dependent programs) in my notebooks that I was running via ssh tunnel. Period.</p>
-
 <p>I constantly got some variation of <code>findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.</code>.:</p>
-
-<p><img src="resources/error-message.png" alt="Error message" title="Error message from `matplotlib`" /></p>
-
+<p><img src="resources/error-message.png" alt="Error message" title="Error message from `matplotlib`"></p>
 <p>This happened both when I directly specified the font in my notebook:</p>
-
 <pre><code>import matplotlib.pyplot as plt
 plt.rcParams[&quot;font.family&quot;] = &quot;sans-serif&quot;
-</code></pre>
-
-<p>And also when I modified my <code>matplotlibrc</code> file (more on that later).</p>
-
+</code></pre><p>And also when I modified my <code>matplotlibrc</code> file (more on that later).</p>
 <p>I figured I was simply doing something wrong and eventually gave up on trying to fix it and just succumbed to my fate of manually changing fonts post-plotting in Adobe Illustrator. I did this for&hellip; several years.</p>
-
 <p>And then yesterday, I had an epiphany. My remote HPC probably doesn&rsquo;t have Microsoft  fonts installed.</p>
-
-<p><img src="resources/picard-meme-facepalm.jpg" alt="Facepalm" title="Facepalm" /></p>
-
-<p>As <a href="https://alexanderlabwhoi.github.io/authors/akrinos/" target="_blank">Arianna</a> said (slacked, really) when I asked for her comments on this blog post: &ldquo;This is because unlike an OS that we’re used to working with that’s all set up out-of-the-box, HPC admins don’t really have a need to use anything but some kind of Courier New.&rdquo;</p>
-
+<p><img src="resources/picard-meme-facepalm.jpg" alt="Facepalm" title="Facepalm"></p>
+<p>As <a href="https://alexanderlabwhoi.github.io/authors/akrinos/">Arianna</a> said (slacked, really) when I asked for her comments on this blog post: &ldquo;This is because unlike an OS that we’re used to working with that’s all set up out-of-the-box, HPC admins don’t really have a need to use anything but some kind of Courier New.&rdquo;</p>
 <p>Too true.</p>
-
 <p>And so, I present to you&hellip;</p>
-
 <h2 id="how-to-specify-fonts-in-matplotlib-when-you-are-working-on-a-linux-system">How to specify fonts in <code>matplotlib</code> when you are working on a Linux system:</h2>
-
-<p>First off, I highly recommend using <code>conda</code> environments to manage research computational environments&ndash; it can enhance reproducibility and avoid package conflicts (<a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/data-science.html" target="_blank">more here</a>). For the purposes of this tutorial, I will assume that you have created a <code>conda</code> environment that has <code>matplotlib</code> installed. For the sake of demonstration my environment is called <code>general_plotting</code>.</p>
-
-<p>Conveniently, there is a conda package <a href="https://anaconda.org/conda-forge/mscorefonts" target="_blank"><code>mscorefonts</code></a> that contains all the &ldquo;core fonts&rdquo; that are used for the Web. These fonts include: Andale Mono, Arial, Arial Black, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana, and Webdings. While not totally comprehensive, it provides enough font variety for my purposes.</p>
-
+<p>First off, I highly recommend using <code>conda</code> environments to manage research computational environments&ndash; it can enhance reproducibility and avoid package conflicts (<a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/data-science.html">more here</a>). For the purposes of this tutorial, I will assume that you have created a <code>conda</code> environment that has <code>matplotlib</code> installed. For the sake of demonstration my environment is called <code>general_plotting</code>.</p>
+<p>Conveniently, there is a conda package <a href="https://anaconda.org/conda-forge/mscorefonts"><code>mscorefonts</code></a> that contains all the &ldquo;core fonts&rdquo; that are used for the Web. These fonts include: Andale Mono, Arial, Arial Black, Comic Sans MS, Courier New, Georgia, Impact, Times New Roman, Trebuchet MS, Verdana, and Webdings. While not totally comprehensive, it provides enough font variety for my purposes.</p>
 <p>After having activated whatever environment you are using, you can install the <code>mscorefonts</code> package.</p>
-
 <pre><code>conda activate general_plotting
 conda install -c conda-forge mscorefonts
-</code></pre>
-
-<p>This will install and make those fonts available to you within your environment. We are almost done&ndash; but a few more steps just to make it work.</p>
-
+</code></pre><p>This will install and make those fonts available to you within your environment. We are almost done&ndash; but a few more steps just to make it work.</p>
 <p>I found that I had to delete my cached <code>matplotlib</code> folder. If you have <code>conda</code> installed I believe that it should be located in your home directory; however, if you can&rsquo;t find it there leave me a comment below.</p>
-
 <pre><code>rm ~/.cache/matplotlib -rf
-</code></pre>
-
-<p>Now, any adjustments you want to make should be fairly straightforward!</p>
-
+</code></pre><p>Now, any adjustments you want to make should be fairly straightforward!</p>
 <p>Now, you should be able to specify a font in your notebook preamble as you wish:</p>
-
 <pre><code>import matplotlib
 matplotlib.rcParams['font.family'] = &quot;sans-serif&quot;
 matplotlib.rcParams['font.sans-serif'] = &quot;Comic Sans MS&quot;
-</code></pre>
-
-<p>The above would make all plots in the notebook default to Comic Sans.</p>
-
+</code></pre><p>The above would make all plots in the notebook default to Comic Sans.</p>
 <p>You should also be able to specify fonts directly on some figure portion (e.g. y-label):</p>
-
 <pre><code>fig, ax = plt.plot(x,y) #some random variables
 ax.set_ylabel(&quot;First variable&quot;, fontname=&quot;Arial&quot;, fontsize=12)
-</code></pre>
-
-<h2 id="setting-a-default-font">Setting a default font</h2>
-
+</code></pre><h2 id="setting-a-default-font">Setting a default font</h2>
 <p>I generally like all my plots to look relatively similar. My preferred font is Arial &ndash; it is tidy and generally easy to read. If you want to specify a default font for all your plots without having to specify the <code>rcParams</code> in each notebook you can modify the <code>matplotlibrc</code> file for your environment. You can think of the <code>matplotlibrc</code> as similar to your <code>.bashrc</code> &ndash; it controls some of the basic functionality and preferences for your <code>matplotlib</code> plotting. This file can be a bit buried (especially when using <code>conda</code> environments). One easy way to find your file is to open a notebook within whatever environment you are using and type the following:</p>
-
 <pre><code>import matplotlib
 print(matplotlib.matplotlib_fname())
-</code></pre>
-
-<p>This command will print the absolute path to your <code>matplotlibrc</code>.</p>
-
+</code></pre><p>This command will print the absolute path to your <code>matplotlibrc</code>.</p>
 <p>Within this file, I edited the file such that I uncommented the following lines and made the following specifications:</p>
-
 <pre><code>font.family:  sans-serif
 font.sans-serif: Arial
-</code></pre>
-
-<p>As a random aside while you have your <code>matplotlibrc</code> file open and handy, you should consider changing your <code>pdf.fonttype</code> to <code>TrueType</code> rather than the default <code>Type 3</code>. If you go to edit or tinker with a <code>.pdf</code> file sometime down the line, you might be upset to discover that all the fonts have been converted to vectors (or outlined shapes of the fonts that can&rsquo;t be easily altered). You can set your default behavior to be exporting editable <code>TrueType</code> fonts by finding <code>pdf.fonttype</code> in <code>matplotlibrc</code> and uncommenting it and changing it as follows:</p>
-
+</code></pre><p>As a random aside while you have your <code>matplotlibrc</code> file open and handy, you should consider changing your <code>pdf.fonttype</code> to <code>TrueType</code> rather than the default <code>Type 3</code>. If you go to edit or tinker with a <code>.pdf</code> file sometime down the line, you might be upset to discover that all the fonts have been converted to vectors (or outlined shapes of the fonts that can&rsquo;t be easily altered). You can set your default behavior to be exporting editable <code>TrueType</code> fonts by finding <code>pdf.fonttype</code> in <code>matplotlibrc</code> and uncommenting it and changing it as follows:</p>
 <pre><code>pdf.fonttype:       42
-</code></pre>
-
-<p>You can now change your fonts as you please and not be stuck with DejaVu Sans (a font that I really, <em>really</em>, <strong>REALLY</strong> dislike).</p>
-
+</code></pre><p>You can now change your fonts as you please and not be stuck with DejaVu Sans (a font that I really, <em>really</em>, <strong>REALLY</strong> dislike).</p>
 <p>Happy plotting!</p>
-
 <p>[Thanks to Arianna for commenting on this blog post for me :)]</p>
 
     </div>
@@ -820,7 +773,7 @@ font.sans-serif: Arial
   
   <a class="badge badge-light" href="/tags/fonts/">fonts</a>
   
-  <a class="badge badge-light" href="/tags/data-visualization/">data visualization</a>
+  <a class="badge badge-light" href="">data visualization</a>
   
 </div>
 
@@ -984,7 +937,7 @@ font.sans-serif: Arial
   
 
   <p class="powered-by">
-    &copy; 2019 &middot; 
+    © 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1130,7 +1083,7 @@ font.sans-serif: Arial
     
     
     
-    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+    <script src="/js/academic.min.1846cc5c27f3006b56814095ec02281f.js"></script>
 
   </body>
 </html>

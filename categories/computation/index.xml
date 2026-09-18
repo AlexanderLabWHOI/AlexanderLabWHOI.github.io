@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>computation on Alexander Lab @ WHOI</title>
@@ -18,8 +18,7 @@
       <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/</guid>
-      <description>Anvi&amp;rsquo;o is a powerful tool for analyzing and vizualizing &amp;lsquo;omics data, much of which relies on one&amp;rsquo;s ability to visualize those data. On Poseidon, it can sometimes be difficult to work with these kinds of plotting tools, because we&amp;rsquo;re working on the command line. To use anvi&amp;rsquo;o interactively on Poseidon, we need to go through a few extra steps.
-I&amp;rsquo;ll walk you through the whole installation of anvi&amp;rsquo;o here from start to finish!</description>
+      <description>How to use anvi&amp;rsquo;o in interactive mode specifically on WHOI&amp;rsquo;s server</description>
     </item>
     
     <item>
@@ -37,7 +36,7 @@ I&amp;rsquo;ll walk you through the whole installation of anvi&amp;rsquo;o here 
       <pubDate>Tue, 30 Mar 2021 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/post/2021-03-missingfont/</guid>
-      <description>Over the last few years I have made a transition in my workflow from doing most of my data exploration and plotting on my local machine (a 2016 MacBook laptop) to doing most of my plotting on a remote HPC (check out this other blog post for more on that). This workflow is very convenient for many reasons (keeping all files in one location, more extensibility and power for my notebooks that my personal laptop can&amp;rsquo;t handle, minimizing file storage on my local machine, etc.</description>
+      <description>How to install MS core fonts with conda</description>
     </item>
     
     <item>
@@ -64,7 +63,7 @@ I&amp;rsquo;ll walk you through the whole installation of anvi&amp;rsquo;o here 
       <pubDate>Mon, 11 Mar 2019 18:30:13 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/post/2019-03-08_jpn_slurm/</guid>
-      <description>I run the bulk of my bioinformatic analyses remotely on a server or HPC, as they require more computational power or space than I have on my local computer. Rather than transfer the intermediate byproducts of these analyses (which may often be very large) to my local machine, I prefer to examine and analyze the data remotely using Jupyter. As jupyter notebook are browser-based, if you run the command jupyter notebook on a remote machine you will not be able to automatically interact with the jupyter dashboard as you do not have access to a browser on the remote machine.</description>
+      <description>Using SSH to tunnel into jupyter notebooks deployed remotely on slurm</description>
     </item>
     
   </channel>

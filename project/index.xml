@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Alexander Lab @ WHOI</title>
@@ -22,15 +22,6 @@
     </item>
     
     <item>
-      <title>EUKulele: Taxonomic annotation</title>
-      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
-      <description>Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics).</description>
-    </item>
-    
-    <item>
       <title>Ecological Role of Eukaryotic Pangenomes</title>
       <link>https://alexanderlabwhoi.github.io/project/ehuxleyi/</link>
       <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
@@ -46,6 +37,24 @@
       
       <guid>https://alexanderlabwhoi.github.io/project/eukheist/</guid>
       <description>Eukaryotic microbes, or protists, are key drivers of marine ecosystems, with roles ranging from primary producers (phytoplankton) to consumers (heterotrophs or mixotrophs). As with their bacteria and archaea, many protists are difficult or impossible to culture. This has limited our ability to directly interrogate their biology in the laboratory and has led us to underestimate their diversity across marine ecosystems. Molecular and genomic approaches, particularly those applied to whole, mixed communities (e.</description>
+    </item>
+    
+    <item>
+      <title>eukrhythmic: automating metatranscriptomics</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukrhythmic/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukrhythmic/</guid>
+      <description>Metatranscriptomics is a useful probe into the members of an ecological community, capturing community members and their potential functions in a single sequencing effort. Because transcribed RNA is sequenced, via thorough processing of metatrancriptomes, we can decipher both the members constituting a community as well as the genes that each member was expressing at the instant that the sample was collected. Metatranscriptomics is a relatively immature pursuit as compared to genomics or transcriptomics.</description>
+    </item>
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
+      <description>Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics).</description>
     </item>
     
     <item>
@@ -73,15 +82,6 @@
       
       <guid>https://alexanderlabwhoi.github.io/project/thermal_ehux/</guid>
       <description>Emiliania huxleyi is a globally-distributed coccolithophore with a major influence on beogeochemical cycling via the production of large, ephemeral blooms. Because of its global distribution, Emiliania huxleyi has a wide thermal range and apparently a high capacity for short-term acclimation and long-term adaptation to thermal conditions. We are studying this capacity in the lab via both traditional experimental acclimation approaches in semi-continuous culture, and via tracking gene expression changes in response to thermal conditioning in the taxon via transcriptomics.</description>
-    </item>
-    
-    <item>
-      <title>eukrhythmic: automating metatranscriptomics</title>
-      <link>https://alexanderlabwhoi.github.io/project/eukrhythmic/</link>
-      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
-      
-      <guid>https://alexanderlabwhoi.github.io/project/eukrhythmic/</guid>
-      <description>Metatranscriptomics is a useful probe into the members of an ecological community, capturing community members and their potential functions in a single sequencing effort. Because transcribed RNA is sequenced, via thorough processing of metatrancriptomes, we can decipher both the members constituting a community as well as the genes that each member was expressing at the instant that the sample was collected. Metatranscriptomics is a relatively immature pursuit as compared to genomics or transcriptomics.</description>
     </item>
     
   </channel>

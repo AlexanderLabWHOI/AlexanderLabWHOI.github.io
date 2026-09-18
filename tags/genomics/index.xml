@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>genomics on Alexander Lab @ WHOI</title>
@@ -18,8 +18,43 @@
       <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/</guid>
-      <description>Anvi&amp;rsquo;o is a powerful tool for analyzing and vizualizing &amp;lsquo;omics data, much of which relies on one&amp;rsquo;s ability to visualize those data. On Poseidon, it can sometimes be difficult to work with these kinds of plotting tools, because we&amp;rsquo;re working on the command line. To use anvi&amp;rsquo;o interactively on Poseidon, we need to go through a few extra steps.
-I&amp;rsquo;ll walk you through the whole installation of anvi&amp;rsquo;o here from start to finish!</description>
+      <description>How to use anvi&amp;rsquo;o in interactive mode specifically on WHOI&amp;rsquo;s server</description>
+    </item>
+    
+    <item>
+      <title>Ecological Role of Eukaryotic Pangenomes</title>
+      <link>https://alexanderlabwhoi.github.io/project/ehuxleyi/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/ehuxleyi/</guid>
+      <description>Coccolithophores, a group of calcifying marine phytoplankton within the phylum Haptophyta, play a significant role in marine biogeochemical cycles, particularly in those of carbon and sulfur. Emiliania huxleyi is one of the most abundant extant coccolithophore species in the ocean, typified by its cosmopolitan distribution and ability to form large blooms. Intra-specific variability in physiology (e.g. enzymatic rates, morphology, growth rates) of E. huxleyi has long been known in cultured isolates.</description>
+    </item>
+    
+    <item>
+      <title>EUKulele: Taxonomic annotation</title>
+      <link>https://alexanderlabwhoi.github.io/project/eukulele/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/eukulele/</guid>
+      <description>Easy, accurate classification of the taxonomy of microbial eukaryotes in the environment is a persistent challenge. For metagenomic and metatranscriptomic data, annotation is imperfect, because genomic references for organisms isolated from the environment are lacking. By leveraging experimental transcriptomic references, we have designed a tool to estimate the taxonomy of marine microbial eukaryotes. The tool is a flexible and modular way to leverage the expanding amount of omics data on environmentally-isolated microbial eukaryotes in order to better annotate multi-organism omics datasets (meta-omics).</description>
+    </item>
+    
+    <item>
+      <title>Phaeocystis</title>
+      <link>https://alexanderlabwhoi.github.io/project/phaeocystis/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/phaeocystis/</guid>
+      <description>Phytoplankton blooms are central to the ecology of Cape Cod Bay, where historically spring blooms of diatoms have been rapidly grazed, shuttling biomass through the food web. In more recent years, blooms of a haptophyte, Phaeocystis pouchetii have become more frequent in Cape Cod Bay. These organisms produce large gelatinous colonies, which prevents blooms of this haptophyte from being effectively grazed, hence reducing carbon cycling in the upper water column. We are partnering with the Center for Coastal Studies in Provincetown to find and study these blooms.</description>
+    </item>
+    
+    <item>
+      <title>SeqWell for Marine Microbes</title>
+      <link>https://alexanderlabwhoi.github.io/project/seqwell/</link>
+      <pubDate>Fri, 02 Jul 2021 15:15:49 -0400</pubDate>
+      
+      <guid>https://alexanderlabwhoi.github.io/project/seqwell/</guid>
+      <description>A central project aim is adaptation of a new single cell transcriptome (SCT) sequencing approach called SeqWell for analysis of natural microbial communities. The method addresses two overarching obstacles to microbial symbiosis investigations: 1) the requirement that symbionts be brought into culture for ‘omics analyses, and 2) time resolution limits on bulk approaches because populations are asynchronous. With enough SCTs, pseudotime methods can establish the time course of host and symbiont interactions.</description>
     </item>
     
     <item>

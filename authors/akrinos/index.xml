@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>akrinos on Alexander Lab @ WHOI</title>
@@ -18,8 +18,7 @@
       <pubDate>Mon, 24 Oct 2022 15:25:12 -0400</pubDate>
       
       <guid>https://alexanderlabwhoi.github.io/post/2022-10-24_anvio/</guid>
-      <description>Anvi&amp;rsquo;o is a powerful tool for analyzing and vizualizing &amp;lsquo;omics data, much of which relies on one&amp;rsquo;s ability to visualize those data. On Poseidon, it can sometimes be difficult to work with these kinds of plotting tools, because we&amp;rsquo;re working on the command line. To use anvi&amp;rsquo;o interactively on Poseidon, we need to go through a few extra steps.
-I&amp;rsquo;ll walk you through the whole installation of anvi&amp;rsquo;o here from start to finish!</description>
+      <description>How to use anvi&amp;rsquo;o in interactive mode specifically on WHOI&amp;rsquo;s server</description>
     </item>
     
     <item>
